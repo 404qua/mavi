@@ -1,0 +1,5 @@
+header {
+	border-bottom: 1px;	
+	padding: 0px var(--spacing-xl) 0px var(--spacing-xl);
+	background-color: var(--background-500);
+}

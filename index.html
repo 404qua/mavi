@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Earth Demo 1</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="importmap">{
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.183.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+	<header>
+		<H1>Earth Demo 1</H1>
+	</header>
+	<main>
+		<div class="viewport__container">
+			<div id="viewport"></div>
+		</div>
+		<div class="description">
+			<div class="inputs">
+				<h2>Inputs</h2>
+				<hr>
+				<div class="input__list">
+					<div class="input">
+						<span>Test Slider Input 1</span>
+						<label class="slider">
+							<input type="range">
+							<span class="fill"></span>
+							<span class="thumb"></span>
+							<span class="track"></span>
+						</label>
+					</div>
+
+					<div class="input">
+						<span>Test Slider Input 2</span>
+						<label class="slider">
+							<input type="range">
+							<span class="fill"></span>
+							<span class="thumb"></span>
+							<span class="track"></span>
+						</label>
+					</div>
+
+					<div class="input">
+						<span>Test Slider Input 3</span>
+						<label class="slider">
+							<input type="range" step="any">
+							<span class="fill"></span>
+							<span class="thumb"></span>
+							<span class="track"></span>
+						</label>
+					</div>
+
+					<div class="input">
+						<span>Another Test Slider Input 3</span>
+						<label class="slider">
+							<input type="range" step="any">
+							<span class="fill"></span>
+							<span class="thumb"></span>
+							<span class="track"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div class="description__text">
+				<h2>A Demo of Planet Earth</h2>
+				<p>
+					This is a demo of a digital render of planet earth. This demo has been made using surface and
+					weather data from nasa.
+				</p>
+			</div>
+		</div>
+	</main>
+</body>
+
+<script type="module" src="script.js"></script>
+
+</html>

@@ -1,0 +1,35 @@
+.inputs {
+	display: flex;
+	flex-direction: column;
+}
+
+.input__list {
+	display: grid;
+	grid-template-columns: max-content auto;
+}
+
+.input {
+	align-items: center;
+	align-content: center;
+	height: 1rem;
+	padding: var(--spacing-s);
+	line-height:1;
+
+	width: 100%;
+
+	margin-left: min(var(--spacing-xl), 4vw);
+	margin-right: var(--spacing-l);
+
+	gap: var(--spacing-xl);
+
+	display: grid;
+	grid-template-columns: subgrid;
+	grid-column: 1 / -1;
+}
+
+.input>label {
+	display:flex;
+	align-items: center;
+	flex-grow: 1;
+	height: 100%;
+}

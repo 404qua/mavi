@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("./css/header.css");
+@import url("./css/viewport.css");
+@import url("./css/inputs.css");
+@import url("./css/description.css");
+
+@import url("./scripts/app/css/sliders.css");
+
+:root {
+	--background-100: #5e5e5e;
+	--background-200: #525252;
+	--background-300: #464646;
+	--background-400: #3a3a3a;
+	--background-500: #2e2e2e;
+	--background-600: #222222;
+	--background-700: #161616;
+	--background-800: #080808;
+	--background-900: #000;
+
+	--foreground-100: #fff;
+	--foreground-200: #eee;
+	--foreground-300: #d8d8d8;
+	--foreground-400: #c8c8c8;
+	--foreground-500: #bbb;
+	--foreground-600: #a8a8a8;
+	--foreground-700: #989898;
+	--foreground-800: #888;
+	--foreground-900: #777;
+
+
+	--accent-400: #78adba;
+	--accent-500: #5aafc4;
+	--accent-600: #2d5660;
+
+	--spacing-xs: 2px;
+	--spacing-s: 4px;
+	--spacing-l: 8px;
+	--spacing-xl: 32px;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--background-600);
+	color: var(--foreground-500);
+    font-family: "Source Sans 3",system-ui, sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	min-width: 400px;
+
+	font-size: max(min(14px,3vh,3vw),10px);
+}
+
+h1, h2, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+hr {
+	width: 100%;
+	color: var(--background-400);
+	border: none;
+	border-bottom: 1px solid;
+}
+
+main {
+	display: flex;
+    width: 100%;
+	flex-grow: 1;
+
+	box-sizing: border-box;
+	padding: var(--spacing-l);
+	gap:var(--spacing-l);
+
+	--dir: row;
+}
+
+@media (max-aspect-ratio: 1.5) {
+	main {
+		flex-direction: column;
+		--dir: column;
+	}
+}
+
+@media (max-height: 425px) and (min-aspect-ratio: 1) {
+	main {
+		flex-direction: row;
+		--dir: row;
+	}
+}

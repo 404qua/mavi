@@ -1,0 +1,56 @@
+.slider {
+	position: relative;
+	cursor: pointer;
+}
+
+.slider input {
+	z-index: 3;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	inset: 0;
+	box-sizing: border-box;
+	margin: 0px;
+
+	cursor: grab;
+	appearance: none;
+	opacity: 0;
+}
+
+.slider input:active {
+	cursor: grabbing;
+}
+
+.slider .thumb,
+.slider .fill,
+.slider .track {
+	display: block;
+	position: absolute;
+}
+
+.track, .fill {
+	height: 1px;
+}
+
+.track {
+	z-index: 0;	
+	width: 100%;
+	background-color: var(--background-700);	
+}
+
+.fill {
+	z-index: 1;	
+	background-color: var(--accent-500);
+	width: var(--value);
+}
+
+.thumb {
+	left: var(--value);
+	translate: calc(((var(--value)) * -1)) 0px;
+	z-index: 2;	
+	border-radius: var(--spacing-xs);
+	background-color: var(--foreground-800);
+	border: 1px solid var(--foreground-500);
+	width: var(--spacing-l);
+	height: 100%;
+}
