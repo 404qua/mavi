@@ -48,13 +48,13 @@ container.appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = false;
 controls.enablePan = false;
+controls.offse
 
 // Mesh
 
 const radius = 1;
-const detail = 32;
 
-const geometry = new THREE.IcosahedronGeometry(radius, detail);
+const geometry = new THREE.SphereGeometry(radius, 360,180);
 
 const cube = new THREE.Mesh(geometry, materialEarth);
 scene.add(cube);

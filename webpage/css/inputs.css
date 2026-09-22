@@ -17,7 +17,7 @@
 
 	width: 100%;
 
-	margin-left: min(var(--spacing-xl), 4vw);
+	margin-left: min(var(--spacing-l), 1vw);
 	margin-right: var(--spacing-l);
 
 	gap: var(--spacing-xl);

@@ -1,58 +1,20 @@
 #viewport {
 	width: 100%;
-
-	max-height: min(500px, 100%);
-	max-width: min(500px, 100%);
-
-	box-sizing: border-box;
-
-	min-width: 0px;
-	min-height: 0px;
-
-	aspect-ratio: 1;
-
-	margin: auto;
-	margin-top: 0px;
-	background-color: var(--background-500);
-	position: relative;
-	overflow: hidden;
-
-	display: flex;
-
-	border: var(--spacing-s) solid var(--background-500);
+	height: 100%;
 }
 
 .viewport__container {
-	width: 100%;
-	max-width: 500px;
-	height: 100%;
-
+	
 	margin: auto;
 	margin-right: 0px;
-
-	container-type: size;
 	display: flex;
+	box-sizing: border-box;
+
+	inset: 0;
+
+	position: absolute;
 }
 
-@container style(--dir:column) {
-	.viewport__container {
-		height: 100%;
-		max-height: 500px;
-		max-width: unset;
-		margin-bottom: 0px;
-	}
-
-	#viewport {
-		margin-top: auto;
-	}
-}
-
-@container (orientation: landscape) {
-	#viewport {
-		width: unset;
-		height: 100%;
-	}
-}
 
 #viewport canvas {
 	display: block;

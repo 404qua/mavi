@@ -1,6 +1,8 @@
 .slider {
 	position: relative;
 	cursor: pointer;
+
+	width: 12em;
 }
 
 .slider input {
