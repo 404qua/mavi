@@ -3,8 +3,7 @@
 	height: 100%;
 }
 
-.viewport__container {
-	
+.viewport__container {	
 	margin: auto;
 	margin-right: 0px;
 	display: flex;
@@ -21,4 +20,6 @@
 	position: absolute;
 	border-radius: inherit;
 	box-sizing: border-box;
+
+	pointer-events: none;
 }

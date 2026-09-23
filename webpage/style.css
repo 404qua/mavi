@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=rajdhani@300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 @import url("./css/viewport.css");
 @import url("./css/inputs.css");
 @import url("./css/panels.css");
@@ -46,7 +49,7 @@ html, body {
     overflow: hidden;
     background: var(--background-600);
 	color: var(--foreground-500);
-    font-family: "Source Sans 3",system-ui, sans-serif;
+    font-family: "Titillium Web",system-ui, sans-serif;
 
 	display: flex;
 	flex-direction: column;
@@ -58,6 +61,11 @@ html, body {
 h1, h2, p {
 	margin: 0px;
 	padding: 0px;
+}
+
+h1, h2 {
+	font-family: "Michroma", system-ui, sans-serif;
+	font-size: 18px;
 }
 
 hr {
