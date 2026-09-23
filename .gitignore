@@ -161,7 +161,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -464,6 +463,7 @@ vcpkg_installed/
 # debug information files
 *.dwo
 
-# test output & cache
+# test output & cache   
 Testing/
 .cache/
+localTests/

@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Earth Demo 1</title>
 	<link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="../../Data/2k/baseMap.jpg">
+    <link rel="preload" as="image" href="../../Data/2k/marsHeight.png">
 
+	<script src="https://unpkg.com/@upng/upng-js@2.2.2/dist/UPNG.umd.js"></script>
 	<script type="importmap">{
         "imports": {
             "three": "https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.js",
@@ -14,6 +17,7 @@
         }
     }
     </script>
+	<script type="module" src="./scripts/lib/assetLoader/loader.js"></script>
 </head>
 
 <body>
