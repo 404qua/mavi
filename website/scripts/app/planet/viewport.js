@@ -1,8 +1,6 @@
 import * as Cesium from 'cesium';
 import 'cesium/Build/Cesium/Widgets/widgets.css';
 
-import planetTexture from './tmp/baseMap.jpg';
-
 async function main() {
 
 	const globeRadius = 3396190.0;
