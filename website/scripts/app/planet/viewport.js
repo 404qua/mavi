@@ -6,6 +6,8 @@ async function main() {
 	const globeRadius = 3396190.0;
 	const globeEllipsoid = new Cesium.Ellipsoid(globeRadius, globeRadius, globeRadius);
 
+	const globeTerrainProvider = await Cesium.CesiumTerrainProvider.fromUrl('https://marswalk-assets.pages.dev/terrain', { ellipsoid: globeEllipsoid });
+
 	Cesium.Ellipsoid.default = globeEllipsoid;
 
 	const viewer = new Cesium.Viewer('viewport', {
@@ -20,7 +22,7 @@ async function main() {
 		fullscreenButton: false,
 		creditContainer: document.createElement('div'),
 		globe: new Cesium.Globe(globeEllipsoid),
-
+		terrainProvider: globeTerrainProvider,
 	})
 
 
@@ -31,7 +33,7 @@ async function main() {
 
 
 	scene.skyAtmosphere = new Cesium.SkyAtmosphere(globeEllipsoid);
-	scene.atmosphere = new Cesium.SkyAtmosphere(globeEllipsoid);
+	scene.atmosphere = new Cesium.Atmosphere(globeEllipsoid);
 
 	scene.atmosphere.hueShift = 1;
 	scene.atmosphere.dynamicLighting = Cesium.DynamicAtmosphereLightingType.SUNLIGHT;
