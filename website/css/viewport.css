@@ -20,6 +20,4 @@
 	position: absolute;
 	border-radius: inherit;
 	box-sizing: border-box;
-
-	pointer-events: none;
 }
