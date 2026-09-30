@@ -466,4 +466,7 @@ vcpkg_installed/
 # test output & cache   
 Testing/
 .cache/
-localTests/
+ .wrangler/
+ .wrangler
+/Data/
+.wrangler/
