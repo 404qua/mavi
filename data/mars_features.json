@@ -152,7 +152,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "\"Lake of the Sun\"; the so-called \"Eye of Mars,\" connecting East with West.",
-    "image": "imagery/features/5624.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5624.jpg",
     "image_source": "wikidata"
   },
   {
@@ -198,7 +198,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "\"Middle Bay,\" from Flammarion map.",
-    "image": "imagery/features/5568.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5568.jpg",
     "image_source": "wikidata"
   },
   {
@@ -398,7 +398,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "(Alytus), town in Lithuania.",
-    "image": "imagery/features/189.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/189.jpg",
     "image_source": "wikidata"
   },
   {
@@ -444,7 +444,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "A.D.; Russian geologist.",
-    "image": "imagery/features/384.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/384.jpg",
     "image_source": "wikidata"
   },
   {
@@ -479,7 +479,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "After Caralis Fons, classical albedo feature named after Caralis Lacus, now Beysehir Gölü, in Isauria (Asia Minor).",
-    "image": "imagery/features/15253.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15253.jpg",
     "image_source": "wikidata"
   },
   {
@@ -503,7 +503,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Albedo feature at 30S, 75W.",
-    "image": "imagery/features/5954.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5954.jpg",
     "image_source": "wikidata"
   },
   {
@@ -527,7 +527,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Albedo feature Centauri Lacus.",
-    "image": "imagery/features/1100.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1100.jpg",
     "image_source": "wikidata"
   },
   {
@@ -563,7 +563,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/325.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/325.jpg",
     "image_source": "wikidata"
   },
   {
@@ -576,7 +576,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/481.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/481.jpg",
     "image_source": "wikidata"
   },
   {
@@ -590,7 +590,7 @@
     "importance": 2,
     "origin": "Albedo feature name.",
     "additional_info": "Feature boundary extended May 18, 2012 to include mountains to the northwest as well as the feature formerly called Tyrrhena Mons.",
-    "image": "imagery/features/482.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/482.jpg",
     "image_source": "wikidata"
   },
   {
@@ -603,7 +603,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/1315.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1315.jpg",
     "image_source": "wikidata"
   },
   {
@@ -627,7 +627,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/1714.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1714.jpg",
     "image_source": "wikidata"
   },
   {
@@ -651,7 +651,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/1781.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1781.jpg",
     "image_source": "wikidata"
   },
   {
@@ -697,7 +697,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/2066.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2066.jpg",
     "image_source": "wikidata"
   },
   {
@@ -732,7 +732,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/2157.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2157.jpg",
     "image_source": "wikidata"
   },
   {
@@ -789,7 +789,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/3506.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3506.jpg",
     "image_source": "wikidata"
   },
   {
@@ -802,7 +802,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/3517.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3517.jpg",
     "image_source": "wikidata"
   },
   {
@@ -815,7 +815,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/3796.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3796.jpg",
     "image_source": "wikidata"
   },
   {
@@ -861,7 +861,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/4651.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4651.jpg",
     "image_source": "wikidata"
   },
   {
@@ -874,7 +874,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/4884.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4884.jpg",
     "image_source": "wikidata"
   },
   {
@@ -887,7 +887,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/5268.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5268.jpg",
     "image_source": "wikidata"
   },
   {
@@ -922,7 +922,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/5859.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5859.jpg",
     "image_source": "wikidata"
   },
   {
@@ -946,7 +946,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/6720.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6720.jpg",
     "image_source": "wikidata"
   },
   {
@@ -959,7 +959,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Albedo feature name.",
-    "image": "imagery/features/6721.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6721.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1005,7 +1005,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo feature; classical Persian deity of wickedness.",
-    "image": "imagery/features/378.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/378.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1029,7 +1029,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo name.",
-    "image": "imagery/features/393.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/393.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1042,7 +1042,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo name.",
-    "image": "imagery/features/395.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/395.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1110,7 +1110,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Albedo name.",
-    "image": "imagery/features/4618.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4618.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1123,7 +1123,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albedo name.",
-    "image": "imagery/features/4619.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4619.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1147,7 +1147,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Albert; German astronomer (1828-1897).",
-    "image": "imagery/features/3725.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3725.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1160,7 +1160,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Aleksander P.; Soviet geochemist (1895-1975).",
-    "image": "imagery/features/6394.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6394.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1184,7 +1184,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Aleksey; Soviet writer (1882-1945).",
-    "image": "imagery/features/178.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/178.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1219,7 +1219,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Alfred L.; German geophysicist (1880-1930).",
-    "image": "imagery/features/6508.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6508.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1243,7 +1243,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Alfred R.; British biologist (1823-1913).",
-    "image": "imagery/features/6478.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6478.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1267,7 +1267,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Alvan; American optician-astronomer (1804-1887).",
-    "image": "imagery/features/1233.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1233.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1459,7 +1459,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "American station in Antarctica.",
-    "image": "imagery/features/3784.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3784.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1517,7 +1517,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient and modern river in Spain, Portugal.",
-    "image": "imagery/features/5821.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5821.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1530,7 +1530,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient Egyptian word for \"Mars.\"",
-    "image": "imagery/features/2367.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2367.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1543,7 +1543,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient European river (Bulgaria).",
-    "image": "imagery/features/352.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/352.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1578,7 +1578,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient name for Greek river.",
-    "image": "imagery/features/3224.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3224.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1712,7 +1712,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient name of river at Troy (modern Turkey).",
-    "image": "imagery/features/5353.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5353.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1725,7 +1725,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient Pakistani River.",
-    "image": "imagery/features/4961.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4961.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1738,7 +1738,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ancient river in Greece.",
-    "image": "imagery/features/2404.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2404.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1762,7 +1762,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Andrew C.; British astronomer (1865-1939).",
-    "image": "imagery/features/1338.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1338.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1775,7 +1775,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Andrew E.; American astronomer (1867-1962).",
-    "image": "imagery/features/1631.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1631.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1799,7 +1799,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Angelo; Italian astronomer (1818-1878).",
-    "image": "imagery/features/5402.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5402.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1812,7 +1812,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Antoine H.; French physicist (1852-1908).",
-    "image": "imagery/features/655.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/655.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1858,7 +1858,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Arthur S.; British astronomer (1861-1938).",
-    "image": "imagery/features/6552.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6552.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1871,7 +1871,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Arthur; British geologist (1890-1965).",
-    "image": "imagery/features/2544.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2544.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1895,7 +1895,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Audouin Charles; French astronomer (1924-2010).",
-    "image": "imagery/features/15168.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15168.jpg",
     "image_source": "wikidata"
   },
   {
@@ -1930,7 +1930,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Bernard; French astronomer (1897-1952).",
-    "image": "imagery/features/3538.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3538.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2031,7 +2031,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Boris Evgen'evich; Soviet astronomer (1900-1937).",
-    "image": "imagery/features/5423.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5423.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2055,7 +2055,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Camille; French astronomer (1842-1925).",
-    "image": "imagery/features/1973.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1973.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2101,7 +2101,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Carl E.; American astronomer (1934-1996).",
-    "image": "imagery/features/5276.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5276.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2114,7 +2114,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Carl G.; Swedish-American meteorologist (1898-1957).",
-    "image": "imagery/features/5194.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5194.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2127,7 +2127,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Carl O.; American astronomer (1873-1951).",
-    "image": "imagery/features/3260.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3260.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2140,7 +2140,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Carl V.; Swedish astronomer (1862-1934).",
-    "image": "imagery/features/1154.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1154.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2153,7 +2153,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Carl Wilhelm; German astronomer (1876-1939).",
-    "image": "imagery/features/6564.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6564.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2166,7 +2166,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Charles A.; American atmospheric physicist (1930-2014).",
-    "image": "imagery/features/15795.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15795.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2190,7 +2190,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Charles E.; British astronomer (1846-1882).",
-    "image": "imagery/features/929.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/929.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2214,7 +2214,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Charles R.; British naturalist (1809-1882) and George H.; British astronomer (1845-1912).",
-    "image": "imagery/features/1418.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1418.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2227,7 +2227,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Charles; British geologist (1797-1875).",
-    "image": "imagery/features/3533.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3533.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2240,7 +2240,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Chesley; American space artist (1888-1986).",
-    "image": "imagery/features/814.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/814.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2253,7 +2253,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Chinese astronomer (c. A.D. 85).",
-    "image": "imagery/features/3379.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3379.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2266,7 +2266,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Chinese astronomer (d. A.D. 22).",
-    "image": "imagery/features/3428.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3428.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2290,7 +2290,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Christiaan; Dutch physicist-astronomer (1629-1695).",
-    "image": "imagery/features/2596.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2596.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2303,7 +2303,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Christopher; Italian explorer (1451-1506).",
-    "image": "imagery/features/1274.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1274.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2327,7 +2327,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classcial albedo feature name.",
-    "image": "imagery/features/2407.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2407.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2362,7 +2362,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature at 72N, 70W.",
-    "image": "imagery/features/5.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2386,7 +2386,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name",
-    "image": "imagery/features/1105.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1105.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2421,7 +2421,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name of Greek origin.",
-    "image": "imagery/features/15184.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15184.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2456,7 +2456,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name, Hiddekel.",
-    "image": "imagery/features/15482.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15482.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2568,7 +2568,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14147.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14147.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2614,7 +2614,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/66.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/66.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2638,7 +2638,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15001.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15001.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2673,7 +2673,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/79.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/79.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2698,7 +2698,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/166.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/166.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2711,7 +2711,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/219.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/219.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2724,7 +2724,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6960.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6960.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2737,7 +2737,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/227.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/227.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2750,7 +2750,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/228.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/228.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2774,7 +2774,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14177.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14177.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2809,7 +2809,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/311.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/311.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2846,7 +2846,7 @@
     "importance": 1,
     "origin": "Classical albedo feature name.",
     "additional_info": "Size changed Sept. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/323.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/323.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2859,7 +2859,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/336.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/336.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2872,7 +2872,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/339.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/339.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2951,7 +2951,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/375.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/375.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2964,7 +2964,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/390.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/390.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2977,7 +2977,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14279.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14279.jpg",
     "image_source": "wikidata"
   },
   {
@@ -2990,7 +2990,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/473.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/473.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3003,7 +3003,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/476.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/476.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3071,7 +3071,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14149.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14149.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3085,7 +3085,7 @@
     "importance": 1,
     "origin": "Classical albedo feature name.",
     "additional_info": "Size changed Spet. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/737.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/737.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3099,7 +3099,7 @@
     "importance": 2,
     "origin": "Classical albedo feature name.",
     "additional_info": "Name introduced to represent the entire edifice. See the entry for Biblis Patera.",
-    "image": "imagery/features/14308.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14308.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3112,7 +3112,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6964.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6964.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3158,7 +3158,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1000.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1000.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3204,7 +3204,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1013.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1013.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3228,7 +3228,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1106.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1106.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3252,7 +3252,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14162.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14162.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3287,7 +3287,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1149.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1149.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3311,7 +3311,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1161.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1161.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3324,7 +3324,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14180.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14180.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3337,7 +3337,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14386.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14386.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3350,7 +3350,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14152.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14152.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3385,7 +3385,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1230.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1230.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3398,7 +3398,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1272.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1272.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3422,7 +3422,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1302.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1302.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3435,7 +3435,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1358.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1358.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3448,7 +3448,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1359.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1359.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3461,7 +3461,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1380.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1380.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3474,7 +3474,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1508.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1508.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3520,7 +3520,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1712.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1712.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3533,7 +3533,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1713.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1713.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3546,7 +3546,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15037.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15037.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3559,7 +3559,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15160.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15160.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3572,7 +3572,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1782.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1782.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3607,7 +3607,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1810.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1810.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3631,7 +3631,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15161.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15161.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3666,7 +3666,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1839.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1839.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3679,7 +3679,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14325.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14325.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3692,7 +3692,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/1868.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1868.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3705,7 +3705,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15038.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15038.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3740,7 +3740,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2094.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2094.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3775,7 +3775,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2096.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2096.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3832,7 +3832,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2222.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2222.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3846,7 +3846,7 @@
     "importance": 1,
     "origin": "Classical albedo feature name.",
     "additional_info": "Size changed Sept. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/2310.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2310.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3859,7 +3859,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15264.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15264.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3873,7 +3873,7 @@
     "importance": 2,
     "origin": "Classical albedo feature name.",
     "additional_info": "Name introduced to represent the entire edifice. See the entry for Hadriaca Patera.",
-    "image": "imagery/features/14309.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14309.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3897,7 +3897,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2402.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2402.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3910,7 +3910,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15364.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15364.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3934,7 +3934,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2435.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2435.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3947,7 +3947,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2457.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2457.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3960,7 +3960,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2488.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2488.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3984,7 +3984,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15270.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15270.jpg",
     "image_source": "wikidata"
   },
   {
@@ -3997,7 +3997,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15271.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15271.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4010,7 +4010,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2604.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2604.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4023,7 +4023,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2605.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2605.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4047,7 +4047,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2611.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2611.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4093,7 +4093,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2625.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2625.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4106,7 +4106,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2629.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2629.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4119,7 +4119,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2641.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2641.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4132,7 +4132,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2647.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2647.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4156,7 +4156,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15039.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15039.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4169,7 +4169,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14592.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14592.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4182,7 +4182,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2757.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2757.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4206,7 +4206,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2850.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2850.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4219,7 +4219,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15269.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15269.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4232,7 +4232,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/2874.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2874.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4245,7 +4245,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3190.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3190.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4258,7 +4258,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3192.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3192.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4271,7 +4271,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3391.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3391.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4284,7 +4284,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3519.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3519.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4297,7 +4297,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3529.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3529.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4321,7 +4321,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3699.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3699.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4334,7 +4334,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3701.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3701.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4347,7 +4347,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3795.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3795.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4360,7 +4360,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3812.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3812.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4395,7 +4395,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3827.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3827.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4431,7 +4431,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/3859.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3859.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4444,7 +4444,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4041.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4041.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4468,7 +4468,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4207.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4207.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4481,7 +4481,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14572.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14572.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4494,7 +4494,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4214.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4214.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4529,7 +4529,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4271.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4271.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4542,7 +4542,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4272.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4272.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4577,7 +4577,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4275.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4275.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4601,7 +4601,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4319.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4319.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4703,7 +4703,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4451.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4451.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4738,7 +4738,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15695.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15695.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4751,7 +4751,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4454.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4454.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4775,7 +4775,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4475.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4475.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4788,7 +4788,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4476.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4476.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4801,7 +4801,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15173.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15173.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4814,7 +4814,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4478.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4478.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4827,7 +4827,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4484.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4484.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4840,7 +4840,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4533.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4533.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4864,7 +4864,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15040.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15040.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4877,7 +4877,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15041.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15041.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4934,7 +4934,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4701.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4701.jpg",
     "image_source": "wikidata"
   },
   {
@@ -4947,7 +4947,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4742.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4742.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5015,7 +5015,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/4832.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4832.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5050,7 +5050,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5231.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5231.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5063,7 +5063,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5267.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5267.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5076,7 +5076,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15042.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15042.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5111,7 +5111,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5548.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5548.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5124,7 +5124,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5575.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5575.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5192,7 +5192,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14280.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14280.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5216,7 +5216,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5625.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5625.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5229,7 +5229,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5752.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5752.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5242,7 +5242,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14573.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14573.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5255,7 +5255,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5794.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5794.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5268,7 +5268,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5875.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5875.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5314,7 +5314,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5931.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5931.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5327,7 +5327,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5932.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5932.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5351,7 +5351,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/5949.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5949.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5397,7 +5397,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6030.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6030.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5410,7 +5410,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6032.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6032.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5423,7 +5423,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6074.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6074.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5436,7 +5436,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6075.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6075.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5450,7 +5450,7 @@
     "importance": 0,
     "origin": "Classical albedo feature name.",
     "additional_info": "Size changed Sept. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/6174.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6174.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5463,7 +5463,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6175.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6175.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5476,7 +5476,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/7024.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/7024.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5490,7 +5490,7 @@
     "importance": 2,
     "origin": "Classical albedo feature name.",
     "additional_info": "Name changed from Tyrhenna Mons.",
-    "image": "imagery/features/14310.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14310.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5514,7 +5514,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6204.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6204.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5538,7 +5538,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/15017.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15017.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5552,7 +5552,7 @@
     "importance": 1,
     "origin": "Classical albedo feature name.",
     "additional_info": "Size changed Sept. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/6211.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6211.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5566,7 +5566,7 @@
     "importance": 2,
     "origin": "Classical albedo feature name.",
     "additional_info": "Name introduced to represent the entire edifice. See the entry for Ulysses Patera.",
-    "image": "imagery/features/14311.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14311.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5579,7 +5579,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6212.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6212.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5592,7 +5592,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6236.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6236.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5606,7 +5606,7 @@
     "importance": 2,
     "origin": "Classical albedo feature name.",
     "additional_info": "Name introduced to represent the entire edifice. See the entry for Uranius Patera.",
-    "image": "imagery/features/14312.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14312.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5620,7 +5620,7 @@
     "importance": 2,
     "origin": "Classical albedo feature name.",
     "additional_info": "Size changed Sept. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/6237.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6237.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5633,7 +5633,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6238.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6238.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5668,7 +5668,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/14161.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14161.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5714,7 +5714,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name.",
-    "image": "imagery/features/6600.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6600.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5760,7 +5760,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name; \"A River of Diamonds\"; today's River Sarbarnarekha in India.",
-    "image": "imagery/features/45.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/45.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5773,7 +5773,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature name; home of the Amazons.",
-    "image": "imagery/features/220.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/220.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5797,7 +5797,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature, Baetis.",
-    "image": "imagery/features/15537.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15537.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5843,7 +5843,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature, Sinai.",
-    "image": "imagery/features/15935.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15935.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5867,7 +5867,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo feature.",
-    "image": "imagery/features/2151.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2151.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5880,7 +5880,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature.",
-    "image": "imagery/features/4523.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4523.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5904,7 +5904,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo feature; name of goddess of youth.",
-    "image": "imagery/features/2403.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2403.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5917,7 +5917,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/157.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/157.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5930,7 +5930,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/158.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/158.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5944,7 +5944,7 @@
     "importance": 1,
     "origin": "Classical albedo name.",
     "additional_info": "Size changed Sept. 19, 2007 to correspond only to the central depression.",
-    "image": "imagery/features/159.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/159.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5957,7 +5957,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/415.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/415.jpg",
     "image_source": "wikidata"
   },
   {
@@ -5970,7 +5970,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/416.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/416.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6005,7 +6005,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/475.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/475.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6029,7 +6029,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/2069.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2069.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6042,7 +6042,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/2745.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2745.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6055,7 +6055,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/2746.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2746.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6123,7 +6123,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical albedo name.",
-    "image": "imagery/features/6172.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6172.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6147,7 +6147,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical and present day Arno River in Tuscany, Italy (previously named Arena Rupes).",
-    "image": "imagery/features/389.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/389.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6160,7 +6160,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Classical martian albedo feature, Coprates",
-    "image": "imagery/features/15326.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15326.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6228,7 +6228,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for Dee River in Scotland; new position and coordinates.",
-    "image": "imagery/features/1511.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1511.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6285,7 +6285,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical name for modern Hagios River, Greece.",
-    "image": "imagery/features/432.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/432.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6320,7 +6320,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for modern Po River in Italy.",
-    "image": "imagery/features/4547.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4547.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6355,7 +6355,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for present Dniester River, Ukraine.",
-    "image": "imagery/features/6169.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6169.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6412,7 +6412,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical name for present Neckar River, Germany.",
-    "image": "imagery/features/4246.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4246.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6425,7 +6425,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for present Sambre River in France and Belgium.",
-    "image": "imagery/features/5261.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5261.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6438,7 +6438,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for present Severn River, England.",
-    "image": "imagery/features/5263.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5263.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6451,7 +6451,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for present Var River, France.",
-    "image": "imagery/features/6324.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6324.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6497,7 +6497,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for river in Italy.",
-    "image": "imagery/features/3912.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3912.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6510,7 +6510,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical name for river in Macedonia (Greece).",
-    "image": "imagery/features/4222.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4222.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6534,7 +6534,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for river in Scythia; present Kuban River in Russia.",
-    "image": "imagery/features/2609.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2609.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6558,7 +6558,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical name for river present Ebro River in NE Spain.",
-    "image": "imagery/features/2632.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2632.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6582,7 +6582,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical river east of Rome, Italy.",
-    "image": "imagery/features/5731.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5731.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6595,7 +6595,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical river in ancient Lusitania, present Tormes River, Spain.",
-    "image": "imagery/features/5928.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5928.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6608,7 +6608,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical river in ancient Macedonia, present-day Greece.",
-    "image": "imagery/features/332.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/332.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6643,7 +6643,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical river in Etruria; present Chiana River, Italy.",
-    "image": "imagery/features/1227.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1227.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6656,7 +6656,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical river in Hibernia; present Boyne River, Ireland.",
-    "image": "imagery/features/938.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/938.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6680,7 +6680,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Classical river in Italy.",
-    "image": "imagery/features/6017.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6017.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6737,7 +6737,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Classical river.",
-    "image": "imagery/features/599.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/599.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6762,7 +6762,7 @@
     "importance": 0,
     "origin": "Classical town.",
     "additional_info": "Name changed from Atrax Dorsum May 30, 2014.",
-    "image": "imagery/features/15243.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15243.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6797,7 +6797,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Claudius; Greco-Egyptian astronomer (c. A.D. 90-160).",
-    "image": "imagery/features/4861.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4861.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6810,7 +6810,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Clyde William; American astronomer (1906-1997).",
-    "image": "imagery/features/14166.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14166.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6823,7 +6823,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Connecting link between East and West; ancient Spanish town Tartessus.",
-    "image": "imagery/features/5947.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5947.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6881,7 +6881,7 @@
     "importance": 1,
     "origin": "Danish astronomer (1546-1601).",
     "additional_info": "Double crater.",
-    "image": "imagery/features/6164.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6164.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6905,7 +6905,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Daughter of Ptolomy Lagun and Bernice.",
-    "image": "imagery/features/396.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/396.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6940,7 +6940,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "David; British astronomer (1843-1914).",
-    "image": "imagery/features/2164.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2164.jpg",
     "image_source": "wikidata"
   },
   {
@@ -6953,7 +6953,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Dean B.; American astronomer (1901-1965).",
-    "image": "imagery/features/3782.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3782.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7021,7 +7021,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Dirk; American physicist (1906-1972).",
-    "image": "imagery/features/5007.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5007.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7034,7 +7034,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Dmitry Yakovlevich; Russian astronomer (1906-1989).",
-    "image": "imagery/features/15152.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15152.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7047,7 +7047,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Dominique F.; French astronomer (1786-1853).",
-    "image": "imagery/features/338.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/338.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7082,7 +7082,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Dry riverbed in Russia.",
-    "image": "imagery/features/6266.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6266.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7106,7 +7106,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edgar R.; American novelist (1875-1950).",
-    "image": "imagery/features/928.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/928.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7119,7 +7119,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Edison; American astronomer (1890-1962).",
-    "image": "imagery/features/4677.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4677.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7132,7 +7132,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edmund; British astronomer (1656-1742).",
-    "image": "imagery/features/2331.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2331.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7145,7 +7145,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Eduard; Austrian geologist, engineer (1831-1914).",
-    "image": "imagery/features/5747.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5747.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7158,7 +7158,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edward B.; British astronomer (1841-1930).",
-    "image": "imagery/features/3066.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3066.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7171,7 +7171,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edward Charles; American astronomer (1846-1919), William Henry; American astronomer (1858-1938), Sir William Hayward; New Zealand-American engineer (1910-2004).",
-    "image": "imagery/features/4723.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4723.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7184,7 +7184,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edward E.; American astronomer (1857-1923).",
-    "image": "imagery/features/609.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/609.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7208,7 +7208,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edward W.; British astronomer (1851-1928).",
-    "image": "imagery/features/3757.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3757.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7221,7 +7221,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Edwin P.; American physicist (1916-1967).",
-    "image": "imagery/features/3729.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3729.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7256,7 +7256,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Egyptian name for Mars.",
-    "image": "imagery/features/2463.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2463.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7302,7 +7302,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Emmanuel; French astronomer (1826-1900).",
-    "image": "imagery/features/3382.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3382.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7348,7 +7348,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ernest; British physicist (1871-1937).",
-    "image": "imagery/features/5240.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5240.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7361,7 +7361,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ernst; German astronomer (1851-1923).",
-    "image": "imagery/features/2377.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2377.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7385,7 +7385,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Eugène Michael; Turkish-born French astronomer (1870-1944).",
-    "image": "imagery/features/297.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/297.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7398,7 +7398,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Euskadi (Basque) town in Spain.",
-    "image": "imagery/features/2070.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2070.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7411,7 +7411,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Evgenii J.; Russian astronomer (1906-1938).",
-    "image": "imagery/features/4656.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4656.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7424,7 +7424,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "F.; Mexican astronomer (c. 1930).",
-    "image": "imagery/features/1841.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1841.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7437,7 +7437,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Famous in antiquity for its marble quarries.",
-    "image": "imagery/features/4592.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4592.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7461,7 +7461,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ferdinand J.; French astronomer (1872-1951).",
-    "image": "imagery/features/4896.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4896.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7474,7 +7474,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Fernand; French astronomer (1885-1964).",
-    "image": "imagery/features/575.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/575.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7487,7 +7487,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Fernao de; Portuguese navigator (1480-1521).",
-    "image": "imagery/features/3579.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3579.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7533,7 +7533,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Francesco; Italian astronomer (1585-1646).",
-    "image": "imagery/features/1991.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1991.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7546,7 +7546,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Francesco; Italian astronomer (1662-1729).",
-    "image": "imagery/features/735.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/735.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7559,7 +7559,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Francesco; Italian physicist (1626-1697).",
-    "image": "imagery/features/4975.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4975.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7572,7 +7572,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Francois J.; Belgian astronomer (1846-1911).",
-    "image": "imagery/features/5924.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5924.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7585,7 +7585,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Frank E.; American astronomer (1874-1966).",
-    "image": "imagery/features/5193.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5193.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7598,7 +7598,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Frank W.; American astronomer (1852-1927).",
-    "image": "imagery/features/6364.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6364.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7611,7 +7611,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Frederick; Dutch astronomer (1808-1872).",
-    "image": "imagery/features/2890.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2890.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7657,7 +7657,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Fridtjof; Norwegian explorer (1861-1930).",
-    "image": "imagery/features/4143.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4143.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7670,7 +7670,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature Anseris Fons.",
-    "image": "imagery/features/288.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/288.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7683,7 +7683,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 2N, 183W.",
-    "image": "imagery/features/5874.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5874.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7741,7 +7741,7 @@
     "importance": 2,
     "origin": "From albedo feature at 10n, 212W. Changed from Cerberus Rupes.",
     "additional_info": "Extent of this feature expanded 10/11/2007.",
-    "image": "imagery/features/1109.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1109.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7754,7 +7754,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 10S, 65W.",
-    "image": "imagery/features/4477.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4477.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7767,7 +7767,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "From albedo feature at 10S, 74W.",
-    "image": "imagery/features/1114.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1114.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7791,7 +7791,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 14S, 65W.",
-    "image": "imagery/features/1303.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1303.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7804,7 +7804,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 16N, 111W.",
-    "image": "imagery/features/2849.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2849.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7817,7 +7817,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 17N, 134W.",
-    "image": "imagery/features/4452.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4452.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7830,7 +7830,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 17N, 186W.",
-    "image": "imagery/features/2496.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2496.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7876,7 +7876,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 20N, 67W.",
-    "image": "imagery/features/5269.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5269.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7922,7 +7922,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 25S, 110W.",
-    "image": "imagery/features/1231.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1231.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7946,7 +7946,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 26N, 182W.",
-    "image": "imagery/features/1821.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1821.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7970,7 +7970,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 30N, 55W.",
-    "image": "imagery/features/4277.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4277.jpg",
     "image_source": "wikidata"
   },
   {
@@ -7983,7 +7983,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 30N, 173W.",
-    "image": "imagery/features/457.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/457.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8007,7 +8007,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 32N, 96W.",
-    "image": "imagery/features/3695.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3695.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8020,7 +8020,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 35N, 110W.",
-    "image": "imagery/features/5860.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5860.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8033,7 +8033,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 35N, 269W.",
-    "image": "imagery/features/436.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/436.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8046,7 +8046,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 35N, 355W.",
-    "image": "imagery/features/1509.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1509.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8059,7 +8059,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 38N, 125W.",
-    "image": "imagery/features/4698.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4698.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8072,7 +8072,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 40N, 70W.",
-    "image": "imagery/features/5914.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5914.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8085,7 +8085,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 40N, 70W.",
-    "image": "imagery/features/5915.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5915.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8098,7 +8098,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 40N, 70W.",
-    "image": "imagery/features/5916.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5916.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8122,7 +8122,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 40N, 333W.",
-    "image": "imagery/features/2741.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2741.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8157,7 +8157,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 45N, 205W.",
-    "image": "imagery/features/69.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/69.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8203,7 +8203,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 48S, 290W.",
-    "image": "imagery/features/4646.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4646.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8216,7 +8216,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature at 50N, 355W.",
-    "image": "imagery/features/1367.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1367.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8273,7 +8273,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature at 65N, 300W.",
-    "image": "imagery/features/4883.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4883.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8320,7 +8320,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From albedo feature Echus Lacus at 1N, 90W.",
-    "image": "imagery/features/1711.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1711.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8333,7 +8333,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature name.",
-    "image": "imagery/features/5356.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5356.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8346,7 +8346,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From albedo feature name.",
-    "image": "imagery/features/6210.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6210.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8370,7 +8370,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From classical albedo feature at 5S, 60W; changed from Iamunae Chasma.",
-    "image": "imagery/features/551.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/551.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8383,7 +8383,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From classical albedo feature at 10N, 56W.",
-    "image": "imagery/features/2748.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2748.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8396,7 +8396,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From classical albedo feature at 35N, 140W.",
-    "image": "imagery/features/35.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/35.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8420,7 +8420,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "From classical albedo feature at 45N, 120W.",
-    "image": "imagery/features/348.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/348.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8455,7 +8455,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From classical albedo feature name.",
-    "image": "imagery/features/36.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/36.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8468,7 +8468,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "From classical albedo feature name.",
-    "image": "imagery/features/37.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/37.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8536,7 +8536,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "G. Edward Danielson, Jr.; American Engineer (1939-2005).",
-    "image": "imagery/features/14544.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14544.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8549,7 +8549,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gabrielle; French astronomer (1877-1962).",
-    "image": "imagery/features/4992.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4992.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8562,7 +8562,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Galileo; Italian astronomer and physicist (1564-1642).",
-    "image": "imagery/features/2075.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2075.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8586,7 +8586,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gaston; French astronomer (b. 1866).",
-    "image": "imagery/features/3902.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3902.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8599,7 +8599,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gavril A.; Russian astronomer (1875-1960).",
-    "image": "imagery/features/6003.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6003.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8612,7 +8612,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gene; American engineer, television producer (1921-1991).",
-    "image": "imagery/features/5168.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5168.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8636,7 +8636,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "George B.; British astronomer (1801-1892).",
-    "image": "imagery/features/114.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/114.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8649,7 +8649,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "George E.; American astronomer (1868-1938).",
-    "image": "imagery/features/2322.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2322.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8662,7 +8662,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George G.; British physicist (1819-1903).",
-    "image": "imagery/features/5712.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5712.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8675,7 +8675,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George J.; Irish physicist (1826-1911).",
-    "image": "imagery/features/5717.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5717.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8688,7 +8688,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George K.; German astronomer (1786-1846).",
-    "image": "imagery/features/3162.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3162.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8701,7 +8701,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George Orson; American radio and motion picture actor and director (1915-1985).",
-    "image": "imagery/features/4499.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4499.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8714,7 +8714,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George P.; American astronomer (1825-1865).",
-    "image": "imagery/features/811.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/811.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8727,7 +8727,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George W.; American astronomer (1864-1945).",
-    "image": "imagery/features/5156.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5156.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8751,7 +8751,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "George; British meteorologist (1685-1768).",
-    "image": "imagery/features/2309.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2309.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8764,7 +8764,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Georges; French astronomer (1881-1954).",
-    "image": "imagery/features/2004.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2004.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8799,7 +8799,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gerard P.; American astronomer (1905-1973).",
-    "image": "imagery/features/3139.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3139.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8812,7 +8812,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gerhard; German planetary scientist (1944-2014).",
-    "image": "imagery/features/15687.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15687.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8836,7 +8836,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Giacomo F.; French astronomer (1665-1729).",
-    "image": "imagery/features/3651.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3651.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8860,7 +8860,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Giovanni; Italian astronomer (1625-1712).",
-    "image": "imagery/features/1046.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1046.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8906,7 +8906,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Greek astronomer (c. 160-125 B.C.).",
-    "image": "imagery/features/2517.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2517.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8919,7 +8919,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Greek astronomer (c. 408-355 B.C.).",
-    "image": "imagery/features/1864.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1864.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8932,7 +8932,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Greek god of light, poetry, music and arts, one of the Olympian gods, son of Zeus.",
-    "image": "imagery/features/15694.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15694.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8945,7 +8945,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Greek god of trade, travelers, sports, the messenger of the gods, one of the Olympian gods, son of Zeus.",
-    "image": "imagery/features/15690.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15690.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8958,7 +8958,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Greek god of wine, celebration and ecstasy, patron god of the art and theatre, one of the Olympian gods, son of Zeus.",
-    "image": "imagery/features/15692.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15692.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8971,7 +8971,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Greek goddess of wisdom, one of the Olympians, daughter of Zeus.",
-    "image": "imagery/features/15693.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15693.jpg",
     "image_source": "wikidata"
   },
   {
@@ -8984,7 +8984,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Greek goddess of women and marriage, one of the Olympians, wife of Zeus.",
-    "image": "imagery/features/15691.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15691.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9008,7 +9008,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Greek name of Aurora; albedo feature.",
-    "image": "imagery/features/1809.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1809.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9021,7 +9021,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Greek sky, thunder and lightning god, who ruled as king of the gods of Mount Olympus.",
-    "image": "imagery/features/15689.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15689.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9056,7 +9056,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Gregor J.; Austrian biologist (1822-1884).",
-    "image": "imagery/features/3836.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3836.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9069,7 +9069,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Grove K.; American geologist (1843-1918).",
-    "image": "imagery/features/2160.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2160.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9082,7 +9082,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Gustav; German physicist (1868-1957).",
-    "image": "imagery/features/3886.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3886.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9106,7 +9106,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Hans E.; Danish astronomer (1879-1918).",
-    "image": "imagery/features/3296.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3296.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9119,7 +9119,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Harold S.; British astronomer (1890-1960).",
-    "image": "imagery/features/2843.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2843.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9132,7 +9132,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Harold; American astrogeologist (1922-1990).",
-    "image": "imagery/features/3746.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3746.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9145,7 +9145,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Hendrik G.; Dutch astronomer (1838-1923).",
-    "image": "imagery/features/566.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/566.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9158,7 +9158,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Henri A.; French astronomer, studied dark lineations on Mars (1845-1904).",
-    "image": "imagery/features/4663.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4663.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9193,7 +9193,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Henry N.; American astronomer (1877-1957).",
-    "image": "imagery/features/5236.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5236.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9206,7 +9206,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Herbert G.; British novelist (1866-1946).",
-    "image": "imagery/features/6516.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6516.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9219,7 +9219,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Hermann Carl; German astronomer (1841-1907).",
-    "image": "imagery/features/6426.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6426.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9243,7 +9243,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Hermann von; German physicist (1821-1894).",
-    "image": "imagery/features/2439.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2439.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9278,7 +9278,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Honore; French astronomer (1755-1835).",
-    "image": "imagery/features/1978.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1978.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9335,7 +9335,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Isaac; American biochemist and writer (1920-1992).",
-    "image": "imagery/features/14567.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14567.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9348,7 +9348,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Isaac; British physicist (1643-1727).",
-    "image": "imagery/features/4236.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4236.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9383,7 +9383,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "J.H.; English astrophysicist (1852-1914).",
-    "image": "imagery/features/4816.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4816.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9407,7 +9407,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "James B.; American physicist (1938-1994).",
-    "image": "imagery/features/4782.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4782.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9442,7 +9442,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "James H.; British physicist, astronomer (1877-1946).",
-    "image": "imagery/features/2815.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2815.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9477,7 +9477,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "James; British astronomer (1785-1867).",
-    "image": "imagery/features/5656.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5656.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9490,7 +9490,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "James; British geologist (1726-1797).",
-    "image": "imagery/features/2593.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2593.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9536,7 +9536,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Jean A.; Dutch astronomer (1827-1906).",
-    "image": "imagery/features/4528.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4528.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9549,7 +9549,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Jean H.; Greco-French astronomer (1909-1969).",
-    "image": "imagery/features/1989.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1989.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9562,7 +9562,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Jean L.; American naturalist (1807-1873).",
-    "image": "imagery/features/81.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/81.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9586,7 +9586,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Johann F.; German astronomer (1825-1884); Otto Y.; Russian geophysicist (1891-1956).",
-    "image": "imagery/features/5375.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5375.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9599,7 +9599,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Johann G.; German astronomer (1812-1910).",
-    "image": "imagery/features/2080.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2080.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9612,7 +9612,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Johann H. von; German astronomer (1794-1874).",
-    "image": "imagery/features/4092.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4092.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9625,7 +9625,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Johann H.; German astronomer (1745-1816).",
-    "image": "imagery/features/5380.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5380.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9638,7 +9638,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Johann H.; German physicist (1728-1777).",
-    "image": "imagery/features/3254.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3254.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9651,7 +9651,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Johann von; German astronomer (1805-1879).",
-    "image": "imagery/features/3257.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3257.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9664,7 +9664,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Johannes; German astronomer (1571-1630).",
-    "image": "imagery/features/2991.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2991.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9688,7 +9688,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John A.; American astronomer (1840-1920).",
-    "image": "imagery/features/865.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/865.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9701,7 +9701,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John B.; British physiologist-geneticist (1892-1964).",
-    "image": "imagery/features/2320.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2320.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9714,7 +9714,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John E.; American amateur astronomer (1886-1970).",
-    "image": "imagery/features/3821.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3821.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9727,7 +9727,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "John F.; British astronomer (1792-1871); William H.; British astronomer (1738-1822).",
-    "image": "imagery/features/2479.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2479.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9740,7 +9740,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John M.; American astronomer (1853-1924).",
-    "image": "imagery/features/5362.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5362.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9753,7 +9753,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John W.; Canadian physicist (1889-1955). William W.; American astronomer (1862-1938).",
-    "image": "imagery/features/991.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/991.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9777,7 +9777,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John; British geologist (1800-1874). Theodore E.; British astronomer (1868-1942).",
-    "image": "imagery/features/4690.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4690.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9790,7 +9790,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John; British geologist and mathematician (1748-1819).",
-    "image": "imagery/features/4760.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4760.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9803,7 +9803,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John; British physicist (1820-1893).",
-    "image": "imagery/features/6168.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6168.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9816,7 +9816,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "John; Irish geologist (1857-1933).",
-    "image": "imagery/features/2841.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2841.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9829,7 +9829,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Jose; Spanish astronomer (1868-1937).",
-    "image": "imagery/features/1276.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1276.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9842,7 +9842,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Joseph N.; British astronomer (1836-1920).",
-    "image": "imagery/features/3444.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3444.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9855,7 +9855,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Joseph; British astronomer (1836-1906).",
-    "image": "imagery/features/2188.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2188.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9868,7 +9868,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Joseph; British chemist (1733-1804).",
-    "image": "imagery/features/4823.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4823.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9881,7 +9881,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Joshua; American molecular biologist (1925-2008).",
-    "image": "imagery/features/15016.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15016.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9894,7 +9894,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Julien; French astronomer (1882-1967).",
-    "image": "imagery/features/4659.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4659.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9907,7 +9907,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Jurgen; American astronomer and NASA program director (1940-1997).",
-    "image": "imagery/features/4926.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4926.jpg",
     "image_source": "wikidata"
   },
   {
@@ -9942,7 +9942,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Kasimir; German astronomer (1878-1950).",
-    "image": "imagery/features/2234.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2234.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10065,7 +10065,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Lazzaro; Italian biologist (1729-1799).",
-    "image": "imagery/features/5663.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5663.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10078,7 +10078,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Leif; Norse explorer (c. 1000).",
-    "image": "imagery/features/1750.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1750.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10091,7 +10091,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Leon P.; French meteorologist (1855-1913).",
-    "image": "imagery/features/5901.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5901.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10104,7 +10104,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Leonardo; Italian artist-scientist (1452-1519).",
-    "image": "imagery/features/1377.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1377.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10117,7 +10117,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Lewis F.; British meteorologist, chemist (1881-1953).",
-    "image": "imagery/features/5028.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5028.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10130,7 +10130,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Libyan Gulf, now Gulf of Sirte.",
-    "image": "imagery/features/5795.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5795.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10143,7 +10143,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Lindsay A.; South African astronomer (1845-1913).",
-    "image": "imagery/features/1718.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1718.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10156,7 +10156,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Louis; Belgian astronomer (1844-1920).",
-    "image": "imagery/features/4259.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4259.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10169,7 +10169,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Louis; French chemist (1822-1895).",
-    "image": "imagery/features/4605.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4605.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10226,7 +10226,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Lucien; French astronomer (1874-1947).",
-    "image": "imagery/features/5215.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5215.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10239,7 +10239,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Luiz; Brazilian astronomer (1848-1908).",
-    "image": "imagery/features/1341.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1341.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10263,7 +10263,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "M. A.; Russian astronomer (1821-1884).",
-    "image": "imagery/features/3106.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3106.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10287,7 +10287,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "M. K.; Russian rocket scientist (1900-1974).",
-    "image": "imagery/features/6001.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6001.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10355,7 +10355,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Mare Amphitrites; classical albedo feature name.",
-    "image": "imagery/features/242.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/242.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10379,7 +10379,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Marie; Polish-born French chemist (Mme P. Curie) (1867-1934).",
-    "image": "imagery/features/5593.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5593.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10437,7 +10437,7 @@
     "importance": 2,
     "origin": "Mayan village in Guatemala.",
     "additional_info": "ET changed from Mayan to Guatemala on January 22, 2026.",
-    "image": "imagery/features/6765.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6765.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10472,7 +10472,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Mentore; Italian astronomer (1890-1941).",
-    "image": "imagery/features/3580.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3580.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10485,7 +10485,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Merton Edward; American engineer, planetary geodesist (1917-2001).",
-    "image": "imagery/features/1426.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1426.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10520,7 +10520,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Mikhail Vasilievich; Russian poet, scientist, and grammarian (1711-1765).",
-    "image": "imagery/features/3463.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3463.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10534,7 +10534,7 @@
     "importance": 1,
     "origin": "Milutin; Yugoslav geophysicist, astrophysicist (1879-1958).",
     "additional_info": "Diacritic mark in name changed from Milankovič to Milanković on February 17, 2023. No reference was given for Milankovič; reference added to database for the Milanković spelling.",
-    "image": "imagery/features/3893.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3893.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10547,7 +10547,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Modern Australian River.",
-    "image": "imagery/features/6491.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6491.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10560,7 +10560,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Modern name for river in the Republic of Korea.",
-    "image": "imagery/features/4119.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4119.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10584,7 +10584,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Modern river in Greece.",
-    "image": "imagery/features/3484.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3484.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10674,7 +10674,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Modern river, Vermont, USA.",
-    "image": "imagery/features/3561.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3561.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10709,7 +10709,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "N. N.; Russian mathematician (1883-1950).",
-    "image": "imagery/features/3525.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3525.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10755,7 +10755,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Nadir Baba Ogly; Soviet astronomer (1932-1977).",
-    "image": "imagery/features/2637.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2637.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10768,7 +10768,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Name and feature changes 1984 from Ultimi Cavi and Thyles Chasma.",
-    "image": "imagery/features/5987.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5987.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10859,7 +10859,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for albedo feature at 10S, 195W.",
-    "image": "imagery/features/503.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/503.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10872,7 +10872,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for albedo feature at 10S, 195W.",
-    "image": "imagery/features/504.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/504.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10896,7 +10896,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for albedo feature at 20N, 65W.",
-    "image": "imagery/features/4281.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4281.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10909,7 +10909,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for albedo feature at 20N, 65W.",
-    "image": "imagery/features/4282.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4282.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10922,7 +10922,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for albedo feature at 20N, 65W.",
-    "image": "imagery/features/4283.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4283.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10935,7 +10935,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for albedo feature Hellas.",
-    "image": "imagery/features/2430.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2430.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10948,7 +10948,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Named for albedo feature Labeatis Lacus.",
-    "image": "imagery/features/3193.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3193.jpg",
     "image_source": "wikidata"
   },
   {
@@ -10961,7 +10961,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Named for albedo feature.",
-    "image": "imagery/features/2600.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2600.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11064,7 +11064,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Named for classical albedo feature at 35N, 195W.",
-    "image": "imagery/features/4700.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4700.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11110,7 +11110,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for classical albedo feature at 54N, 137W.",
-    "image": "imagery/features/406.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/406.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11234,7 +11234,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for Mariner IV spacecraft.",
-    "image": "imagery/features/3711.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3711.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11390,7 +11390,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named for nearby valles.",
-    "image": "imagery/features/3627.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3627.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11447,7 +11447,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Named from albedo feature at 35N, 355W.",
-    "image": "imagery/features/16267.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/16267.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11504,7 +11504,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Nathan E.; British astronomer (1823-1899).",
-    "image": "imagery/features/2244.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2244.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11517,7 +11517,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Nepali word for \"Mars\".",
-    "image": "imagery/features/3598.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3598.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11530,7 +11530,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Nicolaus; Danish geologist (1638-1686).",
-    "image": "imagery/features/5697.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5697.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11543,7 +11543,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Nicolaus; Polish astronomer (1473-1543).",
-    "image": "imagery/features/1297.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1297.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11556,7 +11556,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Nikolay P.; Russian astronomer (1894-1971).",
-    "image": "imagery/features/601.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/601.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11580,7 +11580,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Norman H.; American biologist and geneticist (1915-2005).",
-    "image": "imagery/features/14620.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14620.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11670,7 +11670,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Oliver; British physicist (1850-1925).",
-    "image": "imagery/features/2401.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2401.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11750,7 +11750,7 @@
     "importance": 1,
     "origin": "Origin unknown.",
     "additional_info": "Origin previously stated \"French word for Mars,\" but this was found to be incorrect.",
-    "image": "imagery/features/3194.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3194.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11763,7 +11763,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Ormsby M.; American astronomer (1809-1862).",
-    "image": "imagery/features/3931.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3931.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11776,7 +11776,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Osborne; British physicist (1842-1912).",
-    "image": "imagery/features/5010.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5010.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11789,7 +11789,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Oswald; German astronomer (1845-1915).",
-    "image": "imagery/features/3454.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3454.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11802,7 +11802,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Otto; German astronomer (1853-1937).",
-    "image": "imagery/features/791.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/791.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11815,7 +11815,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "P.; French astronomer (d. 1922).",
-    "image": "imagery/features/876.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/876.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11828,7 +11828,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "P.; French atmospheric scientist.",
-    "image": "imagery/features/705.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/705.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11841,7 +11841,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Paul; French astronomer (1848-1905). Prosper; French astronomer (1849-1903).",
-    "image": "imagery/features/2452.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2452.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11854,7 +11854,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Percival; American astronomer (1855-1916).",
-    "image": "imagery/features/3494.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3494.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11867,7 +11867,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Percy B.; British astronomer (1867-1908).",
-    "image": "imagery/features/3953.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3953.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11902,7 +11902,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Pierre Jules César; French astronomer (1824-1907).",
-    "image": "imagery/features/2801.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2801.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11915,7 +11915,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Pierre; French physicist-chemist (1859-1906).",
-    "image": "imagery/features/1351.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1351.jpg",
     "image_source": "wikidata"
   },
   {
@@ -11928,7 +11928,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Pierre; French physicist-hydrographer (1698-1758).",
-    "image": "imagery/features/840.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/840.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12063,7 +12063,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Previously named feature at 30N, 75W; expanded coordinates.",
-    "image": "imagery/features/3191.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3191.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12077,7 +12077,7 @@
     "importance": 0,
     "origin": "Probably named for Llanes, a town in Spain.",
     "additional_info": "Origin was changed from \"Town in Spain\" on 02/17/2017, to correct an error.",
-    "image": "imagery/features/3432.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3432.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12178,7 +12178,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Rene; French astronomer (1868-1951).",
-    "image": "imagery/features/2807.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2807.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12202,7 +12202,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Richard A.; British astronomer (1837-1888).",
-    "image": "imagery/features/4829.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4829.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12215,7 +12215,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Richard Edwin; American aviator-explorer (1888-1975).",
-    "image": "imagery/features/942.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/942.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12239,7 +12239,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Africa.",
-    "image": "imagery/features/4261.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4261.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12296,7 +12296,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "River in Bosnia and Herzegovina and Croatia.",
-    "image": "imagery/features/15879.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15879.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12353,7 +12353,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "River in British Columbia and Alberta, Canada.",
-    "image": "imagery/features/15036.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15036.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12377,7 +12377,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Canada. (Changed from Athabasca Vallis.)",
-    "image": "imagery/features/453.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/453.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12445,7 +12445,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Greece.",
-    "image": "imagery/features/1890.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1890.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12503,7 +12503,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Kenya.",
-    "image": "imagery/features/15091.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15091.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12538,7 +12538,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in New Jersey, USA.",
-    "image": "imagery/features/4927.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4927.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12573,7 +12573,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Pennsylvania, USA.",
-    "image": "imagery/features/193.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/193.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12608,7 +12608,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Russia.",
-    "image": "imagery/features/4515.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4515.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12643,7 +12643,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "River in Scotland.",
-    "image": "imagery/features/5942.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5942.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12766,7 +12766,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Robert A.; American author (1907-1988).",
-    "image": "imagery/features/2415.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2415.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12779,7 +12779,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Robert B.; American geoscientist (1928-2003).",
-    "image": "imagery/features/14191.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14191.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12803,7 +12803,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Robert J.; American astronomer (1886-1956).",
-    "image": "imagery/features/6098.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6098.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12816,7 +12816,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Robert Phillip; American geologist (1911-2004).",
-    "image": "imagery/features/15002.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15002.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12829,7 +12829,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Robert; British astronomer (1808-1878).",
-    "image": "imagery/features/3596.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3596.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12842,7 +12842,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Robert; British physicist-astronomer (1635-1703).",
-    "image": "imagery/features/2549.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2549.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12855,7 +12855,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Rodolphe; French astronomer (1835-1911).",
-    "image": "imagery/features/4916.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4916.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12879,7 +12879,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Ronald; American geologist (1939-2011).",
-    "image": "imagery/features/15313.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15313.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12892,7 +12892,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Ruined city in Syria.",
-    "image": "imagery/features/3703.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3703.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12916,7 +12916,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Russell W.; American astronomer (1871-1949).",
-    "image": "imagery/features/4804.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4804.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12940,7 +12940,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Sandra; Italian astrobiologist (1933-2021).",
-    "image": "imagery/features/16376.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/16376.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12953,7 +12953,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Semen Ivanovich; Russian geographer, explorer, and navigator (1605-1673).",
-    "image": "imagery/features/1463.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1463.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12966,7 +12966,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Sergei N.; Russian microbiologist (1856-1953).",
-    "image": "imagery/features/6395.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6395.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12979,7 +12979,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Sergey Pavlovich; Russian engineer (1906-1966).",
-    "image": "imagery/features/3091.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3091.jpg",
     "image_source": "wikidata"
   },
   {
@@ -12992,7 +12992,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Seth Barnes; American astronomer (1891-1963).",
-    "image": "imagery/features/4249.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4249.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13005,7 +13005,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Shotaro; Japanese astronomer (1912-1992).",
-    "image": "imagery/features/14326.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14326.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13018,7 +13018,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Simon; American astronomer (1835-1909).",
-    "image": "imagery/features/4233.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4233.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13043,7 +13043,7 @@
     "importance": 0,
     "origin": "Small crater within crater Airy that defines zero degrees longitude on Mars.",
     "additional_info": "Defines zero degrees longitude on Mars.",
-    "image": "imagery/features/115.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/115.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13078,7 +13078,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Soviet builder of unmanned space stations (1914-1970).",
-    "image": "imagery/features/532.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/532.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13136,7 +13136,7 @@
     "importance": 0,
     "origin": "Spanish port.",
     "additional_info": "Spelling changed from Cādiz to Cádiz March 9, 2009.",
-    "image": "imagery/features/1375.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1375.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13149,7 +13149,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Spanish tracking site.",
-    "image": "imagery/features/3567.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3567.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13162,7 +13162,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Spanish word for \"Mars\".",
-    "image": "imagery/features/3723.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3723.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13175,7 +13175,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Stanley G.; American novelist (1902-1935).",
-    "image": "imagery/features/6512.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6512.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13188,7 +13188,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Strutt, John W., third Baron Rayleigh; British physicist (1842-1919).",
-    "image": "imagery/features/4967.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4967.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13201,7 +13201,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Svante; Swedish physical chemist (1859-1927).",
-    "image": "imagery/features/392.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/392.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13225,7 +13225,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Syrtis of the Nile; part of Nilus (Nile) Canal.",
-    "image": "imagery/features/4278.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4278.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13282,7 +13282,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Theodore; Hungarian-American aeronautical engineer (1881-1963).",
-    "image": "imagery/features/6441.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6441.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13295,7 +13295,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Theophile; French astronomer and meteorologist (1867-1954).",
-    "image": "imagery/features/4035.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4035.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13319,7 +13319,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Thomas H.; British biologist (1825-1895).",
-    "image": "imagery/features/2595.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2595.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13398,7 +13398,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Alabama, USA.",
-    "image": "imagery/features/4021.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4021.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13687,7 +13687,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Arizona, USA.",
-    "image": "imagery/features/4483.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4483.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13700,7 +13700,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Arizona, USA.",
-    "image": "imagery/features/15876.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15876.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13735,7 +13735,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Aruba.",
-    "image": "imagery/features/14794.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14794.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13759,7 +13759,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Australia.",
-    "image": "imagery/features/16014.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/16014.jpg",
     "image_source": "wikidata"
   },
   {
@@ -13827,7 +13827,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Australia.",
-    "image": "imagery/features/3626.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3626.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14061,7 +14061,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Bangladesh.",
-    "image": "imagery/features/5677.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5677.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14151,7 +14151,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Bhutan.",
-    "image": "imagery/features/14593.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14593.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14263,7 +14263,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Brazil.",
-    "image": "imagery/features/14184.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14184.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14287,7 +14287,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Brazil.",
-    "image": "imagery/features/1091.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1091.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14410,7 +14410,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in British Columbia, Canada.",
-    "image": "imagery/features/14332.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14332.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14511,7 +14511,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Burma.",
-    "image": "imagery/features/3349.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3349.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14557,7 +14557,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in California, USA.",
-    "image": "imagery/features/15314.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15314.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14581,7 +14581,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in California, USA.",
-    "image": "imagery/features/3951.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3951.jpg",
     "image_source": "wikidata"
   },
   {
@@ -14638,7 +14638,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Town in Canada.",
-    "image": "imagery/features/14501.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14501.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15003,7 +15003,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in China.",
-    "image": "imagery/features/5780.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5780.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15159,7 +15159,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Colombia.",
-    "image": "imagery/features/3474.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3474.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15183,7 +15183,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Colombia.",
-    "image": "imagery/features/5843.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5843.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15273,7 +15273,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Costa Rica.",
-    "image": "imagery/features/15272.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15272.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15286,7 +15286,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Croatia.",
-    "image": "imagery/features/14546.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14546.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15389,7 +15389,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Denmark.",
-    "image": "imagery/features/5689.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5689.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15413,7 +15413,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Dominica.",
-    "image": "imagery/features/14624.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14624.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15448,7 +15448,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ecuador.",
-    "image": "imagery/features/6951.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6951.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15505,7 +15505,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in England.",
-    "image": "imagery/features/1307.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1307.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15518,7 +15518,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in England.",
-    "image": "imagery/features/1326.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1326.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15597,7 +15597,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Town in England.",
-    "image": "imagery/features/6059.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6059.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15765,7 +15765,7 @@
     "importance": 1,
     "origin": "Town in Finland.",
     "additional_info": "Origin was changed from \"Town in Sweden\" on August 10, 2016 to correct an error.",
-    "image": "imagery/features/6405.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6405.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15789,7 +15789,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in France.",
-    "image": "imagery/features/164.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/164.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15934,7 +15934,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Gabon.",
-    "image": "imagery/features/15015.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15015.jpg",
     "image_source": "wikidata"
   },
   {
@@ -15981,7 +15981,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Germany.",
-    "image": "imagery/features/589.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/589.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16005,7 +16005,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Germany.",
-    "image": "imagery/features/1335.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1335.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16106,7 +16106,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ghana.",
-    "image": "imagery/features/5281.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5281.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16273,7 +16273,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Hungary.",
-    "image": "imagery/features/14329.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14329.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16385,7 +16385,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Illinois, USA.",
-    "image": "imagery/features/2209.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2209.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16531,7 +16531,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in India.",
-    "image": "imagery/features/4799.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4799.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16665,7 +16665,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Indonesia.",
-    "image": "imagery/features/5526.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5526.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16810,7 +16810,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ireland.",
-    "image": "imagery/features/1935.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1935.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16834,7 +16834,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ireland.",
-    "image": "imagery/features/14196.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14196.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16847,7 +16847,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ireland.",
-    "image": "imagery/features/14271.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14271.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16915,7 +16915,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Israel.",
-    "image": "imagery/features/3446.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3446.jpg",
     "image_source": "wikidata"
   },
   {
@@ -16983,7 +16983,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Italy.",
-    "image": "imagery/features/4153.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4153.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17227,7 +17227,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Kenya.",
-    "image": "imagery/features/3044.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3044.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17251,7 +17251,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Kenya.",
-    "image": "imagery/features/3575.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3575.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17330,7 +17330,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Kermān province in Iran.",
-    "image": "imagery/features/15569.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15569.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17453,7 +17453,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Lesotho.",
-    "image": "imagery/features/15124.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15124.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17477,7 +17477,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Liberia.",
-    "image": "imagery/features/14185.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14185.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17490,7 +17490,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Libya.",
-    "image": "imagery/features/3136.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3136.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17536,7 +17536,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Macedonia.",
-    "image": "imagery/features/14795.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14795.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17692,7 +17692,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Mali.",
-    "image": "imagery/features/6948.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6948.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17727,7 +17727,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Mali.",
-    "image": "imagery/features/6010.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6010.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17795,7 +17795,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Mexico.",
-    "image": "imagery/features/342.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/342.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17885,7 +17885,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Mississippi, USA.",
-    "image": "imagery/features/741.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/741.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17942,7 +17942,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Mongolia.",
-    "image": "imagery/features/15309.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15309.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17955,7 +17955,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Mongolia.",
-    "image": "imagery/features/16013.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/16013.jpg",
     "image_source": "wikidata"
   },
   {
@@ -17968,7 +17968,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Mongolia.",
-    "image": "imagery/features/4469.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4469.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18135,7 +18135,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Nebraska, USA.",
-    "image": "imagery/features/6471.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6471.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18159,7 +18159,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Nepal.",
-    "image": "imagery/features/5992.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5992.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18206,7 +18206,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in New Caledonia.",
-    "image": "imagery/features/14793.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14793.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18230,7 +18230,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in New Mexico, USA.",
-    "image": "imagery/features/5311.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5311.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18243,7 +18243,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in New Mexico, USA.",
-    "image": "imagery/features/5894.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5894.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18278,7 +18278,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in New South Wales, Australia.",
-    "image": "imagery/features/1293.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1293.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18291,7 +18291,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in New York, USA.",
-    "image": "imagery/features/15873.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15873.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18304,7 +18304,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in New York, USA.",
-    "image": "imagery/features/3945.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3945.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18515,7 +18515,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Nigeria.",
-    "image": "imagery/features/1119.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1119.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18594,7 +18594,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Northern Ireland.",
-    "image": "imagery/features/1641.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1641.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18607,7 +18607,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Northwest Territories, Canada.",
-    "image": "imagery/features/2703.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2703.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18642,7 +18642,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Norway.",
-    "image": "imagery/features/14448.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14448.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18677,7 +18677,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Norway.",
-    "image": "imagery/features/15508.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15508.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18701,7 +18701,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Nova Scotia, Canada.",
-    "image": "imagery/features/1006.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1006.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18747,7 +18747,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Oklahoma, USA.",
-    "image": "imagery/features/14182.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14182.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18804,7 +18804,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Ontario, Canada.",
-    "image": "imagery/features/1540.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1540.jpg",
     "image_source": "wikidata"
   },
   {
@@ -18984,7 +18984,7 @@
     "importance": 0,
     "origin": "Town in Papua New Guinea.",
     "additional_info": "On January 26, 2026, the Origin statement was changed from \"Town in New Guinea\" to \"Town in Papua New Guinea\" and the ET was changed from New Guinea to Papua New Guinea.",
-    "image": "imagery/features/801.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/801.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19044,7 +19044,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Paraguay.",
-    "image": "imagery/features/6685.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6685.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19057,7 +19057,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Pennsylvania, USA.",
-    "image": "imagery/features/2208.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2208.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19226,7 +19226,7 @@
     "importance": 0,
     "origin": "Town in Poland.",
     "additional_info": "Name edited on October 25, 2018: Púnsk changed to Puńsk, the form originally approved by the IAU WGPSN in 1976.",
-    "image": "imagery/features/4888.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4888.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19250,7 +19250,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Portugal.",
-    "image": "imagery/features/501.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/501.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19274,7 +19274,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Prince Edward Island, Canada.",
-    "image": "imagery/features/3042.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3042.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19287,7 +19287,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Prince Edward Island, Canada.",
-    "image": "imagery/features/5998.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5998.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19322,7 +19322,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Quebec, Canada.",
-    "image": "imagery/features/1141.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1141.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19390,7 +19390,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Romania.",
-    "image": "imagery/features/14193.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14193.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19403,7 +19403,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Russia.",
-    "image": "imagery/features/6.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19471,7 +19471,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Russia.",
-    "image": "imagery/features/585.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/585.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19561,7 +19561,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Russia.",
-    "image": "imagery/features/2107.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2107.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19629,7 +19629,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Russia.",
-    "image": "imagery/features/2775.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2775.jpg",
     "image_source": "wikidata"
   },
   {
@@ -19642,7 +19642,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Russia.",
-    "image": "imagery/features/2826.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2826.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20095,7 +20095,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Russia.",
-    "image": "imagery/features/5553.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5553.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20295,7 +20295,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Russia.",
-    "image": "imagery/features/6737.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6737.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20319,7 +20319,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Rwanda.",
-    "image": "imagery/features/14630.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14630.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20376,7 +20376,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Saskatchewan.",
-    "image": "imagery/features/6124.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6124.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20467,7 +20467,7 @@
     "importance": 0,
     "origin": "Town in Senegal.",
     "additional_info": "ET changed from Semitic to Senegal on January 22, 2026, to correct error.",
-    "image": "imagery/features/4773.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4773.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20747,7 +20747,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Spain.",
-    "image": "imagery/features/966.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/966.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20771,7 +20771,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Spain.",
-    "image": "imagery/features/1177.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1177.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20839,7 +20839,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Spain.",
-    "image": "imagery/features/14521.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14521.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20852,7 +20852,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Spain.",
-    "image": "imagery/features/6417.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6417.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20876,7 +20876,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Sri Lanka.",
-    "image": "imagery/features/14626.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14626.jpg",
     "image_source": "wikidata"
   },
   {
@@ -20911,7 +20911,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Sudan.",
-    "image": "imagery/features/5463.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5463.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21012,7 +21012,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Sweden.",
-    "image": "imagery/features/14167.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14167.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21025,7 +21025,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Sweden.",
-    "image": "imagery/features/6066.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6066.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21126,7 +21126,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Taiwan (also spelled Makung).",
-    "image": "imagery/features/15238.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15238.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21173,7 +21173,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Tanzania.",
-    "image": "imagery/features/16432.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/16432.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21186,7 +21186,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Tanzania.",
-    "image": "imagery/features/3070.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3070.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21565,7 +21565,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Philippines.",
-    "image": "imagery/features/544.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/544.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21611,7 +21611,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Philippines.",
-    "image": "imagery/features/14207.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14207.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21635,7 +21635,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in the Republic of Chad.",
-    "image": "imagery/features/14547.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14547.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21648,7 +21648,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Republic of Congo (Congo-Brazzaville).",
-    "image": "imagery/features/15535.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15535.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21683,7 +21683,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Republic of Djibouti.",
-    "image": "imagery/features/15123.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15123.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21707,7 +21707,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Republic of Gambia.",
-    "image": "imagery/features/15120.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15120.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21742,7 +21742,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in the Republic of Georgia.",
-    "image": "imagery/features/2092.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2092.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21766,7 +21766,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Republic of Guinea-Bissau.",
-    "image": "imagery/features/15092.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15092.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21834,7 +21834,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Republic of Panama, formerly within the US Panama Canal Zone.",
-    "image": "imagery/features/571.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/571.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21858,7 +21858,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Republic of Sao Tome and Principe.",
-    "image": "imagery/features/15122.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15122.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21871,7 +21871,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Town in the Republic of Seychelles.",
-    "image": "imagery/features/14522.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14522.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21917,7 +21917,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Solomon Islands.",
-    "image": "imagery/features/15367.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15367.jpg",
     "image_source": "wikidata"
   },
   {
@@ -21930,7 +21930,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in the Union of the Comoros.",
-    "image": "imagery/features/14950.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14950.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22108,7 +22108,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Turkey.",
-    "image": "imagery/features/5872.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5872.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22187,7 +22187,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ukraine.",
-    "image": "imagery/features/683.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/683.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22211,7 +22211,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ukraine.",
-    "image": "imagery/features/1995.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1995.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22235,7 +22235,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Ukraine.",
-    "image": "imagery/features/3512.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3512.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22281,7 +22281,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Uruguay.",
-    "image": "imagery/features/31.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/31.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22328,7 +22328,7 @@
     "importance": 0,
     "origin": "Town in Utah, USA.",
     "additional_info": "ET changed from American to United States on January 22, 2026.",
-    "image": "imagery/features/3896.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3896.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22352,7 +22352,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Town in Utah, USA.",
-    "image": "imagery/features/14269.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14269.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22410,7 +22410,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Venezuela.",
-    "image": "imagery/features/1342.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1342.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22467,7 +22467,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Victoria, Australia.",
-    "image": "imagery/features/4242.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4242.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22502,7 +22502,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Virginia, USA.",
-    "image": "imagery/features/1183.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1183.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22636,7 +22636,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Yemen.",
-    "image": "imagery/features/14440.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14440.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22671,7 +22671,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Zaire.",
-    "image": "imagery/features/931.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/931.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22695,7 +22695,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Zaire.",
-    "image": "imagery/features/3036.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3036.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22741,7 +22741,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town in Zaire.",
-    "image": "imagery/features/6750.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6750.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22798,7 +22798,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town on Réunion Island.",
-    "image": "imagery/features/15498.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15498.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22811,7 +22811,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town on Santorini Island in the Aegean Sea.",
-    "image": "imagery/features/5973.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5973.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22824,7 +22824,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Town on the island of Sicily, Italy.",
-    "image": "imagery/features/6949.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6949.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22837,7 +22837,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Tsuneo; Japanese amateur astronomer (1916-1996).",
-    "image": "imagery/features/14136.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14136.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22883,7 +22883,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Urbain J.; French astronomer (1811-1877).",
-    "image": "imagery/features/3314.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3314.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22896,7 +22896,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Valdemar Axel; English astronomer (1910-1981).",
-    "image": "imagery/features/14782.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14782.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22931,7 +22931,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Vasilii G.; Russian astrophysicist (1889-1972).",
-    "image": "imagery/features/1948.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1948.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22966,7 +22966,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Vesto M.; American astronomer (1875-1969); Earl C.; American astronomer (1883-1964).",
-    "image": "imagery/features/5600.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5600.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22979,7 +22979,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Vicenzo; Italian astronomer (1859-1927).",
-    "image": "imagery/features/1112.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1112.jpg",
     "image_source": "wikidata"
   },
   {
@@ -22992,7 +22992,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Vilhelm F.; Norwegian physicist (1862-1951).",
-    "image": "imagery/features/760.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/760.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23016,7 +23016,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Village in Argentina.",
-    "image": "imagery/features/1258.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1258.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23040,7 +23040,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Village in Armenia.",
-    "image": "imagery/features/15318.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15318.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23196,7 +23196,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Village in Kashmir.",
-    "image": "imagery/features/14144.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14144.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23286,7 +23286,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Village in Nepal.",
-    "image": "imagery/features/14145.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14145.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23310,7 +23310,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Village in northern Russia.",
-    "image": "imagery/features/6961.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6961.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23323,7 +23323,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Village in Peru.",
-    "image": "imagery/features/3655.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3655.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23435,7 +23435,7 @@
     "description": "N/A",
     "importance": 0,
     "origin": "Village in Turkmenistan.",
-    "image": "imagery/features/15167.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/15167.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23492,7 +23492,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Vsevolod V.; Russian astronomer (1901-1964).",
-    "image": "imagery/features/5470.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5470.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23516,7 +23516,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Walter S.; American astronomer (1876-1956).",
-    "image": "imagery/features/46.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/46.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23529,7 +23529,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Walter; German astronomer (1859-1905).",
-    "image": "imagery/features/6565.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6565.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23553,7 +23553,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Wilhelm F.; German astronomer (1893-1958).",
-    "image": "imagery/features/4909.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4909.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23566,7 +23566,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Wilhelm; German astronomer (1797-1850).",
-    "image": "imagery/features/659.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/659.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23601,7 +23601,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William F.; British astronomer (1848-1931).",
-    "image": "imagery/features/1490.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1490.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23614,7 +23614,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William H.; American astronomer (1871-1959).",
-    "image": "imagery/features/6582.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6582.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23627,7 +23627,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William J.; American astronomer (1862-1926).",
-    "image": "imagery/features/2591.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2591.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23640,7 +23640,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William M.; American astronomer (1925-2004).",
-    "image": "imagery/features/14290.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/14290.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23653,7 +23653,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William R.; British astronomer (1799-1868).",
-    "image": "imagery/features/1431.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1431.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23666,7 +23666,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William W.; American physicist (1873-1962).",
-    "image": "imagery/features/1257.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1257.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23679,7 +23679,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William; British astronomer (1799-1880).",
-    "image": "imagery/features/3287.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3287.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23692,7 +23692,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William; British astronomer (1824-1910).",
-    "image": "imagery/features/2575.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2575.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23705,7 +23705,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "William; British geologist-engineer (1769-1839).",
-    "image": "imagery/features/5603.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5603.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23718,7 +23718,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Wolf V.; American microbiologist (1922-1974).",
-    "image": "imagery/features/6410.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6410.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23753,7 +23753,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"Mars\" in Akkadian.",
-    "image": "imagery/features/5460.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5460.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23766,7 +23766,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"Mars\" in Armenian.",
-    "image": "imagery/features/2565.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2565.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23779,7 +23779,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Word for \"Mars\" in Babylonian.",
-    "image": "imagery/features/4307.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4307.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23803,7 +23803,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"Mars\" in Hebrew.",
-    "image": "imagery/features/3772.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3772.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23816,7 +23816,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"Mars\" in Japanese.",
-    "image": "imagery/features/2942.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/2942.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23840,7 +23840,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"Mars\" in Oscan.",
-    "image": "imagery/features/3618.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3618.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23853,7 +23853,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"Mars\" in Sanskrit.",
-    "image": "imagery/features/3628.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/3628.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23867,7 +23867,7 @@
     "importance": 2,
     "origin": "Word for \"Mars\" in Sumerian.",
     "additional_info": "Descriptor term changed to the plural (valles), and coordinates redefined 3/31/2008.",
-    "image": "imagery/features/5544.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5544.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23880,7 +23880,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"planet\" in Gaelic.",
-    "image": "imagery/features/5006.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/5006.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23893,7 +23893,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Word for \"planet\" in Sesotho, national language of Lesotho, Africa.",
-    "image": "imagery/features/4136.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/4136.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23906,7 +23906,7 @@
     "description": "N/A",
     "importance": 2,
     "origin": "Word for \"star\" in Thai.",
-    "image": "imagery/features/1409.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/1409.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23953,7 +23953,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Word for 'Mars' in Persian.",
-    "image": "imagery/features/558.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/558.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23966,7 +23966,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Word for 'Mars' in Quechua (Inca).",
-    "image": "imagery/features/471.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/471.jpg",
     "image_source": "wikidata"
   },
   {
@@ -23990,7 +23990,7 @@
     "description": "N/A",
     "importance": 1,
     "origin": "Étienne Léopold; French astronomer (1827-1895).",
-    "image": "imagery/features/6094.jpg",
+    "image": "https://marswalk-imagery.pages.dev/features/6094.jpg",
     "image_source": "wikidata"
   }
 ]
