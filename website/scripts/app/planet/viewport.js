@@ -1,6 +1,11 @@
 import * as Cesium from "cesium";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 
+let resolveViewport
+export let Viewport = new Promise((resolve) => {
+	resolveViewport = resolve;
+})
+
 async function main() {
 	const marsEllipsoid = Cesium.Ellipsoid.WGS84;
 	const MarsRadius = marsEllipsoid.maximumRadius;
@@ -21,7 +26,7 @@ async function main() {
 		{ ellipsoid: marsEllipsoid },
 	);
 
-	const viewer = new Cesium.Viewer("viewport", {
+	let viewer = new Cesium.Viewer("viewport", {
 		baseLayer: false,
 		baseLayerPicker: false,
 		geocoder: false,
@@ -39,9 +44,11 @@ async function main() {
 		globe: globe,
 	});
 
+	resolveViewport(viewer)
+
 	const scene = viewer.scene;
 
-	scene.msaaSamples = 1;
+	scene.msaaSamples = 4;
 
 	const tilingScheme = new Cesium.GeographicTilingScheme({
 		ellipsoid: marsEllipsoid,
@@ -121,7 +128,7 @@ async function main() {
         const height = cartographic.height;
         let sse;
 
-        if (height > 3000000.0) {
+        if (height > 5000000.0) {
             sse = sseSettings.veryFar;
         } else if (height > 1000000.0) {
             sse = sseSettings.far;
@@ -134,7 +141,7 @@ async function main() {
         if (sse === currentSse) {
             return;
         }
-
+		
         currentSse = sse;
         scene.globe.maximumScreenSpaceError = sse;
     }
