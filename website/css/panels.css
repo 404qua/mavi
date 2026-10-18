@@ -1,5 +1,5 @@
 .panels {
-	visibility: hidden;
+	/*	visibility: hidden; */
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -26,7 +26,7 @@
 	border: 2px solid var(--background-300);
 	padding: var(--spacing-l);
 	width: fit-content;
-	pointer-events:initial;
+	pointer-events: initial;
 
 	border-radius: var(--spacing-s);
 }
