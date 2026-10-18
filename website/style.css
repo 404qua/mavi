@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 @import url("./css/viewport.css");
 @import url("./css/inputs.css");
@@ -40,31 +40,35 @@
 	--spacing-xl: 32px;
 }
 
-html, body {
+html,
+body {
 	margin: 0px;
 	padding: 0px;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background: var(--background-600);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: var(--background-600);
 	color: var(--foreground-500);
-    font-family: "Titillium Web",system-ui, sans-serif;
+	font-family: "Play", system-ui, sans-serif;
 
 	display: flex;
 	flex-direction: column;
 	min-width: 400px;
 
-	font-size: max(min(14px,3vh,3vw),10px);
+	font-size: max(min(16px, 3vh, 3vw), 10px);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
 	margin: 0px;
 	padding: 0px;
 }
 
-h1, h2 {
+h1,
+h2 {
 	font-family: "Michroma", system-ui, sans-serif;
-	font-size: 18px;
+	font-size: 1.4rem;
 }
 
 hr {
@@ -72,17 +76,17 @@ hr {
 	color: var(--background-400);
 	border: none;
 	border-bottom: 1px solid;
-	--padding:calc(var(--spacing-l) / 2);
-	margin-top:var(--padding);
-	margin-bottom:var(--padding);
+	--padding: calc(var(--spacing-l) / 2);
+	margin-top: var(--padding);
+	margin-bottom: var(--padding);
 }
 
 main {
 	display: flex;
-    width: 100%;
+	width: 100%;
 	flex-grow: 1;
 	position: relative;
 
 	box-sizing: border-box;
-	gap:var(--spacing-l);
+	gap: var(--spacing-l);
 }

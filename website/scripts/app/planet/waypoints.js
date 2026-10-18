@@ -3,7 +3,7 @@ import * as Cesium from "cesium";
 
 let viewport = await Viewport;
 
-function createWaypoint(text,longitude,latitude,importance) {
+function createWaypoint(text, longitude, latitude, importance) {
 	let drawDistance = 27000000;
 
 	let color = Cesium.Color.YELLOW
@@ -26,18 +26,18 @@ function createWaypoint(text,longitude,latitude,importance) {
 	viewport.entities.add({
 		position: Cesium.Cartesian3.fromDegrees(longitude, latitude, 15000),
 		label: {
-			eyeOffset: new Cesium.Cartesian3(0, 0, -1000),	
+			eyeOffset: new Cesium.Cartesian3(0, 0, -1000),
 			heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
 			text: text,
 			font: "14px Source Sans 3",
-			fillColor: Cesium.Color.BLACK,
-			outlineWidth: 1,
-			showBackground: true,
-			backgroundColor: color,
+			fillColor: color,
+			outlineWidth: 3,
+			showBackground: false,
+			outline: Cesium.Color.BLACK.withAlpha(0.4),
 			style: Cesium.LabelStyle.FILL_AND_OUTLINE,
 			verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
 			disableDepthTestDistance: 100000,
-			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0,drawDistance)
+			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance)
 		},
 	});
 }
@@ -69,6 +69,6 @@ async function getJson(url) {
 let features = await getJson("/data/mars_features.json");
 
 features.forEach((e) => {
-	createWaypoint(e.name,e.longitude,e.latitude,e.importance)
+	createWaypoint(e.name, e.longitude, e.latitude, e.importance)
 })
 

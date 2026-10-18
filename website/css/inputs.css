@@ -6,6 +6,9 @@
 .input__list {
 	display: grid;
 	grid-template-columns: max-content auto;
+	gap: calc(var(--spacing-s) * 2);
+	margin-top: var(--spacing-s);
+	margin-bottom: var(--spacing-s);
 }
 
 .input {
@@ -13,7 +16,7 @@
 	align-content: center;
 	height: 1rem;
 	padding: var(--spacing-s);
-	line-height:1;
+	line-height: 1;
 
 	width: 100%;
 
@@ -28,8 +31,47 @@
 }
 
 .input>label {
-	display:flex;
+	display: flex;
 	align-items: center;
 	flex-grow: 1;
 	height: 100%;
+}
+
+label:has(input) {
+	user-select: none;
+}
+
+label:has(input[type="button"]) {
+	& input {
+		appearance: none;
+		min-width: 0px;
+		border: none;
+		background: none;
+		padding: 0px;
+	}
+
+	background: var(--accent-500);
+	width: fit-content;
+	font-weight: 600;
+	color: var(--background-500);
+	padding: var(--spacing-s);
+
+	padding-right: calc(var(--spacing-l) * 2);
+	padding-left: calc(var(--spacing-l) * 2);
+
+	border-radius: var(--spacing-xs);
+
+	line-height: 1em;
+	height: 1em;
+
+	transition: all 100ms,
+	background 0ms;
+
+	&:hover {
+		background: var(--accent-400);
+	}
+
+	&:active {
+		background: var(--accent-600);
+	}
 }

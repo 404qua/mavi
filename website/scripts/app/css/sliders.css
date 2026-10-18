@@ -1,4 +1,6 @@
 .slider {
+	--transition-time: 0ms;
+
 	position: relative;
 	cursor: pointer;
 
@@ -30,29 +32,40 @@
 	position: absolute;
 }
 
-.track, .fill {
-	height: 1px;
+.track,
+.fill {
+	height: 2px;
 }
 
 .track {
-	z-index: 0;	
+	z-index: 0;
 	width: 100%;
-	background-color: var(--background-700);	
+	background-color: var(--background-700);
 }
 
 .fill {
-	z-index: 1;	
+	z-index: 1;
 	background-color: var(--accent-500);
 	width: var(--value);
+
+	transition: var(--transition-time);
 }
 
 .thumb {
+	transition: all var(--transition-time), width 100ms;
+
 	left: var(--value);
-	translate: calc(((var(--value)) * -1)) 0px;
-	z-index: 2;	
-	border-radius: var(--spacing-xs);
-	background-color: var(--foreground-800);
-	border: 1px solid var(--foreground-500);
-	width: var(--spacing-l);
+	/* translate: calc(((var(--value)) * -1)) 0px; */
+	translate: -50% 0px;
+	z-index: 2;
+	background-color: var(--foreground-500);
+	width: var(--spacing-s);
 	height: 100%;
+}
+
+.slider:hover {
+
+	.thumb {
+		width: calc(var(--spacing-l) * 2);
+	}
 }

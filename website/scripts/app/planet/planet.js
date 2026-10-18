@@ -1,3 +1,3 @@
 import "./viewport.js"
-//import "./waypoints.js"
+import "./waypoints.js"
 import "./paths.js"
