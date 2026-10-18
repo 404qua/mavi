@@ -44,6 +44,8 @@ async function main() {
 		globe: globe,
 	});
 
+	viewer.scene.globe.depthTestAgainstTerrain = false;
+
 	resolveViewport(viewer)
 
 	const scene = viewer.scene;
@@ -105,9 +107,9 @@ async function main() {
 	scene.skyAtmosphere.atmosphereMieScaleHeight = 1000.0;
 
 
-    scene.globe.preloadAncestors = true;
-    scene.globe.preloadSiblings = true;
-    scene.globe.depthTestAgainstTerrain = true;
+	scene.globe.preloadAncestors = true;
+	scene.globe.preloadSiblings = true;
+	scene.globe.depthTestAgainstTerrain = true;
 
 	let sseSettings = {
 		veryClose: 2.0,
@@ -116,39 +118,39 @@ async function main() {
 		veryFar: 32.0,
 	}
 
-    let currentSse = sseSettings.far;
+	let currentSse = sseSettings.far;
 
-    function updateTerrainLOD() {
-        const cartographic = viewer.camera.positionCartographic;
+	function updateTerrainLOD() {
+		const cartographic = viewer.camera.positionCartographic;
 
-        if (!cartographic) {
-            return;
-        }
+		if (!cartographic) {
+			return;
+		}
 
-        const height = cartographic.height;
-        let sse;
+		const height = cartographic.height;
+		let sse;
 
-        if (height > 5000000.0) {
-            sse = sseSettings.veryFar;
-        } else if (height > 1000000.0) {
-            sse = sseSettings.far;
-        } else if (height > 300000.0) {
-            sse = sseSettings.close;
-        } else {
-            sse = sseSettings.veryClose;
-        }
+		if (height > 5000000.0) {
+			sse = sseSettings.veryFar;
+		} else if (height > 1000000.0) {
+			sse = sseSettings.far;
+		} else if (height > 300000.0) {
+			sse = sseSettings.close;
+		} else {
+			sse = sseSettings.veryClose;
+		}
 
-        if (sse === currentSse) {
-            return;
-        }
-		
-        currentSse = sse;
-        scene.globe.maximumScreenSpaceError = sse;
-    }
+		if (sse === currentSse) {
+			return;
+		}
 
-    viewer.camera.percentageChanged = 0.01;
-    viewer.camera.changed.addEventListener(updateTerrainLOD);
-    updateTerrainLOD();
+		currentSse = sse;
+		scene.globe.maximumScreenSpaceError = sse;
+	}
+
+	viewer.camera.percentageChanged = 0.01;
+	viewer.camera.changed.addEventListener(updateTerrainLOD);
+	updateTerrainLOD();
 }
 
 main().catch((err) => console.error("Mars viewer failed:", err));
