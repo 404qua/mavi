@@ -7,6 +7,7 @@
 @import url("./css/panels.misc.css");
 
 @import url("./scripts/app/css/sliders.css");
+@import url("./scripts/app/css/planet.css");
 
 :root {
 	--background-100: #5e5e5e;

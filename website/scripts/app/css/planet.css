@@ -1,0 +1,29 @@
+.planet__waypoints__selection-box {
+	position: absolute;
+	left: var(--position-x);
+	top: var(--position-y);
+
+	border: 2px solid darkgray;
+	background-color: #ffffff40;
+
+	transition: 0ms;
+
+	translate: -50% calc(0px - 4px - 50%);
+
+	opacity: 50%;
+
+	transition: all 0ms, opacity 150ms;
+
+	width: var(--size-w);
+	height: var(--size-h);
+
+	padding: 8px;
+
+	pointer-events: none;
+}
+
+.planet__waypoints__disabled-normal {
+	opacity: 0%;
+
+	transition: 150ms;
+}

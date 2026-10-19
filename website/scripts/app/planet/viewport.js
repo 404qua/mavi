@@ -109,7 +109,7 @@ async function main() {
 
 	scene.globe.preloadAncestors = true;
 	scene.globe.preloadSiblings = true;
-	scene.globe.depthTestAgainstTerrain = true;
+	scene.globe.depthTestAgainstTerrain = false;
 
 	let sseSettings = {
 		veryClose: 2.0,
