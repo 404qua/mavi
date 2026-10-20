@@ -5,9 +5,9 @@ import { Viewport } from "./viewport";
 let viewer = await Viewport
 
 let velocity = { x: 0, y: 0 }
-let acceleration = .0016;
-let decceleration = 0.9;
-let friction = .0004;
+let acceleration = 0.16;
+let decceleration = 0.994;
+let friction = 0.04;
 let pressedKeys = { up: 0, down: 0, right: 0, left: 0 }
 
 let position = { x: 0, y: 0 }
@@ -48,86 +48,91 @@ window.addEventListener('keyup', (event) => {
 	}
 });
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+function physicsTick(delta) {
+	const moveDirection = new Cesium.Cartesian2(pressedKeys.right - pressedKeys.left, pressedKeys.up - pressedKeys.down)
 
-async function startPhysicsSimulation() {
+	if (Cesium.Cartesian2.magnitudeSquared(moveDirection) > 0) {
+		let lookDirectionX = Cesium.Math.toRadians(-lookDirection.x);
+		Cesium.Cartesian2.normalize(moveDirection, moveDirection);
+		const lookCosX = Math.cos(lookDirectionX);
+		const lookSinX = Math.sin(lookDirectionX);
 
+		const resultantVector = new Cesium.Cartesian2(
+			moveDirection.x * lookCosX - moveDirection.y * lookSinX,
+			moveDirection.x * lookSinX + moveDirection.y * lookCosX
+		);
+
+		moveDirection.x = resultantVector.x;
+		moveDirection.y = resultantVector.y;
+	}
+
+	Cesium.Cartesian2.multiplyByScalar(moveDirection, acceleration * delta, moveDirection);
+
+	Cesium.Cartesian2.add(velocity, moveDirection, velocity);
+
+	Cesium.Cartesian2.multiplyByScalar(velocity, (1 - decceleration) ** delta, velocity);
+
+	let velocityMagnitude = Cesium.Cartesian2.magnitude(velocity)
+	if (velocityMagnitude > 0) {
+		let frictionDirection = new Cesium.Cartesian2();
+		Cesium.Cartesian2.normalize(velocity, frictionDirection)
+		Cesium.Cartesian2.multiplyByScalar(frictionDirection, (-Math.min(friction, velocityMagnitude)) * delta, frictionDirection);
+
+		Cesium.Cartesian2.add(velocity, frictionDirection, velocity);
+	}
+
+	let precision = 16
+	let round = (10 ** (precision))
+
+
+	velocity.x = Math.floor(Number(velocity.x.toFixed(precision + 1)) * round) / round;
+	velocity.y = Math.floor(Number(velocity.y.toFixed(precision + 1)) * round) / round;
+
+	position.y += velocity.y
+
+	const cosLat = Math.max(Math.cos(Cesium.Math.toRadians(position.y)), 1e-3);
+	position.x += velocity.x / cosLat;
+
+
+	const worldPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, 0);
+	const cartographicPos = Cesium.Cartographic.fromCartesian(worldPos);
+
+	let terrainHeight = viewer.scene.globe.getHeight(cartographicPos);
+
+	let cameraOffset = 10000
+
+	if (!(Cesium.defined(terrainHeight))) {
+		terrainHeight = cameraOffset
+	}
+
+	const cameraPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, terrainHeight + cameraOffset);
+
+	viewer.camera.setView({
+		destination: cameraPos,
+		orientation: {
+			heading: Cesium.Math.toRadians(lookDirection.x),
+			pitch: Cesium.Math.toRadians(lookDirection.y),
+			roll: 0.0
+		}
+	});
+}
+
+function startPhysicsSimulation() {
 	let shouldRunSim = true;
 
 	function stopSim() {
 		shouldRunSim = false
 	}
 
-	while (shouldRunSim) {
+	let lastTime = Cesium.getTimestamp();
 
-		const moveDirection = new Cesium.Cartesian2(pressedKeys.right - pressedKeys.left, pressedKeys.up - pressedKeys.down)
+	viewer.scene.preRender.addEventListener(() => {
+		const now = Cesium.getTimestamp();
+		const deltaTime = (now - lastTime) / 1000;
+		lastTime = now;
 
-		if (Cesium.Cartesian2.magnitudeSquared(moveDirection) > 0) {
-			let lookDirectionX = Cesium.Math.toRadians(-lookDirection.x);
-			Cesium.Cartesian2.normalize(moveDirection, moveDirection);
-			const lookCosX = Math.cos(lookDirectionX);
-			const lookSinX = Math.sin(lookDirectionX);
-
-			const resultantVector = new Cesium.Cartesian2(
-				moveDirection.x * lookCosX - moveDirection.y * lookSinX,
-				moveDirection.x * lookSinX + moveDirection.y * lookCosX
-			);
-
-			moveDirection.x = resultantVector.x;
-			moveDirection.y = resultantVector.y;
-		}
-
-		Cesium.Cartesian2.multiplyByScalar(moveDirection, acceleration, moveDirection);
-
-		Cesium.Cartesian2.add(velocity, moveDirection, velocity);
-
-		Cesium.Cartesian2.multiplyByScalar(velocity, decceleration, velocity);
-
-		let velocityMagnitude = Cesium.Cartesian2.magnitude(velocity)
-		if (velocityMagnitude > 0) {
-			let frictionDirection = new Cesium.Cartesian2();
-			Cesium.Cartesian2.normalize(velocity, frictionDirection)
-			Cesium.Cartesian2.multiplyByScalar(frictionDirection, -Math.min(friction, velocityMagnitude), frictionDirection);
-
-			Cesium.Cartesian2.add(velocity, frictionDirection, velocity);
-		}
-
-		let precision = 16
-		let round = (10 ** (precision))
-
-		velocity.x = Math.floor(Number(velocity.x.toFixed(precision + 1)) * round) / round;
-		velocity.y = Math.floor(Number(velocity.y.toFixed(precision + 1)) * round) / round;
-
-		position.y += velocity.y
-
-		const cosLat = Math.max(Math.cos(Cesium.Math.toRadians(position.y)), 1e-3);
-		position.x += velocity.x / cosLat;
-
-
-		const worldPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, 0);
-		const cartographicPos = Cesium.Cartographic.fromCartesian(worldPos);
-
-		let terrainHeight = viewer.scene.globe.getHeight(cartographicPos);
-
-		let cameraOffset = 10000
-
-		if (!(Cesium.defined(terrainHeight))) {
-			terrainHeight = cameraOffset
-		}
-
-		const cameraPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, terrainHeight + cameraOffset);
-
-		viewer.camera.setView({
-			destination: cameraPos,
-			orientation: {
-				heading: Cesium.Math.toRadians(lookDirection.x),
-				pitch: Cesium.Math.toRadians(lookDirection.y),
-				roll: 0.0
-			}
-		});
-
-		await sleep(16)
-	}
+		physicsTick(deltaTime);
+	});
 
 	return stopSim
 }
