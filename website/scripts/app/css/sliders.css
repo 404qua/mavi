@@ -32,18 +32,18 @@
 	position: absolute;
 }
 
-.track,
-.fill {
+.slider .track,
+.slider .fill {
 	height: 2px;
 }
 
-.track {
+.slider .track {
 	z-index: 0;
 	width: 100%;
 	background-color: var(--background-700);
 }
 
-.fill {
+.slider .fill {
 	z-index: 1;
 	background-color: var(--accent-500);
 	width: var(--value);
@@ -51,7 +51,7 @@
 	transition: var(--transition-time);
 }
 
-.thumb {
+.slider .thumb {
 	transition: all var(--transition-time), width 100ms;
 
 	left: var(--value);

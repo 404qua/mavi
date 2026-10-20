@@ -39,6 +39,10 @@
 
 label:has(input) {
 	user-select: none;
+
+
+	cursor: pointer;
+
 }
 
 label:has(input[type="button"]) {
@@ -73,5 +77,39 @@ label:has(input[type="button"]) {
 
 	&:active {
 		background: var(--accent-600);
+	}
+}
+
+label.toggle {
+	width: calc(var(--spacing-xl) * 2);
+	height: 1em;
+	background: var(--background-700);
+
+	border: var(--spacing-s) solid var(--background-600);
+	border-radius: var(--spacing-s);
+
+	input {
+		appearance: none;
+		margin: 0px;
+	}
+
+	.fill {
+		height: 100%;
+		width: 0%;
+		background: var(--accent-500);
+
+		transition: width 50ms;
+	}
+
+	.thumb {
+		height: 100%;
+		width: 50%;
+		background: var(--background-200);
+	}
+}
+
+label.toggle:has(input:checked) {
+	.fill {
+		width: 50%;
 	}
 }
