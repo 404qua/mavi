@@ -23,8 +23,8 @@ function createWapointImage(svg) {
 
 		let ctx = canvas.getContext("2d");
 
-		let color = "#00000030"
-		let outlineColor = "#ffffff30"
+		let color = "#00000005"
+		let outlineColor = "#ffffff08"
 		let borderWidth = 2
 		let borderRadius = 4
 
@@ -34,7 +34,7 @@ function createWapointImage(svg) {
 		let totalPadding = padding + (borderWidth / 2)
 		ctx.roundRect(totalPadding, totalPadding, canvasSize - (totalPadding * 2), canvasSize - (totalPadding * 2), borderRadius)
 		ctx.lineWidth = borderWidth;
-		ctx.stroke();
+		// ctx.stroke();
 		ctx.fill();
 
 
@@ -120,7 +120,7 @@ function createWaypoint(text, longitude, latitude, importance, id) {
 			outlineWidth: 3,
 			scale: 0.85,
 			showBackground: true,
-			backgroundColor: Cesium.Color.BLACK.withAlpha(0.2),
+			backgroundColor: Cesium.Color.BLACK.withAlpha(0.05),
 			outlineColor: Cesium.Color.BLACK.withAlpha(0.2),
 			style: Cesium.LabelStyle.FILL,
 			verticalOrigin: Cesium.VerticalOrigin.CENTER,
@@ -233,9 +233,6 @@ function updateHover(movement) {
 		lastlabel.distanceDisplayCondition = cachedHoverValues.label__distanceDisplayCondition;
 	}
 
-
-	lastPicked = picked
-
 	const time = viewport.clock.currentTime;
 	if (!(picked.id.properties.hoverable.getValue(time) == true)) return
 
@@ -268,22 +265,34 @@ function updateHover(movement) {
 		pickerDisplayBox.style.setProperty("--position-x", pos.x + "px")
 		pickerDisplayBox.style.setProperty("--position-y", pos.y + "px")
 
-		const text = label.text.getValue(time);
-		const font = label.font.getValue(time);      // "bold 14px Play"
-		const scale = label.scale.getValue(time) ?? 1;
-
-		measureCtx.font = font;
-		const width = measureCtx.measureText(text).width * scale;
-
 		pickerDisplayBox.classList.remove("planet__waypoints__disabled-normal");
-		pickerDisplayBox.style.setProperty("--size-w", width + "px")
-		pickerDisplayBox.style.setProperty("--size-h", 48 + "px")
 
-		viewport.scene.requestRender();
-
+		return pickerDisplayBox
 	}
 
 	updateCurrentHover()
+
+	const text = label.text.getValue(time);
+	const font = label.font.getValue(time);
+	const scale = label.scale.getValue(time) ?? 1;
+
+	measureCtx.font = font;
+	const width = measureCtx.measureText(text).width * scale;
+
+	pickerDisplayBox.style.setProperty("--size-w", width + "px")
+	pickerDisplayBox.style.setProperty("--size-h", 48 + "px")
+
+
+	viewport.scene.requestRender();
+
+	if (!lastPicked) {
+		pickerDisplayBox.classList.add("planet__waypoints__no_transition")
+		requestAnimationFrame(() => {
+			pickerDisplayBox.classList.remove("planet__waypoints__no_transition")
+		})
+	}
+
+	lastPicked = picked
 }
 
 let hoverTimeout = null;
@@ -300,12 +309,21 @@ handler.setInputAction((movement) => {
 
 
 handler.setInputAction(() => {
+	if (!lastPicked) return
+
 	const time = viewport.clock.currentTime;
 	console.log(lastPicked.id.properties.iconId.getValue(time))
+
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
 viewport.camera.changed.addEventListener(() => {
-	if (updateCurrentHover) updateCurrentHover()
+	if (updateCurrentHover) {
+		let pickerDisplayBox = updateCurrentHover()
+		pickerDisplayBox.classList.add("planet__waypoints__no_transition")
+		requestAnimationFrame(() => {
+			pickerDisplayBox.classList.remove("planet__waypoints__no_transition")
+		})
+	}
 });
 
 viewport.cesiumWidget.screenSpaceEventHandler.removeInputAction(

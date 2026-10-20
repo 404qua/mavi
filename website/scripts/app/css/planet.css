@@ -12,7 +12,7 @@
 
 	opacity: 50%;
 
-	transition: all 0ms, opacity 150ms;
+	transition: 150ms;
 
 	width: var(--size-w);
 	height: var(--size-h);
@@ -20,10 +20,19 @@
 	padding: 8px;
 
 	pointer-events: none;
+
+	border-radius: 2px;
 }
 
 .planet__waypoints__disabled-normal {
 	opacity: 0%;
 
+
+	padding: 4px;
+
 	transition: 150ms;
+}
+
+.planet__waypoints__no_transition {
+	transition: all 150ms, top 0ms, left 0ms, width 0ms, height 0ms;
 }
