@@ -46,7 +46,6 @@ async function main() {
 
 	viewer.scene.globe.depthTestAgainstTerrain = false;
 
-	resolveViewport(viewer)
 
 	const scene = viewer.scene;
 
@@ -106,7 +105,6 @@ async function main() {
 	scene.skyAtmosphere.atmosphereRayleighScaleHeight = 10000.0;
 	scene.skyAtmosphere.atmosphereMieScaleHeight = 1000.0;
 
-
 	scene.globe.preloadAncestors = true;
 	scene.globe.preloadSiblings = true;
 	scene.globe.depthTestAgainstTerrain = false;
@@ -147,6 +145,8 @@ async function main() {
 		currentSse = sse;
 		scene.globe.maximumScreenSpaceError = sse;
 	}
+
+	resolveViewport(viewer)
 
 	viewer.camera.percentageChanged = 0.01;
 	viewer.camera.changed.addEventListener(updateTerrainLOD);

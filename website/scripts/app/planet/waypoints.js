@@ -105,7 +105,7 @@ function createWaypoint(text, longitude, latitude, importance, id) {
 			pixelOffset: new Cesium.Cartesian2(0, -labelGap),
 			verticalOrigin: Cesium.VerticalOrigin.CENTER,
 			scale: .75,
-			disableDepthTestDistance: 100000,
+			disableDepthTestDistance: undefined,
 			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance),
 			scaleByDistance: scaleByDistance,
 
@@ -124,7 +124,7 @@ function createWaypoint(text, longitude, latitude, importance, id) {
 			outlineColor: Cesium.Color.BLACK.withAlpha(0.2),
 			style: Cesium.LabelStyle.FILL,
 			verticalOrigin: Cesium.VerticalOrigin.CENTER,
-			disableDepthTestDistance: 100000,
+			disableDepthTestDistance: undefined,
 			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance / 2),
 			scaleByDistance: scaleByDistance,
 
@@ -319,6 +319,8 @@ handler.setInputAction(() => {
 viewport.camera.changed.addEventListener(() => {
 	if (updateCurrentHover) {
 		let pickerDisplayBox = updateCurrentHover()
+		if (!(pickerDisplayBox)) return
+
 		pickerDisplayBox.classList.add("planet__waypoints__no_transition")
 		requestAnimationFrame(() => {
 			pickerDisplayBox.classList.remove("planet__waypoints__no_transition")
