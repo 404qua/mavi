@@ -203,8 +203,6 @@ function stopPhysicsSimulation() {
 
 	if (physicsEventListener) {
 		physicsEventListener();
-		viewer.camera.frustum.fov = cameraValuesCache.fov;
-
 		viewer.camera.flyTo({
 			destination: cameraValuesCache.cartographicCartesain3,
 			orientation: {
@@ -213,6 +211,8 @@ function stopPhysicsSimulation() {
 				roll: cameraValuesCache.rollRad
 			}
 		});
+
+		viewer.camera.frustum.fov = cameraValuesCache.fov;
 		physicsEventListener = null;
 	}
 

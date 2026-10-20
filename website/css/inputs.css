@@ -4,11 +4,23 @@
 }
 
 .input__list {
+	--gap: calc(var(--spacing-s) * 2);
 	display: grid;
 	grid-template-columns: max-content auto;
-	gap: calc(var(--spacing-s) * 2);
+	gap: var(--gap);
 	margin-top: var(--spacing-s);
 	margin-bottom: var(--spacing-s);
+
+	hr,
+	h3 {
+		grid-column: 1 / -1;
+	}
+
+	h3 {
+		margin-top: calc(0px - var(--gap));
+		margin-bottom: calc(0px - var(--gap));
+		margin-left: var(--gap);
+	}
 }
 
 .input {
@@ -87,6 +99,7 @@ label.toggle {
 
 	border: var(--spacing-xs) solid var(--background-600);
 	border-radius: 999px;
+	justify-self: center;
 
 	input {
 		appearance: none;

@@ -61,6 +61,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
 	margin: 0px;
 	padding: 0px;
@@ -80,6 +81,11 @@ hr {
 	--padding: calc(var(--spacing-l) / 2);
 	margin-top: var(--padding);
 	margin-bottom: var(--padding);
+}
+
+hr.hidden {
+	border-bottom: none;
+	padding-bottom: 1px;
 }
 
 main {
