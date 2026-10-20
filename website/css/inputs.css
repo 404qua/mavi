@@ -81,12 +81,12 @@ label:has(input[type="button"]) {
 }
 
 label.toggle {
-	width: calc(var(--spacing-xl) * 2);
+	width: 3em;
 	height: 1em;
 	background: var(--background-700);
 
-	border: var(--spacing-s) solid var(--background-600);
-	border-radius: var(--spacing-s);
+	border: var(--spacing-xs) solid var(--background-600);
+	border-radius: 999px;
 
 	input {
 		appearance: none;
@@ -101,15 +101,34 @@ label.toggle {
 		transition: width 50ms;
 	}
 
+	position: relative;
+
 	.thumb {
-		height: 100%;
-		width: 50%;
+		--margin: 2px;
+
+		position: absolute;
+		margin: var(--margin);
+
+		height: calc(100% - var(--margin) * 2);
+		width: calc(50% - var(--margin) * 2);
+
 		background: var(--background-200);
+
+		border-radius: 999px;
+
+		left: 0%;
+
+		transition: 100ms;
 	}
+
+	transition: 100ms;
 }
 
 label.toggle:has(input:checked) {
-	.fill {
-		width: 50%;
+	background: var(--accent-500);
+
+
+	.thumb {
+		left: 50%;
 	}
 }
