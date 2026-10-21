@@ -1,3 +1,10 @@
 .description {
 	max-width: 360px;
 }
+
+.planet-feature-info {
+	.pfi-disabled {
+		visibility: hidden;
+		display: none;
+	}
+}

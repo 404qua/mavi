@@ -6,20 +6,47 @@
 
 	pointer-events: none;
 
-	padding: var(--spacing-l);
+	--padding: var(--spacing-l);
+	padding: var(--padding);
 
 	&>hr {
 		border: 0px solid;
 	}
+
+	position: relative;
+	box-sizing: border-box;
+}
+
+.panels__right,
+.panels__left {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&>hr {
+		border: 0px solid;
+	}
+
+	width: 35%;
+	overflow: hidden;
 }
 
 .panels__right {
-	&>hr {
-		border: 0px solid;
-	}
+	position: absolute;
+	left: 0%;
+	padding-left: var(--padding);
 
-	width: 50%;
 }
+
+.panels__left {
+	position: absolute;
+	right: 0%;
+
+	align-items: flex-end;
+
+	padding-right: var(--padding);
+}
+
 
 .panel {
 	background-color: var(--background-500);
@@ -29,4 +56,5 @@
 	pointer-events: initial;
 
 	border-radius: var(--spacing-s);
+	max-width: 100%;
 }
