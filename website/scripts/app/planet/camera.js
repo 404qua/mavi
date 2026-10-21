@@ -5,9 +5,9 @@ import { Viewport } from "./viewport";
 let viewer = await Viewport
 
 let velocity = { x: 0, y: 0 }
-let acceleration = 0.16;
+let acceleration = 300000;
 let decceleration = 0.994;
-let friction = 0.04;
+let friction = 80000;
 let pressedKeys = { up: 0, down: 0, right: 0, left: 0 }
 
 let position = { x: 0, y: 0 }
@@ -60,6 +60,38 @@ let cameraValuesCache = {}
 const maxLerp = 2000;
 const cameraOffset = 5000
 
+// ---- AI START: helpers ----
+const EARTH_RADIUS = 6378137;
+
+const normal = new Cesium.Cartesian3();   // unit vector for where we are
+const north = new Cesium.Cartesian3();    // reference "forward" tangent, carried along as we move
+const right = new Cesium.Cartesian3();
+const moveDir = new Cesium.Cartesian3();
+const axis = new Cesium.Cartesian3();
+const kxv = new Cesium.Cartesian3();
+const tmp = new Cesium.Cartesian3();
+const horiz = new Cesium.Cartesian3();
+const viewDir = new Cesium.Cartesian3();
+const viewUp = new Cesium.Cartesian3();
+const cartoScratch = new Cesium.Cartographic();
+
+// out = a*sa + b*sb
+function combine(a, sa, b, sb, out) {
+	out.x = a.x * sa + b.x * sb;
+	out.y = a.y * sa + b.y * sb;
+	out.z = a.z * sa + b.z * sb;
+}
+
+// Rodrigues rotation of v around unit axis k, in place
+function rotate(v, k, c, s) {
+	Cesium.Cartesian3.cross(k, v, kxv);
+	const kdv = Cesium.Cartesian3.dot(k, v) * (1 - c);
+	v.x = v.x * c + kxv.x * s + k.x * kdv;
+	v.y = v.y * c + kxv.y * s + k.y * kdv;
+	v.z = v.z * c + kxv.z * s + k.z * kdv;
+}
+// ---- AI END ----
+
 function physicsTick(delta) {
 	const moveDirection = new Cesium.Cartesian2(pressedKeys.right - pressedKeys.left, pressedKeys.up - pressedKeys.down)
 
@@ -93,56 +125,45 @@ function physicsTick(delta) {
 		Cesium.Cartesian2.add(velocity, frictionDirection, velocity);
 	}
 
-	let precision = 16
-	let round = (10 ** (precision))
+	// ---- AI START: movement ----
+	const speed = Cesium.Cartesian2.magnitude(velocity);
+	if (speed < 0.01) {
+		velocity.x = 0;
+		velocity.y = 0;
+	} else {
+		Cesium.Cartesian3.cross(north, normal, right);
+		combine(right, velocity.x / speed, north, velocity.y / speed, moveDir);
 
+		Cesium.Cartesian3.cross(normal, moveDir, axis);
+		const angle = speed * delta / EARTH_RADIUS;
+		const c = Math.cos(angle), s = Math.sin(angle);
+		rotate(normal, axis, c, s);
+		rotate(north, axis, c, s);
 
-	velocity.x = Math.floor(Number(velocity.x.toFixed(precision + 1)) * round) / round;
-	velocity.y = Math.floor(Number(velocity.y.toFixed(precision + 1)) * round) / round;
-
-	// position.y += velocity.y
-	//
-	// const cosLat = Math.max(Math.cos(Cesium.Math.toRadians(position.y)), 1e-3);
-	// position.x += velocity.x / cosLat;
-
-	// this is ai code and i have no idea how this sphere stuff works
-	let speedInDegrees = Cesium.Cartesian2.magnitude(velocity);
-
-	if (speedInDegrees > 0) {
-		let bearingRad = Math.atan2(velocity.x, velocity.y);
-		let bearingDeg = bearingRad * (180 / Math.PI);
-
-		let distanceMeters = speedInDegrees * 111132.0;
-
-		const EARTH_RADIUS = 6371000.0;
-		let delta = distanceMeters / EARTH_RADIUS;
-
-		let phi1 = position.y * (Math.PI / 180);
-		let lambda1 = position.x * (Math.PI / 180);
-		let theta = bearingDeg * (Math.PI / 180);
-
-		let sinPhi2 = Math.sin(phi1) * Math.cos(delta) + Math.cos(phi1) * Math.sin(delta) * Math.cos(theta);
-		let phi2 = Math.asin(sinPhi2);
-
-		let yComponent = Math.sin(theta) * Math.sin(delta) * Math.cos(phi1);
-		let xComponent = Math.cos(delta) - Math.sin(phi1) * sinPhi2;
-		let lambda2 = lambda1 + Math.atan2(yComponent, xComponent);
-
-		position.y = phi2 * (180 / Math.PI);
-		position.x = (lambda2 * (180 / Math.PI) + 540) % 360 - 180;
+		// fix floating point drift
+		Cesium.Cartesian3.normalize(normal, normal);
+		Cesium.Cartesian3.multiplyByScalar(normal, Cesium.Cartesian3.dot(north, normal), tmp);
+		Cesium.Cartesian3.subtract(north, tmp, north);
+		Cesium.Cartesian3.normalize(north, north);
 	}
-	// end of ai
+	Cesium.Cartesian3.cross(north, normal, right);
 
-	const worldPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, 0);
-	const cartographicPos = Cesium.Cartographic.fromCartesian(worldPos);
+	const carto = cartoScratch;
+	carto.longitude = Math.atan2(normal.y, normal.x);
+	carto.latitude = Math.asin(Cesium.Math.clamp(normal.z, -1, 1));
+	carto.height = 0;
+	position.x = Cesium.Math.toDegrees(carto.longitude);
+	position.y = Cesium.Math.toDegrees(carto.latitude);
+	// ---- AI END ----
 
-	let terrainHeight = viewer.scene.globe.getHeight(cartographicPos);
-
-	if (!(Cesium.defined(terrainHeight))) {
-		terrainHeight = cameraOffset
+	let terrainHeight = viewer.scene.globe.getHeight(carto);
+	if (!Cesium.defined(terrainHeight)) {
+		terrainHeight = cameraOffset;
 	}
 
-	const cameraPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, terrainHeight + cameraOffset);
+	const cameraPos = Cesium.Cartesian3.fromRadians(
+		carto.longitude, carto.latitude, terrainHeight + cameraOffset
+	);
 
 	let now = Cesium.getTimestamp();
 	let lerpTime = now - cameraValuesCache.time;
@@ -173,13 +194,19 @@ function physicsTick(delta) {
 	let AnimatedPitch = lerpIntegerValue(cameraValuesCache.pitchRad, Cesium.Math.toRadians(lookDirection.y), lerpValue ** 4)
 	let AnimatedRoll = lerpIntegerValue(cameraValuesCache.rollRad, 0, lerpValue)
 
+	// ---- AI START: orientation from our own frame ----
+	const yaw = Cesium.Math.toRadians(lookDirection.x);
+	const pitch = Cesium.Math.toRadians(lookDirection.y);
+	combine(north, Math.cos(yaw), right, Math.sin(yaw), horiz);
+	combine(horiz, Math.cos(pitch), normal, Math.sin(pitch), viewDir);
+	combine(normal, Math.cos(pitch), horiz, -Math.sin(pitch), viewUp);
+	// ---- AI END ----
+
 	viewer.camera.setView({
 		destination: cameraPos,
-		orientation: {
-			heading: AnimatedHeading,
-			pitch: AnimatedPitch,
-			roll: AnimatedRoll
-		}
+		orientation: lerpValue < 1
+			? { heading: AnimatedHeading, pitch: AnimatedPitch, roll: AnimatedRoll }  // your intro animation, untouched
+			: { direction: viewDir, up: viewUp }
 	});
 }
 
@@ -207,6 +234,18 @@ function startPhysicsSimulation() {
 	cameraValuesCache.rollRad = viewer.camera.roll;
 
 	position = { x: Cesium.Math.toDegrees(cameraValuesCache.cartographic.longitude), y: Cesium.Math.toDegrees(cameraValuesCache.cartographic.latitude) }
+
+	// ---- AI START: init frame ----
+	const lat0 = Cesium.Math.toRadians(position.y);
+	const lon0 = Cesium.Math.toRadians(position.x);
+	Cesium.Cartesian3.fromElements(
+		Math.cos(lat0) * Math.cos(lon0), Math.cos(lat0) * Math.sin(lon0), Math.sin(lat0), normal);
+	Cesium.Cartesian3.fromElements(
+		-Math.sin(lat0) * Math.cos(lon0), -Math.sin(lat0) * Math.sin(lon0), Math.cos(lat0), north);
+	// ---- AI END ----
+
+	cameraValuesCache.direction = viewer.camera.direction.clone();
+	cameraValuesCache.up = viewer.camera.up.clone();
 
 	cameraValuesCache.fov = viewer.camera.frustum.fov;
 
