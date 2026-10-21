@@ -57,7 +57,7 @@ window.addEventListener('keyup', (event) => {
 });
 
 let cameraValuesCache = {}
-const maxLerp = 2000;
+const maxLerp = 5000;
 
 function physicsTick(delta) {
 	const moveDirection = new Cesium.Cartesian2(pressedKeys.right - pressedKeys.left, pressedKeys.up - pressedKeys.down)
