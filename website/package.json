@@ -14,6 +14,6 @@
     "vite-plugin-cesium": "^1.2.23"
   },
   "dependencies": {
-    "cesium": "^1.146.0"
+    "cesium": "^1.134.0"
   }
 }

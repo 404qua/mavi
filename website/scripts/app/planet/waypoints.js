@@ -10,7 +10,7 @@ const iconPaths = {
 	circle: "../../../icons/circle.svg",
 }
 
-function createWapointImage(svg) {
+function createWaypointImage(svg) {
 	return new Promise((resolve, reject) => {
 
 		const canvasSize = 64;
@@ -54,14 +54,36 @@ function createWapointImage(svg) {
 	})
 }
 
+function createRectangleImage({ width = 10, height = 10, backgroundColor = "#fff", outlineColor = "#000", borderWidth = 2, borderRadius = 4 }) {
+	let canvas = document.createElement("canvas");
+	canvas.width = width;
+	canvas.height = height;
+
+	let ctx = canvas.getContext("2d");
+
+	ctx.beginPath();
+	ctx.fillStyle = backgroundColor;
+	ctx.strokeStyle = outlineColor;
+	let totalPadding = (borderWidth / 2)
+	ctx.roundRect(totalPadding, totalPadding, canvas.width - (totalPadding * 2), canvas.height - (totalPadding * 2), borderRadius)
+	ctx.lineWidth = borderWidth;
+	ctx.stroke();
+	ctx.fill();
+
+	return canvas.toDataURL("image/png");
+
+}
+
 const iconImageData = {
-	star: await createWapointImage(iconPaths.star),
-	fourstar: await createWapointImage(iconPaths.fourstar),
-	triangle: await createWapointImage(iconPaths.triangle),
-	circle: await createWapointImage(iconPaths.circle),
+	star: await createWaypointImage(iconPaths.star),
+	fourstar: await createWaypointImage(iconPaths.fourstar),
+	triangle: await createWaypointImage(iconPaths.triangle),
+	circle: await createWaypointImage(iconPaths.circle),
 }
 
 const textDrawdistanceScale = 0.5;
+const waypointOffset = 5000;
+let labelGap = 14;
 
 function createWaypoint(text, longitude, latitude, importance, id) {
 	let drawDistance = 27000000;
@@ -90,10 +112,9 @@ function createWaypoint(text, longitude, latitude, importance, id) {
 	}
 
 	let scaleByDistance = new Cesium.NearFarScalar(Math.max(drawDistance * textDrawdistanceScale, 600000), 1, drawDistance, 0.4);
-	let labelGap = 14;
 
 	viewport.entities.add({
-		position: Cesium.Cartesian3.fromDegrees(longitude, latitude, 0),
+		position: Cesium.Cartesian3.fromDegrees(longitude, latitude, waypointOffset),
 
 		properties: {
 			hoverable: true,
@@ -101,15 +122,14 @@ function createWaypoint(text, longitude, latitude, importance, id) {
 		},
 
 		billboard: {
-			image: image, // Cesium natively accepts HTMLCanvasElement
+			image: image,
 			pixelOffset: new Cesium.Cartesian2(0, -labelGap),
 			verticalOrigin: Cesium.VerticalOrigin.CENTER,
 			scale: .75,
 			disableDepthTestDistance: undefined,
 			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance),
 			scaleByDistance: scaleByDistance,
-
-			// heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
+			heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
 		},
 
 		label: {
@@ -128,7 +148,7 @@ function createWaypoint(text, longitude, latitude, importance, id) {
 			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance / 2),
 			scaleByDistance: scaleByDistance,
 
-			// heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
+			heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
 		},
 
 	});
@@ -162,6 +182,27 @@ let features = await getJson("/data/mars_features.json");
 
 features.forEach((e) => {
 	createWaypoint(e.name, e.longitude, e.latitude, e.importance, e.id)
+})
+
+let selectionRectangle = viewport.entities.add({
+	position: Cesium.Cartesian3.fromDegrees(20, 20, 20),
+
+	billboard: {
+		image: createRectangleImage({
+			borderRadius: 0,
+			width: 96,
+			height: 64,
+			outlineColor: "darkgray",
+			outlineWidth: 2,
+			backgroundColor: "#ffffff40",
+		}),
+		pixelOffset: new Cesium.Cartesian2(0, -labelGap),
+		verticalOrigin: Cesium.VerticalOrigin.CENTER,
+		disableDepthTestDistance: Number.POSITIVE_INFINITY,
+		heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
+		allowPicking: false,
+	},
+
 })
 
 let pickerDisplayBox = document.createElement("div");
@@ -209,9 +250,16 @@ function cancelHover() {
 }
 
 function updateHover(movement) {
-	const picked = viewport.scene.pick(movement.endPosition);
+	const pickedObjects = viewport.scene.drillPick(movement.endPosition);
 
-	if (!(Cesium.defined(picked) && picked.id instanceof Cesium.Entity && picked.id.position && picked.id.properties.hoverable)) {
+	const picked = pickedObjects?.find(p =>
+		Cesium.defined(p.id) &&
+		p.id instanceof Cesium.Entity &&
+		p.id.properties?.isSelectionOverlay?.getValue(viewport.clock.currentTime) !== true && // Exclude overlay
+		p.id.properties?.hoverable?.getValue(viewport.clock.currentTime) === true
+	);
+
+	if (!(Cesium.defined(picked) && picked.id instanceof Cesium.Entity && picked.id.position && Cesium.defined(picked.id.properties) && picked.id.properties.hoverable)) {
 		if (cancelHoverTimeout) clearTimeout(cancelHoverTimeout)
 		cancelHoverTimeout = setTimeout(() => cancelHover(), 150)
 
@@ -254,11 +302,31 @@ function updateHover(movement) {
 	billboard.distanceDisplayCondition = undefined;
 	label.distanceDisplayCondition = undefined;
 
-	updateCurrentHover = () => {
-		const time = viewport.clock.currentTime;
 
+
+	updateCurrentHover = () => {
+
+		const time = viewport.clock.currentTime;
 		const world = picked.id.position.getValue(time);
-		const pos = Cesium.SceneTransforms.worldToWindowCoordinates(viewport.scene, world);
+		const cartographic = Cesium.Cartographic.fromCartesian(world);
+
+		let terrainHeight = viewport.scene.globe.getHeight(cartographic);
+
+		if (!(Cesium.defined(terrainHeight))) {
+			cartographic.height += waypointOffset;
+		} else {
+			cartographic.height += terrainHeight + waypointOffset;
+		}
+
+
+		const pos = Cesium.SceneTransforms.worldToWindowCoordinates(
+			viewport.scene,
+			Cesium.Cartesian3.fromRadians(
+				cartographic.longitude,
+				cartographic.latitude,
+				cartographic.height
+			)
+		);
 
 		if (!(pos)) return
 
@@ -272,6 +340,13 @@ function updateHover(movement) {
 
 	updateCurrentHover()
 
+	if (!lastPicked) {
+		pickerDisplayBox.classList.add("planet__waypoints__no_transition")
+		requestAnimationFrame(() => {
+			pickerDisplayBox.classList.remove("planet__waypoints__no_transition")
+		})
+	}
+
 	const text = label.text.getValue(time);
 	const font = label.font.getValue(time);
 	const scale = label.scale.getValue(time) ?? 1;
@@ -283,14 +358,17 @@ function updateHover(movement) {
 	pickerDisplayBox.style.setProperty("--size-h", 48 + "px")
 
 
-	viewport.scene.requestRender();
+	selectionRectangle.position = picked.id.position.getValue(time);
+	selectionRectangle.billboard.image = createRectangleImage({
+		borderRadius: 0,
+		width: width,
+		height: 48,
+		outlineColor: "darkgray",
+		outlineWidth: 2,
+		backgroundColor: "#ffffff40",
+	}),
 
-	if (!lastPicked) {
-		pickerDisplayBox.classList.add("planet__waypoints__no_transition")
-		requestAnimationFrame(() => {
-			pickerDisplayBox.classList.remove("planet__waypoints__no_transition")
-		})
-	}
+		viewport.scene.requestRender();
 
 	lastPicked = picked
 }
@@ -316,7 +394,7 @@ handler.setInputAction(() => {
 
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-viewport.camera.changed.addEventListener(() => {
+viewport.scene.preRender.addEventListener(() => {
 	if (updateCurrentHover) {
 		let pickerDisplayBox = updateCurrentHover()
 		if (!(pickerDisplayBox)) return
@@ -327,6 +405,7 @@ viewport.camera.changed.addEventListener(() => {
 		})
 	}
 });
+
 
 viewport.cesiumWidget.screenSpaceEventHandler.removeInputAction(
 	Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK

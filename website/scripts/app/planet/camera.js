@@ -57,7 +57,8 @@ window.addEventListener('keyup', (event) => {
 });
 
 let cameraValuesCache = {}
-const maxLerp = 5000;
+const maxLerp = 2000;
+const cameraOffset = 5000
 
 function physicsTick(delta) {
 	const moveDirection = new Cesium.Cartesian2(pressedKeys.right - pressedKeys.left, pressedKeys.up - pressedKeys.down)
@@ -99,18 +100,43 @@ function physicsTick(delta) {
 	velocity.x = Math.floor(Number(velocity.x.toFixed(precision + 1)) * round) / round;
 	velocity.y = Math.floor(Number(velocity.y.toFixed(precision + 1)) * round) / round;
 
-	position.y += velocity.y
+	// position.y += velocity.y
+	//
+	// const cosLat = Math.max(Math.cos(Cesium.Math.toRadians(position.y)), 1e-3);
+	// position.x += velocity.x / cosLat;
 
-	const cosLat = Math.max(Math.cos(Cesium.Math.toRadians(position.y)), 1e-3);
-	position.x += velocity.x / cosLat;
+	// this is ai code and i have no idea how this sphere stuff works
+	let speedInDegrees = Cesium.Cartesian2.magnitude(velocity);
 
+	if (speedInDegrees > 0) {
+		let bearingRad = Math.atan2(velocity.x, velocity.y);
+		let bearingDeg = bearingRad * (180 / Math.PI);
+
+		let distanceMeters = speedInDegrees * 111132.0;
+
+		const EARTH_RADIUS = 6371000.0;
+		let delta = distanceMeters / EARTH_RADIUS;
+
+		let phi1 = position.y * (Math.PI / 180);
+		let lambda1 = position.x * (Math.PI / 180);
+		let theta = bearingDeg * (Math.PI / 180);
+
+		let sinPhi2 = Math.sin(phi1) * Math.cos(delta) + Math.cos(phi1) * Math.sin(delta) * Math.cos(theta);
+		let phi2 = Math.asin(sinPhi2);
+
+		let yComponent = Math.sin(theta) * Math.sin(delta) * Math.cos(phi1);
+		let xComponent = Math.cos(delta) - Math.sin(phi1) * sinPhi2;
+		let lambda2 = lambda1 + Math.atan2(yComponent, xComponent);
+
+		position.y = phi2 * (180 / Math.PI);
+		position.x = (lambda2 * (180 / Math.PI) + 540) % 360 - 180;
+	}
+	// end of ai
 
 	const worldPos = Cesium.Cartesian3.fromDegrees(position.x, position.y, 0);
 	const cartographicPos = Cesium.Cartographic.fromCartesian(worldPos);
 
 	let terrainHeight = viewer.scene.globe.getHeight(cartographicPos);
-
-	let cameraOffset = 5000
 
 	if (!(Cesium.defined(terrainHeight))) {
 		terrainHeight = cameraOffset
@@ -144,7 +170,7 @@ function physicsTick(delta) {
 	lerpValue = lerpValue ** 4;
 
 	let AnimatedHeading = lerpIntegerValue(cameraValuesCache.headingRad, Cesium.Math.toRadians(lookDirection.x), lerpValue)
-	let AnimatedPitch = lerpIntegerValue(cameraValuesCache.pitchRad, Cesium.Math.toRadians(lookDirection.y), lerpValue)
+	let AnimatedPitch = lerpIntegerValue(cameraValuesCache.pitchRad, Cesium.Math.toRadians(lookDirection.y), lerpValue ** 4)
 	let AnimatedRoll = lerpIntegerValue(cameraValuesCache.rollRad, 0, lerpValue)
 
 	viewer.camera.setView({
@@ -161,6 +187,7 @@ let physicsEventListener = null;
 
 function startPhysicsSimulation() {
 	viewer.scene.screenSpaceCameraController.enableInputs = false;
+	viewer.scene.globe.depthTestAgainstTerrain = true;
 
 	velocity = { x: 0, y: 0 }
 	pressedKeys = { up: 0, down: 0, right: 0, left: 0 }
@@ -200,6 +227,8 @@ function startPhysicsSimulation() {
 
 function stopPhysicsSimulation() {
 	viewer.scene.screenSpaceCameraController.enableInputs = true;
+
+	viewer.scene.globe.depthTestAgainstTerrain = false;
 
 	if (physicsEventListener) {
 		physicsEventListener();
