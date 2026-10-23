@@ -14,6 +14,11 @@ let position = { x: 0, y: 0 }
 let lookDirection = { x: 0, y: 0 }
 let lookSensitivity = 0.08;
 
+let cameraSwitchCooldown = false;
+let cameraSwitchStartedTime = 0;
+
+let toggleCheckbox = document.getElementById("firstPersonCameraToggle");
+
 window.addEventListener('keydown', (event) => {
 	switch (event.key.toLowerCase()) {
 		case 'arrowup':
@@ -57,6 +62,8 @@ window.addEventListener('keyup', (event) => {
 });
 
 let cameraValuesCache = {}
+let cameraFlyToCache = {}
+let cameraMode = null;
 const maxLerp = 2000;
 const cameraOffset = 5000
 
@@ -211,15 +218,11 @@ function physicsTick(delta) {
 }
 
 let physicsEventListener = null;
+let stopFovUpdate = () => { };
 
 function startPhysicsSimulation() {
-	viewer.scene.screenSpaceCameraController.enableInputs = false;
-	viewer.scene.globe.depthTestAgainstTerrain = true;
-
-	velocity = { x: 0, y: 0 }
-	pressedKeys = { up: 0, down: 0, right: 0, left: 0 }
-
-	lookDirection = { x: 0, y: 0 }
+	let lastTime = Cesium.getTimestamp();
+	cameraMode = "firstPerson";
 
 	cameraValuesCache.cartographic = viewer.camera.positionCartographic.clone();
 
@@ -233,6 +236,33 @@ function startPhysicsSimulation() {
 	cameraValuesCache.pitchRad = viewer.camera.pitch;
 	cameraValuesCache.rollRad = viewer.camera.roll;
 
+	cameraValuesCache.direction = viewer.camera.direction.clone();
+	cameraValuesCache.up = viewer.camera.up.clone();
+
+	stopFovUpdate();
+	cameraValuesCache.fov = viewer.camera.frustum.fov;
+
+
+	cameraValuesCache.time = lastTime;
+
+	if (cameraSwitchCooldown == false) {
+		cameraFlyToCache.cartographicCartesain3 = cameraValuesCache.cartographicCartesain3
+		cameraFlyToCache.headingRad = cameraValuesCache.headingRad
+		cameraFlyToCache.pitchRad = cameraValuesCache.pitchRad
+		cameraFlyToCache.rollRad = cameraValuesCache.rollRad
+		cameraFlyToCache.fov = cameraValuesCache.fov
+
+		cameraSwitchCooldown = true;
+	}
+
+	viewer.scene.screenSpaceCameraController.enableInputs = false;
+	viewer.scene.globe.depthTestAgainstTerrain = true;
+
+	velocity = { x: 0, y: 0 }
+	pressedKeys = { up: 0, down: 0, right: 0, left: 0 }
+
+	lookDirection = { x: 0, y: 0 }
+
 	position = { x: Cesium.Math.toDegrees(cameraValuesCache.cartographic.longitude), y: Cesium.Math.toDegrees(cameraValuesCache.cartographic.latitude) }
 
 	// ---- AI START: init frame ----
@@ -243,15 +273,6 @@ function startPhysicsSimulation() {
 	Cesium.Cartesian3.fromElements(
 		-Math.sin(lat0) * Math.cos(lon0), -Math.sin(lat0) * Math.sin(lon0), Math.cos(lat0), north);
 	// ---- AI END ----
-
-	cameraValuesCache.direction = viewer.camera.direction.clone();
-	cameraValuesCache.up = viewer.camera.up.clone();
-
-	cameraValuesCache.fov = viewer.camera.frustum.fov;
-
-	let lastTime = Cesium.getTimestamp();
-
-	cameraValuesCache.time = lastTime;
 
 	physicsEventListener = viewer.scene.preRender.addEventListener(() => {
 		const now = Cesium.getTimestamp();
@@ -265,22 +286,61 @@ function startPhysicsSimulation() {
 }
 
 function stopPhysicsSimulation() {
+	cameraMode = "normal";
 	viewer.scene.screenSpaceCameraController.enableInputs = true;
 
 	viewer.scene.globe.depthTestAgainstTerrain = false;
 
+	cameraSwitchStartedTime = Cesium.getTimestamp();
+
 	if (physicsEventListener) {
 		physicsEventListener();
+
+		let distanceCartesian3 = new Cesium.Cartesian3();
+		Cesium.Cartesian3.subtract(viewer.camera.position, cameraFlyToCache.cartographicCartesain3, distanceCartesian3);
+		let distance = Cesium.Cartesian3.magnitude(distanceCartesian3);
+		let duration = distance / 5000000;
+
+
+		let startTime = Cesium.getTimestamp();
+		let lastFov = viewer.camera.frustum.fov;
+
+		function updateFov() {
+			let now = Cesium.getTimestamp();
+
+			let t = Cesium.EasingFunction.CUBIC_IN_OUT(((now - startTime) / 1000) / duration);
+
+			if (t >= 1) {
+				viewer.scene.preRender.removeEventListener(updateFov);
+				viewer.camera.frustum.fov = cameraFlyToCache.fov;
+				return
+			}
+
+			viewer.camera.frustum.fov = lastFov + ((cameraFlyToCache.fov - lastFov) * t);
+		}
+
+		viewer.scene.preRender.addEventListener(updateFov);
+
+		stopFovUpdate = () => {
+			viewer.scene.preRender.removeEventListener(updateFov);
+		};
+
 		viewer.camera.flyTo({
-			destination: cameraValuesCache.cartographicCartesain3,
+			destination: cameraFlyToCache.cartographicCartesain3,
+			duration: duration,
+			easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT,
 			orientation: {
-				heading: cameraValuesCache.headingRad,
-				pitch: cameraValuesCache.pitchRad,
-				roll: cameraValuesCache.rollRad
+				heading: cameraFlyToCache.headingRad,
+				pitch: cameraFlyToCache.pitchRad,
+				roll: cameraFlyToCache.rollRad
+			},
+			complete: () => {
+				if (cameraMode == "normal") {
+					cameraSwitchCooldown = false;
+				}
 			}
 		});
 
-		viewer.camera.frustum.fov = cameraValuesCache.fov;
 		physicsEventListener = null;
 	}
 
@@ -311,9 +371,6 @@ handler.setInputAction((movement) => {
 handler.setInputAction(() => {
 	MOUSE_DOWN = false;
 }, Cesium.ScreenSpaceEventType.LEFT_UP)
-
-
-let toggleCheckbox = document.getElementById("firstPersonCameraToggle");
 
 function updateFirstPersonCameraEnabled() {
 	if (toggleCheckbox.checked == true) {

@@ -275,8 +275,6 @@ function updateHover(movement) {
 
 	const width = measureCtx.measureText(text).width * scale;
 
-
-
 	updateCurrentHover = () => {
 		const time = viewport.clock.currentTime;
 		const world = picked.id.position.getValue(time);

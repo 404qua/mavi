@@ -2,9 +2,157 @@
 	max-width: 360px;
 }
 
-.planet-feature-info {
-	.pfi-disabled {
+@keyframes slide-in {
+	from {
+		opacity: 0;
+		transform: translateX(16px);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes clip-in {
+	from {
+		opacity: 0;
+		/* clip-path: inset(0 0 100% 0); */
+		scale: 0.9;
+	}
+
+	to {
+		opacity: 1;
+		/* clip-path: inset(0 0 0 0) */
+
+		scale: 1;
+	}
+}
+
+@keyframes wipe-in {
+	from {
+		width: 0px;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+.planet-feature-info__container {
+	position: relative;
+	display: block;
+}
+
+.planet-feature-info__close {
+	position: absolute;
+	right: 100%;
+
+	pointer-events: initial;
+
+	width: var(--spacing-xl);
+	height: var(--spacing-xl);
+	background-color: var(--background-400);
+	border: 1px solid var(--background-200);
+	border-right: 0px;
+
+	align-items: center;
+
+
+	display: none;
+
+	span {
+		margin: auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	input {
+		appearance: none;
 		visibility: hidden;
 		display: none;
+	}
+}
+
+.planet-feature-info__close:has(input:checked) {
+	display: flex;
+}
+
+.planet-feature-info__container:not(:has(#planet-feature-info__close:checked)) {
+	display: none;
+}
+
+.planet-feature-info {
+	display: flex;
+	flex-direction: column;
+
+	--transition-el: 100ms;
+	--transition-delay: 25ms;
+
+	transition: 250ms;
+	overflow: hidden;
+
+	h3,
+	b,
+	h2 {
+		animation: fade-in var(--transition-el) both;
+		animation-delay: calc(var(--i, 0) * var(--transition-delay));
+	}
+
+	p {
+		animation: slide-in var(--transition-el) both;
+		animation-delay: calc(var(--i, 0) * var(--transition-delay));
+	}
+
+	img {
+		animation: clip-in var(--transition-el) both;
+	}
+
+	hr {
+		animation: wipe-in var(--transition-delay) both;
+		animation-delay: calc(var(--i, 0) * var(--transition-delay));
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 300px;
+		align-self: center;
+
+		min-width: 10em;
+		min-height: 10em;
+
+		background-color: var(--background-400);
+		transition: 250ms;
+	}
+
+	#pfi_group__image {
+		align-self: center;
+		width: fit-content;
+		position: relative;
+		background-color: var(--background-400);
+
+		#pfi__img_source {
+			position: absolute;
+			bottom: 0%;
+			left: 0%;
+			background-color: #000000aa;
+			padding: var(--spacing-s);
+			color: #fff;
+		}
 	}
 }

@@ -27,8 +27,9 @@
 		border: 0px solid;
 	}
 
-	width: 35%;
-	overflow: hidden;
+	width: 30%;
+	max-width: 400px;
+	/* overflow: hidden; */
 }
 
 .panels__right {
@@ -50,11 +51,13 @@
 
 .panel {
 	background-color: var(--background-500);
-	border: 2px solid var(--background-300);
+	/* border: 2px solid var(--background-300); */
+
+	border: 1px solid var(--background-100);
 	padding: var(--spacing-l);
 	width: fit-content;
 	pointer-events: initial;
 
-	border-radius: var(--spacing-s);
+	/* border-radius: var(--spacing-l); */
 	max-width: 100%;
 }

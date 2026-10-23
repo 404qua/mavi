@@ -1,63 +1,95 @@
 import { features } from "./waypointCreator";
 
-let hiddenClassName = "pfi-disabled"
+let planet_feature_info = document.getElementById("planet_feature_info")
+let planet_feature_info__close = document.getElementById("planet-feature-info__close")
+let lastArray = null;
 
-let pfi_name = document.getElementById("pfi__name")
-let pfi_group__description = document.getElementById("pfi_group__description")
-let pfi__description = document.getElementById("pfi__description")
-let pfi_group__origin = document.getElementById("pfi_group__origin")
-let pfi__origin = document.getElementById("pfi__origin")
-let pfi_group__additional_info = document.getElementById("pfi_group__additional_info")
-let pfi__additional_info = document.getElementById("pfi__additional_info")
-let pfi_group__type = document.getElementById("pfi_group__type")
-let pfi__type = document.getElementById("pfi__type")
-let pfi_group__diameter = document.getElementById("pfi_group__diameter")
-let pfi__diameter = document.getElementById("pfi__diameter")
-let pfi_group__lon_lat = document.getElementById("pfi_group__lon-lat")
-let pfi__lon = document.getElementById("pfi__lon")
-let pfi__lat = document.getElementById("pfi__lat")
-let pfi_group__image = document.getElementById("pfi_group__image")
-let pfi__img = document.getElementById("pfi__img")
 
-function toggleElement(element, visible) {
-	if (visible == true) {
-		element.classList.remove(hiddenClassName)
-	} else {
-		element.classList.add(hiddenClassName)
-	}
-}
 
 export function UpdateDom(arrayIndex) {
+	planet_feature_info__close.checked = true;
+	if (lastArray == arrayIndex) return
+	lastArray = arrayIndex
+
 	let requiredFeature = features[arrayIndex];
-	console.log(requiredFeature);
 
-	pfi_name.innerHTML = requiredFeature.name
+	planet_feature_info.innerHTML = `
+		<h3>Name</h3>
+		<hr>
+		<h2>${requiredFeature.name}</h2>
+		${(requiredFeature.description && requiredFeature.description != "N/A") ?
+			`<hr>
+		<h3>Description</h3>
+		<hr>
+		<p>${requiredFeature.description}</p>`
+			: ""}
+		${(requiredFeature.origin) ?
+			`<hr>
+		<h3>Origin</h3>
+		<hr>
+		<p>${requiredFeature.origin}</p>`
+			: ""}
 
-	function singleValueGroupPair(value, valueElement, groupElement) {
-		if (value == null || value == "N/A") {
-			toggleElement(groupElement, false)
-		} else {
-			toggleElement(groupElement, true)
-			valueElement.innerHTML = value;
-		}
-	}
-
-	singleValueGroupPair(requiredFeature.description, pfi__description, pfi_group__description);
-	singleValueGroupPair(requiredFeature.origin, pfi__origin, pfi_group__origin);
-	singleValueGroupPair(requiredFeature.additional_info, pfi__additional_info, pfi_group__additional_info);
-
-	singleValueGroupPair(requiredFeature.longitude, pfi__lon, pfi_group__lon_lat);
-	singleValueGroupPair(requiredFeature.latitude, pfi__lat, pfi_group__lon_lat);
-
-	singleValueGroupPair(requiredFeature.type, pfi__type, pfi_group__type);
-	singleValueGroupPair(requiredFeature.diameter, pfi__diameter, pfi_group__diameter);
+		${(requiredFeature.additional_info) ?
+			`
+		<hr class="hidden">
+	 	<hr class="hidden">
+	 	<p>${requiredFeature.additional_info}</p>
+		`
+			: ""}
 
 
-	if (requiredFeature.image == null) {
-		toggleElement(pfi_group__image, false)
-	} else {
+		${(requiredFeature.type) ?
+			`
+	 	<hr class="hidden">
+	 	<span>
+	 		<b>Type: &nbsp;</b>
+	 		<p>${requiredFeature.type}</p>
+	 	</span>
+		`
+			: ""}
 
-		toggleElement(pfi_group__image, true)
-		pfi__img.src = requiredFeature.image;
+		${(requiredFeature.diameter) ?
+			`
+	 	<hr class="hidden">
+	 	<span>
+	 		<b>Diameter: &nbsp;</b>
+	 		<p>${requiredFeature.diameter}</p>
+	 	</span>
+		`
+			: ""}
+
+		${(requiredFeature.longitude && requiredFeature.latitude) ?
+			`
+	 	<hr class="hidden">
+	 	<span>
+	 		<b>Longitude: &nbsp;</b>
+	 		<p>${requiredFeature.latitude}</p>
+	 	</span>
+	 	<span>
+	 		<b>Latitude: &nbsp;</b>
+	 		<p>${requiredFeature.longitude}</p>
+	 	</span>
+		`
+			: ""}
+
+		${(requiredFeature.image) ?
+			`
+
+			<hr class="hidden">
+		<div id="pfi_group__image">
+			<img src="${requiredFeature.image}">
+			${(requiredFeature.image_source) ?
+				`<p id="pfi__img_source"><b>Source:&nbsp;</b>${requiredFeature.image_source}</p>`
+				: ""}
+		</div
+		`
+			: ""}
+	`
+	let i = 0
+	for (const el of planet_feature_info.children) {
+		el.style.setProperty("--i", i)
+		if (el.classList.contains("hidden") || el.tagName == "HR") continue
+		i++
 	}
 }
