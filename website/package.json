@@ -1,15 +1,17 @@
 {
-  "name": "marsmap",
-  "version": "0.0.0",
+  "name": "Mavi",
+  "version": "0.1.1",
   "description": "A Map for Mars",
   "license": "GPL-3.0-or-later",
-  "type": "commonjs",
+  "type": "module",
   "main": "script.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "node build.mjs"
   },
   "devDependencies": {
+    "esbuild": "^0.28.2",
+    "html-minifier-terser": "^7.2.0",
     "vite": "^8.3.0",
     "vite-plugin-cesium": "^1.2.23"
   },
