@@ -4,8 +4,6 @@ let planet_feature_info = document.getElementById("planet_feature_info")
 let planet_feature_info__close = document.getElementById("planet-feature-info__close")
 let lastArray = null;
 
-
-
 export function UpdateDom(arrayIndex) {
 	planet_feature_info__close.checked = true;
 	if (lastArray == arrayIndex) return

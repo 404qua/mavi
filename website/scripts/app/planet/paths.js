@@ -33,12 +33,10 @@ export function AddPathLine(points) {
 	let [totalPathLength, segmentDistances] = getLengthOfLine(pointsInCartesian)
 	let animationLengthSeconds = totalPathLength / 5000000 / 2
 
-
 	function animatePath(time_ms) {
 		let animationProgress = Cesium.EasingFunction.CUBIC_OUT(Cesium.Math.clamp(((time_ms - animationStartTime_ms) / 1000) / animationLengthSeconds, 0, 1));
 
 		animatedPoints = getLineInBetween(pointsInCartesian, totalPathLength, animationProgress, segmentDistances)
-
 
 		viewport.scene.requestRender();
 
@@ -57,13 +55,11 @@ export function AddPathLine(points) {
 }
 
 export function ReplaceCurrentPath(points) {
-	let newPath = AddPathLine(points)
-
 	if (currentPath) {
 		viewport.entities.remove(currentPath)
 	}
 
-	currentPath = newPath
+	currentPath = AddPathLine(points)
 }
 
 ReplaceCurrentPath(
@@ -75,16 +71,18 @@ ReplaceCurrentPath(
 )
 
 document.getElementById("randomizePath").addEventListener("click", () => {
-	let random = () => Math.random() - 0.5 * 2;
+	let random = () => (Math.random() - 0.5) * 2;
+
+	let [x, y] = [90, 180]
 
 	ReplaceCurrentPath(
 		[
-			random() * 89, random() * 89,
-			random() * 89, random() * 89,
-			random() * 89, random() * 89,
-			random() * 89, random() * 89,
-			random() * 89, random() * 89,
-			random() * 89, random() * 89,
+			random() * x, random() * y,
+			random() * x, random() * y,
+			random() * x, random() * y,
+			random() * x, random() * y,
+			random() * x, random() * y,
+			random() * x, random() * y,
 		]
 	)
 })

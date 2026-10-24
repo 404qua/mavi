@@ -1,2 +1,3 @@
 import "./waypointCreator.js"
-import "./domUpdater.js"
+import "./HTMLUpdater.js"
+import "./waypointHover.js"

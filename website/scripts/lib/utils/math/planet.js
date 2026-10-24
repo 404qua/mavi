@@ -69,3 +69,9 @@ export function getLineInBetween(points, totalLength, progress, segmentDistances
 
 	return lines;
 }
+
+export function combine(a, sa, b, sb, out) {
+	out.x = a.x * sa + b.x * sb;
+	out.y = a.y * sa + b.y * sb;
+	out.z = a.z * sa + b.z * sb;
+}
