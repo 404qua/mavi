@@ -62,14 +62,6 @@ export function ReplaceCurrentPath(points) {
 	currentPath = AddPathLine(points)
 }
 
-ReplaceCurrentPath(
-	[
-		-75.1641667, 39.9522221,
-		60.0060, 40.7128,
-		60.0589, 88.3601,
-	]
-)
-
 document.getElementById("randomizePath").addEventListener("click", () => {
 	let random = () => (Math.random() - 0.5) * 2;
 
