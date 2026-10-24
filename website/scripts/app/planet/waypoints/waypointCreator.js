@@ -5,10 +5,10 @@ import { UpdateDom } from "./domUpdater";
 let viewport = await Viewport;
 
 const iconPaths = {
-	star: "../../../icons/star.svg",
-	fourstar: "../../../icons/fourstar.svg",
-	triangle: "../../../icons/triangle.svg",
-	circle: "../../../icons/circle.svg",
+	star: "icons/star.svg",
+	fourstar: "icons/fourstar.svg",
+	triangle: "icons/triangle.svg",
+	circle: "icons/circle.svg",
 }
 
 function createWapointImage(svg) {
@@ -94,8 +94,10 @@ function createWaypoint(text, longitude, latitude, importance, id, elevation) {
 	let scaleByDistance = new Cesium.NearFarScalar(Math.max(drawDistance * textDrawdistanceScale, 600000), 1, drawDistance, 0.4);
 	let labelGap = 14;
 
+	let waypointHeight = Math.max((waypointOffset + elevation), 0)
+
 	viewport.entities.add({
-		position: Cesium.Cartesian3.fromDegrees(longitude, latitude, waypointOffset + elevation),
+		position: Cesium.Cartesian3.fromDegrees(longitude, latitude, waypointHeight),
 
 		properties: {
 			hoverable: true,
@@ -160,7 +162,7 @@ async function getJson(url) {
 	}
 }
 
-export let features = await getJson("/data/mars_features.json");
+export let features = await getJson("data/mars_features.json");
 
 features.forEach((e, i) => {
 	createWaypoint(e.name, e.longitude, e.latitude, e.importance, i, e.elevation)
@@ -199,8 +201,8 @@ function cancelHover() {
 		lastlabel.scaleByDistance = cachedHoverValues.label__scaleByDistance;
 
 
-		lastbillboard.disableDepthTestDistance = cachedHoverValues.billboard__disableDepthTestDistance;
-		lastlabel.disableDepthTestDistance = cachedHoverValues.label__disableDepthTestDistance;
+		lastbillboard.disableDepthTestDistance = undefined;
+		lastlabel.disableDepthTestDistance = undefined;
 
 		lastbillboard.distanceDisplayCondition = cachedHoverValues.billboard__distanceDisplayCondition;
 		lastlabel.distanceDisplayCondition = cachedHoverValues.label__distanceDisplayCondition;
@@ -224,9 +226,7 @@ function updateHover(movement) {
 		return
 	}
 
-
-	if (lastPicked == picked) return
-
+	if (lastPicked?.id == picked.id) return
 
 	if (lastPicked) {
 		const lastlabel = lastPicked.id.label;
@@ -277,7 +277,8 @@ function updateHover(movement) {
 
 	updateCurrentHover = () => {
 		const time = viewport.clock.currentTime;
-		const world = picked.id.position.getValue(time);
+		const world = picked.id._position.getValue(time);
+
 		// const cartographic = Cesium.Cartographic.fromCartesian(world);
 
 		// let terrainHeight = viewport.scene.globe.getHeight(cartographic);
@@ -361,7 +362,7 @@ let initialized = false;
 
 const cam = viewport.camera;
 
-viewport.scene.preRender.addEventListener(() => {
+viewport.scene.postRender.addEventListener(() => {
 
 	// Epsilon thresholds: position in meters, direction/up are unit vectors
 	const changed =

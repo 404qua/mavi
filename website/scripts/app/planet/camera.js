@@ -167,6 +167,7 @@ function physicsTick(delta) {
 	if (!Cesium.defined(terrainHeight)) {
 		terrainHeight = cameraOffset;
 	}
+	// terrainHeight = Math.max(terrainHeight, -2400)
 
 	const cameraPos = Cesium.Cartesian3.fromRadians(
 		carto.longitude, carto.latitude, terrainHeight + cameraOffset
@@ -256,6 +257,7 @@ function startPhysicsSimulation() {
 	}
 
 	viewer.scene.screenSpaceCameraController.enableInputs = false;
+	viewer.scene.screenSpaceCameraController.enableCollisionDetection = false;
 	viewer.scene.globe.depthTestAgainstTerrain = true;
 
 	velocity = { x: 0, y: 0 }
@@ -337,6 +339,7 @@ function stopPhysicsSimulation() {
 			complete: () => {
 				if (cameraMode == "normal") {
 					cameraSwitchCooldown = false;
+					viewer.scene.screenSpaceCameraController.enableCollisionDetection = true;
 				}
 			}
 		});
@@ -386,3 +389,4 @@ toggleCheckbox.addEventListener("input", () => {
 })
 
 updateFirstPersonCameraEnabled()
+

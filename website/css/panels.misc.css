@@ -39,35 +39,37 @@
 	}
 }
 
-@keyframes wipe-in {
-	from {
-		width: 0px;
+@keyframes open-pfi {
+	0% {
+		clip-path: inset(0 0 100% 0);
 	}
 
-	to {
-		width: 100%;
+	50% {
+		clip-path: inset(0 0 0 0);
 	}
 }
+
 
 .planet-feature-info__container {
 	position: relative;
 	display: block;
+
+	animation: open-pfi 500ms both;
 }
+
 
 .planet-feature-info__close {
 	position: absolute;
 	right: 100%;
 
-	pointer-events: initial;
-
 	width: var(--spacing-xl);
 	height: var(--spacing-xl);
-	background-color: var(--background-400);
 	border: 1px solid var(--background-200);
+	background-color: var(--background-500);
 	border-right: 0px;
 
 	align-items: center;
-
+	pointer-events: none;
 
 	display: none;
 
@@ -86,10 +88,33 @@
 
 .planet-feature-info__close:has(input:checked) {
 	display: flex;
+	pointer-events: initial;
 }
 
+@keyframes close-pfi {
+	0% {
+		clip-path: inset(0 0 0 0);
+	}
+
+	50% {
+		clip-path: inset(0 0 100% 0);
+	}
+
+	100% {
+		clip-path: inset(0 0 100% 0);
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		overflow: hidden;
+		display: none;
+		position: absolute;
+	}
+}
+
+
 .planet-feature-info__container:not(:has(#planet-feature-info__close:checked)) {
-	display: none;
+	animation: close-pfi 500ms forwards;
 }
 
 .planet-feature-info {

@@ -27,8 +27,10 @@
 		border: 0px solid;
 	}
 
-	width: 30%;
+	width: 35%;
 	max-width: 400px;
+
+	gap: var(--spacing-l);
 	/* overflow: hidden; */
 }
 
@@ -36,7 +38,6 @@
 	position: absolute;
 	left: 0%;
 	padding-left: var(--padding);
-
 }
 
 .panels__left {
@@ -60,4 +61,6 @@
 
 	/* border-radius: var(--spacing-l); */
 	max-width: 100%;
+	box-sizing: border-box;
+	min-width: fit-content;
 }
