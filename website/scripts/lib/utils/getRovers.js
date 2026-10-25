@@ -1,6 +1,6 @@
 const roverDataCache = new Map();
 
-async function fetchRoverData(rover) {
+export async function fetchRoverData(rover) {
     if (!["perseverance", "curiosity"].includes(rover)) {
         throw new Error(`Unknown rover: ${rover}`);
     }
