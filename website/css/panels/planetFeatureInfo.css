@@ -1,60 +1,8 @@
-.description {
-	max-width: 360px;
-}
-
-@keyframes slide-in {
-	from {
-		opacity: 0;
-		transform: translateX(16px);
-	}
-
-	to {
-		opacity: 1;
-		transform: none;
-	}
-}
-
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes clip-in {
-	from {
-		opacity: 0;
-		/* clip-path: inset(0 0 100% 0); */
-		scale: 0.9;
-	}
-
-	to {
-		opacity: 1;
-		/* clip-path: inset(0 0 0 0) */
-
-		scale: 1;
-	}
-}
-
-@keyframes open-pfi {
-	0% {
-		clip-path: inset(0 0 100% 0);
-	}
-
-	50% {
-		clip-path: inset(0 0 0 0);
-	}
-}
-
-
 .planet-feature-info__container {
 	position: relative;
 	display: block;
 
-	animation: open-pfi 500ms both;
+	animation: clip-in calc(var(--transition-normal) * 3) both;
 }
 
 
@@ -91,40 +39,18 @@
 	pointer-events: initial;
 }
 
-@keyframes close-pfi {
-	0% {
-		clip-path: inset(0 0 0 0);
-	}
-
-	50% {
-		clip-path: inset(0 0 100% 0);
-	}
-
-	100% {
-		clip-path: inset(0 0 100% 0);
-		height: 0;
-		margin: 0;
-		padding: 0;
-		border: 0;
-		overflow: hidden;
-		display: none;
-		position: absolute;
-	}
-}
-
-
 .planet-feature-info__container:not(:has(#planet-feature-info__close:checked)) {
-	animation: close-pfi 500ms forwards;
+	animation: clip-out calc(var(--transition-normal) * 3) forwards;
 }
 
 .planet-feature-info {
 	display: flex;
 	flex-direction: column;
 
-	--transition-el: 100ms;
-	--transition-delay: 25ms;
+	--transition-el: calc(var(--transition-normal) * 0.5);
+	--transition-delay: calc(var(--transition-short) * 0.5);
 
-	transition: 250ms;
+	transition: var(--transition-el);
 	overflow: hidden;
 
 	h3,
@@ -140,7 +66,7 @@
 	}
 
 	img {
-		animation: clip-in var(--transition-el) both;
+		animation: sizeUp-in var(--transition-el) both;
 	}
 
 	hr {
@@ -162,7 +88,7 @@
 		min-height: 10em;
 
 		background-color: var(--background-400);
-		transition: 250ms;
+		transition: var(--transition-el);
 	}
 
 	#pfi_group__image {

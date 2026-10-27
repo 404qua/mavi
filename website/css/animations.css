@@ -1,0 +1,64 @@
+@keyframes slide-in {
+	from {
+		opacity: 0;
+		transform: translateX(16px);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes sizeUp-in {
+	from {
+		opacity: 0;
+		scale: 0.9;
+	}
+
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@keyframes clip-in {
+	0% {
+		clip-path: inset(0 0 100% 0);
+	}
+
+	50% {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes clip-out {
+	0% {
+		clip-path: inset(0 0 0 0);
+	}
+
+	50% {
+		clip-path: inset(0 0 100% 0);
+	}
+
+	100% {
+		clip-path: inset(0 0 100% 0);
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		overflow: hidden;
+		display: none;
+		position: absolute;
+	}
+}

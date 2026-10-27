@@ -9,10 +9,6 @@
 	--padding: var(--spacing-l);
 	padding: var(--padding);
 
-	&>hr {
-		border: 0px solid;
-	}
-
 	position: relative;
 	box-sizing: border-box;
 }
