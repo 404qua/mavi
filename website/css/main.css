@@ -29,6 +29,9 @@
 	--spacing-l: 8px;
 	--spacing-xl: 32px;
 
+	--unit-px: 14px;
+	--border-radius: 8px;
+
 	--transition-normal: 150ms;
 	--transition-short: 50ms;
 
@@ -51,9 +54,9 @@ body {
 
 	display: flex;
 	flex-direction: column;
-	min-width: 400px;
+	min-width: 300px;
 
-	font-size: max(min(16px, 3vh, 3vw), 10px);
+	font-size: max(min(16px, 3vh, 3vw), 14px);
 }
 
 h1,
@@ -83,6 +86,8 @@ hr {
 hr.hidden {
 	border-bottom: none;
 	padding-bottom: 1px;
+	appearance: initial;
+	display: block;
 }
 
 main {
@@ -97,4 +102,9 @@ main {
 
 span {
 	display: flex;
+}
+
+.hidden {
+	appearance: none;
+	display: none;
 }

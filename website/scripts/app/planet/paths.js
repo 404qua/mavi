@@ -61,20 +61,3 @@ export function ReplaceCurrentPath(points) {
 
 	currentPath = AddPathLine(points)
 }
-
-document.getElementById("randomizePath").addEventListener("click", () => {
-	let random = () => (Math.random() - 0.5) * 2;
-
-	let [x, y] = [90, 180]
-
-	ReplaceCurrentPath(
-		[
-			random() * x, random() * y,
-			random() * x, random() * y,
-			random() * x, random() * y,
-			random() * x, random() * y,
-			random() * x, random() * y,
-			random() * x, random() * y,
-		]
-	)
-})

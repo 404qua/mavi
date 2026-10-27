@@ -7,108 +7,74 @@
 	<title>Mavi</title>
 	<link rel="stylesheet" href="style.css">
 
-	<!-- icons	 -->
 	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
 	<main>
+		<div class="panels">
+			<div class="panels--bottom panel--group">
+				<div class="panel__toolbar">
+					<!-- <div class="button"> -->
+					<!-- </div> -->
+					<!-- <div class="button"> -->
+					<!-- </div> -->
+					<!-- <div class="button"> -->
+					<!-- </div> -->
+					<!-- <div class="button"> -->
+					<!-- </div> -->
+				</div>
+				<!-- <div class="panel__sidebar panel__sidebar--right"> -->
+				<!-- 	<div class="button"> -->
+				<!-- 		<span class="material-symbols-outlined"> -->
+				<!-- 			add -->
+				<!-- 		</span> -->
+				<!-- 	</div> -->
+				<!---->
+				<!-- 	<div class="button"> -->
+				<!-- 		<span class="material-symbols-outlined"> -->
+				<!-- 			remove -->
+				<!-- 		</span> -->
+				<!-- 	</div> -->
+				<!-- </div> -->
+
+				<div class="panel__sidebar panel__sidebar--right">
+					<label class="toggleIcon button">
+						<div class="iconOn">
+							<span class="material-symbols-outlined">
+								photo_camera_back
+							</span>
+						</div> <input type="radio" class="hidden" name="camera" value="firstPersonCamera">
+					</label>
+
+
+					<label class="toggleIcon button">
+						<div class="iconOn">
+							<span class="material-symbols-outlined">
+								public
+							</span>
+						</div> <input type="radio" name="camera" class="hidden" value="normal" checked>
+					</label>
+				</div>
+			</div>
+			<div class="panel--group">
+				<div class="planet-feature-info">
+					<div id="planet-feature-info" class="content"> </div>
+
+					<label class="toggleIcon button">
+						<div class="iconOn">
+							<span class="material-symbols-outlined">
+								close
+							</span>
+						</div> <input type="checkbox" class="hidden" id="planet-feature-info__close" autocomplete="off">
+					</label>
+				</div>
+			</div>
+		</div>
+
 		<div class="viewport__container">
 			<div id="viewport"></div>
-		</div>
-		<div class="panels">
-			<div class="panels__right">
-				<!-- <div class="description panel"> -->
-				<!-- 	<h2>A Demo of MARS</h2> -->
-				<!-- 	<hr> -->
-				<!-- 	<p> -->
-				<!-- 		This is a demo of a digital render of planet Mars. This demo has been made using surface and -->
-				<!-- 		weather data from NASA and the rendering engine from CesiumJS. -->
-				<!-- 	</p> -->
-				<!-- </div> -->
-				<!-- <hr> -->
-				<div class="inputs panel">
-					<h2>Options</h2>
-					<hr>
-					<div class="input__list">
-						<!-- <div class="input"> -->
-						<!-- 	<span>Test Slider Input 1</span> -->
-						<!-- 	<label class="slider"> -->
-						<!-- 		<input type="range"> -->
-						<!-- 		<span class="fill"></span> -->
-						<!-- 		<span class="thumb"></span> -->
-						<!-- 		<span class="track"></span> -->
-						<!-- 	</label> -->
-						<!-- </div> -->
-						<!---->
-						<!-- <div class="input"> -->
-						<!-- 	<span>Test Slider Input 2</span> -->
-						<!-- 	<label class="slider"> -->
-						<!-- 		<input type="range"> -->
-						<!-- 		<span class="fill"></span> -->
-						<!-- 		<span class="thumb"></span> -->
-						<!-- 		<span class="track"></span> -->
-						<!-- 	</label> -->
-						<!-- </div> -->
-						<!---->
-						<!-- <div class="input"> -->
-						<!-- 	<span>Test Slider Input 3</span> -->
-						<!-- 	<label class="slider"> -->
-						<!-- 		<input type="range" step="any"> -->
-						<!-- 		<span class="fill"></span> -->
-						<!-- 		<span class="thumb"></span> -->
-						<!-- 		<span class="track"></span> -->
-						<!-- 	</label> -->
-						<!-- </div> -->
-						<!---->
-						<!-- <div class="input"> -->
-						<!-- 	<span>Another Test Slider Input 3</span> -->
-						<!-- 	<label class="slider"> -->
-						<!-- 		<input type="range" step="any"> -->
-						<!-- 		<span class="fill"></span> -->
-						<!-- 		<span class="thumb"></span> -->
-						<!-- 		<span class="track"></span> -->
-						<!-- 	</label> -->
-						<!-- </div> -->
-
-						<div class="input">
-							<span>Path Randomizer (Test)</span>
-							<label class="button">
-								<input type="button" step="any" id="randomizePath">
-								Randomize
-							</label>
-						</div>
-
-
-						<hr class="hidden">
-						<h3>Camera</h3>
-						<hr>
-
-						<div class="input">
-							<span>First Person Camera</span>
-							<label class="toggle">
-								<input type="checkbox" step="any" id="firstPersonCameraToggle">
-								<div class="fill"></div>
-								<div class="thumb"></div>
-							</label>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panels__left">
-				<div class="planet-feature-info__container">
-					<label class="planet-feature-info__close">
-						<input type="checkbox" step="any" id="planet-feature-info__close" autocomplete="off">
-						<span class="material-symbols-outlined">
-							close
-						</span>
-					</label>
-					<div class="planet-feature-info panel" id="planet_feature_info">
-					</div>
-				</div>
-			</div>
 		</div>
 	</main>
 

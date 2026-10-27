@@ -68,6 +68,9 @@ function updateHover(movement) {
 
 		lastbillboard.distanceDisplayCondition = cachedHoverValues.billboard__distanceDisplayCondition;
 		lastlabel.distanceDisplayCondition = cachedHoverValues.label__distanceDisplayCondition;
+
+		lastbillboard.disableDepthTestDistance = undefined;
+		lastlabel.disableDepthTestDistance = undefined;
 	}
 
 	const time = viewer.clock.currentTime;

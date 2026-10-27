@@ -1,22 +1,25 @@
 import { StartFirstPersonCamera, StopFirstPersonCamera } from "./firstPersonCamera/firstPersonCamera";
-let toggleCheckbox = document.getElementById("firstPersonCameraToggle");
 
-let CameraMode = "normal"
+let CameraMode = document.querySelector('input[name="camera"]:checked').value
 
 function updateFirstPersonCameraEnabled() {
-	if (toggleCheckbox.checked == true) {
-		if (CameraMode == "firstPersonCamera") return
-		CameraMode = "firstPersonCamera"
+	if (CameraMode == "firstPersonCamera") {
 		StartFirstPersonCamera()
 	} else {
 		StopFirstPersonCamera()
-		CameraMode = "normal"
 	}
 }
 
-toggleCheckbox.addEventListener("input", () => {
-	updateFirstPersonCameraEnabled();
-})
+const allCameraRadios = document.querySelectorAll('input[name="camera"]');
+
+allCameraRadios.forEach(radio => {
+	radio.addEventListener('input', (e) => {
+		if (CameraMode == e.target.value) return
+		CameraMode = e.target.value;
+
+		updateFirstPersonCameraEnabled()
+	});
+});
 
 updateFirstPersonCameraEnabled()
 

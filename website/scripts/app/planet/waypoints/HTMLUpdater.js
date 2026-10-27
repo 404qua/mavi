@@ -1,6 +1,6 @@
 import { features } from "./waypointCreator";
 
-let planet_feature_info = document.getElementById("planet_feature_info")
+let planet_feature_info = document.getElementById("planet-feature-info")
 let planet_feature_info__close = document.getElementById("planet-feature-info__close")
 let lastArray = null;
 
@@ -12,25 +12,22 @@ export function UpdateDom(arrayIndex) {
 	let requiredFeature = features[arrayIndex];
 
 	planet_feature_info.innerHTML = `
-		<h3>Name</h3>
-		<hr>
 		<h2>${requiredFeature.name}</h2>
 		${(requiredFeature.description && requiredFeature.description != "N/A") ?
 			`<hr>
-		<h3>Description</h3>
-		<hr>
 		<p>${requiredFeature.description}</p>`
 			: ""}
 		${(requiredFeature.origin) ?
-			`<hr>
-		<h3>Origin</h3>
+			`
+	 	<hr class="hidden">
+
+		<h3>Name Origin</h3>
 		<hr>
 		<p>${requiredFeature.origin}</p>`
 			: ""}
 
 		${(requiredFeature.additional_info) ?
 			`
-		<hr class="hidden">
 	 	<hr class="hidden">
 	 	<p>${requiredFeature.additional_info}</p>
 		`
@@ -49,7 +46,6 @@ export function UpdateDom(arrayIndex) {
 
 		${(requiredFeature.diameter) ?
 			`
-	 	<hr class="hidden">
 	 	<span>
 	 		<b>Diameter: &nbsp;</b>
 	 		<p>${requiredFeature.diameter}</p>
@@ -59,7 +55,6 @@ export function UpdateDom(arrayIndex) {
 
 		${(requiredFeature.longitude && requiredFeature.latitude) ?
 			`
-	 	<hr class="hidden">
 	 	<span>
 	 		<b>Longitude: &nbsp;</b>
 	 		<p>${requiredFeature.latitude}</p>
@@ -74,6 +69,7 @@ export function UpdateDom(arrayIndex) {
 		${(requiredFeature.image) ?
 			`
 
+			<hr class="hidden">
 			<hr class="hidden">
 		<div id="pfi_group__image">
 			<img src="${requiredFeature.image}">

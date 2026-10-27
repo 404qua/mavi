@@ -3,6 +3,13 @@
 	flex-direction: column;
 }
 
+button {
+	appearance: none;
+	border: none;
+
+	background-color: var(--background-500);
+}
+
 .input__list {
 	--gap: calc(var(--spacing-s) * 2);
 	display: grid;
@@ -40,6 +47,15 @@
 	display: grid;
 	grid-template-columns: subgrid;
 	grid-column: 1 / -1;
+
+	&>span {
+		height: 1em;
+		line-height: 1em;
+		font-size: 1em;
+		padding-right: 1em;
+		flex-wrap: nowrap;
+		white-space: nowrap;
+	}
 }
 
 .input>label {
@@ -65,6 +81,8 @@ label:has(input[type="button"]) {
 		background: none;
 		padding: 0px;
 	}
+
+	justify-self: center;
 
 	background: var(--accent-500);
 	width: fit-content;
@@ -140,8 +158,15 @@ label.toggle {
 label.toggle:has(input:checked) {
 	background: var(--accent-500);
 
-
 	.thumb {
 		left: 50%;
 	}
+}
+
+label.toggleIcon:has(input:checked) {
+	background-color: var(--accent-600);
+}
+
+label.toggleIcon:has(input:checked):hover {
+	background-color: var(--accent-600);
 }

@@ -1,0 +1,27 @@
+.button {
+	box-sizing: border-box;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.icon,
+.button {
+	width: calc(var(--unit-px) * 3);
+	height: calc(var(--unit-px) * 3);
+	background-color: var(--background-500);
+
+	padding: var(--spacing-s);
+}
+
+.button {
+	pointer-events: initial;
+}
+
+.button:hover {
+	background-color: var(--background-400)
+}
+
+.button:active {
+	background-color: var(--accent-600)
+}
