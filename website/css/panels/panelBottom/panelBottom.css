@@ -42,7 +42,7 @@
 
 		& .button:first-of-type {
 			border-top-left-radius: var(--input-border-radius);
-			border-top-width: 1px;
+			border-top-width: var(--input-border-size);
 		}
 
 		& .button:last-of-type {
