@@ -1,7 +1,6 @@
 .planet-feature-info {
 	position: relative;
 
-
 	background-color: var(--background-500);
 
 	border-radius: var(--border-radius);
@@ -11,7 +10,7 @@
 	--margin-right: 0px;
 	margin-right: var(--margin-right);
 	margin-top: var(--margin);
-	margin-left: max(min(var(--margin), calc(100vw - 400px - var(--margin-right))), 0px);
+	margin-left: max(min(var(--margin), calc((100vw - var(--margin) - var(--spacing-l)) - 400px - var(--margin-right))), 0px);
 
 	height: fit-content;
 	/* border-radius: var(--border-radius); */
@@ -20,8 +19,26 @@
 		pointer-events: initial;
 	}
 
+
+	user-select:text;
+
+	p,
+	h2,
+	h3,
+	b {
+		padding: 0px 0px 0px var(--spacing-l);
+
+	}
+
+	span {
+		p {
+			padding-left: 0px;
+		}
+	}
+
+
 	h2 {
-		padding-right: calc(var(--unit-px) * 3);
+		padding-right: 2.5rem;
 	}
 
 	label {
@@ -39,6 +56,9 @@
 
 		translate: calc(0px - var(--spacing-l)) var(--spacing-l);
 
+		width: 2.5rem;
+		height: 2.5rem;
+
 		div {
 			display: flex;
 			align-items: center;
@@ -54,7 +74,7 @@
 		/* border: calc(var(--border-radius)) solid var(--background-500); */
 		padding: var(--spacing-l);
 		/* margin-bottom: var(--spacing-l); */
-		margin-top: var(--spacing-l);
+		/* margin-top: var(--spacing-l); */
 		max-height: 75vh;
 		max-width: 400px;
 		width: calc(100vw - var(--margin-right));
@@ -92,7 +112,7 @@
 	}
 
 	b {
-		padding-left: calc(var(--spacing-l)*2);
+		padding-left: calc(var(--spacing-l)*4);
 		color: var(--foreground-700);
 	}
 

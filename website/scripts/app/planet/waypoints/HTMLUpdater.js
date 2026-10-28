@@ -63,13 +63,15 @@ export function UpdateDom(arrayIndex) {
 	 		<b>Latitude: &nbsp;</b>
 	 		<p>${requiredFeature.longitude}</p>
 	 	</span>
+
+			<hr class="hidden">
 		`
+
 			: ""}
 
 		${(requiredFeature.image) ?
 			`
 
-			<hr class="hidden">
 			<hr class="hidden">
 		<div id="pfi_group__image">
 			<img src="${requiredFeature.image}">

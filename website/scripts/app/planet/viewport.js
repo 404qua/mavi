@@ -42,6 +42,8 @@ async function main() {
 		creditContainer: document.createElement("div"),
 		contextOptions: { webgl: { powerPreference: "high-performance" } },
 		globe: globe,
+		// mapMode2D: Cesium.MapMode2D.ROTATE,
+		// sceneMode: Cesium.SceneMode.SCENE2D,
 	});
 
 	viewer.scene.globe.depthTestAgainstTerrain = false;
