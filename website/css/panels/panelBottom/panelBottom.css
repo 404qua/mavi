@@ -32,12 +32,23 @@
 		/* 	padding-left: calc(var(--border-radius) / 2); */
 		/* } */
 
+		.button {
+			border: var(--panel-border-size) solid var(--background-300);
+			border-top-width: 0px;
+			border-right-width: 0px;
+
+			border-bottom: var(--panel-border-size) solid var(--background-600);
+		}
+
 		& .button:first-of-type {
-			border-top-left-radius: var(--border-radius);
+			border-top-left-radius: var(--input-border-radius);
+			border-top-width: 1px;
 		}
 
 		& .button:last-of-type {
-			border-bottom-left-radius: var(--border-radius);
+			border-bottom-left-radius: var(--input-border-radius);
+
+			border-bottom: var(--panel-border-size) solid var(--background-300);
 		}
 	}
 }

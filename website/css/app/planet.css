@@ -21,7 +21,7 @@
 
 	pointer-events: none;
 
-	border-radius: var(--border-radius);
+	border-radius: 8px;
 }
 
 .planet__waypoints__disabled-normal {
