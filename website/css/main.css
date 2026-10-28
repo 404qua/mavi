@@ -29,12 +29,12 @@
 	--spacing-l: 8px;
 	--spacing-xl: 32px;
 
-	--unit-px: 14px;
-	--border-radius: 4px;
+	--unit-px: 16px;
+	--border-radius: 10px;
 	--border-size: 1px;
 	--input-border-size: 1px;
-	--input-border-radius: 8px;
-	--panel-border-size: 1px;
+	--input-border-radius: 16px;
+	--panel-border-size: 0px;
 
 	--transition-normal: 150ms;
 	--transition-short: 50ms;
@@ -58,7 +58,7 @@ body {
 
 	display: flex;
 	flex-direction: column;
-	min-width: 300px;
+	/* min-width: 300px; */
 
 	font-size: max(min(16px, 3vh, 3vw), 14px);
 }

@@ -53,13 +53,13 @@
 		box-sizing: border-box;
 		/* border: calc(var(--border-radius)) solid var(--background-500); */
 		padding: var(--spacing-l);
-		margin-bottom: var(--spacing-l);
+		/* margin-bottom: var(--spacing-l); */
 		margin-top: var(--spacing-l);
 		max-height: 75vh;
 		max-width: 400px;
 		width: calc(100vw - var(--margin-right));
 
-		background-color: var(--background-500);
+		border-radius: calc(var(--border-radius) - var(--spacing-l));
 
 		pointer-events: initial;
 		overflow: scroll;

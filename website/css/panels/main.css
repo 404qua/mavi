@@ -16,3 +16,8 @@
 	grid-row: 1;
 	grid-column: 1;
 }
+
+.material-symbols-outlined {
+	color: var(--foreground-500);
+	font-size: calc(var(--unit-px) * 1.75);
+}

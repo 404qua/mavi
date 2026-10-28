@@ -5,13 +5,30 @@
 	justify-content: center;
 }
 
+:root {
+	--button-size: calc(var(--unit-px) * 3);
+}
+
 .icon,
 .button {
-	width: calc(var(--unit-px) * 3);
-	height: calc(var(--unit-px) * 3);
+	width: var(--button-size);
+	height: var(--button-size);
 	background-color: var(--background-500);
 
+	box-sizing: border-box;
 	padding: var(--spacing-s);
+
+	border-radius: var(--input-border-radius);
+
+	span {
+		font-size: 2em;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
 
 	.iconOn,
 	.iconOff {
@@ -19,6 +36,38 @@
 		display: flex;
 		align-items: center;
 		justify-content: center
+	}
+}
+
+.icon {
+	background-color: var(--background-600);
+}
+
+.container {
+	width: var(--button-size);
+	height: var(--button-size);
+
+	background-color: var(--background-500);
+
+	border-radius: var(--input-border-radius);
+	padding: var(--spacing-s);
+	box-sizing: border-box;
+
+	flex-direction: column;
+
+	height: fit-content;
+
+	display: flex;
+	gap: var(--spacing-s);
+
+	span {
+		font-size: calc(2em - (var(--spacing-s) * 2));
+	}
+
+	.button {
+		border-radius: calc(var(--input-border-radius) - var(--spacing-s));
+		width: calc(var(--button-size) - (var(--spacing-s) * 2));
+		height: calc(var(--button-size) - (var(--spacing-s) * 2));
 	}
 }
 
