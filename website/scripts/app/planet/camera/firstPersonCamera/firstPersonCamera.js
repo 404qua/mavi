@@ -3,6 +3,7 @@ import { Viewport } from "../../viewport";
 import { PhysicsTick, ResetPhysicsValues, CartographicPosition, normal, north, right } from "./physics";
 import { combine } from "../../../../lib/utils/math/planet";
 import { StartInputChecking, StopInputChecking } from "./input";
+import { SetJoystickEnabled } from "../../../joystick";
 
 const viewer = await Viewport
 
@@ -83,6 +84,8 @@ export function StartFirstPersonCamera() {
 	let lastTime = Cesium.getTimestamp();
 	cameraMode = "firstPerson";
 
+	SetJoystickEnabled(true);
+
 	ResetPhysicsValues();
 	StartInputChecking();
 
@@ -142,7 +145,9 @@ export function StartFirstPersonCamera() {
 
 export function StopFirstPersonCamera() {
 	cameraMode = "normal";
+
 	StopInputChecking();
+	SetJoystickEnabled(false);
 
 	viewer.scene.screenSpaceCameraController.enableInputs = true;
 

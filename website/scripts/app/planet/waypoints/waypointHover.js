@@ -48,8 +48,11 @@ function cancelHover() {
 	viewer.scene.requestRender();
 }
 
+let touchDown = false;
+
 function updateHover(movement) {
 	const picked = viewer.scene.pick(movement.endPosition);
+	touchDown = false;
 
 	if (!(Cesium.defined(picked) && picked.id instanceof Cesium.Entity && picked.id.position && picked.id.properties.hoverable)) {
 		if (cancelHoverTimeout) clearTimeout(cancelHoverTimeout)
@@ -178,9 +181,26 @@ handler.setInputAction((movement) => {
 
 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
+handler.setInputAction((movement) => {
+	const picked = viewer.scene.pick(movement.position);
+
+	if (lastPicked?.id == picked?.id) return
+	touchDown = true
+
+    if (hoverTimeout) clearTimeout(hoverTimeout);
+	const touchHoldTime = 100; // ms
+
+	hoverTimeout = setTimeout(() => {
+		clearTimeout(hoverTimeout)
+		updateHover({endPosition: movement.position})
+	}, touchHoldTime)
+
+}, Cesium.ScreenSpaceEventType.LEFT_DOWN);
+
 
 handler.setInputAction(() => {
 	if (!lastPicked) return
+	if (touchDown) return
 
 	if (navigationSelectorState != navigationPossibleStates.NotSelecting) {
 		return
