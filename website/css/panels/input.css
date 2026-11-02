@@ -76,9 +76,49 @@
 }
 
 .button:hover {
-	background-color: var(--background-400)
+	background-color: var(--background-300)
 }
 
 .button:active {
-	background-color: var(--accent-600)
+	background-color: var(--background-500);
+}
+
+.closeButton {
+	position: absolute;
+	box-shadow: 0px 0px var(--spacing-l) 0px var(--background-500);
+	right: 0%;
+	top: 0%;
+	display: flex;
+	pointer-events: none;
+
+	border-radius: calc(var(--input-border-radius) * 20);
+	/* outline: var(--spacing-l) solid var(--background-500); */
+	align-items: center;
+	justify-content: center;
+
+	translate: calc(0px - var(--spacing-l)) var(--spacing-l);
+
+	width: 2.5rem;
+	height: 2.5rem;
+
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	z-index: 3;
+}
+
+.button.disabled {
+	background-color: var(--background-600);
+}
+
+.closeButton:has(input:checked) {
+	pointer-events: auto;
+}
+
+.closeButtonTitle {
+	padding-right: calc(var(--spacing-l) + 2.5rem);
 }

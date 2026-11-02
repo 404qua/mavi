@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,1,0&icon_names=
-		add,close,landscape,layers,navigation,photo_camera,public,remove,school" />
+		add,close,close_small,landscape,layers,navigation,photo_camera,public,remove,school" />
 </head>
 
 <body>
@@ -16,17 +16,81 @@
 		<div class="panels">
 			<div class="panels--bottom panel--group">
 				<div class="panel--group">
-
 					<div class="panel__toolbar panel__toolbar--start">
-						<div class="button">
-							<span class="material-symbols-outlined">
-								navigation
-							</span>
+						<div class="panel__window-button-group">
+							<label class="toggleIcon button">
+								<div class="iconOn">
+									<span class="material-symbols-outlined">
+										navigation
+									</span>
+								</div> <input type="radio" class="hidden uncheckable" name="bottomPanels1">
+							</label>
+
+							<div class="panel__window navigation-window">
+								<h2>Path Finder</h2>
+								<hr>
+								<hr class="hidden">
+								<div class="selectionInputs">
+									<div class="accessoryLine"></div>
+
+									<span class="selectionInput">
+										<p>Start Position</p>
+
+										<span class="selectionButton">
+											<label class="button ">
+												<p id="start-position-text">Select</p>
+												<input type="button" class="hidden" name="bottomPanels1"
+													id="start-position-select">
+											</label>
+
+											<label class="button disabled">
+												<span class="material-symbols-outlined">
+													close_small
+												</span>
+												<input type="button" class="hidden" name="bottomPanels1"
+													id="clear-start-position-select">
+											</label>
+										</span>
+									</span>
+
+
+									<span class="selectionInput">
+										<p>End Position</p>
+
+										<span class="selectionButton">
+											<label class="button">
+												<p id="end-position-text">Select</p>
+												<input type="button" class="hidden" name="bottomPanels1"
+													id="end-position-select">
+											</label>
+
+											<label class="button disabled">
+												<span class="material-symbols-outlined">
+													close_small
+												</span>
+												<input type="button" class="hidden" name="bottomPanels1"
+													id="clear-end-position-select">
+											</label>
+										</span>
+									</span>
+								</div>
+
+								<hr class="hidden">
+											<hr>
+								<label class="button find-path">
+									<p>Find Path</p>
+									<input type="button" class="hidden" name="bottomPanels1" id="find-path-button">
+								</label>
+							</div>
 						</div>
-						<div class="button">
-							<span class="material-symbols-outlined">
-								layers
-							</span>
+						<div class="panel__window-button-group">
+							<label class="toggleIcon button">
+								<div class="iconOn">
+									<span class="material-symbols-outlined">
+										layers
+									</span>
+								</div> <input type="radio" class="hidden uncheckable" name="bottomPanels1">
+							</label>
 						</div>
 					</div>
 
@@ -69,8 +133,6 @@
 							</div> <input type="radio" class="hidden" name="camera" value="firstPersonCamera">
 						</label>
 
-
-
 						<label class="toggleIcon button">
 							<div class="iconOn">
 								<span class="material-symbols-outlined">
@@ -84,8 +146,7 @@
 			<div class="panel--group">
 				<div class="planet-feature-info">
 					<div id="planet-feature-info" class="content"> </div>
-
-					<label class="toggleIcon button">
+					<label class="toggleIcon button closeButton">
 						<div class="iconOn">
 							<span class="material-symbols-outlined">
 								close

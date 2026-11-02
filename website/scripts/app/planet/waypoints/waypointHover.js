@@ -1,6 +1,7 @@
 import { UpdateDom } from "./HTMLUpdater";
 import * as Cesium from "cesium";
 import { Viewport } from "../viewport";
+import { navigationSelectorState, navigationPossibleStates } from "../navigator";
 
 let viewer = await Viewport;
 
@@ -54,6 +55,10 @@ function updateHover(movement) {
 		if (cancelHoverTimeout) clearTimeout(cancelHoverTimeout)
 		cancelHoverTimeout = setTimeout(() => cancelHover(), 150)
 
+		return
+	}
+
+	if (navigationSelectorState != navigationPossibleStates.NotSelecting) {
 		return
 	}
 
@@ -177,6 +182,10 @@ handler.setInputAction((movement) => {
 handler.setInputAction(() => {
 	if (!lastPicked) return
 
+	if (navigationSelectorState != navigationPossibleStates.NotSelecting) {
+		return
+	}
+
 	const time = viewer.clock.currentTime;
 	UpdateDom(lastPicked.id.properties.featureId.getValue(time))
 
@@ -204,7 +213,6 @@ viewer.scene.postRender.addEventListener(() => {
 	Cesium.Cartesian3.clone(camera.directionWC, lastDir);
 	Cesium.Cartesian3.clone(camera.upWC, lastUp);
 	initialized = true;
-
 
 	if (updateCurrentHover) {
 		let pickerDisplayBox = updateCurrentHover()

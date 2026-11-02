@@ -57,9 +57,33 @@
 
 	100% {
 		clip-path: inset(-100vmax -100vmax 100% -100vmax);
-		height: 0;
+		/* height: 0; */
 		overflow: hidden;
 		display: none;
 		position: absolute;
+	}
+}
+
+@keyframes window-size-up-in {
+	from {
+		opacity: 0;
+		scale: 0.95;
+	}
+
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@keyframes window-size-up-out {
+	from {
+		opacity: 1;
+		scale: 1;
+	}
+
+	to {
+		opacity: 0;
+		scale: 0.95;
 	}
 }

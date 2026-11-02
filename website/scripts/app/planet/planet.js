@@ -2,6 +2,8 @@ import "./viewport.js";
 import "./waypoints/waypoint.js"
 import "./paths.js";
 import "./camera/camera.js"
+import "./navigator.js"
+
 import { route, snapCandidates, findPath, findPathDetailed } from "./router.js";
 
 // Expose to window for web console access

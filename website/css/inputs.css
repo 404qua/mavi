@@ -16,7 +16,6 @@ button {
 	grid-template-columns: max-content auto;
 	gap: var(--gap);
 	margin-top: var(--spacing-s);
-	margin-bottom: var(--spacing-s);
 
 	hr,
 	h3 {
@@ -38,9 +37,10 @@ button {
 	line-height: 1;
 
 	width: 100%;
+	min-height: fit-content;
 
-	margin-left: min(var(--spacing-l), 1vw);
-	margin-right: var(--spacing-l);
+	/* margin-left: min(var(--spacing-l), 1vw); */
+	/* margin-right: var(--spacing-l); */
 
 	gap: var(--spacing-xl);
 
@@ -49,10 +49,9 @@ button {
 	grid-column: 1 / -1;
 
 	&>span {
-		height: 1em;
 		line-height: 1em;
+		min-height: fit-content;
 		font-size: 1em;
-		padding-right: 1em;
 		flex-wrap: nowrap;
 		white-space: nowrap;
 	}
@@ -82,10 +81,10 @@ label:has(input[type="button"]) {
 		padding: 0px;
 	}
 
-	justify-self: center;
 
 	background: var(--accent-500);
 	width: fit-content;
+	height: fit-content;
 	font-weight: 600;
 	color: var(--background-500);
 	padding: var(--spacing-s);
@@ -96,10 +95,8 @@ label:has(input[type="button"]) {
 	border-radius: var(--spacing-xs);
 
 	line-height: 1em;
-	height: 1em;
 
-	transition: all 100ms,
-	background 0ms;
+	/* transition: all 100ms, background 0ms; */
 
 	&:hover {
 		background: var(--accent-400);

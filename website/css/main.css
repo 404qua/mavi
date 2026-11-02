@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
 :root {
 	--background-100: #5e5e5e;
 	--background-200: #525252;
@@ -30,7 +34,7 @@
 	--spacing-xl: 32px;
 
 	--unit-px: 16px;
-	--border-radius: 10px;
+	--border-radius: 8px;
 	--border-size: 1px;
 	--input-border-size: 1px;
 	--input-border-radius: 16px;
