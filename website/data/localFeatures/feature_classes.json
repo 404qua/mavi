@@ -12,7 +12,38 @@
       "hirise_image": "ESP_052490_2200",
       "summary": "Knobby polygonal terrain covers most of the area, with smooth polygonal terrain, expanded and inverted expanded craters, pingo-like features and arcuate ridges. Brain coral terrain lies about 8 km southeast, outside the mapped area.",
       "unit_count": 70,
-      "contact_count": 88
+      "contact_count": 88,
+      "hirise_product": "ESP_052490_2200_RED",
+      "hirise_footprint": {
+        "image_size_px": {
+          "width": 32404,
+          "height": 65696
+        },
+        "bounds": {
+          "west": -157.99525261,
+          "east": -157.82809037,
+          "south": 39.67077319,
+          "north": 39.94839258
+        },
+        "vertices": {
+          "top": {
+            "lon": -157.86095999,
+            "lat": 39.94833764
+          },
+          "right": {
+            "lon": -157.82815744,
+            "lat": 39.68101673
+          },
+          "bottom": {
+            "lon": -157.96125321,
+            "lat": 39.67085771
+          },
+          "left": {
+            "lon": -157.99519071,
+            "lat": 39.93824835
+          }
+        }
+      }
     },
     "AP-8": {
       "lat": 40.75,
@@ -20,7 +51,38 @@
       "hirise_image": "ESP_043220_2210",
       "summary": "Smooth polygonal terrain dominates, with knobby polygonal terrain in the west. Features include dense clusters of expanded craters, inverted expanded craters, arcuate ridges and a terraced crater with brain coral terrain about 1.4 km from the site. No pingo-like features.",
       "unit_count": 234,
-      "contact_count": 233
+      "contact_count": 233,
+      "hirise_product": "ESP_043220_2210_RED",
+      "hirise_footprint": {
+        "image_size_px": {
+          "width": 27370,
+          "height": 33766
+        },
+        "bounds": {
+          "west": -158.79727388,
+          "east": -158.64621767,
+          "south": 40.66435589,
+          "north": 40.80711387
+        },
+        "vertices": {
+          "top": {
+            "lon": -158.67006633,
+            "lat": 40.80703776
+          },
+          "right": {
+            "lon": -158.6462839,
+            "lat": 40.67790447
+          },
+          "bottom": {
+            "lon": -158.77354113,
+            "lat": 40.66438548
+          },
+          "left": {
+            "lon": -158.79725181,
+            "lat": 40.7937936
+          }
+        }
+      }
     },
     "AP-9": {
       "lat": 40.02,
@@ -28,7 +90,38 @@
       "hirise_image": "ESP_060811_2205",
       "summary": "Entirely knobby polygonal terrain, with expanded craters, inverted expanded craters and pingo-like features. No brain coral terrain or arcuate ridges.",
       "unit_count": 73,
-      "contact_count": 74
+      "contact_count": 74,
+      "hirise_product": "ESP_060811_2205_RED",
+      "hirise_footprint": {
+        "image_size_px": {
+          "width": 28827,
+          "height": 61953
+        },
+        "bounds": {
+          "west": -156.74206158,
+          "east": -156.58296382,
+          "south": 39.89371648,
+          "north": 40.15564872
+        },
+        "vertices": {
+          "top": {
+            "lon": -156.6235082,
+            "lat": 40.15563181
+          },
+          "right": {
+            "lon": -156.58306869,
+            "lat": 39.90568591
+          },
+          "bottom": {
+            "lon": -156.70117225,
+            "lat": 39.89371648
+          },
+          "left": {
+            "lon": -156.74205054,
+            "lat": 40.14425641
+          }
+        }
+      }
     }
   },
   "feature_classes": [
