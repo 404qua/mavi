@@ -71,43 +71,6 @@ async function main() {
 	baseImageLayer.brightness = 0.85;
 	baseImageLayer.contrast = 1.1;
 
-	const HIRISE_BASE = "https://marswalk-hirise.pages.dev/"; // your new project URL
-
-const hiriseSites = [
-  { name: "AP-1", rect: [-157.99526, 39.67076, -157.82808, 39.94840] },
-  { name: "AP-8", rect: [-158.79728, 40.66435, -158.64621, 40.80712] },
-  { name: "AP-9", rect: [-156.74207, 39.89370, -156.58295, 40.15565] },
-];
-
-function addHiriseLayer(site, product, maxLevel, minLevel = 9, alpha = 1.0) {
-  const provider = new Cesium.UrlTemplateImageryProvider({
-    url: `${HIRISE_BASE}${site.name}-${product}/{z}/{x}/{y}.png`,
-    tilingScheme: new Cesium.GeographicTilingScheme({
-      ellipsoid: marsEllipsoid,
-      numberOfLevelZeroTilesX: 2,
-      numberOfLevelZeroTilesY: 1,
-    }),
-    rectangle: Cesium.Rectangle.fromDegrees(...site.rect),
-    tileWidth: 1024,
-    tileHeight: 1312,
-    hasAlphaChannel: true,
-    enablePickFeatures: false,
-    minimumLevel: minLevel,
-    maximumLevel: maxLevel,
-    ellipsoid: marsEllipsoid,
-    credit: "NASA / JPL / University of Arizona (HiRISE)",
-  });
-  const layer = viewer.imageryLayers.addImageryProvider(provider);
-  layer.alpha = alpha;
-  return layer;
-}
-
-for (const site of hiriseSites) {
-  addHiriseLayer(site, "MRGB", 14);              // colour, 0.5 m/px
-  addHiriseLayer(site, "RED", 15, 15, 1.0);      // greyscale detail, only at the closest zoom
-}
-
-
 	const base = "https://marswalk-imagery.pages.dev/" + "skybox/";
 
 	scene.skyBox = new Cesium.SkyBox({

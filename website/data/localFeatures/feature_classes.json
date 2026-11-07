@@ -1,0 +1,358 @@
+{
+  "study": {
+    "title": "Geomorphological evidence of near-surface ice at candidate landing sites in northern Amazonis Planitia, Mars",
+    "authors": "Luzzi, E., Heldmann, J.L., Williams, K.E., Nodjoumi, G., Deutsch, A., Sehlke, A.",
+    "journal": "Journal of Geophysical Research: Planets, 130(5), e2024JE008724 (2025)",
+    "doi": "10.1029/2024JE008724"
+  },
+  "sites": {
+    "AP-1": {
+      "lat": 39.8,
+      "lon": -157.9,
+      "hirise_image": "ESP_052490_2200",
+      "summary": "Knobby polygonal terrain covers most of the area, with smooth polygonal terrain, expanded and inverted expanded craters, pingo-like features and arcuate ridges. Brain coral terrain lies about 8 km southeast, outside the mapped area.",
+      "unit_count": 70,
+      "contact_count": 88
+    },
+    "AP-8": {
+      "lat": 40.75,
+      "lon": -158.7,
+      "hirise_image": "ESP_043220_2210",
+      "summary": "Smooth polygonal terrain dominates, with knobby polygonal terrain in the west. Features include dense clusters of expanded craters, inverted expanded craters, arcuate ridges and a terraced crater with brain coral terrain about 1.4 km from the site. No pingo-like features.",
+      "unit_count": 234,
+      "contact_count": 233
+    },
+    "AP-9": {
+      "lat": 40.02,
+      "lon": -156.65,
+      "hirise_image": "ESP_060811_2205",
+      "summary": "Entirely knobby polygonal terrain, with expanded craters, inverted expanded craters and pingo-like features. No brain coral terrain or arcuate ridges.",
+      "unit_count": 73,
+      "contact_count": 74
+    }
+  },
+  "feature_classes": [
+    {
+      "class_id": "expanded_secondary_crater",
+      "name": "Expanded secondary crater",
+      "geometry_type": "Polygon",
+      "description": "Secondary impact craters that have been enlarged and degraded. They are elongated, with expanded rims and a sharp, preserved scarp facing northeast; floors are covered by polygons and no ejecta is visible. Inner morphology varies: a bowl-shaped central pit (\"bullseye\"), a central bulge, or a flat floor. Major axes range from about 20 to 503 m and floor depths from about 1 to 18 m.",
+      "ice_significance": "Expansion happens when sublimation removes buried excess ice after an impact, so these craters indicate that significant excess ice is present, or was present, in the ground.",
+      "total_count": 277,
+      "total_area_km2": 2.981,
+      "per_site": {
+        "AP-1": {
+          "count": 27,
+          "total_area_km2": 0.851
+        },
+        "AP-8": {
+          "count": 210,
+          "total_area_km2": 0.931
+        },
+        "AP-9": {
+          "count": 40,
+          "total_area_km2": 1.2
+        }
+      },
+      "inner_morphology_AP-1": {
+        "bulge": 16,
+        "bullseye": 4,
+        "flat": 7
+      }
+    },
+    {
+      "class_id": "mound",
+      "name": "Mound",
+      "geometry_type": "Polygon",
+      "description": "Small positive-relief mound mapped as its own class, separate from pingo-like features.",
+      "ice_significance": "No specific ice interpretation is given for this class.",
+      "total_count": 45,
+      "total_area_km2": 0.099,
+      "per_site": {
+        "AP-1": {
+          "count": 13,
+          "total_area_km2": 0.035
+        },
+        "AP-8": {
+          "count": 9,
+          "total_area_km2": 0.026
+        },
+        "AP-9": {
+          "count": 23,
+          "total_area_km2": 0.038
+        }
+      }
+    },
+    {
+      "class_id": "pingo_like_feature",
+      "name": "Pingo-like feature",
+      "geometry_type": "Polygon",
+      "description": "Prominent subcircular-to-elongated rounded mounds that rise above the flat surrounding terrain and carry the same polygonal surface. Elongated examples are 196-442 m long and 4-10 m high; subcircular ones are 117-440 m across and 4-8 m high. Some have a shallow summit depression. They appear randomly distributed with no preferred alignment.",
+      "ice_significance": "Their size and shape resemble terrestrial pingos (ice-cored mounds), but this cannot be confirmed from morphology alone; they could also be heavily degraded inverted expanded craters.",
+      "total_count": 24,
+      "total_area_km2": 0.621,
+      "per_site": {
+        "AP-1": {
+          "count": 13,
+          "total_area_km2": 0.272
+        },
+        "AP-8": {
+          "count": 3,
+          "total_area_km2": 0.039
+        },
+        "AP-9": {
+          "count": 8,
+          "total_area_km2": 0.31
+        }
+      }
+    },
+    {
+      "class_id": "polygonized_terrain_b",
+      "name": "Polygonized terrain B (smooth polygonal terrain)",
+      "geometry_type": "Polygon",
+      "description": "Low-albedo terrain of smooth high-centered polygons where knobs are rare. It is affected by a dense population of arcuate ridges that trend northwest-southeast.",
+      "ice_significance": "Thermal contraction polygons, indicating shallow ground ice (tens of cm below the surface).",
+      "total_count": 10,
+      "total_area_km2": 22.276,
+      "per_site": {
+        "AP-1": {
+          "count": 10,
+          "total_area_km2": 22.276
+        }
+      }
+    },
+    {
+      "class_id": "hummocky_unit",
+      "name": "Hummocky unit",
+      "geometry_type": "Polygon",
+      "description": "Terrain with irregular, undulating relief.",
+      "ice_significance": "No specific ice interpretation is given for this class.",
+      "total_count": 8,
+      "total_area_km2": 1.541,
+      "per_site": {
+        "AP-1": {
+          "count": 3,
+          "total_area_km2": 0.166
+        },
+        "AP-8": {
+          "count": 5,
+          "total_area_km2": 1.375
+        }
+      }
+    },
+    {
+      "class_id": "polygonized_terrain_a",
+      "name": "Polygonized terrain A (knobby polygonal terrain)",
+      "geometry_type": "Polygon",
+      "description": "Low-albedo terrain of high-centered polygons (raised centers, depressed margins), with knobs at the center of some polygons that give a domical look. Knobby polygons are typically 0.5-1.6 m high. At AP-1 it covers most of the area and lies topographically higher than the smooth polygonal terrain.",
+      "ice_significance": "Thermal contraction polygons; the ice beneath them is estimated to lie on the order of tens of cm below the surface, shallow enough to be reachable for resource use.",
+      "total_count": 4,
+      "total_area_km2": 56.638,
+      "per_site": {
+        "AP-1": {
+          "count": 4,
+          "total_area_km2": 56.638
+        }
+      }
+    },
+    {
+      "class_id": "brain_terrain",
+      "name": "Brain coral terrain",
+      "geometry_type": "Polygon",
+      "description": "Anastomosing sets of ridges and troughs with high albedo, in contact with smooth polygonal terrain and topographically lower than it. Here it is open-cell: narrow sinuous ridges (6-14 m wide) enclosing depressed flat-floored cells (3-14.5 m wide), with about 1 m of relief.",
+      "ice_significance": "Widespread at Mars' mid-latitudes; its origin is debated, with leading explanations involving sublimation of ground ice.",
+      "total_count": 1,
+      "total_area_km2": 0.047,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 0.047
+        }
+      }
+    },
+    {
+      "class_id": "crater_floor",
+      "name": "Crater floor",
+      "geometry_type": "Polygon",
+      "description": "Floor of the impact crater mapped at AP-8.",
+      "ice_significance": "Context unit.",
+      "total_count": 1,
+      "total_area_km2": 0.068,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 0.068
+        }
+      }
+    },
+    {
+      "class_id": "crater_wall",
+      "name": "Crater wall",
+      "geometry_type": "Polygon",
+      "description": "Wall of the terraced impact crater near AP-8. Its polygonal patterned ground matches the polygons on the surrounding plain.",
+      "ice_significance": "Polygons continuing across the crater walls indicate the ice-related patterned ground is widespread.",
+      "total_count": 1,
+      "total_area_km2": 0.082,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 0.082
+        }
+      }
+    },
+    {
+      "class_id": "domical_polygonized_terrain",
+      "name": "Domical polygonized terrain (knobby polygonal terrain)",
+      "geometry_type": "Polygon",
+      "description": "Low-albedo, knobby high-centered polygonal terrain. At AP-9 it covers the entire mapped region; no smooth polygonal terrain was identified there.",
+      "ice_significance": "Thermal contraction polygons, indicating shallow ground ice (tens of cm below the surface).",
+      "total_count": 1,
+      "total_area_km2": 75.152,
+      "per_site": {
+        "AP-9": {
+          "count": 1,
+          "total_area_km2": 75.152
+        }
+      }
+    },
+    {
+      "class_id": "ejecta",
+      "name": "Ejecta",
+      "geometry_type": "Polygon",
+      "description": "Ejecta deposit mapped at AP-8.",
+      "ice_significance": "Context unit.",
+      "total_count": 1,
+      "total_area_km2": 0.947,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 0.947
+        }
+      }
+    },
+    {
+      "class_id": "inverted_expanded_secondary_crater",
+      "name": "Inverted expanded secondary crater",
+      "geometry_type": "Polygon",
+      "description": "Expanded craters whose relief has flipped to positive. Advanced examples are flat-topped mounds 3-6 m high with steep flanks; early-stage examples are flat and ringed by a ridge. All show radial, concentric and orthogonal fractures, and some have a central bulge.",
+      "ice_significance": "Evidence of ongoing sublimation-driven change of ice-rich ground, since they are expanded craters that have undergone topographic inversion.",
+      "total_count": 1,
+      "total_area_km2": 0.006,
+      "per_site": {
+        "AP-9": {
+          "count": 1,
+          "total_area_km2": 0.006
+        }
+      }
+    },
+    {
+      "class_id": "knobby_unit",
+      "name": "Knobby polygonal terrain",
+      "geometry_type": "Polygon",
+      "description": "Knobby high-centered polygonal terrain, present only in the western part of the AP-8 area.",
+      "ice_significance": "Thermal contraction polygons, indicating shallow ground ice.",
+      "total_count": 1,
+      "total_area_km2": 3.332,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 3.332
+        }
+      }
+    },
+    {
+      "class_id": "smooth_unit",
+      "name": "Smooth polygonal terrain",
+      "geometry_type": "Polygon",
+      "description": "Smooth high-centered polygonal terrain that dominates the AP-8 area. Arcuate ridges occur mainly within it.",
+      "ice_significance": "Thermal contraction polygons, indicating shallow ground ice.",
+      "total_count": 1,
+      "total_area_km2": 40.421,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 40.421
+        }
+      }
+    },
+    {
+      "class_id": "terrace",
+      "name": "Terrace",
+      "geometry_type": "Polygon",
+      "description": "Terrace of the ~650 m terraced impact crater near AP-8, about 10-20 m below the surrounding plain. Most of it is covered by open-cell brain coral terrain.",
+      "ice_significance": "Hosts the brain coral terrain at AP-8.",
+      "total_count": 1,
+      "total_area_km2": 0.023,
+      "per_site": {
+        "AP-8": {
+          "count": 1,
+          "total_area_km2": 0.023
+        }
+      }
+    }
+  ],
+  "contact_classes": [
+    {
+      "class_id": "contact_certain",
+      "name": "Certain contact",
+      "geometry_type": "MultiLineString",
+      "description": "Boundary between units that can be traced confidently.",
+      "total_count": 232,
+      "total_length_km": 86.475,
+      "per_site": {
+        "AP-1": {
+          "count": 36,
+          "length_km": 16.446
+        },
+        "AP-8": {
+          "count": 152,
+          "length_km": 59.762
+        },
+        "AP-9": {
+          "count": 44,
+          "length_km": 10.268
+        }
+      }
+    },
+    {
+      "class_id": "contact_inferred",
+      "name": "Inferred contact",
+      "geometry_type": "MultiLineString",
+      "description": "Boundary between units placed by interpretation where the contact is gradational or not clearly visible.",
+      "total_count": 160,
+      "total_length_km": 196.079,
+      "per_site": {
+        "AP-1": {
+          "count": 51,
+          "length_km": 91.664
+        },
+        "AP-8": {
+          "count": 81,
+          "length_km": 46.89
+        },
+        "AP-9": {
+          "count": 28,
+          "length_km": 57.526
+        }
+      }
+    },
+    {
+      "class_id": "contact_unspecified",
+      "name": "Unspecified contact",
+      "geometry_type": "MultiLineString",
+      "description": "Certainty not recorded.",
+      "total_count": 3,
+      "total_length_km": 0.869,
+      "per_site": {
+        "AP-1": {
+          "count": 1,
+          "length_km": 0.0
+        },
+        "AP-9": {
+          "count": 2,
+          "length_km": 0.869
+        }
+      }
+    }
+  ]
+}
