@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,1,0&icon_names=
-		add,close,close_small,landscape,layers,navigation,photo_camera,public,remove,school" />
+		add,close,close_small,landscape,layers,navigation,photo_camera,public,remove,rocket_launch,school" />
 </head>
 
 <body>
@@ -39,16 +39,14 @@
 										<span class="selectionButton">
 											<label class="button ">
 												<p id="start-position-text">Select</p>
-												<input type="button" class="hidden" name="bottomPanels1"
-													id="start-position-select">
+												<input type="button" class="hidden" name="bottomPanels1" id="start-position-select">
 											</label>
 
 											<label class="button disabled">
 												<span class="material-symbols-outlined">
 													close_small
 												</span>
-												<input type="button" class="hidden" name="bottomPanels1"
-													id="clear-start-position-select">
+												<input type="button" class="hidden" name="bottomPanels1" id="clear-start-position-select">
 											</label>
 										</span>
 									</span>
@@ -60,23 +58,21 @@
 										<span class="selectionButton">
 											<label class="button">
 												<p id="end-position-text">Select</p>
-												<input type="button" class="hidden" name="bottomPanels1"
-													id="end-position-select">
+												<input type="button" class="hidden" name="bottomPanels1" id="end-position-select">
 											</label>
 
 											<label class="button disabled">
 												<span class="material-symbols-outlined">
 													close_small
 												</span>
-												<input type="button" class="hidden" name="bottomPanels1"
-													id="clear-end-position-select">
+												<input type="button" class="hidden" name="bottomPanels1" id="clear-end-position-select">
 											</label>
 										</span>
 									</span>
 								</div>
 
 								<hr class="hidden">
-											<hr>
+								<hr>
 								<label class="button find-path">
 									<p>Find Path</p>
 									<input type="button" class="hidden" name="bottomPanels1" id="find-path-button">
@@ -91,6 +87,120 @@
 									</span>
 								</div> <input type="radio" class="hidden uncheckable" name="bottomPanels1">
 							</label>
+
+							<div class="panel__window mission-select-window">
+								<h2>Layers</h2>
+								<hr>
+								<hr class="hidden">
+
+								<div class="sites">
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>Surface</h3>
+												<p>Regular Surface Imagery of Mars.</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden " name="imageryLayers" value="surface" checked>
+									</label>
+
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>Ice Level 1</h3>
+												<p>Information about Ice Formations.</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden" value="ice1" name="imageryLayers">
+									</label>
+
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>Ice Level 3</h3>
+												<p>Information about Ice Formations.</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden" value="ice2" name="imageryLayers">
+									</label>
+
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>Ice Level 2</h3>
+												<p>Information about Ice Formations.</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel__window-button-group">
+							<label class="toggleIcon button">
+								<div class="iconOn">
+									<span class="material-symbols-outlined">
+										rocket_launch
+									</span>
+								</div> <input type="radio" class="hidden uncheckable" name="bottomPanels1">
+							</label>
+
+							<div class="panel__window mission-select-window">
+								<h2>Mission Sites</h2>
+								<hr>
+								<hr class="hidden">
+
+								<div class="sites">
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>Global View</h3>
+												<p>View the entirety of Mars.</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden " name="missionSites" checked data-lon="-1" data-lat="-1">
+									</label>
+
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>AP-1</h3>
+												<p>Site</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden " name="missionSites" data-lon="202.08" data-lat="39.80">
+									</label>
+
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>AP-8</h3>
+												<p>Site</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden " name="missionSites" data-lon="201.27" data-lat="40.72">
+									</label>
+
+									<label class="button">
+										<div class="site">
+											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<div class="description">
+												<h3>AP-9</h3>
+												<p>Site</p>
+											</div>
+										</div>
+										<input type="radio" class="hidden " name="missionSites" data-lon="203.33" data-lat="40.02">
+									</label>
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -103,13 +213,13 @@
 					</div>
 				</div>
 				<div class="panel__sidebar panel__sidebar--right">
-					<div class="button">
+					<div class="button" id="zoom-in">
 						<span class="material-symbols-outlined">
 							add
 						</span>
 					</div>
 
-					<div class="button">
+					<div class="button" id="zoom-out">
 						<span class="material-symbols-outlined">
 							remove
 						</span>
@@ -155,10 +265,10 @@
 					</label>
 				</div>
 			</div>
-			<div class="panel--group"> 
+			<div class="panel--group">
 				<div class="joystick disabled" id="joystick">
-				<div class="joystick__thumb" id="joystick__thumb">
-				</div>
+					<div class="joystick__thumb" id="joystick__thumb">
+					</div>
 				</div>
 			</div>
 		</div>

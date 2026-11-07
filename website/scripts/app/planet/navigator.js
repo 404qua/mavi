@@ -87,6 +87,8 @@ function startPickingMarker(markerName, stateRequired) {
 					"<b>°E</b>&nbsp;" +
 					Cesium.Math.toDegrees(currentItem.latitude).toFixed(5) +
 					"<b>°N</b>";
+			} else {	
+				currentItem.label.innerHTML = "Select";
 			}
 
 			navigationSelectorState = navigationPossibleStates.NotSelecting;
@@ -120,9 +122,10 @@ function startPickingMarker(markerName, stateRequired) {
 			viewer.scene.globe.ellipsoid,
 		);
 
+		markers[markerName].label.innerHTML = "...";
+
 		if (cartesian) {
 			marker.show = true;
-			console.log("here");
 			const carto = Cesium.Cartographic.fromCartesian(cartesian);
 			marker.position = Cesium.Cartesian3.fromRadians(
 				carto.longitude,

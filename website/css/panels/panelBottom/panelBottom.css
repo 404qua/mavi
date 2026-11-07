@@ -1,4 +1,4 @@
-@import url("./panelToolBar.css");
+@import url("./panelToolbar/panelToolBar.css");
 
 .panels--bottom {
 	display: flex;

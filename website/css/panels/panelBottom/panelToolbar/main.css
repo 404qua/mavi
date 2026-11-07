@@ -1,0 +1,82 @@
+.panels--bottom {
+	.panel__toolbar--start {
+		padding-left: calc(var(--unit-px) * 3);
+	}
+
+	.panel__toolbar {
+		display: flex;
+
+		& > .button,
+		& > .container,
+		& > .icon,
+		& > .panel__window-button-group>label {
+			border: var(--panel-border-size) solid var(--background-300);
+			border-radius: 0px;
+
+			border-bottom: var(--panel-border-size) solid var(--background-600);
+		}
+
+		& > .button:first-child,
+		& > .container:first-child,
+		& > .icon:first-child,
+		& > .panel__window-button-group:first-child > label {
+			border-top-left-radius: var(--input-border-radius);
+		}
+
+		& > .button:last-child,
+		& > .container:last-child,
+		& > .icon:last-child,
+		& > .panel__window-button-group:last-child > label {
+			border-top-right-radius: var(--input-border-radius);
+		}
+	}
+
+	.panel__window-button-group:has(>label input:checked) {
+		.panel__window {
+			display: flex;
+
+			animation: window-size-up-in calc(var(--transition-normal)) both
+				var(--ease-cubicOut);
+			/* animation: clip-in calc(var(--transition-normal) * 40) both var(--ease-cubicOut); */
+			z-index: 2;
+
+			pointer-events: auto;
+
+			.button, div, span {
+				pointer-events: unset;
+			}
+		}
+	}
+
+	.panel__toolbar {
+		position: relative;
+
+		.panel__window {
+			border-radius: var(--border-radius);
+			background-color: var(--background-500);
+
+			animation: window-size-up-out calc(var(--transition-normal)) both
+				var(--ease-cubicOut);
+			/* animation: clip-out calc(var(--transition-normal) * 10) both var(--ease-cubicOut); */
+			padding: var(--spacing-l);
+			box-sizing: border-box;
+
+			flex-direction: column;
+
+			pointer-events: none;
+
+			z-index: 0;
+
+			position: absolute;
+
+			height: fit-content;
+			width: max-content;
+
+			bottom: calc(100% + var(--spacing-l));
+
+			* {
+				pointer-events: none;
+			}
+		}
+	}
+}

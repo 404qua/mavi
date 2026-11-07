@@ -2,7 +2,6 @@ let joystick = document.getElementById("joystick");
 let jostickThumb = document.getElementById("joystick__thumb");
 
 let isDirty = true;
-
 const resizeObserver = new ResizeObserver(() => {
 	isDirty = true;
 });
@@ -55,7 +54,7 @@ function startJoystick(event) {
 		);
 		jostickThumb.style.setProperty(
 			"--y-pos",
-			joystickYPosCircular * 100 + "%",
+			joystickYPosCircular * 100 + "%"
 		);
 	}
 

@@ -1,4 +1,5 @@
 import { StartFirstPersonCamera, StopFirstPersonCamera } from "./firstPersonCamera/firstPersonCamera";
+import "./zoom.js";
 
 let CameraMode = document.querySelector('input[name="camera"]:checked').value
 

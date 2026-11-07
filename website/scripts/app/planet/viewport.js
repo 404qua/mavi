@@ -1,13 +1,14 @@
 import * as Cesium from "cesium";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 
-let resolveViewport
+let resolveViewport;
 export let Viewport = new Promise((resolve) => {
 	resolveViewport = resolve;
-})
+});
+
+export const marsEllipsoid = Cesium.Ellipsoid.WGS84;
 
 async function main() {
-	const marsEllipsoid = Cesium.Ellipsoid.WGS84;
 	const MarsRadius = marsEllipsoid.maximumRadius;
 
 	Cesium.RequestScheduler.maximumRequests = 100;
@@ -16,7 +17,7 @@ async function main() {
 	Cesium.Ellipsoid.default = marsEllipsoid;
 
 	const globe = new Cesium.Globe(marsEllipsoid);
-	globe.baseColor = Cesium.Color.PERU;
+	globe.baseColor = Cesium.Color.BLACK;
 	globe.maximumScreenSpaceError = 16;
 	globe.tileCacheSize = 300;
 	globe.showGroundAtmosphere = false;
@@ -48,28 +49,9 @@ async function main() {
 
 	viewer.scene.globe.depthTestAgainstTerrain = false;
 
-
 	const scene = viewer.scene;
 
 	scene.msaaSamples = 4;
-
-	const tilingScheme = new Cesium.GeographicTilingScheme({
-		ellipsoid: marsEllipsoid,
-	});
-
-	const imageryProvider = new Cesium.UrlTemplateImageryProvider({
-		url: "https://marswalk-imagery.pages.dev/" + "{z}/{x}/{y}.png",
-		tilingScheme,
-		minimumLevel: 0,
-		maximumLevel: 6,
-		ellipsoid: marsEllipsoid,
-		credit: "NASA / USGS Mars Viking MDIM 2.1",
-	});
-
-	const baseImageLayer =
-		viewer.imageryLayers.addImageryProvider(imageryProvider);
-	baseImageLayer.brightness = 0.85;
-	baseImageLayer.contrast = 1.1;
 
 	const base = "https://marswalk-imagery.pages.dev/" + "skybox/";
 
@@ -116,7 +98,7 @@ async function main() {
 		close: 8.0,
 		far: 16.0,
 		veryFar: 32.0,
-	}
+	};
 
 	let currentSse = sseSettings.far;
 
@@ -148,7 +130,7 @@ async function main() {
 		scene.globe.maximumScreenSpaceError = sse;
 	}
 
-	resolveViewport(viewer)
+	resolveViewport(viewer);
 
 	viewer.camera.percentageChanged = 0.01;
 	viewer.camera.changed.addEventListener(updateTerrainLOD);
