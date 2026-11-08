@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-	--background-100: #5e5e5e;
-	--background-200: #525252;
-	--background-300: #464646;
-	--background-400: #3a3a3a;
-	--background-500: #2e2e2e;
-	--background-600: #222222;
-	--background-700: #161616;
-	--background-800: #080808;
-	--background-900: #000;
+  --background-500: #2f2f2f;
+  --step: 0.025;
+
+  --background-100: oklch(from var(--background-500) calc(l + var(--step) * 4) c h);
+  --background-200: oklch(from var(--background-500) calc(l + var(--step) * 3) c h);
+  --background-300: oklch(from var(--background-500) calc(l + var(--step) * 2) c h);
+  --background-400: oklch(from var(--background-500) calc(l + var(--step) * 1) c h);
+
+  --background-600: oklch(from var(--background-500) calc(l - var(--step) * 1) c h);
+  --background-700: oklch(from var(--background-500) calc(l - var(--step) * 2) c h);
+  --background-800: oklch(from var(--background-500) calc(l - var(--step) * 3) c h);
+  --background-900: oklch(from var(--background-500) calc(l - var(--step) * 4) c h);
 
 	--foreground-100: #fff;
 	--foreground-200: #eee;
@@ -24,9 +27,21 @@
 	--foreground-900: #777;
 
 
-	--accent-400: #78adba;
-	--accent-500: #5aafc4;
-	--accent-600: #2d5660;
+	/* --accent-400: #78adba; */
+	/* --accent-500: #5aafc4; */
+	/* --accent-600: #2d5660; */
+
+	
+	/* --accent-400: #a2e2f1; */
+	/* --accent-500: #80a9be; */
+	/* --accent-600: #618992; */
+
+  /* --accent-500: #79aab5; */
+	--accent-500: #5ac8c6;
+  --step-accent: 0.06;
+
+  --accent-400: oklch(from var(--accent-500) calc(l + var(--step-accent) * 1) c h);
+  --accent-600: oklch(from var(--accent-500) calc(l - var(--step-accent) * 1) c h);
 
 	--spacing-xs: 2px;
 	--spacing-s: 4px;
@@ -58,13 +73,13 @@ body {
 	overflow: hidden;
 	background: var(--background-600);
 	color: var(--foreground-500);
-	font-family: "Play", system-ui, sans-serif;
+	font-family: "Open Sans", system-ui, sans-serif;
 
 	display: flex;
 	flex-direction: column;
 	/* min-width: 300px; */
 
-	font-size: max(min(16px, 3vh, 3vw), 14px);
+	font-size: max(min(14px, 3vh, 3vw), 12px);
 }
 
 h1,

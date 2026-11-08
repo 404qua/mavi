@@ -1,11 +1,14 @@
 import * as Cesium from "cesium";
 import { getJson } from "../../../lib/utils/getJson";
 import { createMapMarker } from "../mapMarkers";
+import { Viewport } from "../viewport";
+
+const viewer = await Viewport
 
 function createWapointImage(svg) {
 	return new Promise((resolve, reject) => {
 
-		const canvasSize = 64;
+		const canvasSize = 72;
 		const padding = 8;
 		const imageSize = canvasSize - (padding * 2) - 16;
 
@@ -62,28 +65,28 @@ const iconImageData = {
 
 const waypointOffset = 5000;
 
-
 function createWaypoint(text, longitude, latitude, importance, id, elevation) {
 	let drawDistance = 27000000;
 
-	let color = Cesium.Color.KHAKI
+	let color = Cesium.Color.fromRgba(0xeeeeeeff)
 	let image = iconImageData.star
 
 	switch (importance) {
 		case 0:
-			drawDistance = 750000
-			color = Cesium.Color.GRAY
+			drawDistance = 1500000
+			// color = Cesium.Color.GAINSBORO
 			image = iconImageData.circle
 			break;
 		case 1:
-			drawDistance = 1600000
-			color = Cesium.Color.CORNFLOWERBLUE
+			drawDistance = 3500000
+
+			// color = Cesium.Color.LIGHTBLUE
 
 			image = iconImageData.triangle
 			break;
 		case 2:
-			drawDistance = 5000000
-			color = Cesium.Color.CRIMSON
+			drawDistance = 7500000
+			// color = Cesium.Color.LIGHTCORAL
 
 			image = iconImageData.fourstar
 			break;
@@ -91,7 +94,7 @@ function createWaypoint(text, longitude, latitude, importance, id, elevation) {
 
 	let labelGap = 14;
 
-	let waypointHeight = Math.max((waypointOffset + elevation), 0)
+	let waypointHeight = Math.max((waypointOffset + (elevation * viewer.scene.verticalExaggeration)), 0)
 
 	createMapMarker(
 		{

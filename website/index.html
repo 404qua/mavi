@@ -88,7 +88,7 @@
 								</div> <input type="radio" class="hidden uncheckable" name="bottomPanels1">
 							</label>
 
-							<div class="panel__window mission-select-window">
+							<div class="panel__window mission-select-window layer-select-window">
 								<h2>Layers</h2>
 								<hr>
 								<hr class="hidden">
@@ -128,6 +128,7 @@
 									</label>
 
 									<label class="button">
+										<input type="radio" class="hidden" value="ice3" name="imageryLayers">
 										<div class="site">
 											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 											<div class="description">
@@ -135,8 +136,22 @@
 												<p>Information about Ice Formations.</p>
 											</div>
 										</div>
-										<input type="radio" class="hidden" value="ice3" name="imageryLayers">
 									</label>
+
+									<span class="site-date">
+										<label class="button">
+											<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+											<div class="site">
+												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<div class="description">
+													<h3>Ice Level 2</h3>
+													<p>Information about Ice Formations.</p>
+												</div>
+											</div>
+										</label>
+
+											<input type="date">
+									</span>
 								</div>
 							</div>
 						</div>
@@ -164,7 +179,7 @@
 												<p>View the entirety of Mars.</p>
 											</div>
 										</div>
-										<input type="radio" class="hidden " name="missionSites" checked data-lon="-1" data-lat="-1">
+										<input type="radio" class="hidden " name="missionSites" checked value="Global">
 									</label>
 
 									<label class="button">
@@ -175,7 +190,7 @@
 												<p>Site</p>
 											</div>
 										</div>
-										<input type="radio" class="hidden " name="missionSites" data-lon="202.08" data-lat="39.80">
+										<input type="radio" class="hidden " name="missionSites" value="AP_1">
 									</label>
 
 									<label class="button">
@@ -186,7 +201,7 @@
 												<p>Site</p>
 											</div>
 										</div>
-										<input type="radio" class="hidden " name="missionSites" data-lon="201.27" data-lat="40.72">
+										<input type="radio" class="hidden " name="missionSites" value="AP_8">
 									</label>
 
 									<label class="button">
@@ -197,7 +212,7 @@
 												<p>Site</p>
 											</div>
 										</div>
-										<input type="radio" class="hidden " name="missionSites" data-lon="203.33" data-lat="40.02">
+										<input type="radio" class="hidden " name="missionSites" value="AP_9">
 									</label>
 								</div>
 							</div>
@@ -205,11 +220,13 @@
 					</div>
 
 					<div class="panel__toolbar">
-						<div class="button">
-							<span class="material-symbols-outlined">
-								school
-							</span>
-						</div>
+						<label class="toggleIcon button">
+							<div class="iconOn">
+								<span class="material-symbols-outlined">
+									school
+								</span>
+							</div> <input type="checkbox" class="hidden school">
+						</label>
 					</div>
 				</div>
 				<div class="panel__sidebar panel__sidebar--right">
@@ -277,6 +294,10 @@
 			<div id="viewport"></div>
 		</div>
 	</main>
+
+	<div class="learn-window">
+		<p>Under Construction...</p>
+	</div>
 
 	<script type="module" src="script.js"></script>
 </body>

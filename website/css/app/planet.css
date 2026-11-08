@@ -19,6 +19,8 @@
 	height: var(--size-h);
 
 	padding: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
 
 	pointer-events: none;
 

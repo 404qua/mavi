@@ -1,0 +1,16 @@
+.learn-window {
+	height: 0%;
+	transition: all 0ms, height var(--transition-normal);
+
+	box-sizing: border-box;
+	border: 0px solid var(--background-500);
+}
+
+body:has(.school:checked) {
+	.learn-window {
+		height: 20%;
+
+		border: 4px solid var(--background-500);
+		border-radius: var(--border-radius) var(--ease-cubicOut);
+	}
+}

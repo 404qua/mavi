@@ -14,9 +14,10 @@
 					left: 0%;
 					height: calc(50% + (1.05em / 4));
 					width: calc(var(--spacing-l) - var(--spacing-s));
-					border: 2px solid var(--background-300);
+					border: 2px dashed var(--background-300);
 					border-right: 0px;
 					border-radius: 999px 0px 0px 999px;
+					
 				}
 			}
 
@@ -25,7 +26,7 @@
 					font-size: 1.05em;
 					margin-bottom: var(--spacing-s);
 					font-weight: 700;
-					background-color: var(--background-400);
+					background-color: var(--background-200);
 					width: fit-content;
 					border-radius: calc(var(--border-radius) / 4);
 					padding: 0px var(--spacing-l) 0px var(--spacing-l);
@@ -43,6 +44,8 @@
 				height: 2em;
 				border-radius: calc(var(--input-border-radius) / 4);
 				padding: 0px;
+				font-family: "Michroma";
+				font-weight: 900;
 				font-size: 1.5em;
 			}
 

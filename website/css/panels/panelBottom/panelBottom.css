@@ -15,6 +15,39 @@
 		/* & button { */
 		/* 	padding-left: calc(var(--border-radius) / 2); */
 		/* } */
+		#zoom-in, #zoom-out {
+			background-color: var(--background-600);
+			width: calc(var(--unit-px) * 2);
+			height: calc(var(--unit-px) * 2);
+			border-radius: 999px;
+			margin-right: var(--spacing-l);
+
+			transition: var(--transition-normal);
+
+			opacity: 1;
+
+			&:hover {
+					background-color: var(--background-400);
+			}
+
+			&:active {
+					background-color: var(--background-500);
+			}
+
+			&.disabled {
+				opacity: 0;
+			}
+		}
+
+		#zoom-in {
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+		}
+
+		#zoom-out {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+		}
 
 		&>.button,
 		&>.container,

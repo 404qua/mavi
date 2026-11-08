@@ -1,26 +1,31 @@
 import { StartFirstPersonCamera, StopFirstPersonCamera } from "./firstPersonCamera/firstPersonCamera";
 import "./zoom.js";
 
-let CameraMode = document.querySelector('input[name="camera"]:checked').value
+let CameraMode;
 
-function updateFirstPersonCameraEnabled() {
+export function updateCameraMode() {
+	CameraMode = document.querySelector('input[name="camera"]:checked').value;
+}
+
+updateCameraMode();
+
+export function updateFirstPersonCameraEnabled() {
 	if (CameraMode == "firstPersonCamera") {
-		StartFirstPersonCamera()
+		StartFirstPersonCamera();
 	} else {
-		StopFirstPersonCamera()
+		StopFirstPersonCamera();
 	}
 }
 
-const allCameraRadios = document.querySelectorAll('input[name="camera"]');
+const allCameraRadios = document.getElementsByName('camera');
 
-allCameraRadios.forEach(radio => {
-	radio.addEventListener('input', (e) => {
-		if (CameraMode == e.target.value) return
+allCameraRadios.forEach((radio) => {
+	radio.addEventListener("input", (e) => {
+		if (CameraMode == e.target.value) return;
 		CameraMode = e.target.value;
 
-		updateFirstPersonCameraEnabled()
+		updateFirstPersonCameraEnabled();
 	});
 });
 
-updateFirstPersonCameraEnabled()
-
+updateFirstPersonCameraEnabled();

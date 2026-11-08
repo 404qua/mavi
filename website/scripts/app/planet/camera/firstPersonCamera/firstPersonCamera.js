@@ -1,28 +1,31 @@
-import * as Cesium from "cesium"
+import * as Cesium from "cesium";
 import { Viewport } from "../../viewport";
 import { PhysicsTick, ResetPhysicsValues, CartographicPosition, normal, north, right } from "./physics";
 import { combine } from "../../../../lib/utils/math/planet";
 import { StartInputChecking, StopInputChecking } from "./input";
 import { SetJoystickEnabled } from "../../../joystick";
+import { SetZoomEnabled } from "../zoom";
+import { BOUNDS } from "../limit";
 
-const viewer = await Viewport
+const viewer = await Viewport;
 
-let lookDirection = { x: 0, y: 0 }
+let lookDirection = { x: 0, y: 0 };
 let lookSensitivity = 0.08;
 
 let cameraSwitchStartedTime = 0;
-let cameraValuesCache = {}
-let cameraFlyToCache = {}
+let cameraValuesCache = {};
+let cameraFlyToCache = {};
 let cameraMode = null;
 const maxLerp = 2000;
-const cameraOffset = 5000
+const cameraOffset = 5000;
+let cacheCameraOffset = cameraOffset;
 
 let cameraUpdateEventListener = null;
 let stopFovUpdate = () => { };
 
 function lerpNumberValue(a, b, t) {
-	if (t >= 1) return b
-	return a + ((b - a) * t)
+	if (t >= 1) return b;
+	return a + (b - a) * t;
 }
 
 const horiz = new Cesium.Cartesian3();
@@ -32,31 +35,62 @@ const viewUp = new Cesium.Cartesian3();
 let cameraSwitchCooldown = false;
 
 function updateCamera(delta) {
-	PhysicsTick(delta, lookDirection)
+	PhysicsTick(delta, lookDirection);
 
 	let terrainHeight = viewer.scene.globe.getHeight(CartographicPosition);
 	if (!Cesium.defined(terrainHeight)) {
 		terrainHeight = 0;
 	}
 	// terrainHeight = Math.max(terrainHeight, -2400)
+	let cameraPos;
 
-	const cameraPos = Cesium.Cartesian3.fromRadians(CartographicPosition.longitude, CartographicPosition.latitude, terrainHeight + cameraOffset);
+	if (BOUNDS.north == undefined) {
+		cacheCameraOffset = Cesium.Math.lerp(
+			cacheCameraOffset,
+			cameraOffset,
+			1 - 0.001 ** delta,
+		);
+	} else {
+		cacheCameraOffset = Cesium.Math.lerp(
+			cacheCameraOffset,
+			10,
+			1 - 0.001 ** delta,
+		);
+	}
+
+	cameraPos = Cesium.Cartesian3.fromRadians(
+		CartographicPosition.longitude,
+		CartographicPosition.latitude,
+		terrainHeight + cacheCameraOffset,
+	);
+
 	let now = Cesium.getTimestamp();
 	let lerpTime = now - cameraValuesCache.time;
 
 	let lerpValue;
 
 	if (lerpTime < maxLerp) {
-		lerpValue = Cesium.EasingFunction.CUBIC_IN_OUT(Cesium.Math.clamp((now - cameraValuesCache.time) / maxLerp, 0, 1));
+		lerpValue = Cesium.EasingFunction.CUBIC_IN_OUT(
+			Cesium.Math.clamp((now - cameraValuesCache.time) / maxLerp, 0, 1),
+		);
 	} else {
-		lerpValue = 1
+		lerpValue = 1;
 	}
 
 	if (lerpValue < 1) {
-		Cesium.Cartesian3.lerp(cameraValuesCache.cartographicCartesain3, cameraPos, lerpValue, cameraPos)
+		Cesium.Cartesian3.lerp(
+			cameraValuesCache.cartographicCartesain3,
+			cameraPos,
+			lerpValue,
+			cameraPos,
+		);
 	}
 
-	viewer.camera.frustum.fov = lerpNumberValue(cameraValuesCache.fov, Cesium.Math.toRadians(40), lerpValue);
+	viewer.camera.frustum.fov = lerpNumberValue(
+		cameraValuesCache.fov,
+		Cesium.Math.toRadians(40),
+		lerpValue,
+	);
 
 	lerpValue = lerpValue ** 4;
 
@@ -70,13 +104,22 @@ function updateCamera(delta) {
 
 	viewer.camera.setView({
 		destination: cameraPos,
-		orientation: lerpValue < 1
-			? {
-				heading: lerpNumberValue(cameraValuesCache.headingRad, Cesium.Math.toRadians(lookDirection.x), lerpValue),
-				pitch: lerpNumberValue(cameraValuesCache.pitchRad, Cesium.Math.toRadians(lookDirection.y), lerpValue ** 4),
-				roll: lerpNumberValue(cameraValuesCache.rollRad, 0, lerpValue)
-			}  // your intro animation, untouched
-			: { direction: viewDir, up: viewUp }
+		orientation:
+			lerpValue < 1
+				? {
+					heading: lerpNumberValue(
+						cameraValuesCache.headingRad,
+						Cesium.Math.toRadians(lookDirection.x),
+						lerpValue,
+					),
+					pitch: lerpNumberValue(
+						cameraValuesCache.pitchRad,
+						Cesium.Math.toRadians(lookDirection.y),
+						lerpValue ** 4,
+					),
+					roll: lerpNumberValue(cameraValuesCache.rollRad, 0, lerpValue),
+				} // your intro animation, untouched
+				: { direction: viewDir, up: viewUp },
 	});
 }
 
@@ -85,16 +128,36 @@ export function StartFirstPersonCamera() {
 	cameraMode = "firstPerson";
 
 	SetJoystickEnabled(true);
+	SetZoomEnabled(false);
 
 	ResetPhysicsValues();
 	StartInputChecking();
 
 	cameraValuesCache.cartographic = viewer.camera.positionCartographic.clone();
 
+	if (BOUNDS.north != undefined) {
+		cameraValuesCache.cartographic.longitude = Cesium.Math.clamp(
+			cameraValuesCache.cartographic.longitude,
+			BOUNDS.west,
+			BOUNDS.east,
+		);
+		cameraValuesCache.cartographic.latitude = Cesium.Math.clamp(
+			cameraValuesCache.cartographic.latitude,
+			BOUNDS.south,
+			BOUNDS.north,
+		);
+	}
+
+	cameraValuesCache.cartographic.height = Cesium.Math.clamp(
+		cameraValuesCache.cartographic.height,
+		viewer.scene.screenSpaceCameraController.minimumZoomDistance,
+		viewer.scene.screenSpaceCameraController.maximumZoomDistance,
+	);
+
 	cameraValuesCache.cartographicCartesain3 = Cesium.Cartesian3.fromRadians(
 		cameraValuesCache.cartographic.longitude,
 		cameraValuesCache.cartographic.latitude,
-		cameraValuesCache.cartographic.height
+		cameraValuesCache.cartographic.height,
 	);
 
 	cameraValuesCache.headingRad = viewer.camera.heading;
@@ -110,11 +173,12 @@ export function StartFirstPersonCamera() {
 	cameraValuesCache.time = lastTime;
 
 	if (cameraSwitchCooldown == false) {
-		cameraFlyToCache.cartographicCartesain3 = cameraValuesCache.cartographicCartesain3
-		cameraFlyToCache.headingRad = cameraValuesCache.headingRad
-		cameraFlyToCache.pitchRad = cameraValuesCache.pitchRad
-		cameraFlyToCache.rollRad = cameraValuesCache.rollRad
-		cameraFlyToCache.fov = cameraValuesCache.fov
+		cameraFlyToCache.cartographicCartesain3 =
+			cameraValuesCache.cartographicCartesain3;
+		cameraFlyToCache.headingRad = cameraValuesCache.headingRad;
+		cameraFlyToCache.pitchRad = cameraValuesCache.pitchRad;
+		cameraFlyToCache.rollRad = cameraValuesCache.rollRad;
+		cameraFlyToCache.fov = cameraValuesCache.fov;
 
 		cameraSwitchCooldown = true;
 	}
@@ -123,15 +187,23 @@ export function StartFirstPersonCamera() {
 	viewer.scene.screenSpaceCameraController.enableCollisionDetection = false;
 	viewer.scene.globe.depthTestAgainstTerrain = true;
 
-	lookDirection = { x: 0, y: 0 }
+	lookDirection = { x: 0, y: 0 };
 
 	// ---- AI START: init frame ----
 	const lat0 = CartographicPosition.latitude;
 	const lon0 = CartographicPosition.longitude;
 	Cesium.Cartesian3.fromElements(
-		Math.cos(lat0) * Math.cos(lon0), Math.cos(lat0) * Math.sin(lon0), Math.sin(lat0), normal);
+		Math.cos(lat0) * Math.cos(lon0),
+		Math.cos(lat0) * Math.sin(lon0),
+		Math.sin(lat0),
+		normal,
+	);
 	Cesium.Cartesian3.fromElements(
-		-Math.sin(lat0) * Math.cos(lon0), -Math.sin(lat0) * Math.sin(lon0), Math.cos(lat0), north);
+		-Math.sin(lat0) * Math.cos(lon0),
+		-Math.sin(lat0) * Math.sin(lon0),
+		Math.cos(lat0),
+		north,
+	);
 	// ---- AI END ----
 
 	cameraUpdateEventListener = viewer.scene.preRender.addEventListener(() => {
@@ -143,11 +215,17 @@ export function StartFirstPersonCamera() {
 	});
 }
 
+export function CleanUpFirstPersonTransition() {
+	cameraSwitchCooldown = false;
+	viewer.scene.screenSpaceCameraController.enableCollisionDetection = true;
+}
+
 export function StopFirstPersonCamera() {
 	cameraMode = "normal";
 
 	StopInputChecking();
 	SetJoystickEnabled(false);
+	SetZoomEnabled(true);
 
 	viewer.scene.screenSpaceCameraController.enableInputs = true;
 
@@ -159,9 +237,13 @@ export function StopFirstPersonCamera() {
 		cameraUpdateEventListener(); // stops the camera update
 
 		let distanceCartesian3 = new Cesium.Cartesian3();
-		Cesium.Cartesian3.subtract(viewer.camera.position, cameraFlyToCache.cartographicCartesain3, distanceCartesian3);
+		Cesium.Cartesian3.subtract(
+			viewer.camera.position,
+			cameraFlyToCache.cartographicCartesain3,
+			distanceCartesian3,
+		);
 		let distance = Cesium.Cartesian3.magnitude(distanceCartesian3);
-		let duration = distance / 5000000;
+		let duration = Math.max(distance / 5000000, 1);
 
 		let startTime = Cesium.getTimestamp();
 		let lastFov = viewer.camera.frustum.fov;
@@ -169,15 +251,18 @@ export function StopFirstPersonCamera() {
 		function updateFov() {
 			let now = Cesium.getTimestamp();
 
-			let t = Cesium.EasingFunction.CUBIC_IN_OUT(((now - startTime) / 1000) / duration);
+			let t = Cesium.EasingFunction.CUBIC_IN_OUT(
+				(now - startTime) / 1000 / duration,
+			);
 
 			if (t >= 1) {
 				viewer.scene.preRender.removeEventListener(updateFov);
 				viewer.camera.frustum.fov = cameraFlyToCache.fov;
-				return
+				return;
 			}
 
-			viewer.camera.frustum.fov = lastFov + ((cameraFlyToCache.fov - lastFov) * t);
+			viewer.camera.frustum.fov =
+				lastFov + (cameraFlyToCache.fov - lastFov) * t;
 		}
 
 		viewer.scene.preRender.addEventListener(updateFov);
@@ -193,19 +278,17 @@ export function StopFirstPersonCamera() {
 			orientation: {
 				heading: cameraFlyToCache.headingRad,
 				pitch: cameraFlyToCache.pitchRad,
-				roll: cameraFlyToCache.rollRad
+				roll: cameraFlyToCache.rollRad,
 			},
 			complete: () => {
 				if (cameraMode == "normal") {
-					cameraSwitchCooldown = false;
-					viewer.scene.screenSpaceCameraController.enableCollisionDetection = true;
+					CleanUpFirstPersonTransition();
 				}
-			}
+			},
 		});
 
 		cameraUpdateEventListener = null;
 	}
-
 }
 
 const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
@@ -214,23 +297,24 @@ let MOUSE_DOWN = false;
 let mousePosition = new Cesium.Cartesian2(0, 0);
 
 handler.setInputAction((movement) => {
-	if (!MOUSE_DOWN) return
-	lookDirection.x -= (movement.endPosition.x - mousePosition.x) * lookSensitivity
-	lookDirection.y += (movement.endPosition.y - mousePosition.y) * lookSensitivity
+	if (!MOUSE_DOWN) return;
+	lookDirection.x -=
+		(movement.endPosition.x - mousePosition.x) * lookSensitivity;
+	lookDirection.y +=
+		(movement.endPosition.y - mousePosition.y) * lookSensitivity;
 
-	lookDirection.x = lookDirection.x % 360
-	lookDirection.y = Cesium.Math.clamp(lookDirection.y, -85, 85)
+	lookDirection.x = lookDirection.x % 360;
+	lookDirection.y = Cesium.Math.clamp(lookDirection.y, -85, 85);
 
-	mousePosition.x = movement.endPosition.x
-	mousePosition.y = movement.endPosition.y
-}, Cesium.ScreenSpaceEventType.MOUSE_MOVE)
+	mousePosition.x = movement.endPosition.x;
+	mousePosition.y = movement.endPosition.y;
+}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
 handler.setInputAction((movement) => {
 	MOUSE_DOWN = true;
 	mousePosition = movement.position;
-}, Cesium.ScreenSpaceEventType.LEFT_DOWN)
+}, Cesium.ScreenSpaceEventType.LEFT_DOWN);
 
 handler.setInputAction(() => {
 	MOUSE_DOWN = false;
-}, Cesium.ScreenSpaceEventType.LEFT_UP)
-
+}, Cesium.ScreenSpaceEventType.LEFT_UP);

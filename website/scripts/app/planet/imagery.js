@@ -39,9 +39,18 @@ const LAYER_TYPES = Object.freeze({
 let currentLayer = LAYER_TYPES.surface;
 
 const imageryLayers = {
-	ice1: addImageryLayer("https://marswalk-imagery.pages.dev/ice/SWIM4MIM_Ci_0_1/", 4),
-	ice2: addImageryLayer("https://marswalk-imagery.pages.dev/ice/SWIM4MIM_Ci_1_5/", 4),
-	ice3: addImageryLayer("https://marswalk-imagery.pages.dev/ice/SWIM4MIM_Ci_5/", 4),
+	ice1: addImageryLayer(
+		"https://marswalk-imagery.pages.dev/ice/SWIM4MIM_Ci_0_1/",
+		4,
+	),
+	ice2: addImageryLayer(
+		"https://marswalk-imagery.pages.dev/ice/SWIM4MIM_Ci_1_5/",
+		4,
+	),
+	ice3: addImageryLayer(
+		"https://marswalk-imagery.pages.dev/ice/SWIM4MIM_Ci_5/",
+		4,
+	),
 };
 
 for (const layer in imageryLayers) {
@@ -49,6 +58,8 @@ for (const layer in imageryLayers) {
 }
 
 function updateLayer(layerType) {
+	// there is a bug here with the LAYER_TYPES and layerType,
+	// but it doesn't do anything because in LAYER_TYPES name=value
 	if (!(layerType in LAYER_TYPES)) {
 		console.log("No functionality for layer type: " + layerType);
 		return;
@@ -68,7 +79,6 @@ function updateLayer(layerType) {
 		layerType == LAYER_TYPES.ice2 ||
 		layerType == LAYER_TYPES.ice3
 	) {
-
 		if (currentLayer != LAYER_TYPES.surface) {
 			imageryLayers[currentLayer].show = false;
 		}

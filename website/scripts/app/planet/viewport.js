@@ -43,6 +43,7 @@ async function main() {
 		creditContainer: document.createElement("div"),
 		contextOptions: { webgl: { powerPreference: "high-performance" } },
 		globe: globe,
+		useBrowserRecommendedResolution: false,
 		// mapMode2D: Cesium.MapMode2D.ROTATE,
 		// sceneMode: Cesium.SceneMode.SCENE2D,
 	});
@@ -69,7 +70,7 @@ async function main() {
 	const controller = scene.screenSpaceCameraController;
 	controller.maximumZoomDistance = MarsRadius * 10.0;
 	controller.enableCollisionDetection = true;
-	controller.minimumZoomDistance = MarsRadius / 1000 + 10;
+	controller.minimumZoomDistance = MarsRadius / 1000 + 2500;
 
 	scene.verticalExaggeration = 1.87;
 

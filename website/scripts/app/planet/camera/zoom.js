@@ -5,7 +5,7 @@ const viewer = await Viewport;
 const zoomIn = document.getElementById("zoom-in");
 const zoomOut = document.getElementById("zoom-out");
 
-const maxZoomOffset = 500000;
+const maxZoomOffset = 12000;
 
 zoomIn.addEventListener("click", () => {
 	viewer.camera.zoomIn(
@@ -30,3 +30,14 @@ zoomOut.addEventListener("click", () => {
 		),
 	);
 });
+
+
+export function SetZoomEnabled(enabled) {
+	if (enabled == true) {
+		zoomIn.classList.remove("disabled");
+		zoomOut.classList.remove("disabled");
+	} else {
+		zoomIn.classList.add("disabled");
+		zoomOut.classList.add("disabled");
+	}
+}

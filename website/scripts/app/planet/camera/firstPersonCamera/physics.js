@@ -1,6 +1,7 @@
 import { KeysPressed } from "./input";
 import * as Cesium from "cesium";
 import { combine } from "../../../../lib/utils/math/planet";
+import { BOUNDS } from "../limit";
 
 import { JoystickOutput } from "../../../joystick";
 
@@ -10,7 +11,7 @@ const viewer = await Viewport;
 
 let velocity = { x: 0, y: 0 };
 let acceleration = 300000;
-let decceleration = 0.994;
+let deceleration = 0.994;
 let friction = 80000;
 
 // ---- AI START: helpers ----
@@ -51,7 +52,7 @@ export function PhysicsTick(delta, lookDirection) {
 	);
 	const moveDirection = keyboardMoveDirection.clone();
 
-	let JoystickOutputDirection = {... JoystickOutput};
+	let JoystickOutputDirection = { ...JoystickOutput };
 
 	if (JoystickOutputDirection.inputEnabled) {
 		moveDirection.x += JoystickOutputDirection.x;
@@ -77,7 +78,7 @@ export function PhysicsTick(delta, lookDirection) {
 
 	if (JoystickOutputDirection.inputEnabled) {
 		if (Math.abs(Cesium.Cartesian2.magnitude(keyboardMoveDirection)) > 0) {
-			Cesium.Cartesian2.normalize(keyboardMoveDirection,keyboardMoveDirection);
+			Cesium.Cartesian2.normalize(keyboardMoveDirection, keyboardMoveDirection);
 		}
 
 		Cesium.Cartesian2.add(
@@ -86,13 +87,24 @@ export function PhysicsTick(delta, lookDirection) {
 			JoystickOutputDirection,
 		);
 
-		JoystickOutputDirection.x = Cesium.Math.clamp(JoystickOutputDirection.x,-1,1);
-		JoystickOutputDirection.y = Cesium.Math.clamp(JoystickOutputDirection.y,-1,1);
+		JoystickOutputDirection.x = Cesium.Math.clamp(
+			JoystickOutputDirection.x,
+			-1,
+			1,
+		);
+		JoystickOutputDirection.y = Cesium.Math.clamp(
+			JoystickOutputDirection.y,
+			-1,
+			1,
+		);
 
-		const JoystickStrength = Cesium.Cartesian2.distance(JoystickOutputDirection, {
-			x: 0,
-			y: 0,
-		});
+		const JoystickStrength = Cesium.Cartesian2.distance(
+			JoystickOutputDirection,
+			{
+				x: 0,
+				y: 0,
+			},
+		);
 
 		Cesium.Cartesian2.multiplyByScalar(
 			moveDirection,
@@ -111,7 +123,7 @@ export function PhysicsTick(delta, lookDirection) {
 
 	Cesium.Cartesian2.multiplyByScalar(
 		velocity,
-		(1 - decceleration) ** delta,
+		(1 - deceleration) ** delta,
 		velocity,
 	);
 
@@ -158,9 +170,46 @@ export function PhysicsTick(delta, lookDirection) {
 
 	CartographicPosition;
 	CartographicPosition.longitude = Math.atan2(normal.y, normal.x);
-	CartographicPosition.latitude = Math.asin(
-		Cesium.Math.clamp(normal.z, -1, 1),
-	);
+	CartographicPosition.latitude = Math.asin(Cesium.Math.clamp(normal.z, -1, 1));
 	CartographicPosition.height = 0;
+
+	if (BOUNDS.north != undefined) {
+		const lon = CartographicPosition.longitude;
+		const lat = CartographicPosition.latitude;
+
+		const hitEast = lon > BOUNDS.east;
+		const hitWest = lon < BOUNDS.west;
+		const hitNorth = lat > BOUNDS.north;
+		const hitSouth = lat < BOUNDS.south;
+
+		if (hitEast || hitWest || hitNorth || hitSouth) {
+			if ((hitEast && velocity.x > 0) || (hitWest && velocity.x < 0))
+				velocity.x = 0;
+			if ((hitNorth && velocity.y > 0) || (hitSouth && velocity.y < 0))
+				velocity.y = 0;
+
+			const clampedLon = Cesium.Math.clamp(lon, BOUNDS.west, BOUNDS.east);
+			const clampedLat = Cesium.Math.clamp(lat, BOUNDS.south, BOUNDS.north);
+
+			CartographicPosition.longitude = clampedLon;
+			CartographicPosition.latitude = clampedLat;
+
+			// sync internal state to the clamped position
+			const cosLat = Math.cos(clampedLat);
+			normal.x = cosLat * Math.cos(clampedLon);
+			normal.y = cosLat * Math.sin(clampedLon);
+			normal.z = Math.sin(clampedLat);
+
+			Cesium.Cartesian3.multiplyByScalar(
+				normal,
+				Cesium.Cartesian3.dot(north, normal),
+				tmp,
+			);
+			Cesium.Cartesian3.subtract(north, tmp, north);
+			Cesium.Cartesian3.normalize(north, north);
+			Cesium.Cartesian3.cross(north, normal, right);
+		}
+	}
+
 	// ---- AI END ----
 }

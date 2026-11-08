@@ -1,0 +1,51 @@
+.layer-select-window {
+	.site-date {
+		position: relative;
+
+		input[type="date"],input[type="month"] {
+			position: absolute;
+			left: 100%;
+			opacity: 0;
+
+			transition: all 0ms, opacity var(--transition-normal);
+
+			appearance: none;
+			-webkit-appearance: none;
+
+			font: inherit;
+			font-size: 1.1em;
+			color: #e8e8e8;
+			background: var(--background-400);
+			border: none;
+			border-radius: 0px var(--input-border-radius) var(--input-border-radius) 0px;
+			padding: 6px 10px;
+			width: fit-content;
+			box-sizing: border-box;
+
+			border: 2px solid var(--accent-500);
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				background: var(--background-200);
+			}
+
+			&:active {
+				background: var(--background-300);
+			}
+		}
+
+		&:has(input:checked) {
+			label {
+				border-top-right-radius: 0px;
+			}
+
+			input[type="date"],input[type="month"] {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}
+	}
+}

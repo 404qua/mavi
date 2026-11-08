@@ -1,6 +1,15 @@
 import * as Cesium from "cesium"
 import { Viewport } from "./viewport";
+
 const viewer = await Viewport
+
+
+async function loadFonts(fonts) {
+  return Promise.all(fonts.map(f => document.fonts.load(f)))
+    .catch(e => console.warn('Font failed to load, using fallback', e));
+}
+
+await loadFonts(["1em Open Sans"])
 
 const textDrawdistanceScale = 0.5;
 
@@ -8,7 +17,7 @@ export function createMapMarker(
 	{
 		longitude,
 		latitude,
-		height = 1000,
+		height = 500,
 		image = undefined,
 		text = "",
 		color = Cesium.Color.WHITE,
@@ -46,12 +55,12 @@ export function createMapMarker(
 		label: {
 			text: text,
 			pixelOffset: new Cesium.Cartesian2(0, pixelOffset),
-			font: "bold 14px Play",
+			font: "600 14px Open Sans",
 			fillColor: color,
 			outlineWidth: 3,
 			scale: 0.85,
 			showBackground: true,
-			backgroundColor: Cesium.Color.BLACK.withAlpha(0.05),
+			backgroundColor: Cesium.Color.BLACK.withAlpha(0.15),
 			outlineColor: Cesium.Color.BLACK.withAlpha(0.2),
 			style: Cesium.LabelStyle.FILL,
 			verticalOrigin: Cesium.VerticalOrigin.CENTER,
