@@ -2,52 +2,11 @@ import * as Cesium from "cesium";
 import { getJson } from "../../../lib/utils/getJson";
 import { createMapMarker } from "../mapMarkers";
 import { Viewport } from "../viewport";
+import { createWapointImage } from "../../../lib/utils/createWaypointImage";
 
 const viewer = await Viewport
 
-function createWapointImage(svg) {
-	return new Promise((resolve, reject) => {
-
-		const canvasSize = 72;
-		const padding = 8;
-		const imageSize = canvasSize - (padding * 2) - 16;
-
-		let canvas = document.createElement("canvas");
-		canvas.width = canvasSize;
-		canvas.height = canvasSize;
-
-		let ctx = canvas.getContext("2d");
-
-		let color = "#00000005"
-		let outlineColor = "#ffffff08"
-		let borderWidth = 2
-		let borderRadius = 4
-
-		ctx.beginPath();
-		ctx.fillStyle = color;
-		ctx.strokeStyle = outlineColor;
-		let totalPadding = padding + (borderWidth / 2)
-		ctx.roundRect(totalPadding, totalPadding, canvasSize - (totalPadding * 2), canvasSize - (totalPadding * 2), borderRadius)
-		ctx.lineWidth = borderWidth;
-		// ctx.stroke();
-		ctx.fill();
-
-
-		const svgLoader = new Image();
-
-		svgLoader.onload = () => {
-			let imagePosition = (canvasSize - imageSize) / 2
-			ctx.drawImage(svgLoader, imagePosition, imagePosition, imageSize, imageSize);
-			resolve(canvas.toDataURL("image/png"))
-		}
-
-		svgLoader.onerror = () => {
-			reject(new Error(`Failed to load icon: ${svg}`));
-		}
-
-		svgLoader.src = svg;
-	})
-}
+let wayPointList = [];
 
 const iconPaths = {
 	star: "icons/star.svg",
@@ -96,7 +55,7 @@ function createWaypoint(text, longitude, latitude, importance, id, elevation) {
 
 	let waypointHeight = Math.max((waypointOffset + (elevation * viewer.scene.verticalExaggeration)), 0)
 
-	createMapMarker(
+	wayPointList[id] = createMapMarker(
 		{
 			longitude: longitude,
 			latitude: latitude,
@@ -117,3 +76,9 @@ export let features = await getJson("data/mars_features.json");
 features.forEach((e, i) => {
 	createWaypoint(e.name, e.longitude, e.latitude, e.importance, i, e.elevation)
 })
+
+export function SetWaypointsVisible(visible) {
+	wayPointList.forEach((e) => {
+			e.show = visible
+	})
+}

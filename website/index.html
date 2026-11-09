@@ -7,8 +7,9 @@
 	<title>Mavi</title>
 	<link rel="stylesheet" href="style.css">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,1,0&icon_names=
-		add,close,close_small,landscape,layers,navigation,photo_camera,public,remove,rocket_launch,school" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,1,0&icon_names=
+		add,arrow_drop_down,close,close_small,landscape,layers,navigation,photo_camera,public,remove,rocket_launch,location_on,school" />
 </head>
 
 <body>
@@ -105,38 +106,47 @@
 										<input type="radio" class="hidden " name="imageryLayers" value="surface" checked>
 									</label>
 
-									<label class="button">
-										<div class="site">
-											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
-											<div class="description">
-												<h3>Ice Level 1</h3>
-												<p>Information about Ice Formations.</p>
-											</div>
-										</div>
-										<input type="radio" class="hidden" value="ice1" name="imageryLayers">
-									</label>
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Ice</h2>
+											<span class="material-symbols-outlined">
+												arrow_drop_down
+											</span>
+											<input type="checkbox" class="hidden">
+										</label>
 
-									<label class="button">
-										<div class="site">
-											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
-											<div class="description">
-												<h3>Ice Level 3</h3>
-												<p>Information about Ice Formations.</p>
+										<label class="button">
+											<div class="site">
+												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<div class="description">
+													<h3>Ice Level 1</h3>
+												</div>
 											</div>
-										</div>
-										<input type="radio" class="hidden" value="ice2" name="imageryLayers">
-									</label>
+											<input type="radio" class="hidden" value="ice1" name="imageryLayers">
+										</label>
 
-									<label class="button">
-										<input type="radio" class="hidden" value="ice3" name="imageryLayers">
-										<div class="site">
-											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
-											<div class="description">
-												<h3>Ice Level 2</h3>
-												<p>Information about Ice Formations.</p>
+										<label class="button">
+											<div class="site">
+												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<div class="description">
+													<h3>Ice Level 2</h3>
+													<p>Information about Ice Formations.</p>
+												</div>
 											</div>
-										</div>
-									</label>
+											<input type="radio" class="hidden" value="ice2" name="imageryLayers">
+										</label>
+
+										<label class="button">
+											<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+											<div class="site">
+												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<div class="description">
+													<h3>Ice Level 3</h3>
+													<p>Information about Ice Formations.</p>
+												</div>
+											</div>
+										</label>
+									</div>
 
 									<span class="site-date">
 										<label class="button">
@@ -150,7 +160,7 @@
 											</div>
 										</label>
 
-											<input type="date">
+										<span class="monthInput" data-min-month="5" data-max-month="8" data-min-year="2015" id="idk"></span>
 									</span>
 								</div>
 							</div>
@@ -212,7 +222,7 @@
 												<p>Site</p>
 											</div>
 										</div>
-										<input type="radio" class="hidden " name="missionSites" value="AP_9">
+										<input type="radio" class="hidden" name="missionSites" value="AP_9">
 									</label>
 								</div>
 							</div>
@@ -229,6 +239,7 @@
 						</label>
 					</div>
 				</div>
+
 				<div class="panel__sidebar panel__sidebar--right">
 					<div class="button" id="zoom-in">
 						<span class="material-symbols-outlined">
@@ -244,7 +255,16 @@
 				</div>
 
 				<div class="panel__sidebar panel__sidebar--right">
+					<label class="button" id="waypointsEnabledLabel">
+						<span class="material-symbols-outlined">
+							location_on
+						</span>
 
+						<input type="checkbox" id="waypointsEnabled" class="hidden" checked>
+					</label>
+				</div>
+
+				<div class="panel__sidebar panel__sidebar--right">
 					<div class="icon">
 						<span class="material-symbols-outlined">
 							photo_camera
@@ -270,6 +290,8 @@
 					</div>
 				</div>
 			</div>
+
+
 			<div class="panel--group">
 				<div class="planet-feature-info">
 					<div id="planet-feature-info" class="content"> </div>

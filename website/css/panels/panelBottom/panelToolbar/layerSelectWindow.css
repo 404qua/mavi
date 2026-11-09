@@ -1,13 +1,77 @@
 .layer-select-window {
+	.sites {
+		.site-group {
+
+			margin-top: 2px;
+			margin-bottom: 2px;
+
+			gap: var(--spacing-s);
+			display: flex;
+			flex-direction: column;
+			background-color: var(--background-400);
+			outline: 2px solid var(--background-400);
+
+			border-radius: calc(var(--border-radius) / 2);
+
+			.group-header {
+				background-color: var(--background-400);
+				color: var(--foreground-500);
+				width: 100%;
+				padding: 0px;
+				pointer-events: inherit;
+
+				display: flex;
+
+				justify-content: space-between;
+
+				.material-symbols-outlined {
+					display: flex;
+					align-items: center;
+					text-align: center;
+					font-size: 2em;
+
+
+					transform: rotate(0deg);
+					transition: var(--transition-normal)  var(--ease-cubicOut);
+				}
+
+				&:hover {
+					background-color: var(--background-200);
+				}
+
+				&:active {
+					background-color: var(--background-300);
+				}
+
+				h2 {
+					padding: 0px var(--spacing-s) 0px var(--spacing-s);
+					background-color: transparent;
+				}
+			}
+
+			&:not(:has(.group-header input:checked)) {
+				.button:not(:has(input:checked)) {
+					display: none;
+				}
+
+				.material-symbols-outlined {
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+
 	.site-date {
 		position: relative;
 
-		input[type="date"],input[type="month"] {
+		input[type="date"],
+		input[type="month"],
+		.monthInput {
 			position: absolute;
 			left: 100%;
 			opacity: 0;
 
-			transition: all 0ms, opacity var(--transition-normal);
+			transition: all 0ms, opacity var(--transition-short);
 
 			appearance: none;
 			-webkit-appearance: none;
@@ -17,12 +81,13 @@
 			color: #e8e8e8;
 			background: var(--background-400);
 			border: none;
-			border-radius: 0px var(--input-border-radius) var(--input-border-radius) 0px;
-			padding: 6px 10px;
+			--border-radius-el: calc(var(--border-radius) / 2);
+			border-radius: 0px var(--border-radius-el) var(--border-radius-el) 0px;
 			width: fit-content;
 			box-sizing: border-box;
 
 			border: 2px solid var(--accent-500);
+			border-left: 0px;
 
 			&:focus {
 				outline: none;
@@ -35,6 +100,35 @@
 			&:active {
 				background: var(--background-300);
 			}
+
+			select {
+				font-family: inherit;
+				color: var(--foreground-500);
+
+				background-color: var(--background-400);
+				border: 0px;
+				border-right: 1px solid var(--background-600);
+				padding-top: var(--spacing-s);
+				padding-bottom: var(--spacing-s);
+
+				width: fit-content;
+
+				&:last-of-type {
+					--border-radius-select: calc(var(--border-radius-el) - 2px);
+					border-radius: 0px var(--border-radius-select) var(--border-radius-select) 0px;
+					border-right: 0px;
+				}
+
+				&:hover {
+					background-color: var(--background-200);
+				}
+
+				&:active {
+					background-color: var(--background-300);
+				}
+
+				cursor: pointer;
+			}
 		}
 
 		&:has(input:checked) {
@@ -42,9 +136,15 @@
 				border-top-right-radius: 0px;
 			}
 
-			input[type="date"],input[type="month"] {
+			input[type="date"],
+			input[type="month"],
+			.monthInput {
 				opacity: 1;
 				pointer-events: all;
+
+				* {
+					pointer-events: all;
+				}
 			}
 		}
 	}

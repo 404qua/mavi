@@ -1,32 +1,80 @@
 import * as Cesium from "cesium";
 import { marsEllipsoid, Viewport } from "./viewport";
+import { LOCAL_VIEW_MODES } from "./enums.js";
+import { getJson } from "../../lib/utils/getJson.js";
+
+
+const LocalViewData = await getJson("data/localFeatures/feature_classes.json");
 
 const viewer = await Viewport;
 
 const tilingScheme = new Cesium.GeographicTilingScheme({
 	ellipsoid: marsEllipsoid,
 });
-function addImageryLayer(link, maxlevel, minLevel = 0) {
+
+function addImageryLayer(link, maxlevel, minLevel = 0, rectangle = undefined, level = undefined) {
 	const imageryProvider = new Cesium.UrlTemplateImageryProvider({
 		url: link + "{z}/{x}/{y}.png",
 		tilingScheme,
 		minimumLevel: minLevel,
 		maximumLevel: maxlevel,
 		ellipsoid: marsEllipsoid,
+		rectangle: rectangle,
 		credit: "NASA / USGS Mars Viking MDIM 2.1",
 	});
 
-	return viewer.imageryLayers.addImageryProvider(imageryProvider);
+	return viewer.imageryLayers.addImageryProvider(imageryProvider, level);
 }
 
 const baseImageLayer = addImageryLayer(
 	"https://marswalk-imagery.pages.dev/",
-	6,
+	6, 0
 );
+
+const highresImageryLayers = {};
+
+highresImageryLayers[LOCAL_VIEW_MODES.AP_1] = "https://marswalk-hirise.pages.dev/AP-1-MRGB/";
+highresImageryLayers[LOCAL_VIEW_MODES.AP_8] = "https://marswalk-hirise.pages.dev/AP-8-MRGB/";
+highresImageryLayers[LOCAL_VIEW_MODES.AP_9] = "https://marswalk-hirise.pages.dev/AP-9-MRGB/";
+
+let currentHighresLayer = null;
+
+export function DisableHighresImagery() {
+	if (currentHighresLayer) {
+		viewer.imageryLayers.remove(currentHighresLayer, true);
+	}
+
+	currentHighresLayer = null;
+}
+
+export function EnableHighresImagery(MODE) {
+	DisableHighresImagery();
+	const requiredBounds = LocalViewData.sites[MODE].hirise_footprint.bounds;
+	currentHighresLayer = addImageryLayer(
+		highresImageryLayers[MODE],
+		14, 9,
+		Cesium.Rectangle.fromDegrees(
+			requiredBounds.west,
+			requiredBounds.south,
+			requiredBounds.east,
+			requiredBounds.north
+		),
+		1
+	);
+
+	currentHighresLayer.brightness = baseImageLayer.brightness;
+}
 
 const baseBrightness = 0.85;
 
-baseImageLayer.brightness = baseBrightness;
+function changeBaseBrightness(brightness) {
+	baseImageLayer.brightness = brightness;
+	if (currentHighresLayer) {
+		currentHighresLayer.brightness = baseImageLayer.brightness;
+	}
+}
+
+changeBaseBrightness(baseBrightness);
 baseImageLayer.contrast = 1.1;
 
 const LAYER_TYPES = Object.freeze({
@@ -55,6 +103,7 @@ const imageryLayers = {
 
 for (const layer in imageryLayers) {
 	imageryLayers[layer].show = false;
+	viewer.imageryLayers.raiseToTop(imageryLayers[layer]);
 }
 
 function updateLayer(layerType) {
@@ -71,7 +120,7 @@ function updateLayer(layerType) {
 
 	if (layerType == LAYER_TYPES.surface) {
 		imageryLayers[currentLayer].show = false;
-		baseImageLayer.brightness = baseBrightness;
+		changeBaseBrightness(baseBrightness);
 	}
 
 	if (
@@ -85,7 +134,7 @@ function updateLayer(layerType) {
 
 		imageryLayers[layerType].show = true;
 
-		baseImageLayer.brightness = 0.1;
+		changeBaseBrightness(0.1);
 	}
 
 	currentLayer = layerType;

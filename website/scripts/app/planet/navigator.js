@@ -59,6 +59,7 @@ function startPickingMarker(markerName, stateRequired) {
 			latitude: 0,
 			text: markerName,
 			color: markerName == "start" ? Cesium.Color.BLUE : Cesium.Color.RED,
+			drawDistance: 999999999999999,
 		});
 
 		markers[markerName].marker = marker;
@@ -87,7 +88,7 @@ function startPickingMarker(markerName, stateRequired) {
 					"<b>°E</b>&nbsp;" +
 					Cesium.Math.toDegrees(currentItem.latitude).toFixed(5) +
 					"<b>°N</b>";
-			} else {	
+			} else {
 				currentItem.label.innerHTML = "Select";
 			}
 

@@ -49,6 +49,36 @@
 			border-top-right-radius: 0px;
 		}
 
+		#waypointsEnabledLabel {
+			background-color: var(--background-600);
+			width: calc(var(--unit-px) * 2.5);
+			height: calc(var(--unit-px) * 2.5);
+			border-radius: 999px;
+			border-top-left-radius: 999px;
+			border-bottom-left-radius: 999px;
+			margin-right: var(--spacing-l);
+
+			transition: var(--transition-normal);
+
+			opacity: 1;
+
+			&:hover {
+					background-color: var(--background-400);
+			}
+
+			&:active {
+					background-color: var(--background-500);
+			}
+
+			&:has(input:checked) {
+				background-color:var(--accent-500)
+			}
+
+			&:has(input:checked) .material-symbols-outlined {
+					color: var(--background-500)
+			}
+		}
+
 		&>.button,
 		&>.container,
 		&>.icon {

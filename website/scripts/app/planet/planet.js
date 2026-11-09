@@ -5,6 +5,8 @@ import "./camera/camera.js"
 import "./navigator.js"
 import "./imagery.js"
 import "./localView.js"
+import "./localViewMarkers.js"
+import "./markerToggle.js"
 
 import { route, snapCandidates, findPath, findPathDetailed } from "./router.js";
 

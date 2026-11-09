@@ -8,7 +8,7 @@
 
 body:has(.school:checked) {
 	.learn-window {
-		height: 20%;
+		height: 35%;
 
 		border: 4px solid var(--background-500);
 		border-radius: var(--border-radius) var(--ease-cubicOut);

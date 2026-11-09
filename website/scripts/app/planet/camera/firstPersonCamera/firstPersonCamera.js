@@ -45,17 +45,9 @@ function updateCamera(delta) {
 	let cameraPos;
 
 	if (BOUNDS.north == undefined) {
-		cacheCameraOffset = Cesium.Math.lerp(
-			cacheCameraOffset,
-			cameraOffset,
-			1 - 0.001 ** delta,
-		);
+		cacheCameraOffset = cameraOffset;
 	} else {
-		cacheCameraOffset = Cesium.Math.lerp(
-			cacheCameraOffset,
-			10,
-			1 - 0.001 ** delta,
-		);
+		cacheCameraOffset = 10;
 	}
 
 	cameraPos = Cesium.Cartesian3.fromRadians(
@@ -167,6 +159,7 @@ export function StartFirstPersonCamera() {
 	cameraValuesCache.direction = viewer.camera.direction.clone();
 	cameraValuesCache.up = viewer.camera.up.clone();
 
+
 	stopFovUpdate();
 	cameraValuesCache.fov = viewer.camera.frustum.fov;
 
@@ -179,6 +172,8 @@ export function StartFirstPersonCamera() {
 		cameraFlyToCache.pitchRad = cameraValuesCache.pitchRad;
 		cameraFlyToCache.rollRad = cameraValuesCache.rollRad;
 		cameraFlyToCache.fov = cameraValuesCache.fov;
+		cameraFlyToCache.collision = viewer.scene.screenSpaceCameraController.enableCollisionDetection;
+		cameraFlyToCache.depthTest = viewer.scene.globe.depthTestAgainstTerrain;
 
 		cameraSwitchCooldown = true;
 	}
@@ -217,7 +212,7 @@ export function StartFirstPersonCamera() {
 
 export function CleanUpFirstPersonTransition() {
 	cameraSwitchCooldown = false;
-	viewer.scene.screenSpaceCameraController.enableCollisionDetection = true;
+	viewer.scene.screenSpaceCameraController.enableCollisionDetection = cameraFlyToCache.collision;
 }
 
 export function StopFirstPersonCamera() {
@@ -229,7 +224,7 @@ export function StopFirstPersonCamera() {
 
 	viewer.scene.screenSpaceCameraController.enableInputs = true;
 
-	viewer.scene.globe.depthTestAgainstTerrain = false;
+	viewer.scene.globe.depthTestAgainstTerrain = cameraFlyToCache.depthTest;
 
 	cameraSwitchStartedTime = Cesium.getTimestamp();
 

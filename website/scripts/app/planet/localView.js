@@ -2,17 +2,13 @@ import { SetCameraLimits, ReleaseCameraLimits } from "./camera/limit";
 import { getJson } from "../../lib/utils/getJson";
 import { updateFirstPersonCameraEnabled, updateCameraMode } from "./camera/camera";
 import { CleanUpFirstPersonTransition } from "./camera/firstPersonCamera/firstPersonCamera";
+import { DisableHighresImagery, EnableHighresImagery } from "./imagery";
+import { LOCAL_VIEW_MODES } from "./enums";
+import { DisableSiteMarkers, EnableSiteMarkers } from "./localViewMarkers";
 
 const LocalViewData = await getJson("data/localFeatures/feature_classes.json");
 
-const cameraNormalModeElement = document.querySelector('input[name="camera"][value="normal"]')
-
-export const LOCAL_VIEW_MODES = Object.freeze({
-	Global: "global",
-	AP_1: "AP-1",
-	AP_8: "AP-8",
-	AP_9: "AP-9"
-});
+const cameraNormalModeElement = document.querySelector('input[name="camera"][value="normal"]');
 
 export let CurrentLocalView = LOCAL_VIEW_MODES.Global;
 
@@ -25,7 +21,7 @@ function SetLocalViewMode(mode) {
 		return;
 	}
 
-	if (!(cameraNormalModeElement.checked)){
+	if (!(cameraNormalModeElement.checked)) {
 		cameraNormalModeElement.checked = true;
 		updateCameraMode();
 		updateFirstPersonCameraEnabled();
@@ -35,11 +31,15 @@ function SetLocalViewMode(mode) {
 	CurrentLocalView = LOCAL_VIEW_MODES[mode];
 
 	if (CurrentLocalView == LOCAL_VIEW_MODES.Global) {
+		DisableHighresImagery();
 		ReleaseCameraLimits();
+		DisableSiteMarkers();
 		return;
 	}
 
 	SetCameraLimits(LocalViewData.sites[CurrentLocalView].hirise_footprint.bounds);
+	EnableHighresImagery(CurrentLocalView);
+	EnableSiteMarkers(CurrentLocalView);
 }
 
 document.getElementsByName("missionSites").forEach((e) => {

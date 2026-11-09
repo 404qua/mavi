@@ -71,6 +71,7 @@ async function main() {
 	controller.maximumZoomDistance = MarsRadius * 10.0;
 	controller.enableCollisionDetection = true;
 	controller.minimumZoomDistance = MarsRadius / 1000 + 2500;
+	controller.bounceAnimationTime = 0;
 
 	scene.verticalExaggeration = 1.87;
 

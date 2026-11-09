@@ -1,4 +1,5 @@
 import { Viewport } from "../viewport";
+import { BOUNDS } from "./limit";
 
 const viewer = await Viewport;
 
@@ -8,11 +9,14 @@ const zoomOut = document.getElementById("zoom-out");
 const maxZoomOffset = 12000;
 
 zoomIn.addEventListener("click", () => {
+	let lowestZoom = BOUNDS.north != undefined ? 1000 : 1000000;
+	let maxZoom = BOUNDS.north != undefined ? -7000 : maxZoomOffset;
+
 	viewer.camera.zoomIn(
 		Math.max(
 			Math.min(
-				1000000,
-				viewer.camera.positionCartographic.height - maxZoomOffset,
+				lowestZoom,
+				viewer.camera.positionCartographic.height - maxZoom,
 			),
 			0,
 		),
@@ -20,11 +24,14 @@ zoomIn.addEventListener("click", () => {
 });
 
 zoomOut.addEventListener("click", () => {
+	let lowestZoom = BOUNDS.north != undefined ? 2000 : 1000000;
+	let maxZoom = BOUNDS.north != undefined ? 2000 : 250000;
+
 	viewer.camera.zoomOut(
 		Math.max(
 			Math.min(
-				1000000,
-				Math.max(viewer.camera.positionCartographic.height, 250000),
+				lowestZoom,
+				Math.max(viewer.camera.positionCartographic.height, maxZoom),
 			),
 			0,
 		),

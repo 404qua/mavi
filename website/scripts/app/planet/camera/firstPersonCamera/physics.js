@@ -10,7 +10,8 @@ import { Viewport } from "../../viewport";
 const viewer = await Viewport;
 
 let velocity = { x: 0, y: 0 };
-let acceleration = 300000;
+let startingAcceleration = 300000;
+let acceleration = startingAcceleration;
 let deceleration = 0.994;
 let friction = 80000;
 
@@ -57,6 +58,12 @@ export function PhysicsTick(delta, lookDirection) {
 	if (JoystickOutputDirection.inputEnabled) {
 		moveDirection.x += JoystickOutputDirection.x;
 		moveDirection.y += JoystickOutputDirection.y;
+	}
+
+	if (BOUNDS.north != undefined) {
+		acceleration = 500
+	} else {
+		acceleration = startingAcceleration
 	}
 
 	if (Math.abs(Cesium.Cartesian2.magnitude(moveDirection)) > 0) {

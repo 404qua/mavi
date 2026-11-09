@@ -3,7 +3,6 @@ import { Viewport } from "./viewport";
 
 const viewer = await Viewport
 
-
 async function loadFonts(fonts) {
   return Promise.all(fonts.map(f => document.fonts.load(f)))
     .catch(e => console.warn('Font failed to load, using fallback', e));
@@ -26,6 +25,7 @@ export function createMapMarker(
 		pixelOffset = 0,
 		drawDistance = 50000000,
 		id,
+		heightReference = Cesium.HeightReference.NONE,
 	}
 ) {
 
@@ -49,7 +49,7 @@ export function createMapMarker(
 			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance),
 			scaleByDistance: scaleByDistance,
 			// heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
-			heightReference: Cesium.HeightReference.NONE,
+			heightReference: heightReference,
 		},
 
 		label: {
@@ -68,7 +68,7 @@ export function createMapMarker(
 			distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0.0, drawDistance / 2),
 			scaleByDistance: scaleByDistance,
 			// heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
-			heightReference: Cesium.HeightReference.NONE,
+			heightReference: heightReference,
 		},
 
 	});
