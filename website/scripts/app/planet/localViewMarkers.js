@@ -2,6 +2,7 @@ import * as Cesium from "cesium";
 import { getJson } from "../../lib/utils/getJson";
 import { createMapMarker } from "./mapMarkers";
 import { LOCAL_VIEW_MODES } from "./enums";
+import { createWapointImage } from "../../lib/utils/createWaypointImage";
 
 const ap1Unit = await getJson("data/localFeatures/ap1_units.geojson");
 const ap8Unit = await getJson("data/localFeatures/ap8_units.geojson");
@@ -77,6 +78,8 @@ export function EnableSiteMarkers(site) {
 	currentSiteVisible = site;
 }
 
+let localWaypointIcon = await createWapointImage("icons/local.svg");
+
 function createMarkersForSite(site, name) {
 	siteEntities[name] = site.features.map(e => {
 		const [lng, lat] = polygonCentroid(e.geometry.coordinates);
@@ -84,9 +87,13 @@ function createMarkersForSite(site, name) {
 		return createMapMarker({
 			longitude: lng,
 			latitude: lat,
-			text: e.id,
-			color: Cesium.Color.CRIMSON,
+			text: e.properties.feature_class,
+			color: Cesium.Color.WHITE,
 			height: -7200,
+			image: localWaypointIcon,
+			pixelOffset: 14,
+			drawDistance: 10000,
+			nearDistance: -7000,
 			// heightReference: Cesium.HeightReference.RELATIVE_TO_TERRAIN,
 		});
 	});
@@ -100,11 +107,11 @@ createMarkersForSite(ap9Unit, LOCAL_VIEW_MODES.AP_9);
 
 export function SetLocalViewMarkersVisible(value) {
 	if (shouldSiteBeVisible == value) {
-		return
+		return;
 	}
 
 	shouldSiteBeVisible = value;
 	if (currentSiteVisible) {
-		setSiteVisible(currentSiteVisible,value);
+		setSiteVisible(currentSiteVisible, value);
 	}
 }

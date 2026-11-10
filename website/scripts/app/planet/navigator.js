@@ -1,6 +1,7 @@
 import * as Cesium from "cesium";
 import { createMapMarker } from "./mapMarkers";
 import { Viewport } from "./viewport";
+import { createWapointImage } from "../../lib/utils/createWaypointImage";
 
 const viewer = await Viewport;
 
@@ -12,6 +13,11 @@ export const navigationPossibleStates = {
 	StartSelecting: "startSelecting",
 	EndSelecting: "endSelecting",
 };
+
+const iconImageData = {
+	start: await createWapointImage("icons/start.svg"),
+	end: await createWapointImage("icons/end.svg"),
+}
 
 export let navigationSelectorState = navigationPossibleStates.NotSelecting;
 
@@ -57,8 +63,11 @@ function startPickingMarker(markerName, stateRequired) {
 		marker = createMapMarker({
 			longitude: 0,
 			latitude: 0,
-			text: markerName,
-			color: markerName == "start" ? Cesium.Color.BLUE : Cesium.Color.RED,
+			text: markerName == "start" ? "Start" : "End",
+			image: iconImageData[markerName],
+			pixelOffset: 14,
+			// color: markerName == "start" ? Cesium.Color.BLUE : Cesium.Color.RED,
+			color: Cesium.Color.WHITE,
 			drawDistance: 999999999999999,
 		});
 

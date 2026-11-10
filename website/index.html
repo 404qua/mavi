@@ -29,55 +29,55 @@
 
 							<div class="panel__window navigation-window">
 								<h2>Path Finder</h2>
-								<hr>
-								<hr class="hidden">
-								<div class="selectionInputs">
-									<div class="accessoryLine"></div>
+									<hr>
+									<hr class="hidden">
+									<div class="selectionInputs">
+										<div class="accessoryLine"></div>
 
-									<span class="selectionInput">
-										<p>Start Position</p>
+										<span class="selectionInput">
+											<p>Start Position</p>
 
-										<span class="selectionButton">
-											<label class="button ">
-												<p id="start-position-text">Select</p>
-												<input type="button" class="hidden" name="bottomPanels1" id="start-position-select">
-											</label>
+											<span class="selectionButton">
+												<label class="button ">
+													<p id="start-position-text">Select</p>
+													<input type="button" class="hidden" name="bottomPanels1" id="start-position-select">
+												</label>
 
-											<label class="button disabled">
-												<span class="material-symbols-outlined">
-													close_small
-												</span>
-												<input type="button" class="hidden" name="bottomPanels1" id="clear-start-position-select">
-											</label>
+												<label class="button disabled">
+													<span class="material-symbols-outlined">
+														close_small
+													</span>
+													<input type="button" class="hidden" name="bottomPanels1" id="clear-start-position-select">
+												</label>
+											</span>
 										</span>
-									</span>
 
 
-									<span class="selectionInput">
-										<p>End Position</p>
+										<span class="selectionInput">
+											<p>End Position</p>
 
-										<span class="selectionButton">
-											<label class="button">
-												<p id="end-position-text">Select</p>
-												<input type="button" class="hidden" name="bottomPanels1" id="end-position-select">
-											</label>
+											<span class="selectionButton">
+												<label class="button">
+													<p id="end-position-text">Select</p>
+													<input type="button" class="hidden" name="bottomPanels1" id="end-position-select">
+												</label>
 
-											<label class="button disabled">
-												<span class="material-symbols-outlined">
-													close_small
-												</span>
-												<input type="button" class="hidden" name="bottomPanels1" id="clear-end-position-select">
-											</label>
+												<label class="button disabled">
+													<span class="material-symbols-outlined">
+														close_small
+													</span>
+													<input type="button" class="hidden" name="bottomPanels1" id="clear-end-position-select">
+												</label>
+											</span>
 										</span>
-									</span>
-								</div>
+									</div>
 
-								<hr class="hidden">
-								<hr>
-								<label class="button find-path">
-									<p>Find Path</p>
-									<input type="button" class="hidden" name="bottomPanels1" id="find-path-button">
-								</label>
+									<hr class="hidden">
+									<hr>
+									<label class="button find-path">
+										<p>Find Path</p>
+										<input type="button" class="hidden" name="bottomPanels1" id="find-path-button">
+									</label>
 							</div>
 						</div>
 						<div class="panel__window-button-group">
@@ -112,7 +112,7 @@
 											<span class="material-symbols-outlined">
 												arrow_drop_down
 											</span>
-											<input type="checkbox" class="hidden">
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
 										</label>
 
 										<label class="button">
@@ -120,6 +120,7 @@
 												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 												<div class="description">
 													<h3>Ice Level 1</h3>
+													<p>Information about Ice Formations.</p>
 												</div>
 											</div>
 											<input type="radio" class="hidden" value="ice1" name="imageryLayers">
@@ -148,22 +149,218 @@
 										</label>
 									</div>
 
-									<span class="site-date">
-										<label class="button">
-											<input type="radio" class="hidden" value="ice3" name="imageryLayers">
-											<div class="site">
-												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
-												<div class="description">
-													<h3>Ice Level 2</h3>
-													<p>Information about Ice Formations.</p>
-												</div>
-											</div>
+
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Surface</h2>
+											<span class="material-symbols-outlined">
+												arrow_drop_down
+											</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
 										</label>
 
-										<span class="monthInput" data-min-month="5" data-max-month="8" data-min-year="2015" id="idk"></span>
-									</span>
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Surface Temperature</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Surface Pressure</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+									</div>
+
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Dust</h2>
+											<span class="material-symbols-outlined">
+												arrow_drop_down
+											</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
+										</label>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Dust Optical Depth (Monthly)</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Dust Optical Depth (Daily)</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+									</div>
+
+
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Wind</h2>
+											<span class="material-symbols-outlined">
+												arrow_drop_down
+											</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
+										</label>
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Surface Wind Stress</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+									</div>
+
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Flux</h2>
+											<span class="material-symbols-outlined">
+												arrow_drop_down
+											</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
+										</label>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Sensible Heat Flux</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Solar Flux, Surface</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Solar Flux, Surface Reflected</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Solar Flux, Top of Atmosphere</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Solar Flux, Top of Atmosphere Reflected</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+									</div>
+
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Thermal</h2>
+											<span class="material-symbols-outlined">
+												arrow_drop_down
+											</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
+										</label>
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Thermal IR, Surface</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+
+
+										<span class="site-date">
+											<label class="button">
+												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<div class="site">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<div class="description">
+														<h3>Thermal IR, Top of Atmosphere</h3>
+														<p></p>
+													</div>
+												</div>
+											</label>
+										</span>
+									</div>
 								</div>
 							</div>
+
+							<span class="monthInput" data-min-month="1" data-max-month="12" id="idk"></span>
 						</div>
 
 						<div class="panel__window-button-group">
@@ -318,8 +515,12 @@
 	</main>
 
 	<div class="learn-window">
-		<p>Under Construction...</p>
+			<div class="mission-window" id="missions">
+
+			</div>
 	</div>
+
+<dialog class="mission-dialog" id="mission-dialog"></dialog>
 
 	<script type="module" src="script.js"></script>
 </body>

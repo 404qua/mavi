@@ -1,0 +1,288 @@
+/* ---- grid of cards ---- */
+
+.learn-window {
+	height: 0%;
+	transition: all 0ms, height var(--transition-normal) var(--ease-cubicOut);
+	background-color: var(--background-500);
+}
+
+body:has(.school:checked) {
+	.learn-window {
+		height: 50%;
+		
+	}
+}
+
+.mission-window {
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
+	--max-cols: 4;
+	--min-card: 240px;
+
+	grid-template-columns: repeat(auto-fill,
+			minmax(max(var(--min-card), (100% - (var(--max-cols) - 1) * var(--spacing-l)) / var(--max-cols)),
+				1fr));
+
+	gap: var(--spacing-l);
+	padding: var(--spacing-l);
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+
+	border: 4px solid var(--background-500);
+	border-radius: var(--border-radius);
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+	grid-auto-rows: max-content;
+	align-content: start;
+}
+
+/* ---- card ---- */
+.mission-card {
+	all: unset;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	background: var(--background-300);
+	color: var(--foreground-500);
+	border-radius: var(--input-border-radius);
+	overflow: hidden;
+	transition: var(--transition-short) var(--ease-cubicOut);
+}
+
+.mission-card:hover {
+	transform: translateY(-2px);
+	background-color: var(--background-100);
+}
+
+.mission-card:active {
+	background-color: var(--background-200);
+}
+
+.mission-card:focus-visible {
+	outline: 2px solid var(--accent-500);
+	outline-offset: 2px;
+}
+
+/* reserve space so lazy images don't shift layout */
+.mission-card__media {
+	position: relative;
+	/* ← new */
+	aspect-ratio: 4 / 2;
+	background: var(--background-300);
+	overflow: hidden;
+	flex: none;
+}
+
+.mission-card__media img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	position: absolute;
+	inset: 0;
+}
+
+.mission-card__body {
+	padding: .75rem .9rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: .35rem;
+}
+
+.mission-card__body h3 {
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.25;
+}
+
+.mission-card__meta {
+	margin: 0;
+	font-size: .8rem;
+	color: var(--foreground-700);
+}
+
+/* ---- outcome pill ---- */
+.outcome {
+	align-self: flex-start;
+	font-size: .7rem;
+	padding: .15rem .5rem;
+	border-radius: 999px;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	background: #2a2f38;
+	color: #cfd6e0;
+	width: fit-content;
+}
+
+.outcome--success {
+	background: #163a24;
+	color: #7be0a2;
+}
+
+.outcome--partial {
+	background: #3a3216;
+	color: #e0c47b;
+}
+
+.outcome--failure {
+	background: #3a1a1a;
+	color: #e08a8a;
+}
+
+.outcome--ended {
+	background: #2a2436;
+	color: #b8a6e0;
+}
+
+.outcome--operating {
+	background: #12303a;
+	color: #7bd0e0;
+}
+
+.outcome--cancelled {
+	background: #2a2a2a;
+	color: #aaaaaa;
+}
+
+.outcome--planned,
+.outcome--in-development {
+	background: #232a38;
+	color: #9fb8e0;
+}
+
+/* ---- dialog ---- */
+.mission-dialog {
+	width: min(900px, 92vw);
+	max-height: 90vh;
+	padding: 0;
+	border: none;
+	border-radius: 12px;
+	background: var(--background-500);
+	color: var(--foreground-500);
+
+	/* box-shadow: 0px 0px 32px 8px #000; */
+}
+
+.mission-dialog::backdrop {
+	background: rgba(0, 0, 0, .7);
+}
+
+.mission-dialog__inner {
+	padding: var(--spacing-l);
+	/* padding-left: calc(var(--spacing-l) * 2); */
+	/* padding-right: calc(var(--spacing-l) * 2); */
+
+	box-sizing: border-box;
+	max-height: 75vh;
+	overflow: auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-s);
+	position: relative;
+}
+
+.mission-dialog__head {
+	top: calc(0% - var(--spacing-l));
+	position: sticky;
+	background-color: var(--background-500);
+	border: var(--spacing-l) solid var(--background-500);
+	border-top-width: calc(var(--spacing-l) * 2);
+	box-sizing: border-box;
+	margin-top: calc(0px - var(--spacing-l));
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-l);
+}
+
+.mission-dialog__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 1;
+	background: var(--accent-500);
+	color: var(--background-500);
+	border-radius: 999px;
+	padding: 0px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+	.material-symbols-outlined {
+		color: var(--background-500);
+		font-size: 2em;
+	}
+}
+
+.mission-dialog__status {
+	margin: .75rem 0;
+	padding-left: calc(var(--spacing-l)*2);
+	line-height: 1.2;
+}
+
+.mission-dialog__source {
+	font-size: .8rem;
+	color: var(--foreground-900);
+
+	padding-left: calc(var(--spacing-l)*2);
+}
+
+.mission-dialog__source a {
+	color: #6aa9ff;
+}
+
+.mission-dialog__images {
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
+
+	display: block;
+	/* replaces display: grid */
+	column-width: 350px;
+	/* same as your --min-card */
+	column-count: 2;
+	/* same as your --max-cols */
+	column-gap: var(--spacing-l);
+	margin-top: 1rem;
+
+	gap: var(--spacing-l);
+	margin-top: 1rem;
+}
+
+.mission-dialog__images figure {
+	margin: 0 0 var(--spacing-l);
+	height: fit-content;
+	break-inside: avoid;
+
+	padding: var(--spacing-s);
+	box-sizing: border-box;
+	border: 1px solid var(--background-400);
+	border-radius: var(--spacing-s);
+	background-color: var(--background-400)
+}
+
+.mission-dialog__images .img-wrap {
+	aspect-ratio: 4 / 3;
+	background: var(--accent-300);
+	overflow: hidden;
+}
+
+.mission-dialog__images img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.mission-dialog__images figcaption {
+	font-size: .9rem;
+	line-height: 1.4;
+	color: var(--foreground-700);
+	margin-top: .35rem;
+}

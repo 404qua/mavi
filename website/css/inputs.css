@@ -48,7 +48,7 @@ button {
 	grid-template-columns: subgrid;
 	grid-column: 1 / -1;
 
-	& > span {
+	&>span {
 		line-height: 1em;
 		min-height: fit-content;
 		font-size: 1em;
@@ -57,7 +57,7 @@ button {
 	}
 }
 
-.input > label {
+.input>label {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
@@ -159,6 +159,7 @@ label.toggle:has(input:checked) {
 
 label.toggleIcon:has(input:checked) {
 	background-color: var(--accent-500);
+
 	.material-symbols-outlined {
 		color: var(--background-500);
 	}
@@ -166,4 +167,34 @@ label.toggleIcon:has(input:checked) {
 
 label.toggleIcon:has(input:checked):hover {
 	background-color: var(--accent-500);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: var(--foreground-900) var(--background-200);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+	height: 0px;
+	pointer-events: all;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background-200);
+	border-radius: 999px 0px 0px 999px;
+
+	margin-top: calc(var(--border-radius) + var(--spacing-l));
+	margin-bottom: calc(var(--border-radius) + var(--spacing-l));
+
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--foreground-900);
+	border-radius: 999px 0px 0px 999px;
+
+	cursor: pointer;
 }

@@ -52,7 +52,8 @@
 		border-radius: calc(var(--border-radius) - var(--spacing-l));
 
 		pointer-events: auto;
-		overflow: scroll;
+		overflow-y: scroll;
+		overflow-x: hidden;
 	}
 
 	img {

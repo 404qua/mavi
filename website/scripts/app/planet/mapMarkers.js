@@ -24,12 +24,13 @@ export function createMapMarker(
 		elevation = 0,
 		pixelOffset = 0,
 		drawDistance = 50000000,
+		nearDistance = 600000,
 		id,
 		heightReference = Cesium.HeightReference.NONE,
 	}
 ) {
 
-	let scaleByDistance = new Cesium.NearFarScalar(Math.max(drawDistance * textDrawdistanceScale, 600000), 1, drawDistance, 0.4);
+	let scaleByDistance = new Cesium.NearFarScalar(Math.max(drawDistance * textDrawdistanceScale, nearDistance), 1, drawDistance, 0.4);
 
 	return viewer.entities.add({
 		position: Cesium.Cartesian3.fromDegrees(longitude, latitude, height),

@@ -1,4 +1,123 @@
+.monthInput {
+	position: absolute;
+	top: anchor(top);
+	left: calc(anchor(right) - 2px);
+
+	z-index: 3;
+
+	opacity: 0;
+	position-anchor: --month-input-anchor;
+
+	transition: all 0ms, opacity 0ms;
+
+	appearance: none;
+	-webkit-appearance: none;
+
+	font: inherit;
+	font-size: 1em;
+	color: #e8e8e8;
+	background: var(--background-500);
+	--border-radius-el: calc(var(--border-radius) / 2);
+	border-radius: 2px var(--border-radius-el) var(--border-radius-el) var(--border-radius-el);
+	width: fit-content;
+	box-sizing: border-box;
+
+
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: var(--spacing-s);
+	gap: var(--spacing-s);
+
+	&>span {
+		gap: var(--spacing-l);
+		display: grid;
+		grid-column: -1/1;
+		grid-template-columns: subgrid;
+
+		p {
+			border-bottom: 1px solid var(--background-600);
+		}
+	}
+
+	hr {
+		grid-column: -1/1;
+	}
+
+	border: 2px solid var(--accent-500);
+	/* border-left: 0px; */
+
+	& select:focus {
+		outline: none;
+	}
+
+	& select:hover {
+		background: var(--background-100);
+	}
+
+	& select:active {
+		background: var(--background-200);
+	}
+
+	p {
+		display: flex;
+		align-items: center;
+		font-size: 0.85rem;
+	}
+
+	select {
+		font-family: inherit;
+		color: var(--foreground-500);
+
+		font-size: 0.8rem;
+
+		background-color: var(--background-300);
+		/* border: 0px; */
+		border: 1px solid var(--background-600);
+		padding-top: var(--spacing-s);
+		padding-bottom: var(--spacing-s);
+
+		width: fit-content;
+
+		border-radius: var(--spacing-s);
+
+		/* &:last-of-type { */
+		/* 	--border-radius-select: calc(var(--border-radius-el) - 2px); */
+		/* 	border-radius: 0px var(--border-radius-select) var(--border-radius-select) 0px; */
+		/* 	/* border-right: 0px; */
+		*/
+		/* } */
+
+		&:hover {
+			background-color: var(--background-200);
+		}
+
+		&:active {
+			background-color: var(--background-300);
+		}
+
+		cursor: pointer;
+	}
+}
+
+.panel__window-button-group:has(.site-date input:checked) {
+		.monthInput {
+			opacity: 1;
+
+			pointer-events: all;
+
+			transition: all 0ms, opacity var(--transition-short);
+
+			select {
+				pointer-events: all;
+			}
+		}
+}
+
 .layer-select-window {
+	max-height: 75vh;
+	overflow-x: visible;
+	overflow-y: scroll;
+
 	.sites {
 		.site-group {
 
@@ -32,7 +151,7 @@
 
 
 					transform: rotate(0deg);
-					transition: var(--transition-normal)  var(--ease-cubicOut);
+					transition: var(--transition-normal) var(--ease-cubicOut);
 				}
 
 				&:hover {
@@ -50,7 +169,9 @@
 			}
 
 			&:not(:has(.group-header input:checked)) {
-				.button:not(:has(input:checked)) {
+
+				.button:not(:has(input:checked)),
+				.site-date:not(:has(input:checked)) {
 					display: none;
 				}
 
@@ -62,82 +183,15 @@
 	}
 
 	.site-date {
-		position: relative;
-
-		input[type="date"],
-		input[type="month"],
-		.monthInput {
-			position: absolute;
-			left: 100%;
-			opacity: 0;
-
-			transition: all 0ms, opacity var(--transition-short);
-
-			appearance: none;
-			-webkit-appearance: none;
-
-			font: inherit;
-			font-size: 1.1em;
-			color: #e8e8e8;
-			background: var(--background-400);
-			border: none;
-			--border-radius-el: calc(var(--border-radius) / 2);
-			border-radius: 0px var(--border-radius-el) var(--border-radius-el) 0px;
-			width: fit-content;
-			box-sizing: border-box;
-
-			border: 2px solid var(--accent-500);
-			border-left: 0px;
-
-			&:focus {
-				outline: none;
-			}
-
-			&:hover {
-				background: var(--background-200);
-			}
-
-			&:active {
-				background: var(--background-300);
-			}
-
-			select {
-				font-family: inherit;
-				color: var(--foreground-500);
-
-				background-color: var(--background-400);
-				border: 0px;
-				border-right: 1px solid var(--background-600);
-				padding-top: var(--spacing-s);
-				padding-bottom: var(--spacing-s);
-
-				width: fit-content;
-
-				&:last-of-type {
-					--border-radius-select: calc(var(--border-radius-el) - 2px);
-					border-radius: 0px var(--border-radius-select) var(--border-radius-select) 0px;
-					border-right: 0px;
-				}
-
-				&:hover {
-					background-color: var(--background-200);
-				}
-
-				&:active {
-					background-color: var(--background-300);
-				}
-
-				cursor: pointer;
-			}
-		}
-
 		&:has(input:checked) {
+
+			anchor-name: --month-input-anchor;
+
 			label {
 				border-top-right-radius: 0px;
+				border-bottom-right-radius: 0px;
 			}
 
-			input[type="date"],
-			input[type="month"],
 			.monthInput {
 				opacity: 1;
 				pointer-events: all;
