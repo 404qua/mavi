@@ -18,6 +18,7 @@ if (new Uint8Array(new Uint32Array([1]).buffer)[0] !== 1) throw new Error("searc
 
 const PIX_DEG = 0.003374120830641, PIX_RAD = PIX_DEG * Math.PI / 180;
 const MARS_RADIUS_CM = 3396190 * 100;
+const MARS_SURFACE_AREA_KM2 = 4 * Math.PI * Math.pow(MARS_RADIUS_CM / 100000, 2);
 const ROW_KEY_STRIDE = 16777216, CELL_KEY_RANGE = 1048576, MAGIC = 0x3254474d;   // "MGT2": 8-byte edge records
 const NORTH_BIT = 1, EAST_BIT = 2, SOUTH_BIT = 4, WEST_BIT = 8;
 
@@ -375,7 +376,67 @@ export function makeSearch(pathfinder, config = {}) {
     const checkAbort = () => {
       if (options.signal && options.signal.aborted) { const abortError = new Error("aborted"); abortError.name = "AbortError"; throw abortError; }
     };
-    const progress = (phase, extra = {}) => { if (options.onProgress) options.onProgress({ phase, expanded: stats.expanded, tilesLoaded: store.loads - loadsBefore, ...extra }); };
+    const latitudeOfRow = (row) => (90 - (row + meta.firstRow + 0.5) * PIX_DEG) * Math.PI / 180;
+    const startLatitude = latitudeOfRow(startCell.row);
+    const endLatitude = latitudeOfRow(endCell.row);
+    const lowCol = Math.min(startCell.column, endCell.column);
+    const highCol = Math.max(startCell.column, endCell.column);
+    const wrapMultiplier = meta.wrapMultiplier || 1;
+    const colDifference = Math.min(highCol - lowCol, (meta.width - 1 - highCol) + wrapMultiplier + lowCol);
+    const halfLatSine = Math.sin((endLatitude - startLatitude) / 2);
+    const halfLonSine = Math.sin(colDifference * PIX_RAD / 2);
+    const haversine = halfLatSine * halfLatSine + Math.cos(startLatitude) * Math.cos(endLatitude) * halfLonSine * halfLonSine;
+    const centralAngleRad = 2 * Math.asin(Math.min(1, Math.sqrt(haversine)));
+    const greatCircleDistanceCm = centralAngleRad * MARS_RADIUS_CM;
+    const distanceToRadiusRatio = greatCircleDistanceCm / MARS_RADIUS_CM;
+    const normalizedDistanceRatio = Math.max(0.04, Math.min(1, distanceToRadiusRatio / Math.PI));
+
+    const tileSizeDeg = meta.tileSize * PIX_DEG;
+    const totalSphereTiles = Math.max(1, (360 / tileSizeDeg) * (180 / tileSizeDeg));
+    const areaPerTileKm2 = MARS_SURFACE_AREA_KM2 / totalSphereTiles;
+    const allSeenTiles = new Set();
+
+    const calcProgress = (phase, extra = {}) => {
+      const tileCount = allSeenTiles.size;
+      const searchedKm2 = tileCount * areaPerTileKm2;
+      const fractionMarsSearched = tileCount / totalSphereTiles;
+
+      let percent = 2;
+      let statusText = "initializing search";
+
+      if (phase === "snap") {
+        percent = 5;
+        statusText = "Snapping positions to terrain";
+      } else if (phase === "graph" || phase === "widen") {
+        const graphProgress = (fractionMarsSearched * 1000) / normalizedDistanceRatio;
+        percent = Math.min(90, Math.max(5, +(5 + graphProgress).toFixed(1)));
+        statusText = phase === "widen" ? "Widening search corridor" : "Searching for ideal path";
+      } else if (phase === "cells") {
+        const segmentsTotal = extra.segmentsTotal || 1;
+        const segmentsDone = extra.segmentsDone || 0;
+        percent = Math.min(100, +(90 + 10 * (segmentsDone / segmentsTotal)).toFixed(1));
+        statusText = "extracting path details";
+      } else if (phase === "done") {
+        percent = 100;
+        statusText = "Route complete";
+      }
+
+      const areaStr = searchedKm2 > 0 ? ` • ${Math.round(searchedKm2).toLocaleString()} km² searched` : "";
+      const fullStatus = areaStr ? `${statusText}${areaStr}` : statusText;
+
+      return {
+        phase,
+        progress: percent,
+        statusText: fullStatus,
+        areaSearchedKm2: Math.round(searchedKm2),
+      };
+    };
+
+    const progress = (phase, extra = {}) => {
+      if (options.onProgress) {
+        options.onProgress(calcProgress(phase, extra));
+      }
+    };
     const maybeYield = async () => {
       checkAbort();
       if (now() - lastYield > options.yieldMs) {
@@ -473,7 +534,7 @@ export function makeSearch(pathfinder, config = {}) {
 
       const cell = halfCell(meta.width, decoded), tileX = Math.floor(cell.column / meta.tileSize), tileY = Math.floor(cell.row / meta.tileSize);
       const tileId = tileY * tilesX + tileX;
-      if (!seenTiles.has(tileId)) { seenTiles.add(tileId); if (options.ringPrefetch) ringPrefetch(tileX, tileY); }
+      if (!seenTiles.has(tileId)) { seenTiles.add(tileId); allSeenTiles.add(tileId); if (options.ringPrefetch) ringPrefetch(tileX, tileY); }
       let view = store.sync(tileX, tileY);
       if (view === undefined) {
         prefetchFrontier(forwardSearch); if (isBidirectional) prefetchFrontier(backwardSearch);

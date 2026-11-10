@@ -61,3 +61,11 @@ export function ReplaceCurrentPath(points) {
 
 	currentPath = AddPathLine(points)
 }
+
+export function ClearCurrentPath() {
+	if (currentPath) {
+		viewport.entities.remove(currentPath);
+		currentPath = null;
+		viewport.scene.requestRender();
+	}
+}

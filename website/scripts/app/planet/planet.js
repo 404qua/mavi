@@ -8,10 +8,10 @@ import "./localView.js"
 import "./localViewMarkers.js"
 import "./markerToggle.js"
 
-import { route, snapCandidates, findPath, findPathDetailed } from "./router.js";
+import { route, cancelFinder, snapCandidates, findPath, findPathDetailed } from "./router.js";
 
-// Expose to window for web console access
 window.route = route;
+window.cancelFinder = cancelFinder;
 window.snapCandidates = snapCandidates;
 window.findPath = findPath;
 window.findPathDetailed = findPathDetailed;

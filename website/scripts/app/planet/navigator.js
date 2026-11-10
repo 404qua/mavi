@@ -1,6 +1,7 @@
 import * as Cesium from "cesium";
 import { createMapMarker } from "./mapMarkers";
 import { Viewport } from "./viewport";
+import { route, cancelFinder, ClearCurrentPath } from "./router.js";
 
 const viewer = await Viewport;
 
@@ -174,37 +175,108 @@ endButton.addEventListener("click", () => {
 	startPickingMarker("end", navigationPossibleStates.EndSelecting);
 });
 
+function updateUI(text, progress) {
+	console.log(text, progress);
+}
+
+export { cancelFinder };
+
+function formatTelemetry(result) {
+	if (!result) return null;
+	const lengthKm = result.lengthCm != null ? +(result.lengthCm / 100000).toFixed(2) : null;
+	const costEqKm = result.costCm != null ? +(result.costCm / 100000).toFixed(2) : null;
+	const totalSec = result.stats?.ms != null ? +(result.stats.ms / 1000).toFixed(2) : null;
+
+	return {
+		success: true,
+		distance: lengthKm != null ? `${lengthKm.toLocaleString()} km` : "N/A",
+		difficultyScore: costEqKm != null ? `${costEqKm.toLocaleString()} eq-km` : "N/A",
+		nodesExplored: result.stats?.expanded?.toLocaleString() ?? "0",
+		totalTime: totalSec != null ? `${totalSec}s` : "N/A",
+		waypointsCount: result.vertexCount ?? 0,
+		rawResult: result,
+	};
+}
+
+function formatNullResponse(reason, details = {}) {
+	return {
+		success: false,
+		result: null,
+		reason: reason || "No route found",
+		message: "Pathfinder could not find a traversable path between the selected coordinates.",
+		details,
+	};
+}
+
 let clearStartButton = document.getElementById("clear-start-position-select");
 let clearEndButton = document.getElementById("clear-end-position-select");
 
 clearStartButton.addEventListener("click", () => {
 	clearMarker("start");
+	ClearCurrentPath();
 });
 clearEndButton.addEventListener("click", () => {
 	clearMarker("end");
+	ClearCurrentPath();
 });
 
-document.getElementById("find-path-button").addEventListener("click", () => {
-	if (!(markers.start.longitude && markers.start.latitude)) {
-		console.log("Start is not set!");
-	}
-
-	if (!(markers.end.longitude && markers.end.latitude)) {
-		console.log("End is not set!");
+document.getElementById("find-path-button").addEventListener("click", async () => {
+	if (markers.start.longitude == null || markers.start.latitude == null) {
+		console.warn("[Pathfinder] Start position is not selected!");
 		return;
 	}
 
-	console.log(
-		"Start",
-		"\n",
-		"	" + "lon:" + markers.start.longitude,
-		"\n",
-		"	" + "lat:" + markers.start.latitude,
-		"\n",
-		"end",
-		"\n",
-		"	" + "lon:" + markers.end.longitude,
-		"\n",
-		"	" + "lat:" + markers.end.latitude,
-	);
+	if (markers.end.longitude == null || markers.end.latitude == null) {
+		console.warn("[Pathfinder] End position is not selected!");
+		return;
+	}
+
+	cancelFinder();
+
+	const startCoords = {
+		lat: Cesium.Math.toDegrees(markers.start.latitude),
+		lon: Cesium.Math.toDegrees(markers.start.longitude),
+	};
+	const endCoords = {
+		lat: Cesium.Math.toDegrees(markers.end.latitude),
+		lon: Cesium.Math.toDegrees(markers.end.longitude),
+	};
+
+	updateUI("Snapping positions to terrain", 5);
+
+	try {
+		const result = await route(startCoords, endCoords, {
+			silent: true,
+			updateUI,
+			onProgress: (p) => {
+				updateUI(p.statusText, p.progress);
+			},
+		});
+
+		if (result) {
+			const telemetry = formatTelemetry(result);
+			console.log("[Pathfinder] Telemetry:", telemetry);
+			updateUI("Route complete", 100);
+		} else {
+			const nullResponse = formatNullResponse("Route unavailable", {
+				start: startCoords,
+				end: endCoords,
+			});
+			console.warn("[Pathfinder] Route returned null:", nullResponse);
+			updateUI("Route unavailable", 0);
+		}
+	} catch (error) {
+		if (error.name === "AbortError" || error.message === "aborted") {
+			console.log("[Pathfinder] Search cancelled.");
+			updateUI("Search cancelled", 0);
+		} else {
+			const errorResponse = formatNullResponse("Search failed with error", {
+				error: error.message,
+				start: startCoords,
+				end: endCoords,
+			});
+			console.error("[Pathfinder] Search error:", errorResponse);
+			updateUI("Search failed", 0);
+		}
+	}
 });

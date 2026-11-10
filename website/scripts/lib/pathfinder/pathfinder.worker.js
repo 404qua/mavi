@@ -21,6 +21,18 @@ async function runRoute([start, end, options], signal, id) {
 	const startLon = start.lon ?? start.longitude;
 	const endLat = end.lat ?? end.latitude;
 	const endLon = end.lon ?? end.longitude;
+
+	self.postMessage({
+		type: "progress",
+		id,
+		progress: {
+			phase: "snap",
+			progress: 5,
+			statusText: "Snapping positions to terrain",
+			areaSearchedKm2: 0,
+		},
+	});
+
 	const [starts, ends] = await Promise.all([
 		snapCandidates(startLat, startLon, { direction: "from", count: options.snapCount ?? 8 }),
 		snapCandidates(endLat, endLon, { direction: "to", count: options.snapCount ?? 8 }),
