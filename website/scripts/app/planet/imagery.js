@@ -2,7 +2,14 @@ import * as Cesium from "cesium";
 import { marsEllipsoid, Viewport } from "./viewport";
 import { LOCAL_VIEW_MODES } from "./enums.js";
 import { getJson } from "../../lib/utils/getJson.js";
+import {
+	WEATHER_LAYERS,
+	getWeatherLayerLinks,
+	displayWeatherRangeImage,
+} from "./weatherLayers.js";
+import { getCurrentWeatherSelections } from "../monthInput.js";
 
+export { getWeatherLayerLinks, displayWeatherRangeImage, WEATHER_LAYERS };
 
 const LocalViewData = await getJson("data/localFeatures/feature_classes.json");
 
@@ -106,35 +113,86 @@ for (const layer in imageryLayers) {
 	viewer.imageryLayers.raiseToTop(imageryLayers[layer]);
 }
 
-function updateLayer(layerType) {
-	// there is a bug here with the LAYER_TYPES and layerType,
-	// but it doesn't do anything because in LAYER_TYPES name=value
-	if (!(layerType in LAYER_TYPES)) {
+let currentWeatherImageryLayer = null;
+let currentWeatherRequestId = 0;
+
+/**
+ * Loads and displays a single-tile equirectangular weather layer on Mars globe,
+ * and updates the corresponding range image.
+ */
+export async function setWeatherLayer(layerType, dropdownValues = null) {
+	const requestId = ++currentWeatherRequestId;
+	const filters = dropdownValues || getCurrentWeatherSelections();
+	const links = getWeatherLayerLinks(layerType, filters);
+
+	// Display the 2nd image link (range / legend colorbar) at appropriate spots
+	displayWeatherRangeImage(links.rangeImageLink, true);
+
+	try {
+		const provider = await Cesium.SingleTileImageryProvider.fromUrl(links.imageLink, {
+			rectangle: Cesium.Rectangle.fromDegrees(-180.0, -90.0, 180.0, 90.0),
+			ellipsoid: marsEllipsoid,
+		});
+
+		// Stale request guard
+		if (requestId !== currentWeatherRequestId) {
+			return links;
+		}
+
+		if (currentWeatherImageryLayer) {
+			viewer.imageryLayers.remove(currentWeatherImageryLayer, true);
+		}
+
+		currentWeatherImageryLayer = viewer.imageryLayers.addImageryProvider(provider);
+		currentWeatherImageryLayer.alpha = 0.85;
+		viewer.imageryLayers.raiseToTop(currentWeatherImageryLayer);
+	} catch (err) {
+		console.error("Failed to load weather imagery layer:", links.imageLink, err);
+	}
+
+	return links;
+}
+
+export function clearWeatherLayer() {
+	currentWeatherRequestId++;
+	if (currentWeatherImageryLayer) {
+		viewer.imageryLayers.remove(currentWeatherImageryLayer, true);
+		currentWeatherImageryLayer = null;
+	}
+	displayWeatherRangeImage(null, false);
+}
+
+export async function updateLayer(layerType) {
+	const isWeather = layerType in WEATHER_LAYERS;
+	const isIce = layerType === LAYER_TYPES.ice1 || layerType === LAYER_TYPES.ice2 || layerType === LAYER_TYPES.ice3;
+	const isSurface = layerType === LAYER_TYPES.surface;
+
+	if (!isWeather && !isIce && !isSurface) {
 		console.log("No functionality for layer type: " + layerType);
 		return;
 	}
 
-	if (layerType == currentLayer) {
+	if (layerType === currentLayer) {
+		if (isWeather) {
+			await setWeatherLayer(layerType);
+		}
 		return;
 	}
 
-	if (layerType == LAYER_TYPES.surface) {
+	if (currentLayer in imageryLayers) {
 		imageryLayers[currentLayer].show = false;
-		changeBaseBrightness(baseBrightness);
 	}
 
-	if (
-		layerType == LAYER_TYPES.ice1 ||
-		layerType == LAYER_TYPES.ice2 ||
-		layerType == LAYER_TYPES.ice3
-	) {
-		if (currentLayer != LAYER_TYPES.surface) {
-			imageryLayers[currentLayer].show = false;
-		}
-
+	if (isSurface) {
+		clearWeatherLayer();
+		changeBaseBrightness(baseBrightness);
+	} else if (isIce) {
+		clearWeatherLayer();
 		imageryLayers[layerType].show = true;
-
 		changeBaseBrightness(0.1);
+	} else if (isWeather) {
+		changeBaseBrightness(0.15);
+		await setWeatherLayer(layerType);
 	}
 
 	currentLayer = layerType;
@@ -151,3 +209,17 @@ layerOptionElements.forEach((e) => {
 		updateLayer(e.value);
 	});
 });
+
+document.addEventListener("weather-filter-change", async () => {
+	if (currentLayer in WEATHER_LAYERS) {
+		await setWeatherLayer(currentLayer);
+	}
+});
+
+const hudCloseBtn = document.getElementById("weather-legend-close");
+if (hudCloseBtn) {
+	hudCloseBtn.addEventListener("click", () => {
+		const hud = document.getElementById("weather-legend-hud");
+		if (hud) hud.style.display = "none";
+	});
+}

@@ -96,6 +96,7 @@
 
 		cursor: pointer;
 	}
+
 }
 
 .panel__window-button-group:has(.site-date input:checked) {

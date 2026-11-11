@@ -161,7 +161,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="tsurf" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -174,7 +174,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="psurf" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -198,7 +198,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="dust_tau_monthly" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -211,7 +211,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="dust_tau_daily" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -234,7 +234,7 @@
 										</label>
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="wind_stress" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -257,7 +257,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="sensible_heat_flux" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -270,7 +270,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="surface_solar" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -283,7 +283,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="surface_solar_reflected" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -296,7 +296,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="toa_solar" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -309,7 +309,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="toa_solar_reflected" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -332,9 +332,9 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="surface_thermal_ir" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<imI don't have anyg src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
 														<h3>Thermal IR, Surface</h3>
 														<p></p>
@@ -346,7 +346,7 @@
 
 										<span class="site-date">
 											<label class="button">
-												<input type="radio" class="hidden" value="ice3" name="imageryLayers">
+												<input type="radio" class="hidden" value="toa_thermal_ir" name="imageryLayers">
 												<div class="site">
 													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
@@ -511,6 +511,10 @@
 
 		<div class="viewport__container">
 			<div id="viewport"></div>
+			<div id="weather-legend-hud" class="weather-legend-hud" style="display: none;">
+				<button id="weather-legend-close" class="weather-legend-close" title="Hide scale">&times;</button>
+				<img id="weather-legend-hud-img" alt="Weather Layer Scale" src="">
+			</div>
 		</div>
 	</main>
 

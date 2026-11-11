@@ -15,7 +15,6 @@ const MonthNames = [
 	"Late winter",
 ];
 
-
 const ConditionNames = [
 	"Typical",
 	"Cold",
@@ -23,19 +22,31 @@ const ConditionNames = [
 	"Storm",
 ];
 
+export function getCurrentWeatherSelections() {
+	const monthSelect = document.querySelector('select[name="month"]');
+	const timeSelect = document.querySelector('select[name="time"]');
+	const conditionSelect = document.querySelector('select[name="condition"]');
+	return {
+		season: monthSelect ? Number(monthSelect.value) : 0,
+		time: timeSelect ? timeSelect.value : 0,
+		condition: conditionSelect ? Number(conditionSelect.value) : 0,
+	};
+}
+
 for (const el of inputElements) {
 	const minMonth = Number(el.dataset.minMonth ?? 1);
 	const maxMonth = Number(el.dataset.maxMonth ?? 12);
 
 	let monthOutput = "";
-
 	for (let i = minMonth; i <= maxMonth; i++) {
-		monthOutput += `<option value="${i - 1}" ${i == maxMonth ? "selected" : ""}>${MonthNames[i - 1]}</option> `;
+		monthOutput += `<option value="${i - 1}" ${i == 1 ? "selected" : ""}>${MonthNames[i - 1]}</option> `;
 	}
 
-	let timeOutput = "";
-	for (let i = 0; i <= 24; i += 2) {
-		timeOutput += `<option value="${i}" ${i == 0 ? "selected" : ""}>${i}:00</option> `;
+	let timeOutput = `<option value="mean">Daily Mean</option> `;
+	for (let i = 0; i < 12; i++) {
+		const hourVal = (i + 1) * 2;
+		const hourStr = hourVal < 10 ? `0${hourVal}:00` : `${hourVal}:00`;
+		timeOutput += `<option value="${i}" ${i == 0 ? "selected" : ""}>${hourStr}</option> `;
 	}
 
 	let conditionOutput = "";
@@ -43,38 +54,37 @@ for (const el of inputElements) {
 		conditionOutput += `<option value="${i}" ${i == 0 ? "selected" : ""}>${ConditionNames[i]}</option> `;
 	}
 
-	// const minYear = Number(el.dataset.minYear ?? 2000);
-	// const maxYear = Number(el.dataset.maxYear ?? 2026);
-	// let yearOutput = "";
-	// for (let i = minYear; i <= maxYear; i++) {
-	// 	yearOutput += `<option value="${i}" ${i == maxYear ? "selected" : ""}>${i}</option>`;
-	// }
-
 	el.innerHTML = `
 <span>
-	<p>Season </p>
-		<select name="month" id="${el.id}Month">
-			${monthOutput}
-		</select>
+	<p>Season</p>
+	<select name="month" id="${el.id}Season">
+		${monthOutput}
+	</select>
 </span>
 
 <span>
-	<p>Time </p>
-		<select name="time" id="${el.id}Month">
-			${timeOutput}
-		</select>
+	<p>Time</p>
+	<select name="time" id="${el.id}Time">
+		${timeOutput}
+	</select>
 </span>
 
 <span>
-	<p>Condition </p>
-		<select name="condition" id="${el.id}Month">
-			${conditionOutput}
-		</select>
+	<p>Condition</p>
+	<select name="condition" id="${el.id}Condition">
+		${conditionOutput}
+	</select>
 </span>
+
 `;
 
-
-	// <!-- <select name="month" id="${el.id}Year"> -->
-	// <!-- 	${yearOutput} -->
-	// <!-- </select> -->
+	el.querySelectorAll("select").forEach((select) => {
+		select.addEventListener("change", () => {
+			document.dispatchEvent(
+				new CustomEvent("weather-filter-change", {
+					detail: getCurrentWeatherSelections(),
+				})
+			);
+		});
+	});
 }
