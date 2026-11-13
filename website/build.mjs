@@ -37,6 +37,17 @@ const result = await build({
 	loader: { '.png': 'dataurl', '.svg': 'dataurl', '.gif': 'dataurl', '.jpg': 'dataurl' },
 });
 
+// The app creates this worker relative to the bundled script.js at the build root.
+await build({
+	entryPoints: ['scripts/lib/pathfinder/pathfinder.worker.js'],
+	outfile: `${OUT}/pathfinder.worker.js`,
+	bundle: true,
+	minify: true,
+	format: 'esm',
+	target: 'es2022',
+	legalComments: 'none',
+});
+
 // Cesium runtime assets
 for (const dir of CESIUM_DIRS) {
 	await cp(`${CESIUM}/${dir}`, `${OUT}/cesium/${dir}`, {
