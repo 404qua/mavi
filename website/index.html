@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,1,0&icon_names=
-		add,arrow_drop_down,close,close_small,landscape,layers,navigation,photo_camera,public,remove,rocket_launch,location_on,school" />
+		add,arrow_drop_down,close,close_small,landscape,layers,navigation,photo_camera,public,remove,rocket_launch,location_on,school,search" />
 </head>
 
 <body>
@@ -76,7 +76,7 @@
 								<hr>
 
 								<div class="find-path__info disabled" id="find-path__info">
-									<p id="find-path__info__text">info</p>
+									<p id="find-path__info__text">result</p>
 									<progress value="20" max="100" id="find-path__progress"></progress>
 								</div>
 
@@ -521,13 +521,32 @@
 				</div>
 			</div>
 
-			<!-- <div class="panel--group"> -->
-			<!-- 	<div class="search"> -->
-			<!-- 		<div class="search__box"> -->
-			<!-- 			<input type="search"> -->
-			<!-- 		</div> -->
-			<!-- 	</div> -->
-			<!-- </div> -->
+			<div class="panel--group">
+				<div class="search">
+					<div class="search__box">
+						<form onsubmit="return false">
+							<input type="text" placeholder="Search" id="search_box" autocomplete="off">
+							<label>
+								<span class="material-symbols-outlined">
+									close_small
+								</span>
+								<input type="reset" value="X" class="hidden" aria-label="Clear the search field">
+							</label>
+						</form>
+
+						<label class="search__box_search-icon">
+							<span class="material-symbols-outlined">
+								search
+							</span>
+							<!-- <input type="button" value="Search" class="hidden"> -->
+						</label>
+					</div>
+
+					<div class="search__result-box" id="search_results">
+					</div>
+
+				</div>
+			</div>
 		</div>
 
 		<div class="viewport__container">

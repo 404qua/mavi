@@ -1,4 +1,6 @@
 import { StartFirstPersonCamera, StopFirstPersonCamera } from "./firstPersonCamera/firstPersonCamera";
+import { Viewport } from "../viewport.js";
+import * as Cesium from "cesium";
 import { BOUNDS } from "./limit";
 import "./zoom.js";
 
@@ -39,3 +41,30 @@ allCameraRadios.forEach((radio) => {
 });
 
 updateFirstPersonCameraEnabled();
+
+let viewer = await Viewport;
+const camera = viewer.scene.camera;
+
+export function NormalFlyTo({
+	latitude,
+	longitude,
+	height=camera.positionCartographic.height,
+	duration = 1,
+}) {
+	if (CameraMode != "normal") {
+		return;
+	}
+
+	if (BOUNDS.north != undefined) {
+		return;
+	}
+
+
+	camera.flyTo({
+		destination: Cesium.Cartesian3.fromRadians(
+			Cesium.Math.toRadians(longitude),
+			Cesium.Math.toRadians(latitude),
+			height,),
+		duration: duration,
+	});
+}

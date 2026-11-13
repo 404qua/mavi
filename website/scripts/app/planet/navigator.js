@@ -87,8 +87,11 @@ function startPickingMarker(markerName, stateRequired) {
 		handler.removeInputAction(Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 		handler.destroy();
 
-		document.getElementById("find-path__info").classList.add("disabled");
 		ClearCurrentPath();
+		shouldCancel = false;
+		document.getElementById("find-path__info").classList.add("disabled");
+		cancelFinderUI();
+		cancelFinder();
 
 		if (navigationSelectorState == stateRequired) {
 			let currentItem = markers[markerName];
@@ -251,25 +254,28 @@ function cancelFinderUI() {
 
 function updateUI(text, progress) {
 	// document.getElementById("find-path-subtext").innerHTML = text;
-	document.getElementById("find-path__info").classList.remove("disabled");
 
 	document.getElementById("find-path__progress").value = progress;
 	document.getElementById("find-path__info__text").innerHTML = text;
 
 	if (progress == 100) {
 		document.getElementById("find-path__info").classList.add("complete");
+		document.getElementById("find-path__info").classList.remove("disabled");
 		shouldCancel = false;
-
 		cancelFinderUI();
+		return;
 	} else {
 		document.getElementById("find-path__info").classList.remove("complete");
 	}
 
-	if (progress == 0 && shouldCancel == false) {
+	if (progress == -1) {
 		setTimeout(() => {
 			document.getElementById("find-path__info").classList.add("disabled");
 		}, 500);
+		return;
 	}
+
+	document.getElementById("find-path__info").classList.remove("disabled");
 }
 
 export { cancelFinder };
@@ -383,7 +389,7 @@ document.getElementById("find-path-button").addEventListener("click", async () =
 	} catch (error) {
 		if (error.name === "AbortError" || error.message === "aborted") {
 			console.log("[Pathfinder] Search cancelled.");
-			updateUI("Search cancelled", 0);
+			updateUI("Search cancelled", -1);
 		} else {
 			const errorResponse = formatNullResponse("Search failed with error", {
 				error: error.message,
