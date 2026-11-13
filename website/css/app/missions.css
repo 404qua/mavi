@@ -108,45 +108,52 @@ body:has(.school:checked) {
 	border-radius: 999px;
 	text-transform: uppercase;
 	letter-spacing: .04em;
-	background: #2a2f38;
-	color: #cfd6e0;
+	background: var(--foreground-500);
+	color: var(--background-500);
 	width: fit-content;
 }
 
 .outcome--success {
-	background: #163a24;
-	color: #7be0a2;
+	background: #7be0a2;
+	color: var(--background-500);
+	font-weight: 700;
 }
 
 .outcome--partial {
-	background: #3a3216;
-	color: #e0c47b;
+	background: #e0c47b;
+	color: var(--background-500);
+	font-weight: 700;
 }
 
 .outcome--failure {
-	background: #3a1a1a;
-	color: #e08a8a;
+	background: #e08a8a;
+	color: var(--background-500);
+	font-weight: 700;
 }
 
 .outcome--ended {
-	background: #2a2436;
-	color: #b8a6e0;
+	background: #b8a6e0;
+	color: var(--background-500);
+	font-weight: 700;
 }
 
 .outcome--operating {
-	background: #12303a;
-	color: #7bd0e0;
+	background: #7bd0e0;
+	color: var(--background-500);
+	font-weight: 700;
 }
 
 .outcome--cancelled {
-	background: #2a2a2a;
-	color: #aaaaaa;
+	background: #aaaaaa;
+	color: var(--background-500);
+	font-weight: 700;
 }
 
 .outcome--planned,
 .outcome--in-development {
-	background: #232a38;
-	color: #9fb8e0;
+	background: #9fb8e0;
+	font-weight: 700;
+	color: var(--background-500);
 }
 
 /* ---- dialog ---- */
