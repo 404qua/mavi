@@ -104,7 +104,7 @@
 								<div class="sites">
 									<label class="button">
 										<div class="site">
-											<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+											<img src="icons/surface.png" alt="Olympus Mons surface terrain">
 											<div class="description">
 												<h3>Surface</h3>
 												<p>Regular Surface Imagery of Mars.</p>
@@ -116,61 +116,238 @@
 									<div class="site-group">
 										<label class="group-header">
 											<h2>Ice</h2>
-											<span class="material-symbols-outlined">
-												arrow_drop_down
-											</span>
+											<span class="material-symbols-outlined">arrow_drop_down</span>
 											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
 										</label>
-
 										<label class="button">
 											<div class="site">
-												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<img src="icons/ice0_1.png" alt="">
 												<div class="description">
-													<h3>Ice Level 1</h3>
-													<p>Information about Ice Formations.</p>
+													<h3>Ice Consistency, 0–1 m</h3>
+													<p>SWIM evidence for shallow subsurface ice.</p>
 												</div>
 											</div>
 											<input type="radio" class="hidden" value="ice1" name="imageryLayers">
 										</label>
-
 										<label class="button">
 											<div class="site">
-												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<img src="icons/ice1_5.png" alt="">
 												<div class="description">
-													<h3>Ice Level 2</h3>
-													<p>Information about Ice Formations.</p>
+													<h3>Ice Consistency, 1–5 m</h3>
+													<p>SWIM evidence for intermediate-depth ice.</p>
 												</div>
 											</div>
 											<input type="radio" class="hidden" value="ice2" name="imageryLayers">
 										</label>
-
 										<label class="button">
-											<input type="radio" class="hidden" value="ice3" name="imageryLayers">
 											<div class="site">
-												<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+												<img src="icons/ice5.png" alt="">
 												<div class="description">
-													<h3>Ice Level 3</h3>
-													<p>Information about Ice Formations.</p>
+													<h3>Ice Consistency, &gt;5 m</h3>
+													<p>SWIM evidence for deeper subsurface ice.</p>
 												</div>
 											</div>
+											<input type="radio" class="hidden" value="ice3" name="imageryLayers">
 										</label>
 									</div>
 
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Minerals</h2>
+											<span class="material-symbols-outlined">arrow_drop_down</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_quartz.png" alt="">
+												<div class="description">
+													<h3>Quartz</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_quartz" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_k_feldspar.png" alt="">
+												<div class="description">
+													<h3>K-feldspar</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_k_feldspar" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_plagioclase.png" alt="">
+												<div class="description">
+													<h3>Plagioclase</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_plagioclase" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_amphibole.png" alt="">
+												<div class="description">
+													<h3>Amphibole</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_amphibole" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_low_ca_pyroxene.png" alt="">
+												<div class="description">
+													<h3>Low-Ca Pyroxene</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_low_ca_pyroxene" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_high_ca_pyroxene.png" alt="">
+												<div class="description">
+													<h3>High-Ca Pyroxene</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_high_ca_pyroxene" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_olivine.png" alt="">
+												<div class="description">
+													<h3>Olivine</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_olivine" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_hematite.png" alt="">
+												<div class="description">
+													<h3>Hematite</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_hematite" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_sulfate.png" alt="">
+												<div class="description">
+													<h3>Sulfate</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_sulfate" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_carbonate.png" alt="">
+												<div class="description">
+													<h3>Carbonate</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_carbonate" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_sheet_silicates_high_si_glass.png" alt="">
+												<div class="description">
+													<h3>Sheet Silicates / High-Si Glass</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_sheet_silicates_high_si_glass" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/mineral_surface_dust.png" alt="">
+												<div class="description">
+													<h3>Surface Dust</h3>
+													<p>TES mineral map · relative signal</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="mineral_surface_dust" name="imageryLayers">
+										</label>
+									</div>
+
+									<div class="site-group">
+										<label class="group-header">
+											<h2>Elements</h2>
+											<span class="material-symbols-outlined">arrow_drop_down</span>
+											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/element_fe.png" alt="">
+												<div class="description">
+													<h3>Iron (Fe)</h3>
+													<p>Odyssey GRS · weight percent</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="element_fe" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/element_k.png" alt="">
+												<div class="description">
+													<h3>Potassium (K)</h3>
+													<p>Odyssey GRS · weight percent</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="element_k" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/element_si.png" alt="">
+												<div class="description">
+													<h3>Silicon (Si)</h3>
+													<p>Odyssey GRS · weight percent</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="element_si" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/element_th.png" alt="">
+												<div class="description">
+													<h3>Thorium (Th)</h3>
+													<p>Odyssey GRS · weight percent</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="element_th" name="imageryLayers">
+										</label>
+										<label class="button">
+											<div class="site">
+												<img src="icons/element_cl.png" alt="">
+												<div class="description">
+													<h3>Chlorine (Cl)</h3>
+													<p>Odyssey GRS · weight percent</p>
+												</div>
+											</div>
+											<input type="radio" class="hidden" value="element_cl" name="imageryLayers">
+										</label>
+									</div>
 
 									<div class="site-group">
 										<label class="group-header">
 											<h2>Surface</h2>
-											<span class="material-symbols-outlined">
-												arrow_drop_down
-											</span>
+											<span class="material-symbols-outlined">arrow_drop_down</span>
 											<input type="radio" class="hidden uncheckable" name="site-group-checkbox">
 										</label>
-
 										<span class="site-date">
 											<label class="button">
 												<input type="radio" class="hidden" value="tsurf" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/tsurf.png" alt="">
 													<div class="description">
 														<h3>Surface Temperature</h3>
 														<p></p>
@@ -178,12 +355,11 @@
 												</div>
 											</label>
 										</span>
-
 										<span class="site-date">
 											<label class="button">
 												<input type="radio" class="hidden" value="psurf" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/psurf.png" alt="">
 													<div class="description">
 														<h3>Surface Pressure</h3>
 														<p></p>
@@ -191,7 +367,6 @@
 												</div>
 											</label>
 										</span>
-
 									</div>
 
 									<div class="site-group">
@@ -207,7 +382,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="dust_tau_monthly" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/dust_tau_monthly.png" alt="">
 													<div class="description">
 														<h3>Dust Optical Depth (Monthly)</h3>
 														<p></p>
@@ -220,7 +395,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="dust_tau_daily" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/dust_tau_daily.png" alt="">
 													<div class="description">
 														<h3>Dust Optical Depth (Daily)</h3>
 														<p></p>
@@ -243,7 +418,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="wind_stress" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/wind_stress.png" alt="">
 													<div class="description">
 														<h3>Surface Wind Stress</h3>
 														<p></p>
@@ -266,7 +441,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="sensible_heat_flux" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/sensible_heat_flux.png" alt="">
 													<div class="description">
 														<h3>Sensible Heat Flux</h3>
 														<p></p>
@@ -279,7 +454,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="surface_solar" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/surface_solar.png" alt="">
 													<div class="description">
 														<h3>Solar Flux, Surface</h3>
 														<p></p>
@@ -292,7 +467,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="surface_solar_reflected" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/surface_solar_reflected.png" alt="">
 													<div class="description">
 														<h3>Solar Flux, Surface Reflected</h3>
 														<p></p>
@@ -305,7 +480,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="toa_solar" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/toa_solar.png" alt="">
 													<div class="description">
 														<h3>Solar Flux, Top of Atmosphere</h3>
 														<p></p>
@@ -318,7 +493,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="toa_solar_reflected" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/toa_solar_reflected.png" alt="">
 													<div class="description">
 														<h3>Solar Flux, Top of Atmosphere Reflected</h3>
 														<p></p>
@@ -341,7 +516,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="surface_thermal_ir" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/surface_thermal_ir.png" alt="">
 													<div class="description">
 														<h3>Thermal IR, Surface</h3>
 														<p></p>
@@ -355,7 +530,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="toa_thermal_ir" name="imageryLayers">
 												<div class="site">
-													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="icons/toa_thermal_ir.png" alt="">
 													<div class="description">
 														<h3>Thermal IR, Top of Atmosphere</h3>
 														<p></p>
@@ -516,12 +691,6 @@
 			</div>
 
 			<div class="panel--group">
-				<div id="weather-legend-hud" class="weather-legend-hud disabled">
-					<img id="weather-legend-hud-img" alt="Weather Layer Scale" src="">
-				</div>
-			</div>
-
-			<div class="panel--group">
 				<div class="search">
 					<div class="search__box">
 						<form onsubmit="return false">
@@ -551,6 +720,10 @@
 
 		<div class="viewport__container">
 			<div id="viewport"></div>
+			<div id="weather-legend-hud" class="weather-legend-hud" style="display: none;">
+				<button id="weather-legend-close" class="weather-legend-close" title="Hide scale">&times;</button>
+				<img id="weather-legend-hud-img" alt="Layer Scale" src="">
+			</div>
 		</div>
 	</main>
 

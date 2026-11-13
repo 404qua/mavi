@@ -6,8 +6,10 @@ import {
 	WEATHER_LAYERS,
 	getWeatherLayerLinks,
 	displayWeatherRangeImage,
+	displayRangeImage,
 } from "./weatherLayers.js";
 import { getCurrentWeatherSelections } from "../monthInput.js";
+import { MINERAL_DATA_LAYERS } from "./mineralLayers.js";
 
 export { getWeatherLayerLinks, displayWeatherRangeImage, WEATHER_LAYERS };
 
@@ -108,6 +110,12 @@ const imageryLayers = {
 	),
 };
 
+const ICE_RANGE_IMAGES = Object.freeze({
+	ice1: "icons/SWIM4MIM_Ci_0_1_range.svg",
+	ice2: "icons/SWIM4MIM_Ci_1_5_range.svg",
+	ice3: "icons/SWIM4MIM_Ci_5_range.svg",
+});
+
 for (const layer in imageryLayers) {
 	imageryLayers[layer].show = false;
 	viewer.imageryLayers.raiseToTop(imageryLayers[layer]);
@@ -115,6 +123,40 @@ for (const layer in imageryLayers) {
 
 let currentWeatherImageryLayer = null;
 let currentWeatherRequestId = 0;
+let currentMineralImageryLayer = null;
+let currentMineralRequestId = 0;
+
+async function setMineralLayer(layerType) {
+	const requestId = ++currentMineralRequestId;
+	const layer = MINERAL_DATA_LAYERS[layerType];
+	displayRangeImage(layer.rangeImageLink, true);
+
+	try {
+		const provider = await Cesium.SingleTileImageryProvider.fromUrl(layer.imageLink, {
+			rectangle: Cesium.Rectangle.fromDegrees(-180.0, -90.0, 180.0, 90.0),
+			ellipsoid: marsEllipsoid,
+		});
+
+		if (requestId !== currentMineralRequestId) return;
+		if (currentMineralImageryLayer) {
+			viewer.imageryLayers.remove(currentMineralImageryLayer, true);
+		}
+
+		currentMineralImageryLayer = viewer.imageryLayers.addImageryProvider(provider);
+		currentMineralImageryLayer.alpha = 0.85;
+		viewer.imageryLayers.raiseToTop(currentMineralImageryLayer);
+	} catch (err) {
+		console.error("Failed to load mineral imagery layer:", layer.imageLink, err);
+	}
+}
+
+function clearMineralLayer() {
+	currentMineralRequestId++;
+	if (currentMineralImageryLayer) {
+		viewer.imageryLayers.remove(currentMineralImageryLayer, true);
+		currentMineralImageryLayer = null;
+	}
+}
 
 /**
  * Loads and displays a single-tile equirectangular weather layer on Mars globe,
@@ -164,17 +206,23 @@ export function clearWeatherLayer() {
 
 export async function updateLayer(layerType) {
 	const isWeather = layerType in WEATHER_LAYERS;
+	const isMineral = layerType in MINERAL_DATA_LAYERS;
 	const isIce = layerType === LAYER_TYPES.ice1 || layerType === LAYER_TYPES.ice2 || layerType === LAYER_TYPES.ice3;
 	const isSurface = layerType === LAYER_TYPES.surface;
 
-	if (!isWeather && !isIce && !isSurface) {
+	if (!isWeather && !isMineral && !isIce && !isSurface) {
 		console.log("No functionality for layer type: " + layerType);
 		return;
+	}
+	if (!isMineral) {
+		clearMineralLayer();
 	}
 
 	if (layerType === currentLayer) {
 		if (isWeather) {
 			await setWeatherLayer(layerType);
+		} else if (isMineral) {
+			await setMineralLayer(layerType);
 		}
 		return;
 	}
@@ -182,14 +230,18 @@ export async function updateLayer(layerType) {
 	if (currentLayer in imageryLayers) {
 		imageryLayers[currentLayer].show = false;
 	}
-
 	if (isSurface) {
 		clearWeatherLayer();
 		changeBaseBrightness(baseBrightness);
 	} else if (isIce) {
 		clearWeatherLayer();
 		imageryLayers[layerType].show = true;
-		changeBaseBrightness(0.1);
+		changeBaseBrightness(0.3);
+		displayRangeImage(ICE_RANGE_IMAGES[layerType], true);
+	} else if (isMineral) {
+		clearWeatherLayer();
+		changeBaseBrightness(0.3);
+		await setMineralLayer(layerType);
 	} else if (isWeather) {
 		changeBaseBrightness(0.15);
 		await setWeatherLayer(layerType);
