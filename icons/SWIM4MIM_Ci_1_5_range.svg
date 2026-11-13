@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="72" viewBox="0 0 420 72">
+  <defs>
+    <linearGradient id="ci-ramp" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0.00%" stop-color="rgb(123,98,96)" stop-opacity="0.949"/>
+      <stop offset="25.00%" stop-color="rgb(153,132,128)" stop-opacity="0.910"/>
+      <stop offset="45.00%" stop-color="rgb(184,179,170)" stop-opacity="0.843"/>
+      <stop offset="50.00%" stop-color="rgb(111,190,232)" stop-opacity="0.863"/>
+      <stop offset="62.50%" stop-color="rgb(48,158,245)" stop-opacity="0.933"/>
+      <stop offset="75.00%" stop-color="rgb(16,137,255)" stop-opacity="0.969"/>
+      <stop offset="87.50%" stop-color="rgb(0,125,255)" stop-opacity="0.980"/>
+      <stop offset="100.00%" stop-color="rgb(0,105,245)" stop-opacity="0.988"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="72" rx="10" fill="#171b20"/>
+  <rect x="24" y="12" width="372" height="18" rx="5" fill="#e8e9e5"/>
+  <rect x="24" y="12" width="372" height="18" rx="5" fill="url(#ci-ramp)"/>
+  <text x="24" y="54" text-anchor="start" fill="#d6dbe1" font-family="system-ui, sans-serif" font-size="10">Inconsistent / NoData</text>
+  <text x="210" y="54" text-anchor="middle" fill="#d6dbe1" font-family="system-ui, sans-serif" font-size="10">Neutral</text>
+  <text x="396" y="54" text-anchor="end" fill="#d6dbe1" font-family="system-ui, sans-serif" font-size="10">Consistent</text>
+</svg>
