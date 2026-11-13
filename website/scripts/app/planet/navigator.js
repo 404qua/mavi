@@ -257,9 +257,6 @@ document.getElementById("find-path-button").addEventListener("click", async () =
 		const result = await route(startCoords, endCoords, {
 			silent: true,
 			updateUI,
-			onProgress: (p) => {
-				updateUI(p.statusText, p.progress);
-			},
 		});
 
 		if (result) {

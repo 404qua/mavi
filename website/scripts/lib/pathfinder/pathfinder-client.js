@@ -110,6 +110,8 @@ function splitOptions(options = {}) {
 	delete workerOptions.signal;
 	delete workerOptions.onProgress;
 	delete workerOptions.logProgress;
+	delete workerOptions.updateUI;
+	delete workerOptions.onStage;
 	return { signal, onProgress, workerOptions };
 }
 
