@@ -88,6 +88,7 @@ function startPickingMarker(markerName, stateRequired) {
 		handler.destroy();
 
 		document.getElementById("find-path__info").classList.add("disabled");
+		ClearCurrentPath();
 
 		if (navigationSelectorState == stateRequired) {
 			let currentItem = markers[markerName];
@@ -218,7 +219,6 @@ startButton.addEventListener("click", () => {
 	}
 
 
-	ClearCurrentPath();
 	navigationSelectorState = navigationPossibleStates.StartSelecting;
 	startPickingMarker("start", navigationPossibleStates.StartSelecting);
 });
@@ -235,7 +235,6 @@ endButton.addEventListener("click", () => {
 		cancelCurrentSelecting();
 	}
 
-	ClearCurrentPath();
 	navigationSelectorState = navigationPossibleStates.EndSelecting;
 	startPickingMarker("end", navigationPossibleStates.EndSelecting);
 });
