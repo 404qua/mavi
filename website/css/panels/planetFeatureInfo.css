@@ -58,8 +58,10 @@
 
 	img {
 		max-width: 100%;
+		max-height: 100%;
+		box-sizing: border-box;
+		display: block;
 	}
-
 
 	--transition-el: calc(var(--transition-normal) * 0.5);
 	--transition-delay: calc(var(--transition-short) * 0.5);
@@ -88,7 +90,7 @@
 	}
 
 	img {
-		animation: sizeUp-in var(--transition-el) both;
+		animation: sizeUp-in calc(var(--transition-el)*2) both;
 	}
 
 	hr {
@@ -97,10 +99,14 @@
 	}
 
 	#pfi_group__image {
+		box-sizing: border-box;
 		align-self: center;
 		width: fit-content;
 		position: relative;
+		min-height: calc(var(--spacing-l) * 4);
+		min-width: calc(var(--spacing-l) * 4);
 		background-color: var(--background-400);
+		padding: 0px;
 
 		#pfi__img_source {
 			position: absolute;

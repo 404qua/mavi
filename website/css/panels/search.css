@@ -1,0 +1,15 @@
+.search {
+	position: absolute;
+	top: var(--spacing-l);
+	right: var(--spacing-l);
+
+	pointer-events: all;
+}
+
+.search__box {
+	width: calc(var(--unit-px) * 16);
+	height: calc(var(--unit-px) * 2);
+
+	border-radius: var(--input-border-radius);
+	background: var(--background-500);
+}

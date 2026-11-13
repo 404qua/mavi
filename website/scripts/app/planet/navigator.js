@@ -18,7 +18,7 @@ export const navigationPossibleStates = {
 const iconImageData = {
 	start: await createWapointImage("icons/start.svg"),
 	end: await createWapointImage("icons/end.svg"),
-}
+};
 
 export let navigationSelectorState = navigationPossibleStates.NotSelecting;
 
@@ -70,6 +70,7 @@ function startPickingMarker(markerName, stateRequired) {
 			// color: markerName == "start" ? Cesium.Color.BLUE : Cesium.Color.RED,
 			color: Cesium.Color.WHITE,
 			drawDistance: 999999999999999,
+			height: -2000,
 		});
 
 		markers[markerName].marker = marker;
@@ -82,9 +83,11 @@ function startPickingMarker(markerName, stateRequired) {
 	let longitude;
 	let latitude;
 
-	function cancelSelecting() {
+	function finishSelecting() {
 		handler.removeInputAction(Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 		handler.destroy();
+
+		document.getElementById("find-path__info").classList.add("disabled");
 
 		if (navigationSelectorState == stateRequired) {
 			let currentItem = markers[markerName];
@@ -113,7 +116,45 @@ function startPickingMarker(markerName, stateRequired) {
 				1000,
 			);
 		} else {
+			marker.show = false;
+		}
+
+		viewer.scene.requestRender();
+
+		cancelCurrentSelecting = null;
+
+	}
+
+	function cancelSelecting() {
+		handler.removeInputAction(Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+		handler.destroy();
+
+		let currentItem = markers[markerName];
+
+		if (currentItem.longitude != null) {
+			currentItem.label.innerHTML =
+				Cesium.Math.toDegrees(currentItem.longitude).toFixed(5) +
+				"<b>°E</b>&nbsp;" +
+				Cesium.Math.toDegrees(currentItem.latitude).toFixed(5) +
+				"<b>°N</b>";
+		} else {
+			currentItem.label.innerHTML = "Select";
+		}
+
+
+		if (navigationSelectorState == stateRequired) {
+			navigationSelectorState = navigationPossibleStates.NotSelecting;
+		}
+
+		if (markers[markerName].longitude != null) {
 			marker.show = true;
+			marker.position = Cesium.Cartesian3.fromRadians(
+				markers[markerName].longitude,
+				markers[markerName].latitude,
+				1000,
+			);
+		} else {
+			marker.show = false;
 		}
 
 		viewer.scene.requestRender();
@@ -160,32 +201,76 @@ function startPickingMarker(markerName, stateRequired) {
 	}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
 	handler.setInputAction(() => {
-		cancelSelecting();
+		finishSelecting();
 	}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
 
 startButton.addEventListener("click", () => {
+	if (navigationSelectorState == navigationPossibleStates.StartSelecting) {
+		if (cancelCurrentSelecting) {
+			cancelCurrentSelecting();
+		}
+		return;
+	}
+
 	if (cancelCurrentSelecting) {
 		cancelCurrentSelecting();
 	}
 
-	navigationSelectorState = navigationPossibleStates.StartSelecting;
 
+	ClearCurrentPath();
+	navigationSelectorState = navigationPossibleStates.StartSelecting;
 	startPickingMarker("start", navigationPossibleStates.StartSelecting);
 });
 
 endButton.addEventListener("click", () => {
+	if (navigationSelectorState == navigationPossibleStates.EndSelecting) {
+		if (cancelCurrentSelecting) {
+			cancelCurrentSelecting();
+		}
+		return;
+	}
+
 	if (cancelCurrentSelecting) {
 		cancelCurrentSelecting();
 	}
 
+	ClearCurrentPath();
 	navigationSelectorState = navigationPossibleStates.EndSelecting;
-
 	startPickingMarker("end", navigationPossibleStates.EndSelecting);
 });
 
+let shouldCancel = false;
+
+let findPathButton = document.getElementById("find-path-container");
+let findPathButtonText = document.getElementById("find-path-container__text");
+
+function cancelFinderUI() {
+	findPathButton.classList.remove("cancel");
+	findPathButtonText.innerHTML = "Find Path";
+}
+
 function updateUI(text, progress) {
-	console.log(text, progress);
+	// document.getElementById("find-path-subtext").innerHTML = text;
+	document.getElementById("find-path__info").classList.remove("disabled");
+
+	document.getElementById("find-path__progress").value = progress;
+	document.getElementById("find-path__info__text").innerHTML = text;
+
+	if (progress == 100) {
+		document.getElementById("find-path__info").classList.add("complete");
+		shouldCancel = false;
+
+		cancelFinderUI();
+	} else {
+		document.getElementById("find-path__info").classList.remove("complete");
+	}
+
+	if (progress == 0 && shouldCancel == false) {
+		setTimeout(() => {
+			document.getElementById("find-path__info").classList.add("disabled");
+		}, 500);
+	}
 }
 
 export { cancelFinder };
@@ -221,12 +306,27 @@ let clearStartButton = document.getElementById("clear-start-position-select");
 let clearEndButton = document.getElementById("clear-end-position-select");
 
 clearStartButton.addEventListener("click", () => {
+	if (cancelCurrentSelecting) {
+		cancelCurrentSelecting();
+		return;
+	}
+
 	clearMarker("start");
 	ClearCurrentPath();
+
+	document.getElementById("find-path__info").classList.add("disabled");
 });
+
 clearEndButton.addEventListener("click", () => {
+	if (cancelCurrentSelecting) {
+		cancelCurrentSelecting();
+		return;
+	}
+
 	clearMarker("end");
 	ClearCurrentPath();
+
+	document.getElementById("find-path__info").classList.add("disabled");
 });
 
 document.getElementById("find-path-button").addEventListener("click", async () => {
@@ -241,6 +341,16 @@ document.getElementById("find-path-button").addEventListener("click", async () =
 	}
 
 	cancelFinder();
+	if (shouldCancel == true) {
+		cancelFinderUI();
+		shouldCancel = false;
+		return;
+	}
+
+	shouldCancel = true;
+
+	findPathButton.classList.add("cancel");
+	findPathButtonText.innerHTML = "Cancel";
 
 	const startCoords = {
 		lat: Cesium.Math.toDegrees(markers.start.latitude),

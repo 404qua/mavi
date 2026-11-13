@@ -1,0 +1,25 @@
+.weather-legend-hud {
+	position: absolute;
+	bottom: calc(var(--unit-px, 16px) * 4);
+	right: calc(var(--unit-px, 16px) * 4);
+	background: var(--background-500);
+	border-radius: var(--border-radius);
+	padding: var(--spacing-s);
+	pointer-events: all;
+
+	opacity: 1;
+	
+	transition: all 0ms, opacity var(--transition-normal);
+
+	&.disabled {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.weather-legend-hud img {
+	max-width: 25rem;
+	height: auto;
+	border-radius: calc(var(--border-radius) - var(--spacing-s));
+	display: block;
+}

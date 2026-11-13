@@ -1,6 +1,9 @@
 .panels--bottom {
 	.panel__toolbar {
 		& .navigation-window {
+			--panel-window-size: calc(var(--unit-px) * 3 * 7 + var(--spacing-l) * 2);
+			--panel-window-left-pad: calc(0px - (var(--unit-px) * 3 * 1));
+
 			.selectionInputs {
 				display: flex;
 				flex-direction: column;
@@ -17,12 +20,12 @@
 					border: 2px dashed var(--background-300);
 					border-right: 0px;
 					border-radius: 999px 0px 0px 999px;
-					
+
 				}
 			}
 
 			.selectionInput {
-				& > p {
+				&>p {
 					font-size: 1.05em;
 					margin-bottom: var(--spacing-s);
 					font-weight: 700;
@@ -44,9 +47,104 @@
 				height: 2em;
 				border-radius: calc(var(--input-border-radius) / 4);
 				padding: 0px;
-				font-family: "Michroma";
-				font-weight: 900;
 				font-size: 1.5em;
+
+				display: flex;
+				flex-direction: column;
+
+				.text {
+					font-family: "Michroma";
+					font-weight: 900;
+					anchor-name: --find-path-text;
+					/* margin-top: calc(0px - var(--spacing-s)); */
+				}
+
+				.subtext {
+					position: absolute;
+					position-anchor: --find-path-text;
+
+					top: anchor(bottom);
+					line-height: 0.7;
+					font-size: 0.5em;
+				}
+			}
+
+
+			.cancel {
+				--accent-500: #ca383a;
+
+				--step-accent: 0.06;
+
+				--accent-400: oklch(from var(--accent-500) calc(l + var(--step-accent) * 1) c h);
+				--accent-600: oklch(from var(--accent-500) calc(l - var(--step-accent) * 1) c h);
+			}
+
+			.find-path__info {
+				display: flex;
+				flex-direction: column;
+				padding-right: var(--spacing-s);
+				padding-left: var(--spacing-s);
+
+				gap: var(--spacing-s);
+
+				margin-top: var(--spacing-s);
+				margin-bottom: var(--spacing-s);
+
+				&.disabled {
+					display: none;
+				}
+
+				p {
+					max-width: 100%;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					width: 0;
+					min-width: 100%;
+
+					color: var(--foreground-800);
+					font-size: 0.8em;
+					padding-left: var(--spacing-s);
+				}
+
+				progress {
+					border-radius: 2px;
+					background-color: var(--background-100);
+
+					border: 0px;
+					accent-color: var(--accent-500);
+					color: var(--accent-500);
+
+					&::-webkit-progress-bar {
+						background: var(--accent-500);
+					}
+
+					&::-webkit-progress-value {
+						background: currentColor;
+					}
+
+					&::-moz-progress-bar {
+						background: currentColor;
+					}
+				}
+
+				&.complete {
+					progress {
+						color: #41c663;
+
+						&::-webkit-progress-bar {
+							background: #41c663;
+						}
+
+						&::-webkit-progress-value {
+							background: currentColor;
+						}
+
+						&::-moz-progress-bar {
+							background: currentColor;
+						}
+					}
+				}
 			}
 
 			.selectStartEndPoints {
@@ -80,7 +178,8 @@
 
 					flex-grow: 1;
 
-					font-family: "IBM Plex Mono", monospace;
+					font-family: "IBM Plex Mono",
+					monospace;
 
 					b {
 						color: var(--foreground-800);

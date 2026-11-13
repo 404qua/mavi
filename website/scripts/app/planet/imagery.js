@@ -215,11 +215,3 @@ document.addEventListener("weather-filter-change", async () => {
 		await setWeatherLayer(currentLayer);
 	}
 });
-
-const hudCloseBtn = document.getElementById("weather-legend-close");
-if (hudCloseBtn) {
-	hudCloseBtn.addEventListener("click", () => {
-		const hud = document.getElementById("weather-legend-hud");
-		if (hud) hud.style.display = "none";
-	});
-}

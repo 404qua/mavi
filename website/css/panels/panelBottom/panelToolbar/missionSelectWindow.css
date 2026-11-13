@@ -1,8 +1,13 @@
 .mission-select-window {
 	/* outline: 2px solid var(--accent-500); */
 
+	--panel-window-size: calc(var(--unit-px) * 3 * 8.5 + var(--spacing-l) * 2);
+
+	--panel-window-left-pad: calc(0px - (var(--unit-px) * 3 * 3));
+
 	.sites {
 		width: calc(var(--unit-px) * 16);
+
 		label {
 			width: 100%;
 			height: fit-content;
@@ -23,6 +28,7 @@
 		label:has(input:checked) {
 			background-color: var(--accent-500);
 			color: var(--background-500);
+
 			p {
 				color: var(--background-300);
 			}

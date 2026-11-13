@@ -75,17 +75,17 @@ export function getWeatherLayerLinks(layerKey, dropdownValues = {}) {
 	};
 }
 
-export function displayWeatherRangeImage(rangeImageLink, isVisible = true) {
-	const hudContainer = document.getElementById("weather-legend-hud");
-	const hudImg = document.getElementById("weather-legend-hud-img");
 
+const hudContainer = document.getElementById("weather-legend-hud");
+const hudImg = document.getElementById("weather-legend-hud-img");
+export function displayWeatherRangeImage(rangeImageLink, isVisible = true) {
 	if (!isVisible || !rangeImageLink) {
-		if (hudContainer) hudContainer.style.display = "none";
+		if (hudContainer) hudContainer.classList.add("disabled");
 		return;
 	}
 
 	if (hudContainer && hudImg) {
 		hudImg.src = rangeImageLink;
-		hudContainer.style.display = "flex";
+		if (hudContainer) hudContainer.classList.remove("disabled");
 	}
 }

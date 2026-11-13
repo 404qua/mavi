@@ -37,6 +37,13 @@
 		p {
 			border-bottom: 1px solid var(--background-600);
 		}
+
+		&:last-child {
+
+			p {
+				border-bottom: 0px;
+			}
+		}
 	}
 
 	hr {
@@ -100,6 +107,7 @@
 }
 
 .panel__window-button-group:has(.site-date input:checked) {
+	&:has(>.toggleIcon input:checked) {
 		.monthInput {
 			opacity: 1;
 
@@ -111,9 +119,13 @@
 				pointer-events: all;
 			}
 		}
+	}
 }
 
 .layer-select-window {
+	--panel-window-size: calc(var(--unit-px) * 3 * 11 + var(--spacing-l) * 2);
+	--panel-window-left-pad: calc(0px - (var(--unit-px) * 3 * 2));
+
 	max-height: 75vh;
 	overflow-x: visible;
 	overflow-y: scroll;

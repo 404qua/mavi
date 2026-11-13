@@ -2,6 +2,7 @@ import * as Cesium from "cesium";
 import { Viewport } from "../viewport";
 
 const viewer = await Viewport;
+const panels = document.getElementById("panels");
 
 let limitEvent = null;
 
@@ -25,6 +26,8 @@ export function SetCameraLimits({ north, south, east, west }) {
 	if (limitEvent) {
 		limitEvent();
 	}
+
+	panels.classList.add("camera-limited")
 	cameraLimited = true;
 
 	controller.enableCollisionDetection = false;
@@ -114,6 +117,7 @@ export function ReleaseCameraLimits() {
 		limitEvent();
 	}
 	cameraLimited = false;
+	panels.classList.remove("camera-limited")
 
 	viewer.camera.flyHome(1.5);
 

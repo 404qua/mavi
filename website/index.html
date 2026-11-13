@@ -14,7 +14,7 @@
 
 <body>
 	<main>
-		<div class="panels">
+		<div class="panels" id="panels">
 			<div class="panels--bottom panel--group">
 				<div class="panel--group">
 					<div class="panel__toolbar panel__toolbar--start">
@@ -29,55 +29,62 @@
 
 							<div class="panel__window navigation-window">
 								<h2>Path Finder</h2>
-									<hr>
-									<hr class="hidden">
-									<div class="selectionInputs">
-										<div class="accessoryLine"></div>
+								<hr>
+								<hr class="hidden">
+								<div class="selectionInputs">
+									<div class="accessoryLine"></div>
 
-										<span class="selectionInput">
-											<p>Start Position</p>
+									<span class="selectionInput">
+										<p>Start Position</p>
 
-											<span class="selectionButton">
-												<label class="button ">
-													<p id="start-position-text">Select</p>
-													<input type="button" class="hidden" name="bottomPanels1" id="start-position-select">
-												</label>
+										<span class="selectionButton">
+											<label class="button ">
+												<p id="start-position-text">Select</p>
+												<input type="button" class="hidden" name="bottomPanels1" id="start-position-select">
+											</label>
 
-												<label class="button disabled">
-													<span class="material-symbols-outlined">
-														close_small
-													</span>
-													<input type="button" class="hidden" name="bottomPanels1" id="clear-start-position-select">
-												</label>
-											</span>
+											<label class="button disabled">
+												<span class="material-symbols-outlined">
+													close_small
+												</span>
+												<input type="button" class="hidden" name="bottomPanels1" id="clear-start-position-select">
+											</label>
 										</span>
+									</span>
 
 
-										<span class="selectionInput">
-											<p>End Position</p>
+									<span class="selectionInput">
+										<p>End Position</p>
 
-											<span class="selectionButton">
-												<label class="button">
-													<p id="end-position-text">Select</p>
-													<input type="button" class="hidden" name="bottomPanels1" id="end-position-select">
-												</label>
+										<span class="selectionButton">
+											<label class="button">
+												<p id="end-position-text">Select</p>
+												<input type="button" class="hidden" name="bottomPanels1" id="end-position-select">
+											</label>
 
-												<label class="button disabled">
-													<span class="material-symbols-outlined">
-														close_small
-													</span>
-													<input type="button" class="hidden" name="bottomPanels1" id="clear-end-position-select">
-												</label>
-											</span>
+											<label class="button disabled">
+												<span class="material-symbols-outlined">
+													close_small
+												</span>
+												<input type="button" class="hidden" name="bottomPanels1" id="clear-end-position-select">
+											</label>
 										</span>
-									</div>
+									</span>
+								</div>
 
-									<hr class="hidden">
-									<hr>
-									<label class="button find-path">
-										<p>Find Path</p>
-										<input type="button" class="hidden" name="bottomPanels1" id="find-path-button">
-									</label>
+								<hr class="hidden">
+								<hr>
+
+								<div class="find-path__info disabled" id="find-path__info">
+									<p id="find-path__info__text">info</p>
+									<progress value="20" max="100" id="find-path__progress"></progress>
+								</div>
+
+								<label class="button find-path" id="find-path-container">
+									<p class="text" id="find-path-container__text">Find Path</p>
+									<!-- <p class="subtext" id="find-path-subtext">Find Path</p> -->
+									<input type="button" class="hidden" name="bottomPanels1" id="find-path-button">
+								</label>
 							</div>
 						</div>
 						<div class="panel__window-button-group">
@@ -334,7 +341,7 @@
 											<label class="button">
 												<input type="radio" class="hidden" value="surface_thermal_ir" name="imageryLayers">
 												<div class="site">
-													<imI don't have anyg src="https://marswalk-imagery.pages.dev/features/2289.jpg">
+													<img src="https://marswalk-imagery.pages.dev/features/2289.jpg">
 													<div class="description">
 														<h3>Thermal IR, Surface</h3>
 														<p></p>
@@ -461,7 +468,7 @@
 					</label>
 				</div>
 
-				<div class="panel__sidebar panel__sidebar--right">
+				<div class="panel__sidebar panel__sidebar--right camera-toggle">
 					<div class="icon">
 						<span class="material-symbols-outlined">
 							photo_camera
@@ -507,24 +514,34 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="panel--group">
+				<div id="weather-legend-hud" class="weather-legend-hud disabled">
+					<img id="weather-legend-hud-img" alt="Weather Layer Scale" src="">
+				</div>
+			</div>
+
+			<!-- <div class="panel--group"> -->
+			<!-- 	<div class="search"> -->
+			<!-- 		<div class="search__box"> -->
+			<!-- 			<input type="search"> -->
+			<!-- 		</div> -->
+			<!-- 	</div> -->
+			<!-- </div> -->
 		</div>
 
 		<div class="viewport__container">
 			<div id="viewport"></div>
-			<div id="weather-legend-hud" class="weather-legend-hud" style="display: none;">
-				<button id="weather-legend-close" class="weather-legend-close" title="Hide scale">&times;</button>
-				<img id="weather-legend-hud-img" alt="Weather Layer Scale" src="">
-			</div>
 		</div>
 	</main>
 
 	<div class="learn-window">
-			<div class="mission-window" id="missions">
+		<div class="mission-window" id="missions">
 
-			</div>
+		</div>
 	</div>
 
-<dialog class="mission-dialog" id="mission-dialog"></dialog>
+	<dialog class="mission-dialog" id="mission-dialog"></dialog>
 
 	<script type="module" src="script.js"></script>
 </body>

@@ -1,5 +1,3 @@
-/* ---- grid of cards ---- */
-
 .learn-window {
 	height: 0%;
 	transition: all 0ms, height var(--transition-normal) var(--ease-cubicOut);
@@ -8,8 +6,7 @@
 
 body:has(.school:checked) {
 	.learn-window {
-		height: 50%;
-		
+		height: 35%;
 	}
 }
 
@@ -163,11 +160,29 @@ body:has(.school:checked) {
 	color: var(--foreground-500);
 
 	/* box-shadow: 0px 0px 32px 8px #000; */
+
+	transition:var(--transition-normal) var(--ease-cubicOut);
+
+  scale: 1;
 }
 
 .mission-dialog::backdrop {
 	background: rgba(0, 0, 0, .7);
+
+	transition: calc(var(--transition-normal)*2);
 }
+
+@starting-style {
+    .mission-dialog:open {
+        opacity: 0;
+				scale: 0.9;
+    }
+
+    .mission-dialog:open::backdrop {
+        background: rgb(0 0 0 / 0);
+    }
+}
+
 
 .mission-dialog__inner {
 	padding: var(--spacing-l);

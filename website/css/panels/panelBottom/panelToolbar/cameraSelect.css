@@ -1,0 +1,15 @@
+.camera-limited {
+	.camera-toggle {
+		opacity: 0;
+		pointer-events: none;
+
+		* {
+			pointer-events: none;
+		}
+	}
+}
+
+.camera-toggle {
+	opacity: 1;
+	transition: calc(var(--transition-normal) * 3);
+}

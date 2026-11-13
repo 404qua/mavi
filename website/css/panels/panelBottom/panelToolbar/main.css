@@ -6,27 +6,27 @@
 	.panel__toolbar {
 		display: flex;
 
-		& > .button,
-		& > .container,
-		& > .icon,
-		& > .panel__window-button-group>label {
+		&>.button,
+		&>.container,
+		&>.icon,
+		&>.panel__window-button-group>label {
 			border: var(--panel-border-size) solid var(--background-300);
 			border-radius: 0px;
 
 			border-bottom: var(--panel-border-size) solid var(--background-600);
 		}
 
-		& > .button:first-child,
-		& > .container:first-child,
-		& > .icon:first-child,
-		& > .panel__window-button-group:first-child > label {
+		&>.button:first-child,
+		&>.container:first-child,
+		&>.icon:first-child,
+		&>.panel__window-button-group:first-child>label {
 			border-top-left-radius: var(--input-border-radius);
 		}
 
-		& > .button:last-child,
-		& > .container:last-child,
-		& > .icon:last-child,
-		& > .panel__window-button-group:last-child > label {
+		&>.button:last-child,
+		&>.container:last-child,
+		&>.icon:last-child,
+		&>.panel__window-button-group:last-child>label {
 			border-top-right-radius: var(--input-border-radius);
 		}
 	}
@@ -35,17 +35,22 @@
 		.panel__window {
 			display: flex;
 
-			animation: window-size-up-in calc(var(--transition-normal)) both
-				var(--ease-cubicOut);
+			animation: window-size-up-in calc(var(--transition-normal)) both var(--ease-cubicOut);
 			/* animation: clip-in calc(var(--transition-normal) * 40) both var(--ease-cubicOut); */
 			z-index: 2;
 
 			pointer-events: auto;
 
-			.button, div, span {
+			.button,
+			div,
+			span {
 				pointer-events: unset;
 			}
 		}
+	}
+
+	.panel__window-button-group {
+		position: relative;
 	}
 
 	.panel__toolbar {
@@ -55,8 +60,7 @@
 			border-radius: var(--border-radius);
 			background-color: var(--background-500);
 
-			animation: window-size-up-out calc(var(--transition-normal)) both
-				var(--ease-cubicOut);
+			animation: window-size-up-out calc(var(--transition-normal)) both var(--ease-cubicOut);
 			/* animation: clip-out calc(var(--transition-normal) * 10) both var(--ease-cubicOut); */
 			padding: var(--spacing-l);
 			box-sizing: border-box;
@@ -73,6 +77,9 @@
 			width: max-content;
 
 			bottom: calc(100% + var(--spacing-l));
+			left: 0%;
+
+			left: max(min(0%, calc(100vw - var(--panel-window-size))), var(--panel-window-left-pad));
 
 			* {
 				pointer-events: none;
