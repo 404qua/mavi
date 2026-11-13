@@ -1,0 +1,2354 @@
+{
+  "generatedAt": "2026-10-23T05:46:37.340198+00:00",
+  "catalogueSource": "https://azmth.space/data/mars-missions.json",
+  "pageImageSource": "https://azmth.space/",
+  "imageExtractionMethod": "Page metadata and HTML image elements; URLs are extracted, not downloaded.",
+  "attribution": "Catalogue compiled by azmth.space. Check individual image sources and credits before reuse.",
+  "missions": [
+    {
+      "slug": "mars-1m-1960",
+      "entry_kind": "mission",
+      "name": "Mars 1M No. 1 and No. 2",
+      "entity": "OKB-1 (USSR)",
+      "type": "flyby",
+      "era": "first-attempts",
+      "outcome": "failure",
+      "status": "Two spacecraft, two launch failures, on 10 and 14 October 1960. Neither reached Earth orbit, and the USSR never acknowledged either flight; almost everything known about them comes from Western tracking and from post-Soviet memoirs.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 11,
+      "page": "https://azmth.space/mars/missions/mars-1m-1960",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-1m-1960/01-01-a-molniya-8k78-going-vertical-at-baikonur-captio.jpg",
+          "alt": "A colour photograph of a four stage Molniya 8K78 launch vehicle being raised to the vertical by its erector at Baikonur, with the service gantries, cranes and flame trench around it. The source captions the frame 'Preparing to Launch the 1M Mars Probe, Oct 10, 1960'."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-1m-1960/02-02-a-full-scale-mockup-of-venera-1-the-vehicle-buil.jpg",
+          "alt": "A full scale mockup of Venera 1 on display at the Memorial Museum of Cosmonautics in Moscow, showing the pressurised cylindrical body, the dome on top, the perforated solar panel and the furled mesh high gain antenna. Venera 1 was the 1VA vehicle, built a few months after the 1M and reusing as much of the 1M design as possible, with the dome added on top that the 1M did not carry."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-1m-1960/03-03-a-preserved-molniya-launch-vehicle-on-its-rail-t.jpg",
+          "alt": "A four stage launch vehicle of the R-7 family lying horizontal on its rail transporter erector under a grey sky, photographed on 12 August 2004 and identified by the photographer as a Molniya. The 1M probes were launched on the Molniya 8K78, which was brand new in October 1960."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-1m-1960/01-01-a-molniya-8k78-going-vertical-at-baikonur-captio.jpg"
+    },
+    {
+      "slug": "mars-2mv-1962",
+      "entry_kind": "mission",
+      "name": "Sputnik 22, Mars 1 and Sputnik 24",
+      "entity": "OKB-1 (USSR)",
+      "type": "flyby",
+      "era": "first-attempts",
+      "outcome": "partial",
+      "status": "Three launches, 24 October to 4 November 1962: two never left Earth orbit and were never announced. The third, Mars 1, lost its attitude control gas within days and fell silent on 21 March 1963 at 106 million km.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-2mv-1962",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2mv-1962/01-01-mars-1-as-a-nasa-three-dimensional-rendering-not.jpg",
+          "alt": "A NASA three dimensional computer rendering of the Mars 1 spacecraft, a 2MV-4, showing the two solar panels, the umbrella ribbed high gain antenna, the red and white hemispherical thermal radiators, the magnetometer boom and the spherical pennant in its lattice cage on top. The image is a modelled render: the file carries the Blender project name of the NASA intern who built it."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2mv-1962/02-02-a-2mv-spacecraft-in-the-assembly-hall-captioned.jpg",
+          "alt": "A colour photograph of a 2MV spacecraft standing on its handling ring inside an assembly hall, with a Russian overhead crane load rating sign on the wall behind it. mentallandscape.com labels the frame simply 'Mars-1'; Russian Wikipedia captions it 'Космический аппарат Mars-1 во время тестирования на Земле', Mars 1 during testing on Earth."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2mv-1962/03-03-a-museum-model-of-mars-1-in-the-peter-and-paul-f.jpg",
+          "alt": "A display model of the Mars 1 automatic interplanetary station in the Museum of Cosmonautics and Rocket Technology in the Ioannovsky Ravelin of the Peter and Paul Fortress, St Petersburg, photographed on 17 September 2008. The Commons title is 'Модель автоматической межпланетной станции Марс 1', a model of the Mars 1 station."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2mv-1962/04-04-a-soviet-drawing-of-the-2mv-bus-here-in-the-desc.jpg",
+          "alt": "A numbered Soviet line drawing of a 2MV spacecraft in two views, front and side, showing the spherical descent capsule, the umbrella high gain antenna, the solar panels, the thermal radiator hemispheres and the correction engine. The 1962 Mars flyby variant, the 2MV-4 flown as Mars 1, carried an instrument module in place of the descent capsule shown here."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-2mv-1962/01-01-mars-1-as-a-nasa-three-dimensional-rendering-not.jpg"
+    },
+    {
+      "slug": "zond-2",
+      "entry_kind": "mission",
+      "name": "Zond 2",
+      "entity": "OKB-1 (USSR)",
+      "type": "flyby",
+      "era": "first-attempts",
+      "outcome": "failure",
+      "status": "Crippled hours after launch on 30 November 1964 by a jammed solar panel, on about half power, it fired the first electric thrusters beyond Earth orbit, went silent by May 1965 and passed Mars unheard on 6 August 1965.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/zond-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-2/01-01-a-3mv-spacecraft-released-by-nasa-as-a-photograp.jpg",
+          "alt": "A black and white photograph of a 3MV spacecraft on its handling ring against a dark backdrop, showing the ribbed umbrella high gain antenna, the two thermal radiator hemispheres, the perforated panel structure, the magnetometer boom and the latticed descent cone on top. NASA released it captioned as Zond 2; the same photograph appears on mentallandscape.com captioned as Zond 3, and the two vehicles were near identical 3MV craft."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-2/02-02-a-full-scale-replica-of-zond-3-zond-2-s-near-ide.jpg",
+          "alt": "A full scale replica of Zond 3 on display in the Tsiolkovsky State Museum of the History of Cosmonautics in Kaluga, filed on Commons under the category 'Replica of Zond 3'. Zond 3 was a 3MV-4 and Zond 2 a 3MV-4A, and the two vehicles were near identical."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-2/03-03-the-zond-3-replica-in-the-kaluga-gallery-with-a.jpg",
+          "alt": "A wide gallery view of the same Zond 3 replica in the Kaluga museum, photographed on 14 June 2021, with its Russian display placard reading 'Автоматическая станция ЗОНД-3' and a visitor standing beside it for scale."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/zond-2/01-01-a-3mv-spacecraft-released-by-nasa-as-a-photograp.jpg"
+    },
+    {
+      "slug": "mariner-3",
+      "entry_kind": "mission",
+      "name": "Mariner 3",
+      "entity": "NASA",
+      "type": "flyby",
+      "era": "first-attempts",
+      "outcome": "failure",
+      "status": "Killed by its own nose cone on 5 November 1964: the payload shroud never separated, the solar panels could not open, and the batteries died 8 hours 43 minutes after liftoff. Silent in solar orbit ever since.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/mariner-3",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-3/01-01-mariner-3-at-cape-kennedy-in-september-1964-its.jpg",
+          "alt": "The Mariner 3 spacecraft with its four solar panels extended, being processed in the AO Building at Cape Kennedy Air Force Station on 26 September 1964 before mating with its payload fairing. Two technicians in white coats work at its base."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-3/02-02-the-shroud-under-test-in-february-1964-this-is-a.jpg",
+          "alt": "Researcher Bobby Sanders adjusting a 0.10-scale model of the Mariner-C shroud and Agena upper stage in the 8- by 6-Foot Supersonic Wind Tunnel at NASA's Lewis Research Center, February 1964. The tests ran from Mach 0.56 to 1.96 to check that the shroud, wider than the Agena beneath it, would not destabilise the airflow."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-3/03-03-nasa-s-drawing-of-the-mariner-mars-1964-spacecra.jpg",
+          "alt": "NASA line drawing headed Mariner Mars 1964, labelling the low gain antenna mast, magnetometer, ion chamber, cosmic dust detector, plasma probe, trapped radiation instrument, cosmic ray telescope, TV camera and the four solar panels with their solar pressure vanes."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mariner-3/01-01-mariner-3-at-cape-kennedy-in-september-1964-its.jpg"
+    },
+    {
+      "slug": "mariner-4",
+      "entry_kind": "mission",
+      "name": "Mariner 4",
+      "entity": "NASA",
+      "type": "flyby",
+      "era": "first-attempts",
+      "outcome": "success",
+      "status": "Flew 9,846 km above Mars at 01:00:57 UTC on 15 July 1965 and returned the first close-up photographs of another planet. Communications were terminated 21 December 1967; the spacecraft is derelict in solar orbit.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 19,
+      "page": "https://azmth.space/mars/missions/mariner-4",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/01-01-mariner-4-rigged-for-a-weight-test-in-the-jpl-cl.jpg",
+          "alt": "Mariner 4 being prepared for a weight test in the clean room of the Jet Propulsion Laboratory in Pasadena on 1 November 1963, more than a year before launch."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/02-02-frame-11-the-picture-robert-leighton-called-one.jpg",
+          "alt": "Contrast enhanced version of Mariner 4 frame 11, dominated by the basin the IAU named Mariner crater in 1967. The tick marks and pattern of dots around the frame are the camera's calibration marks."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/03-03-frame-1-released-on-15-july-1965-the-limb-of-mar.jpg",
+          "alt": "Contrast enhanced version of Mariner 4's first frame, annotated M-IV 01 down the right edge, showing the bright limb of Mars against the dark terminator. NASA released it on 15 July 1965 as the first close-up photograph of another planet."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/04-04-not-a-photograph-the-printout-strips-of-frame-on.jpg",
+          "alt": "The framed panel made at JPL on 15 July 1965. Staff from the Telecommunications Section cut up the printout strips carrying frame one's pixel values, attached them side by side to a display panel, and coloured the numbers in by hand with chalk pastels. Richard Grumm's initials, RLG, are in the lower right corner, and the plaque records the panel's presentation to Dr Pickering."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/05-05-the-mariner-mars-1964-design-that-flew-as-marine.jpg",
+          "alt": "NASA studio photograph of the Mariner Mars 1964 spacecraft in flight configuration against a black backdrop: the octagonal bus, four deployed solar panels with solar pressure vanes at their tips, the low gain antenna mast, and the scan platform slung underneath. NASA's own caption identifies it only as a Mariner spacecraft, and Mariner 3 and Mariner 4 were identical."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/06-06-the-tape-recorder-that-held-the-pictures-until-t.jpg",
+          "alt": "The four-track magnetic tape recorder carried aboard Mariner 4, which stored the television frames during the flyby for playback to Earth over the following weeks."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/07-07-jpl-s-director-william-pickering-shows-the-marin.jpg",
+          "alt": "William H. Pickering, director of the Jet Propulsion Laboratory, showing Mariner 4 pictures to President Lyndon B. Johnson. The Wikimedia copy carries a placeholder date of 1 January 1964, but NASA dates the event to 29 July 1965, the East Room ceremony at which Johnson awarded Pickering the NASA Distinguished Service Medal. The medal is visible on Pickering's lapel."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mariner-4/01-01-mariner-4-rigged-for-a-weight-test-in-the-jpl-cl.jpg"
+    },
+    {
+      "slug": "mars-1969a-b",
+      "entry_kind": "mission",
+      "name": "Mars 1969A and 1969B",
+      "entity": "USSR",
+      "type": "orbiter",
+      "era": "first-orbits",
+      "outcome": "failure",
+      "status": "Two identical Soviet Mars orbiters, both destroyed by their Proton rockets six days apart in spring 1969. Neither reached Earth orbit, and the USSR never acknowledged that they existed.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/mars-1969a-b",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-1969a-b/01-01-an-m-69-in-the-assembly-hall-with-the-people-who.jpg",
+          "alt": "A colour photograph of an M-69 spacecraft standing in a high bay assembly hall with technicians in white coats around it and on a work platform beside it, showing the large spherical propellant tank, the plumbing loop across the body, a solar panel and the parabolic high gain antenna. Wikimedia records the subject as the verification of systems unit for Mars 1969A."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-1969a-b/02-02-the-soviet-design-drawing-of-the-m-69-labelled-i.jpg",
+          "alt": "A Soviet design drawing of the АМС «M-69» in two views, with Russian callouts naming the solar panels, the descent vehicle (спускаемый аппарат), the fuel tank, the engine, the parabolic high gain antenna, the instrument compartment, the radiator heater, the omnidirectional antenna, the astro navigation system and the attitude control nozzles. The same drawing is Figure 5 of V. G. Perminov's NASA monograph, captioned there 'The M-69 Spacecraft (Second Version)', where the key is translated into English and item (2) is given as 'lander'."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-1969a-b/03-03-an-m-69-part-way-through-assembly-still-under-it.jpg",
+          "alt": "A small vertical photograph of an M-69 spacecraft part way through assembly, wrapped in protective covers, with the two camera window shrouds and the plumbing loop visible. RussianSpaceWeb captions it 'The Mars M-69 spacecraft during the assembly' and credits NPO Lavochkin."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-1969a-b/01-01-an-m-69-in-the-assembly-hall-with-the-people-who.jpg"
+    },
+    {
+      "slug": "mariner-8",
+      "entry_kind": "mission",
+      "name": "Mariner 8",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "first-orbits",
+      "outcome": "failure",
+      "status": "Lost on 9 May 1971 when the Centaur upper stage lost pitch control about 4.7 minutes after liftoff. It fell into the Atlantic, and its mapping mission was folded into Mariner 9.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 9,
+      "page": "https://azmth.space/mars/missions/mariner-8",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-8/01-01-mariner-h-having-its-solar-panels-fitted-at-cape.jpg",
+          "alt": "Technicians installing solar panels on the spacecraft then known by its pre-launch letter as Mariner H, in a clean room at Cape Kennedy in 1971. NASA's caption notes it would be designated Mariner 8 following launch."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-8/02-02-the-mariner-mars-1971-design-mariner-8-and-marin.jpg",
+          "alt": "The Mariner Mars 1971 spacecraft photographed in flight configuration against black, with the thermal blanketed propulsion module on top and the science scan platform beneath. Mariner 8 and Mariner 9 were built to the same design; NASA uses this portrait as the lead image of its Mariner 8 mission page, and it is the same photograph this catalogue also shows under Mariner 9."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-8/03-03-nasa-s-labelled-drawing-of-the-mariner-mars-1971.jpg",
+          "alt": "NASA labelled diagram of the Mariner Mars 1971 spacecraft in two views, marking the maneuver engine and propulsion tanks, the four solar panels, and the scan platform instruments: wide-angle TV, narrow-angle TV, ultraviolet spectrometer, infrared radiometer and infrared interferometer spectrometer. NASA captions it as the Mariner 1971 series and runs it on its Mariner 8 page; Mariner 8 and Mariner 9 were identical."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mariner-8/01-01-mariner-h-having-its-solar-panels-fitted-at-cape.jpg"
+    },
+    {
+      "slug": "kosmos-419",
+      "entry_kind": "mission",
+      "name": "Kosmos 419",
+      "entity": "USSR",
+      "type": "orbiter",
+      "era": "first-orbits",
+      "outcome": "failure",
+      "status": "Reached Earth parking orbit on 10 May 1971, but its Blok D upper stage never restarted because the wrong ignition time had been loaded into the onboard computer. It reentered on 12 May 1971.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/kosmos-419",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kosmos-419/01-01-the-m-71c-spacecraft-the-design-flown-as-kosmos.jpg",
+          "alt": "A large labelled drawing of the M-71C spacecraft with Russian callouts and a thirteen item English key, naming the astro navigation optics, the instrument module, the magnetometer, the stereo antenna, the high gain parabolic antenna, the low gain cone antennas, the propulsion tanks, the thermal radiators, the attitude and stabilisation nozzles and the solar panels. Perminov captions this figure as the M-71C, the vehicle the Soviets flew as Kosmos 419; NSSDCA hosts the same scan under a Mars 2 and Mars 3 filename because the orbiters were built on the same bus."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kosmos-419/02-02-a-soviet-planetary-spacecraft-in-a-factory-hall.jpg",
+          "alt": "A small black and white photograph of a Soviet planetary spacecraft with a large parabolic high gain antenna, solar panels and an instrument compartment, standing on a stand in a factory hall. The URL was fetched and returns a valid JPEG, but the provenance and rights could not be established, so it is flagged unverified."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/kosmos-419/01-01-the-m-71c-spacecraft-the-design-flown-as-kosmos.jpg"
+    },
+    {
+      "slug": "mariner-6-7",
+      "entry_kind": "mission",
+      "name": "Mariner 6 and 7",
+      "entity": "NASA",
+      "type": "flyby",
+      "era": "first-orbits",
+      "outcome": "success",
+      "status": "Both flybys succeeded: Mariner 6 passed Mars on 31 July 1969 and Mariner 7 on 5 August 1969 UTC, returning 201 pictures between them. Both fell silent in the early 1970s and remain derelict in solar orbit.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 14,
+      "page": "https://azmth.space/mars/missions/mariner-6-7",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/01-01-mariner-6-leaving-launch-complex-36b-on-the-nigh.jpg",
+          "alt": "The Atlas-Centaur carrying Mariner 6 lifting off from Launch Complex 36B at Cape Kennedy at 8:29 p.m. EST on 24 February 1969, the pad and service tower lit by the exhaust."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/02-02-mariner-7-following-its-twin-off-the-pad-on-27-m.jpg",
+          "alt": "The Atlas-Centaur carrying Mariner 7 lifting off from Cape Kennedy at 5:22 p.m. EST on 27 March 1969, thirty-one days after its twin."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/03-03-the-mariner-mars-1969-design-an-octagonal-bus-wi.webp",
+          "alt": "NASA photograph of the Mariner Mars 1969 spacecraft in flight configuration against black, with the science scan platform carrying the wide angle and narrow angle cameras slung beneath the octagonal bus. Mariner 6 and Mariner 7 were identical."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/04-04-mars-from-mariner-7-on-approach-the-ring-near-th.jpg",
+          "alt": "Full disk view of Mars photographed by Mariner 7 on approach in 1969 from about 200,000 miles, showing the polar caps and the ring shaped feature then catalogued as Nix Olympica, which Mariner 9 later identified as the volcano Olympus Mons."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/05-05-colour-from-filters-not-from-a-colour-camera-thr.webp",
+          "alt": "Colour view of Mars assembled by combining three Mariner 7 black and white frames taken through different colour filters. The cameras themselves were monochrome."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/06-06-how-much-they-actually-saw-the-wide-angle-frames.jpg",
+          "alt": "Wide-angle Mariner 6 and Mariner 7 frames laid onto a globe already carrying an indistinct Earth-based view of Mars. The Mariner 6 pictures form the two upper rows; the Mariner 7 pictures run from centre to lower right and across the south polar cap."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mariner-6-7/01-01-mariner-6-leaving-launch-complex-36b-on-the-nigh.jpg"
+    },
+    {
+      "slug": "mariner-9",
+      "entry_kind": "mission",
+      "name": "Mariner 9",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "first-orbits",
+      "outcome": "success",
+      "status": "Success: the first spacecraft to orbit another planet, arriving 14 November 1971 UTC and commanded off on 27 October 1972 after 348 days and 7,329 pictures. Presumed still in Mars orbit, no re-entry confirmed as of 24 September 2026.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 15,
+      "page": "https://azmth.space/mars/missions/mariner-9",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/01-01-mariner-i-soon-to-be-mariner-9-getting-its-final.jpg",
+          "alt": "A technician checking the spacecraft, still known by its pre-launch letter as Mariner I, before encapsulation for launch. The NASA caption records the launch as 6:23 p.m. EDT on 30 May 1971."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/02-02-three-days-short-of-orbit-11-november-1971-the-d.jpg",
+          "alt": "Mariner 9 approach picture taken at 8:46 a.m. PST on 11 November 1971 from about 408,000 miles, one of 31 frames on the first tape load. The dust storm has wiped the surface featureless; the dark spot near the top was tentatively identified as Nix Olympica, and NASA's caption already suggested it might be a high mountain showing through the dust."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/03-03-the-south-polar-cap-through-the-dust-on-mariner.jpg",
+          "alt": "Mosaic of Mariner 9 frames from the first orbit showing the remnants of the south polar cap dimly through the dust storm, paired with the same region as Mariner 7 photographed it in August 1969."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/04-04-olympus-mons-once-the-dust-fell-from-mariner-9-f.webp",
+          "alt": "Mosaic of Mariner 9 frames from revolutions 146 and 148 on 8 March 1972, the first clear view of Olympus Mons after the dust settled, showing the summit caldera complex and the basal scarp that rings the volcano."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/05-05-mariner-9-s-own-view-of-the-canyon-system-later.webp",
+          "alt": "Mariner 9 mosaic taken on 5 January 1972 during revolution 106, running from Valles Marineris south across Solis Planum to the rim of the Argyre basin. This is genuine Mariner 9 data, unlike the famous full length Valles Marineris mosaic that usually illustrates the canyon, which is Viking."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/06-06-phobos-from-5-760-km-the-first-properly-resolved.jpg",
+          "alt": "Phobos photographed from 5,760 km on orbit 89, frame MTVS 4109-9. NSSDCA notes that craters as small as 300 m are visible and that the moon is about 26 km along its longest axis."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/07-07-the-mariner-mars-1971-design-that-flew-as-marine.jpg",
+          "alt": "NASA studio photograph of the Mariner Mars 1971 spacecraft in flight configuration against black: the thermal blanketed propulsion module on top, four solar panels spanning 6.89 m, and the science scan platform slung underneath. Mariner 8 and Mariner 9 were built to the same design, the Commons file carries the Mariner H mission text, and NASA publishes this same photograph as the lead image of its Mariner 8 page, so it cannot be tied to one airframe."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mariner-9/01-01-mariner-i-soon-to-be-mariner-9-getting-its-final.jpg"
+    },
+    {
+      "slug": "mars-2",
+      "entry_kind": "mission",
+      "name": "Mars 2",
+      "entity": "USSR",
+      "type": "soft-lander",
+      "era": "first-orbits",
+      "outcome": "partial",
+      "status": "Crashed on 27 November 1971, the first human-made object to reach the surface of Mars; the orbiter it rode on flew 362 orbits before the mission was declared over on 22 August 1972. The wreck has never been located.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2/01-01-an-m-71-station-of-the-1971-pair-mars-2-and-mars.jpg",
+          "alt": "A factory photograph of an M-71 interplanetary station of the type flown as Mars 2 and Mars 3, standing on its trolley in the assembly hall with the high-gain dish and both solar wings deployed and a technician working at the left wing."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2/02-02-ground-that-mars-reconnaissance-orbiter-photogra.jpg",
+          "alt": "A HiRISE image acquired by NASA's Mars Reconnaissance Orbiter specifically to search for the Mars 2 debris field, released by JPL in October 2014 under the title Search for the Mars 2 Debris Field."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2/03-03-a-soviet-cutaway-of-the-descent-module-showing-t.jpg",
+          "alt": "A Soviet cutaway illustration of the M-71 descent module titled спускаемый аппарат, labelled in Russian for the drogue-deploy motor, the parachute container, the main parachute, the radio altimeter antenna, the aerodynamic brake cone and the automatic Mars station inside."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2/04-04-a-modern-3d-render-not-a-photograph-of-the-prop.jpg",
+          "alt": "A modern computer rendering of the PrOP-M walking rover, the 4.5 kg tethered robot carried by both Mars 2 and Mars 3, showing the two skis and the instrument box."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-2/05-05-the-soviet-stamp-marking-the-mars-2-pennant-reac.jpg",
+          "alt": "A 6 kopeck Soviet stamp reading Автоматическая станция «Марс-2»: вымпел на планете 27.11.71 г., with an artist's painting of the station firing its engine near Mars and an inset of the pennant carrying the Soviet coat of arms."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-2/01-01-an-m-71-station-of-the-1971-pair-mars-2-and-mars.jpg"
+    },
+    {
+      "slug": "mars-3",
+      "entry_kind": "mission",
+      "name": "Mars 3",
+      "entity": "USSR",
+      "type": "soft-lander",
+      "era": "first-orbits",
+      "outcome": "partial",
+      "status": "First confirmed soft landing on Mars, at about 13:50:35 UT on 2 December 1971. It began transmitting 90 seconds later and stopped almost immediately; how long it spoke and why it stopped are still unsettled in 2026.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-3",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/01-01-the-mars-3-station-in-1971-from-the-russian-stat.jpg",
+          "alt": "A 1971 archival photograph captioned АМС «Марс-3», showing the assembled station from above with the high-gain dish, both solar wings, the low-gain antenna boom and the descent module in its brake shield at the top."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/02-02-a-ground-photograph-taken-on-earth-of-the-automa.jpg",
+          "alt": "A ground photograph of the automatic Mars station in its landed configuration, the four petals folded back, the antennas and instrument booms extended and the two panoramic telephotometer heads visible at the top of the sphere."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/03-03-a-soviet-mars-descent-module-in-its-brake-cone-d.jpg",
+          "alt": "A Soviet descent module during ground testing, sitting inside its conical aerodynamic brake shield with the parachute container and the sealed station above it. NPO Lavochkin publishes this frame on its Mars 2 and Mars 3 page, while NASA's NSSDCA catalogue publishes the same frame as the M-73P descent module of the 1973 missions, so which article it shows is not settled."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/04-04-the-79-lines-mars-3-sent-from-the-surface-what-i.jpg",
+          "alt": "The print made from the 79 lines of phototelevision signal Mars 3 sent from the surface on 2 December 1971. It is a grey band with a light margin and no horizon; Soviet analysts reported that it contains no information, and later readings of what it holds still disagree."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/05-05-the-prop-m-rover-itself-photographed-before-flig.jpg",
+          "alt": "A 1971 photograph of the real PrOP-M rover built by Alexander Kemurdzhian's team at VNIITransMash, the small tethered box on two walking skis that Mars 3 carried to the surface."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/06-06-the-four-features-hirise-found-in-2013-that-may.jpg",
+          "alt": "The 2013 HiRISE release Could This Be the Mars Soviet 3 Lander, four panels showing features on the floor of Ptolemaeus crater identified by Russian enthusiasts as the possible parachute, heat shield, terminal retrorocket and lander of Mars 3."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-3/07-07-mars-3-s-own-view-of-the-planet-s-edge-during-th.jpg",
+          "alt": "A Mars 3 orbiter phototelevision frame of the Martian limb taken from roughly 150,000 km during the 1971 global dust storm, processed by Don P. Mitchell from published Soviet source material."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-3/01-01-the-mars-3-station-in-1971-from-the-russian-stat.jpg"
+    },
+    {
+      "slug": "mars-4-7",
+      "entry_kind": "mission",
+      "name": "Mars 4, 5, 6 and 7",
+      "entity": "USSR",
+      "type": "soft-lander",
+      "era": "first-orbits",
+      "outcome": "partial",
+      "status": "None of the four 1973 probes completed its mission: Mars 4 flew past without braking, Mars 5 leaked air in orbit, Mars 7 missed the planet, and Mars 6 sent the first data from inside the atmosphere on 12 March 1974.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-4-7",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/01-01-an-m-73-station-of-the-1973-mars-flotilla-in-the.jpg",
+          "alt": "A factory photograph of an M-73 station in the assembly hall at the Lavochkin plant, solar wings and high-gain dish deployed, with the conical shroud of the upper section above the toroidal instrument compartment."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/02-02-an-archive-print-of-mars-from-the-1973-expeditio.jpg",
+          "alt": "An archive print of a Martian surface photograph returned by the 1973 M-73 expedition, showing cratered terrain with the camera's reseau cross marks across the frame and a grey scale calibration wedge along the bottom edge. The Lavochkin page gives no frame number or date."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/03-03-mars-in-colour-from-mars-5-three-filtered-frames.jpg",
+          "alt": "A colour composite of Mars assembled from Mars 5 frames 3, 4 and 5 of imaging programme 5 on 26 February 1974, taken through the green, red and blue filters of the 52 mm Vega camera and combined by Don P. Mitchell."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/04-04-a-mars-5-telephoto-frame-of-the-southern-hemisph.jpg",
+          "alt": "Mars 5 frame 4.Z from imaging programme 1 on 17 February 1974, taken with the 350 mm Zulfar telephoto camera through its orange filter and processed by Don P. Mitchell."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/05-05-an-m-73p-descent-module-of-the-kind-mars-6-and-m.jpg",
+          "alt": "A Soviet Mars descent module during ground testing on Earth, captioned on Russian Wikipedia as the M-73P descent module, the type carried by Mars 6 and Mars 7, sitting in its conical aerodynamic brake shield."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/06-06-a-soviet-numbered-diagram-of-the-m-73-orbiter-ke.jpg",
+          "alt": "A Soviet numbered technical illustration of the M-73 orbiter, an external view rather than a sectioned cutaway, keyed 2 to 7 for the high-gain dish, the upper instrument assembly, the radiators, the solar wings and the propellant tank section."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-4-7/01-01-an-m-73-station-of-the-1973-mars-flotilla-in-the.jpg"
+    },
+    {
+      "slug": "viking-1",
+      "entry_kind": "mission",
+      "name": "Viking 1",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "viking",
+      "outcome": "success",
+      "status": "Landed in western Chryse Planitia on 20 July 1976 and worked 2,245 sols against a 90-day design life. Killed on 19 November 1982 by a command from Earth that overwrote its antenna-pointing memory.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/viking-1",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/01-01-the-first-picture-ever-taken-from-the-surface-of.jpg",
+          "alt": "The first photograph ever taken from the surface of Mars, scanned by Viking 1 camera 2 starting about 25 seconds after touchdown on 20 July 1976, showing rocks, fine soil and one of the lander's footpads at lower right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/02-02-a-viking-lander-at-full-size-the-proof-test-arti.jpg",
+          "alt": "The Viking lander proof test article, genuine Viking ground-test hardware rather than a flown spacecraft, photographed in the Milestones of Flight gallery at the National Air and Space Museum on 24 June 2016. The high-gain antenna dish, the sampler arm boom at right and the two footpads are all visible."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/03-03-viking-1-goes-up-on-a-titan-iiie-centaur-on-20-a.jpg",
+          "alt": "Viking 1 leaves Launch Complex 41 at Cape Canaveral on a Titan IIIE-Centaur at 5:22 p.m. EDT on 20 August 1975, which is 21:22 UT, on the third launch attempt after two scrubs."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/04-04-the-first-colour-view-from-the-martian-surface-t.jpg",
+          "alt": "The first colour picture from the surface of Mars, taken by Viking 1 on 21 July 1976, the day after landing, looking southeast across Chryse Planitia at about local noon, with orange-red surface material, scattered rocks and a reddish sky."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/05-05-found-from-orbit-hirise-photographed-the-viking.webp",
+          "alt": "The Viking 1 lander picked out from Mars orbit by the HiRISE camera on Mars Reconnaissance Orbiter in observation PSP_001521_2025, the image that fixed the lander's measured position in western Chryse Planitia."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/06-06-viking-orbiter-1-frame-035a72-25-july-1976-the-f.jpg",
+          "alt": "A section of Viking Orbiter 1 frame 035A72, taken on 25 July 1976 while the orbiter was scouting Viking 2 landing sites in the Cydonia region at about 47 metres per pixel. The black specks scattered across the frame are data dropouts in the raw transmission; the ground itself carries no such markings."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-1/07-07-the-same-hill-re-photographed-by-mars-global-sur.webp",
+          "alt": "The same Cydonia mesa re-photographed in 2001 by the Mars Orbiter Camera on Mars Global Surveyor, at far higher resolution and a different sun angle, resolving it as an eroded landform with layered slopes and a debris apron."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/viking-1/01-01-the-first-picture-ever-taken-from-the-surface-of.jpg"
+    },
+    {
+      "slug": "viking-2",
+      "entry_kind": "mission",
+      "name": "Viking 2",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "viking",
+      "outcome": "success",
+      "status": "Landed in Utopia Planitia on 3 September 1976, canted 8.2 degrees with one footpad on a rock, and worked 1,281 sols against a 90-day design life. Turned off on 11 April 1980 when its batteries stopped holding a charge.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/viking-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-2/01-01-frost-at-utopia-planitia-on-18-may-1979-one-mart.jpg",
+          "alt": "Frost banked around rocks and lying in patches across the soil at the Viking 2 site in Utopia Planitia, photographed on 18 May 1979 and relayed to Earth by Viking Orbiter 1 on 7 June 1979. NASA described it as a thin coating of water ice on the rocks and soil."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-2/02-02-13-september-1977-the-first-frost-a-lander-ever.jpg",
+          "alt": "The blue-filter frame Viking 2 camera 2 took looking due north at 12:59 p.m. local lander time on 13 September 1977, which JPL described as the first clear indication of frost accumulating on the martian surface seen by lander cameras. Frost shows white around the bases of rocks and in a trench dug by the sampler arm, and the lander's own shadow falls across the foreground."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-2/03-03-the-1979-frost-in-colour-it-stayed-on-the-ground.jpg",
+          "alt": "The 18 May 1979 frost scene at the Viking 2 site in colour, released by JPL as PIA00571. NASA's caption notes the frost remained on the surface for about 100 days."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-2/04-04-viking-2-photographing-itself-in-utopia-planitia.jpg",
+          "alt": "A self-portrait assembled from Viking 2 lander camera frames at Utopia Planitia, showing the circular high-gain antenna, the camera calibration charts and red dust settled on the spacecraft, with a boulder field running to the horizon."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/viking-2/05-05-hirise-found-viking-2-from-orbit-in-november-200.webp",
+          "alt": "The Viking 2 lander seen from Mars orbit by the HiRISE camera on Mars Reconnaissance Orbiter in observation PSP_001501_2280, taken on 21 November 2006."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/viking-2/01-01-frost-at-utopia-planitia-on-18-may-1979-one-mart.jpg"
+    },
+    {
+      "slug": "phobos-1-2",
+      "entry_kind": "mission",
+      "name": "Phobos 1 and 2",
+      "entity": "USSR",
+      "type": "orbiter",
+      "era": "losing-decade",
+      "outcome": "partial",
+      "status": "Both spacecraft died before the landings they were built for: Phobos 1 on 31 August 1988, killed by a single missing character in an uploaded command, and Phobos 2 on 27 March 1989, after 57 days in Mars orbit.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 16,
+      "page": "https://azmth.space/mars/missions/phobos-1-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/01-01-a-phobos-1f-station-in-the-assembly-hall-at-the.jpg",
+          "alt": "A colour factory photograph of a 1F Phobos station standing in the assembly hall at the Lavochkin plant, the thermally blanketed spherical propellant tanks of the Autonomous Propulsion Unit filling the lower half, smaller spherical tanks and instrument boxes above them, red protective covers and tags still fitted, a dark solar wing at the right edge and two technicians on a work platform at the left. The Lavochkin gallery carries no caption, date or serial number for the frame."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/02-02-a-proton-k-with-painted-on-the-shroud-out-on-the.jpg",
+          "alt": "A Proton-K lying horizontally on its rail transporter at Baikonur, ФОБОС painted in Cyrillic along the payload shroud and ПРОТОН along the core stage, lightning masts and pad structures behind it. Advertising boards for Soviet foreign-trade organisations are fixed along the transporter, among them Avtoexport, VO Stroidormashexport of Moscow and Электроника. The Lavochkin gallery gives the frame no caption or date."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/03-03-a-soviet-painting-of-the-endgame-phobos-2-never.jpg",
+          "alt": "A Soviet artist's painting of the close-approach phase, with the 1F station shown in a sequence of positions along a yellow track, thrusters firing, beams reaching down to the surface of Phobos, and green arrows leading to two deployed payloads: the DAS long-lived autonomous station sitting on the ground with its solar panels unfolded, and a line of small spheres bouncing across the regolith, which is the PrOP-FP hopping probe. Mars fills the upper right. None of it happened."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/04-04-phobos-on-25-march-1989-from-the-last-imaging-pa.jpg",
+          "alt": "Four panels of one Phobos observation by the VSK video-spectrometric complex on 25 March 1989, the last of the three imaging passes Phobos 2 completed and returned. Three panels are the raw channel data processed by Don P. Mitchell (wide angle blue-green, narrow angle clear, wide angle near-infrared) and the fourth is the same observation as processed at the Space Research Institute in Moscow, still carrying its Soviet header (С) ИКИ АН СССР ФОБОС 25:03:89. The short white bar low in the near-infrared panel is a known fault in columns 228 to 231 of that CCD, which Mitchell records was later misidentified by UFO writers as an alien spacecraft."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/05-05-phobos-against-mars-on-25-march-1989-two-days-be.jpg",
+          "alt": "Phobos, about 25 km across, as a dark grey body against the bright orange dust of Mars, from the VSK camera of Phobos 2 on 25 March 1989. The Planetary Society publishes it as a colour composite assembled by Ted Stryk from raw data supplied by the Russian Academy of Sciences, and its caption records that Phobos 2 returned 13 colour sets of Phobos images before contact was lost on 27 March 1989."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/06-06-the-shadow-of-phobos-crossing-mars-in-the-therma.jpg",
+          "alt": "One of the four Termoskan panoramas, the thermal infrared channel of the third observing session, which Mitchell labels 26 March 1989 daytime and which matches the archive stop time of 1989-03-26T17:49:50 in NASA's PDS description of the dataset. The long narrow strip runs across the Martian equatorial region at about 1.8 km per pixel, with a large shield volcano at the left-hand end and the Valles Marineris canyon system across the right, and a dark horizontal band running through the middle. The PDS dataset description states plainly that the dark west to east bands in sessions 3 and 4 are the shadow of Phobos."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/phobos-1-2/01-01-a-phobos-1f-station-in-the-assembly-hall-at-the.jpg"
+    },
+    {
+      "slug": "mars-observer",
+      "entry_kind": "mission",
+      "name": "Mars Observer",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "losing-decade",
+      "outcome": "failure",
+      "status": "Lost on 22 August 1993 during a planned fourteen-minute radio blackout, 68 hours short of Mars orbit insertion. The failure board found no smoking gun, and whether the spacecraft reached orbit is still unknown.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/mars-observer",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-observer/01-01-launch-25-september-1992-the-commercial-titan-ii.jpg",
+          "alt": "The Commercial Titan III lifting off from Cape Canaveral Air Force Station on 25 September 1992 carrying Mars Observer and the Transfer Orbit Stage, whose maiden flight this was."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-observer/02-02-the-real-spacecraft-six-weeks-before-launch-mars.jpg",
+          "alt": "Mars Observer mated to its Transfer Orbit Stage in the Payload Hazardous Servicing Facility on 13 August 1992, ready for encapsulation in the Titan III nose fairing; the gold-foiled instrument module and the high gain antenna dish are visible."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-observer/03-03-an-artist-s-concept-not-a-photograph-how-mars-ob.jpg",
+          "alt": "A JPL artist's concept of Mars Observer in Mars orbit with its six-panel solar array deployed. No photograph of the spacecraft at Mars exists, because it was lost 68 hours before orbit insertion."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-observer/04-04-one-of-the-handful-of-frames-its-camera-ever-ret.webp",
+          "alt": "A Mars Observer Camera narrow-angle frame taken at 00:52:47 UT on 14 April 1993 during cruise, showing part of Jupiter's disc with the moons Europa and Ganymede; the camera was still being focused, so the objects are blurred."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-observer/01-01-launch-25-september-1992-the-commercial-titan-ii.jpg"
+    },
+    {
+      "slug": "mars-global-surveyor",
+      "entry_kind": "mission",
+      "name": "Mars Global Surveyor",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "losing-decade",
+      "outcome": "ended",
+      "status": "Mapped Mars for nine years, more than four times its planned mission. Last contact 2 November 2006, after a memory write sent in June drove a solar array into its hard stop and left the antenna pointing away from Earth.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 15,
+      "page": "https://azmth.space/mars/missions/mars-global-surveyor",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-global-surveyor/01-01-the-spacecraft-itself-with-its-solar-panels-spre.jpg",
+          "alt": "Jet Propulsion Laboratory workers in the Payload Hazardous Servicing Facility at Kennedy Space Center prepare Mars Global Surveyor, already mated to its solid propellant upper stage, for transfer to the launch pad on 21 October 1996."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-global-surveyor/02-02-fitting-the-camera-that-would-return-more-than-2.jpg",
+          "alt": "Technicians in clean-room suits install the Mars Orbiter Camera on Mars Global Surveyor in the Payload Hazardous Servicing Facility at Kennedy Space Center on 19 August 1996."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-global-surveyor/03-03-the-measurement-this-site-s-mars-globe-is-built.jpg",
+          "alt": "Two global false-colour orthographic topographic maps of Mars built from Mars Orbiter Laser Altimeter ranging, released in January 2001, showing the Tharsis rise and Valles Marineris on the left hemisphere and the Hellas basin on the right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-global-surveyor/04-04-something-moved-the-same-terra-sirenum-gully-in.jpg",
+          "alt": "Two Mars Orbiter Camera views of a gully on the wall of an unnamed crater in Terra Sirenum at 36.6 degrees south, 161.8 degrees west, taken on 22 December 2001 and 26 August 2005; a light-toned deposit present in the later frame is absent from the earlier one."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-global-surveyor/05-05-an-artist-s-concept-of-the-spacecraft-in-its-map.jpg",
+          "alt": "A JPL artist's concept of Mars Global Surveyor flying over Mars, showing the high gain antenna on its boom and the two solar arrays that also served as aerobrakes."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-global-surveyor/01-01-the-spacecraft-itself-with-its-solar-panels-spre.jpg"
+    },
+    {
+      "slug": "mars-96",
+      "entry_kind": "mission",
+      "name": "Mars 96",
+      "entity": "Roscosmos",
+      "type": "orbiter",
+      "era": "losing-decade",
+      "outcome": "failure",
+      "status": "Never left Earth orbit: the Blok D-2 missed its second burn and Mars 96 re-entered on 17 November 1996 over the eastern Pacific, Chile and Bolivia. Nothing was recovered, including about 270 g of plutonium-238.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-96",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-96/01-01-mars-96-in-the-assembly-hall-the-man-at-the-bott.jpg",
+          "alt": "The Mars 96 orbiter standing on its handling ring in an assembly hall, solar panels partly deployed and the large spherical propellant tanks visible around its base, with a man at lower left giving the scale."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-96/02-02-an-engineering-model-of-one-of-the-two-small-sur.jpg",
+          "alt": "Engineering model of one of the two Mars 96 small surface stations with its petals opened, on display in a case at the Smithsonian National Air and Space Museum's Steven F. Udvar-Hazy Center; one of the four instrument slots holds the backup of JPL's Mars Oxidation Experiment, and the Jet Propulsion Laboratory transferred the object to the museum in 2001."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-96/03-03-how-mars-96-was-meant-to-look-in-flight-an-engin.webp",
+          "alt": "Line drawing of the Mars 96 orbiter in three views, showing the deployed solar panels, the dish antenna, the boom-mounted instruments and the spherical propellant tanks of the propulsion unit."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-96/01-01-mars-96-in-the-assembly-hall-the-man-at-the-bott.jpg"
+    },
+    {
+      "slug": "nozomi",
+      "entry_kind": "mission",
+      "name": "Nozomi",
+      "entity": "ISAS/JAXA",
+      "type": "orbiter",
+      "era": "losing-decade",
+      "outcome": "failure",
+      "status": "Japan's first mission to another planet, and it never reached Mars orbit: a valve in the oxidiser feed failed on 20 December 1998, insertion was abandoned on 9 December 2003, and Nozomi passed Mars at about 1,000 km.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/nozomi",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/nozomi/01-01-nozomi-still-called-planet-b-in-the-isas-clean-r.jpg",
+          "alt": "The Nozomi spacecraft standing on a wheeled handling dolly stencilled PLANET-B in an ISAS clean room, its high-gain antenna dish and stowed solar paddles visible, with three engineers in clean room suits working around it. JAXA Digital Archives item P100006474."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/nozomi/02-02-environmental-testing-before-launch-at-the-earth.jpg",
+          "alt": "Nozomi hardware, including its polished spherical propellant tanks, mounted on a stand inside a cylindrical space environment test chamber, with an engineer in a clean room suit standing beside it. JAXA Digital Archives material number P100006390, catalogued as 環境試験 (environmental testing)."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/nozomi/03-03-earth-and-the-moon-together-photographed-by-nozo.jpg",
+          "alt": "A crescent Earth at lower left and the much smaller crescent Moon at upper right, seen together against black sky. Photographed by Nozomi and catalogued by JAXA as 「のぞみ」　地球と月, material number P100006058."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/nozomi/01-01-nozomi-still-called-planet-b-in-the-isas-clean-r.jpg"
+    },
+    {
+      "slug": "mars-pathfinder",
+      "entry_kind": "mission",
+      "name": "Mars Pathfinder and Sojourner",
+      "entity": "NASA",
+      "type": "rover",
+      "era": "losing-decade",
+      "outcome": "success",
+      "status": "Success: bounced into Ares Vallis on airbags on 4 July 1997 and put the first wheels on Mars two days later. Last data came 27 September 1997; NASA stopped calling on 10 March 1998, and HiRISE found the lander in 2006.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": true,
+      "source_count": 24,
+      "page": "https://azmth.space/mars/missions/mars-pathfinder",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/01-01-sojourner-at-yogi-with-the-lander-s-solar-panel.jpg",
+          "alt": "A section of the geometrically improved, colour enhanced version of the Gallery Pan, taken by the Imager for Mars Pathfinder over sols 8, 9 and 10, showing Sojourner at the boulder Yogi with the lander's solar panel and deflated airbags in the foreground."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/02-02-hours-after-landing-on-4-july-1997-sojourner-sti.jpg",
+          "alt": "One of the first pictures taken by the Pathfinder lander's camera after touchdown at 10:07 a.m. Pacific Daylight Time on 4 July 1997, with Sojourner still stowed on a solar panel, deflated airbag material on either side, and two hills on the horizon."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/03-03-both-of-the-rover-s-first-two-targets-in-one-fra.jpg",
+          "alt": "A black and white Imager for Mars Pathfinder view taken on 7 July 1997 showing Sojourner on the surface with Barnacle Bill, the small rock at left, and Yogi, the large rock at upper right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/04-04-the-gallery-pan-the-first-seamless-360-degree-co.jpg",
+          "alt": "The first contiguous, uniform 360 degree colour panorama from the Imager for Mars Pathfinder, assembled from frames taken over sols 8, 9 and 10 with matched lighting and released on 22 July 1997."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/05-05-sojourner-on-sol-22-beside-the-three-small-rocks.jpg",
+          "alt": "A lander camera colour view of Sojourner on sol 22 near three small rocks nicknamed The Dice, with the alpha proton X-ray spectrometer at the rear of the rover and dark soil exposed in its wheel tracks."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/06-06-found-again-from-orbit-hirise-labelling-the-land.jpg",
+          "alt": "An annotated HiRISE image from Mars Reconnaissance Orbiter, from the observation acquired on 21 December 2006, with yellow labels marking the Pathfinder lander, the backshell and parachute, and possible heat shield debris on the floor of Ares Vallis."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/07-07-the-people-who-built-it-jpl-technicians-folding.jpg",
+          "alt": "Jet Propulsion Laboratory technicians close the metal petals of the Mars Pathfinder lander in the Spacecraft Assembly and Encapsulation Facility-2 at Kennedy Space Center on 2 October 1996, with Sojourner visible folded on one petal."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-pathfinder/01-01-sojourner-at-yogi-with-the-lander-s-solar-panel.jpg"
+    },
+    {
+      "slug": "mars-climate-orbiter",
+      "entry_kind": "mission",
+      "name": "Mars Climate Orbiter",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "losing-decade",
+      "outcome": "failure",
+      "status": "Lost at orbit insertion on 23 September 1999: the carrier vanished 49 seconds early and never returned. One root cause, a ground file giving thruster impulse in pound-force seconds where newton-seconds were specified.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-climate-orbiter",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-climate-orbiter/01-01-the-spacecraft-itself-mars-climate-orbiter-in-ac.jpg",
+          "alt": "The Mars Surveyor '98 Climate Orbiter with technicians in a chamber during acoustic testing on 27 May 1998, a test that reproduces the sound levels of launch; the covered high gain antenna dish stands at the right of the spacecraft."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-climate-orbiter/02-02-final-work-on-the-orbiter-at-kennedy-space-cente.jpg",
+          "alt": "A technician works on Mars Climate Orbiter in the Spacecraft Assembly and Encapsulation Facility-2 at Kennedy Space Center on 16 October 1998, about eight weeks before launch."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-climate-orbiter/03-03-liftoff-from-complex-17a-on-11-december-1998-a-d.jpg",
+          "alt": "A Boeing Delta II lifts off from Launch Complex 17A at Cape Canaveral Air Station at 1:45:51 p.m. EST on 11 December 1998 carrying Mars Climate Orbiter, one day later than planned after a battery-related software problem was found in the spacecraft."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-climate-orbiter/04-04-the-only-picture-of-mars-it-ever-sent-a-dusty-ro.jpg",
+          "alt": "The first and only view of Mars returned by Mars Climate Orbiter, taken by the Mars Color Imager on 7 September 1999 when the spacecraft was about 4.5 million kilometres from the planet; the released frame is only 200 by 200 pixels."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-climate-orbiter/01-01-the-spacecraft-itself-mars-climate-orbiter-in-ac.jpg"
+    },
+    {
+      "slug": "mars-polar-lander",
+      "entry_kind": "mission",
+      "name": "Mars Polar Lander",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "losing-decade",
+      "outcome": "failure",
+      "status": "Lost on 3 December 1999 with no descent telemetry, and never found. The review board's probable cause is a spurious touchdown signal at leg deployment that shut the engine off at about 40 m.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": true,
+      "source_count": 14,
+      "page": "https://azmth.space/mars/missions/mars-polar-lander",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-polar-lander/01-01-mars-polar-lander-in-the-clean-room-at-kennedy-s.jpg",
+          "alt": "A Kennedy Space Center technician looks over the assembled Mars Polar Lander in the Spacecraft Assembly and Encapsulation Facility 2, with the white conical backshell resting above it and the solar panels spread open to either side in their deployed position."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-polar-lander/02-02-a-close-look-at-the-lander-before-encapsulation.jpg",
+          "alt": "Close view of the Mars Polar Lander in the Spacecraft Assembly and Encapsulation Facility 2 at Kennedy Space Center, seen from below with the solar panels spread open and the gold thermal blanketing over the lander deck."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-polar-lander/03-03-liftoff-from-cape-canaveral-on-3-january-1999-th.jpg",
+          "alt": "The Delta II 7425 lifting off from Launch Complex 17 at Cape Canaveral Air Station carrying Mars Polar Lander and the two Deep Space 2 microprobes."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-polar-lander/01-01-mars-polar-lander-in-the-clean-room-at-kennedy-s.jpg"
+    },
+    {
+      "slug": "deep-space-2",
+      "entry_kind": "mission",
+      "name": "Deep Space 2",
+      "entity": "NASA",
+      "type": "penetrator",
+      "era": "losing-decade",
+      "outcome": "failure",
+      "status": "Neither probe was ever heard from after 3 December 1999, and nothing confirms Amundsen and Scott separated, entered or reached the ground. The review board named no probable cause, only four plausible failure modes.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 9,
+      "page": "https://azmth.space/mars/missions/deep-space-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/deep-space-2/01-01-both-probes-bolted-to-the-cruise-stage-at-kenned.jpg",
+          "alt": "The Mars Polar Lander stack at Kennedy Space Center in November 1998, its white backshell below and the copper-blanketed cruise stage above; the two Deep Space 2 probes are the dark units mounted on either side of the cruise stage."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/deep-space-2/02-02-a-jpl-worker-checking-one-of-the-microprobes-bef.jpg",
+          "alt": "A Jet Propulsion Laboratory worker in a clean room suit checks one of the Mars microprobes in the Spacecraft Assembly and Encapsulation Facility 2 at Kennedy Space Center, its aeroshell under a red protective cover."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/deep-space-2/03-03-the-forebody-penetrator-the-piece-meant-to-drive.jpg",
+          "alt": "The Deep Space 2 forebody, the 105.6 mm penetrator that carried the drill, sample chamber and laser water detector, photographed beside a wristwatch and a coin for scale."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/deep-space-2/04-04-sarah-gavit-who-ran-the-project-with-a-probe-dur.jpg",
+          "alt": "Sarah Gavit, project manager for Deep Space 2 at the Jet Propulsion Laboratory, photographed at a bench with a probe during final testing of the probes' electronics, before the aftbody cover was sewn up."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/deep-space-2/01-01-both-probes-bolted-to-the-cruise-stage-at-kenned.jpg"
+    },
+    {
+      "slug": "mars-odyssey",
+      "entry_kind": "mission",
+      "name": "2001 Mars Odyssey",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "operating",
+      "status": "Operating as of 24 September 2026: in Mars orbit since 24 October 2001, longer than any other spacecraft, and still relaying rover data. NASA's 2025 Senior Review put its usable propellant at 3.2 kg, give or take 2 kg.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 15,
+      "page": "https://azmth.space/mars/missions/mars-odyssey",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/01-01-the-real-thing-before-it-left-odyssey-being-set.jpg",
+          "alt": "The 2001 Mars Odyssey orbiter, wrapped in gold thermal blanket and slung from an overhead crane, is lowered onto a workstand in the Spacecraft Assembly and Encapsulation Facility 2 at Kennedy Space Center on 5 January 2001 while the processing team checks its position."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/02-02-the-horizon-of-mars-from-about-400-km-up-themis.jpg",
+          "alt": "A false colour panorama of the Martian horizon built from three infrared channels of the THEMIS camera, one of ten shot on 9 May 2023 from about 400 km up after engineers rolled Odyssey nearly 90 degrees."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/03-03-the-result-odyssey-is-remembered-for-the-neutron.jpg",
+          "alt": "Odyssey's global map of intermediate-energy (epithermal) neutrons from its first three months of mapping, in which deep blue marks a low neutron count and therefore hydrogen-rich soil, concentrated at both poles."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/04-04-launch-7-april-2001-the-delta-ii-that-carried-th.jpg",
+          "alt": "A Boeing Delta II lifts off from Cape Canaveral Air Force Station at 11:02 a.m. EDT on 7 April 2001 carrying 2001 Mars Odyssey, watched by crowds in the foreground."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/05-05-artist-s-concept-of-odyssey-in-its-mapping-orbit.jpg",
+          "alt": "An artist's concept showing 2001 Mars Odyssey in orbit above Mars with its three-panel solar array and the gamma ray sensor head extended on its 6 m boom."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/06-06-two-weeks-before-launch-march-2001-a-last-check.jpg",
+          "alt": "A technician on a step ladder works on the foil-wrapped Mars Odyssey orbiter in the Spacecraft Assembly and Encapsulation Facility 2 on 23 March 2001, shortly before the spacecraft was mated to the Delta II third stage."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-odyssey/01-01-the-real-thing-before-it-left-odyssey-being-set.jpg"
+    },
+    {
+      "slug": "mars-express",
+      "entry_kind": "mission",
+      "name": "Mars Express",
+      "entity": "ESA",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "operating",
+      "status": "Operating as of 24 September 2026: Europe's first mission to another planet has orbited Mars since 25 December 2003. It carried the lost Beagle 2, and its MARSIS radar found the most argued-over reflection on Mars.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 26,
+      "page": "https://azmth.space/mars/missions/mars-express",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-express/01-01-mars-express-over-mars-the-spacecraft-is-an-illu.jpg",
+          "alt": "An artist's impression of Mars Express over Mars, composited by ESA onto a real High Resolution Stereo Camera image of the planet taken by the spacecraft itself."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-express/02-02-the-real-hardware-at-baikonur-may-2003-mars-expr.jpg",
+          "alt": "The flight spacecraft, gold thermal blanket showing, sits on top of the white Fregat upper stage inside the processing hall at Baikonur Cosmodrome in May 2003, surrounded by yellow access scaffolding."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-express/03-03-europe-leaves-for-mars-2-june-2003-beagle-2-was.jpg",
+          "alt": "The Soyuz-Fregat carrying Mars Express and Beagle 2 lifts off from Baikonur Cosmodrome on 2 June 2003 at 23:45 local time."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-express/04-04-orbit-number-25-000-19-october-2023-olympus-mons.jpg",
+          "alt": "A High Resolution Stereo Camera swath taken on 19 October 2023 during orbit 25,000, showing Olympus Mons at upper left, the three Tharsis Montes running down the middle, the head of Valles Marineris at lower right, and Phobos as a small dark spot near the bottom left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-express/05-05-valles-marineris-from-the-side-a-perspective-vie.jpg",
+          "alt": "A computer-generated perspective view looking north-east over Tithonium and Ius Chasma at the western end of Valles Marineris, built from High Resolution Stereo Camera stereo data taken on 26 May 2004 during orbit 442 at about 52 m per pixel."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-express/06-06-how-esa-pictured-marsis-boom-2-once-it-was-out-1.jpg",
+          "alt": "An ESA computer-generated visualisation of Mars Express with the second 20 m MARSIS glass-fibre boom extended, issued alongside the 14 June 2005 deployment. Mars Express carried no camera able to see its own booms, so the deployment was confirmed from spacecraft telemetry and dynamics, not from any picture. The deployment had been postponed for a year over fears the booms could snap back into the spacecraft."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-express/01-01-mars-express-over-mars-the-spacecraft-is-an-illu.jpg"
+    },
+    {
+      "slug": "beagle-2",
+      "entry_kind": "mission",
+      "name": "Beagle 2",
+      "entity": "ESA / UK",
+      "type": "soft-lander",
+      "era": "long-occupation",
+      "outcome": "failure",
+      "status": "Landed on Isidis Planitia on 25 December 2003, never sent a single bit, and was declared lost on 6 February 2004. HiRISE found it intact on 16 January 2015, panels only partly opened; still silent as of 23 August 2026.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/beagle-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/01-01-what-beagle-2-was-supposed-to-look-like-on-mars.jpg",
+          "alt": "A full-size replica of Beagle 2 on display at the Science Museum in London, opened out as the lander was meant to open on Mars: the gold bowl and its instrument deck at the back, the four solar panel petals laid flat around the central lid, and the robotic arm carrying the cameras and spectrometers."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/02-02-the-mission-s-own-picture-of-the-lander-deployed.jpg",
+          "alt": "The mission's own publicity image: a full-size mock-up of Beagle 2 fully deployed on a studio set built to look like the Martian surface, showing the four solar panels, the lid-mounted panel, the base and the PAW instrument arm at right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/03-03-colin-pillinger-at-jodrell-bank-2009-he-died-in.jpg",
+          "alt": "Colin Pillinger of the Open University, who talked ESA into carrying a British lander and then spent years raising the money for it, photographed at Jodrell Bank on 19 July 2009 with the crutches and mobility scooter he used after his multiple sclerosis diagnosis."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/04-04-the-last-picture-of-beagle-2-the-white-dot-at-th.jpg",
+          "alt": "The Mars Express Visual Monitoring Camera looking back at Beagle 2 about a minute after the spring ejection on 19 December 2003, with the lander appearing as the single overexposed white dot at the left edge of an otherwise black frame, roughly 20 m away."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/05-05-found-eleven-years-late-the-bright-speck-hirise.jpg",
+          "alt": "The clinching colour HiRISE observation of 15 December 2014, in which a bright feature a couple of metres across in Isidis Planitia is labelled as Beagle 2, with a 10 m scale bar for reference."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/06-06-the-rest-of-the-flight-system-lander-probable-pa.jpg",
+          "alt": "An annotated HiRISE frame from 29 June 2014 boxing three features on the floor of Isidis Planitia interpreted as the Beagle 2 lander, a probable parachute and the rear cover, spread over a few hundred metres."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/07-07-enlarged-the-speck-breaks-into-a-cluster-of-brig.jpg",
+          "alt": "A composite of two HiRISE observations, enlarged and enhanced, in which Beagle 2 resolves into a small cluster of bright points rather than a single dot, the reading that led the team to conclude that the solar panels had partly opened."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/beagle-2/01-01-what-beagle-2-was-supposed-to-look-like-on-mars.jpg"
+    },
+    {
+      "slug": "spirit",
+      "entry_kind": "mission",
+      "name": "Spirit (MER-A)",
+      "entity": "NASA",
+      "type": "rover",
+      "era": "long-occupation",
+      "outcome": "ended",
+      "status": "Landed in Gusev Crater on 4 January 2004 for a 90-sol mission and worked 2,210 sols. Its last downlink came on 22 March 2010; NASA closed the recovery on 25 May 2011, and nothing had answered by 23 August 2026.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/spirit",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/01-01-spirit-on-the-summit-of-husband-hill-in-august-2.jpg",
+          "alt": "PIA03275, a polar-projection mosaic that combines a self-portrait of Spirit's deck with the 360-degree panorama the rover shot from the true summit of Husband Hill over sols 583 to 586, 24 to 27 August 2005."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/02-02-the-view-from-the-top-of-husband-hill-the-range.jpg",
+          "alt": "PIA03095, the Everest Panorama: an approximately true-colour 360-degree Pancam mosaic taken from the true summit of Husband Hill in the Columbia Hills over sols 620 to 622, 1 to 3 October 2005."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/03-03-the-discovery-a-broken-wheel-made-the-white-stre.jpg",
+          "alt": "PIA11758, an approximately true-colour Pancam mosaic from sol 1202, 21 May 2007, showing the bright trench of soil turned over by Spirit's inoperable right front wheel at the patch nicknamed Gertrude Weise, east of Home Plate."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/04-04-sol-1889-at-the-site-the-team-named-troy-the-haz.jpg",
+          "alt": "PIA12002, a black and white wide-angle view from Spirit's front hazard-avoidance camera on sol 1889, 26 April 2009, showing the soil churned up by two short backward drives that slipped, with Husband Hill on the horizon."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/05-05-troy-the-patch-of-soft-sulfate-rich-soil-spirit.jpg",
+          "alt": "PIA12203, the Calypso Panorama: a full-circle Pancam mosaic assembled from hundreds of frames taken between sols 1906 and 1943, 14 May to 20 June 2009, from the embedded rover's position at Troy, with the west edge of Home Plate filling the right half and Husband Hill in the distance near the centre."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/06-06-dust-is-what-kills-a-solar-rover-spirit-s-deck-i.jpg",
+          "alt": "PIA10128, a vertical-projection Pancam self-portrait of Spirit's deck built from frames taken over sols 1355 to 1358, 26 to 29 October 2007, showing the solar arrays under a heavy coat of dust."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/spirit/07-07-spirit-in-final-checkout-at-kennedy-space-center.jpg",
+          "alt": "Technicians in cleanroom garments work on the Spirit rover during final checkout in the Payload Hazardous Servicing Facility at Kennedy Space Center on 28 March 2003, with the STS-107 memorial plaque visible mounted on the rover's high-gain antenna."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/spirit/01-01-spirit-on-the-summit-of-husband-hill-in-august-2.jpg"
+    },
+    {
+      "slug": "opportunity",
+      "entry_kind": "mission",
+      "name": "Opportunity (MER-B)",
+      "entity": "NASA",
+      "type": "rover",
+      "era": "long-occupation",
+      "outcome": "ended",
+      "status": "Landed in Eagle crater on 25 January 2004 for a 90-sol mission and worked 5,111 sols, driving 45.16 km. A planet-encircling dust storm ended it: last signal 10 June 2018, mission complete 13 February 2019.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 16,
+      "page": "https://azmth.space/mars/missions/opportunity",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/01-01-opportunity-photographing-itself-in-january-2014.jpg",
+          "alt": "PIA17759, a vertical-projection Pancam self-portrait assembled from frames taken 3 to 6 January 2014, about three weeks before Opportunity completed ten years on Mars, with dust still coating the solar arrays after a partial wind cleaning."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/02-02-eagle-crater-the-roughly-20-metre-hole-opportuni.jpg",
+          "alt": "PIA05755, the Lion King panorama: an approximate true-colour Pancam mosaic of 558 frames taken on sols 58 and 60 showing Eagle crater, the discarded lander, the bedrock outcrop in the crater wall, and the plains of Meridiani Planum beyond."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/03-03-the-blueberries-these-hematite-concretions-in-a.jpg",
+          "alt": "PIA19113, a microscopic imager close-up taken beside Fram crater on sol 84, 19 April 2004, with colour added from the panoramic camera; the area shown is about 3 centimetres across."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/04-04-burns-cliff-on-the-inner-wall-of-endurance-crate.jpg",
+          "alt": "PIA07110, an approximately true-colour Pancam mosaic of Burns Cliff on the inner southeastern wall of Endurance crater, composited from 46 image sets taken over sols 287 to 294, 13 to 20 November 2004."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/05-05-victoria-crater-about-800-metres-across-seen-fro.jpg",
+          "alt": "PIA09104, a Pancam vista of Victoria crater taken from the promontory called Cape Verde, assembled from hundreds of exposures acquired between sols 970 and 991, 16 October to 7 November 2006."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/06-06-arrival-at-endeavour-on-9-august-2011-after-near.jpg",
+          "alt": "PIA14509, a Pancam mosaic recorded immediately after Opportunity reached the rim of Endeavour crater on 9 August 2011, showing the Spirit Point area of the rim, the small crater Odyssey, and the interior of Endeavour beyond."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/opportunity/07-07-the-last-thing-opportunity-sent-the-black-and-wh.jpg",
+          "alt": "PIA22909, the approximately true-colour version of Opportunity's last panorama: 354 Pancam frames taken in Perseverance Valley between sols 5,084 and 5,111, 13 May to 10 June 2018, with a group of frames at lower left that were never filled in through the green and violet filters before the dust storm ended the mission."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/opportunity/01-01-opportunity-photographing-itself-in-january-2014.jpg"
+    },
+    {
+      "slug": "mars-reconnaissance-orbiter",
+      "entry_kind": "mission",
+      "name": "Mars Reconnaissance Orbiter",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "operating",
+      "status": "Operating as of 24 September 2026, in Mars orbit since 10 March 2006 and now in its twenty-first year, still relaying and still imaging. CRISM is dead; HiRISE and the Mars Climate Sounder are damaged but working.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 20,
+      "page": "https://azmth.space/mars/missions/mars-reconnaissance-orbiter",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/01-01-artist-s-concept-of-mro-over-nilosyrtis-an-illus.jpg",
+          "alt": "An artist's concept of Mars Reconnaissance Orbiter over the Nilosyrtis region with its high-gain antenna, twin solar arrays and instrument deck facing the surface."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/02-02-the-people-who-built-it-lockheed-martin-technici.jpg",
+          "alt": "Lockheed Martin technicians on work platforms prepare a full range-of-motion gimbal test of the Mars Reconnaissance Orbiter high-gain antenna in the Payload Hazardous Servicing Facility at Kennedy Space Center on 25 May 2005."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/03-03-launch-12-august-2005-nasa-s-first-atlas-v-fligh.jpg",
+          "alt": "Mars Reconnaissance Orbiter lifts off at 7:43 a.m. EDT on 12 August 2005 on a Lockheed Martin Atlas V from Launch Complex 41 at Cape Canaveral Air Force Station, NASA's first use of the Atlas V."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/04-04-one-spacecraft-photographing-another-mid-landing.jpg",
+          "alt": "HiRISE catches the Perseverance descent stage falling through the Martian atmosphere under its parachute on 18 February 2021, shot from about 700 km away while MRO was moving at roughly 3 km per second, with the Jezero delta at left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/05-05-china-s-tianwen-1-platform-and-the-zhurong-rover.jpg",
+          "alt": "HiRISE observation ESP_069665_2055, acquired 6 June 2021 at about 29 cm per pixel, showing China's Tianwen-1 landing platform as the bright spot at the centre of a dark blast pattern in southern Utopia Planitia, with the Zhurong rover as a smaller bright spot just to the south."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/06-06-where-schiaparelli-hit-six-days-after-the-fact-t.jpg",
+          "alt": "HiRISE view of 25 October 2016 showing the ground where ESA's Schiaparelli test lander struck Meridiani Planum on 19 October 2016, with magnified insets of the three sites where separate components of the spacecraft hit."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/07-07-recurring-slope-lineae-in-garni-crater-the-2015.jpg",
+          "alt": "Dark narrow streaks known as recurring slope lineae running down the walls of Garni Crater, shown on a HiRISE digital terrain model with the vertical scale exaggerated, published in September 2015 when NASA presented them as evidence of present-day briny water."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-reconnaissance-orbiter/01-01-artist-s-concept-of-mro-over-nilosyrtis-an-illus.jpg"
+    },
+    {
+      "slug": "phoenix",
+      "entry_kind": "mission",
+      "name": "Phoenix",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "long-occupation",
+      "outcome": "ended",
+      "status": "Landed 25 May 2008 at 68.22 N in the Martian arctic, touched and analysed water ice and measured 0.4 to 0.6 percent perchlorate in the soil. Last signal 2 November 2008; NASA formally ended the mission on 24 May 2010.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/phoenix",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/01-01-phoenix-photographed-its-own-solar-panel-and-its.jpg",
+          "alt": "Surface Stereo Imager panorama looking out over the arctic plain, with one of the lander's circular solar panels in the foreground and the robotic arm holding a soil sample in its scoop."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/02-02-caught-on-the-way-down-phoenix-hanging-under-its.jpg",
+          "alt": "HiRISE image from Mars Reconnaissance Orbiter showing Phoenix descending under its parachute on 25 May 2008, with a large crater behind it. The lander and parachute are only a few pixels across at full scale, so NASA boxed them and repeated them enlarged in an inset at the lower left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/03-03-under-the-lander-on-sol-5-the-descent-engines-sw.jpg",
+          "alt": "Robotic Arm Camera view underneath the lander on sol 5, framed by landing struts, showing the smooth bright patch left where the descent thrusters blew the loose soil aside."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/04-04-the-evidence-four-days-apart-a-cluster-of-bright.jpg",
+          "alt": "Two Surface Stereo Imager frames of the Dodo-Goldilocks trench, labelled sol 20 and sol 24 (15 and 19 June 2008), in which a cluster of bright lumps in the lower left of the trench floor shrinks and disappears over four days. The larger bright patch higher up the trench is still there in both frames."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/05-05-the-snow-white-trench-after-scraping-material-wo.jpg",
+          "alt": "The floor of the trench informally named Snow White in July 2008, scored with rasp and scrape marks made in preparation for collecting a sample of the hard subsurface layer."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/06-06-snow-on-mars-recorded-as-data-the-lidar-profile.jpg",
+          "alt": "A lidar data plot rather than a photograph: the Canadian-built lidar on Phoenix profiling a cloud on sol 99, with labelled fall streaks of ice crystals descending from the cloud base near 4 km altitude."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phoenix/07-07-phoenix-leaves-earth-on-a-delta-ii-7925-from-cap.jpg",
+          "alt": "The Delta II 7925 carrying Phoenix lifting off from Pad 17A at Cape Canaveral Air Force Station at 5:26 a.m. EDT on 4 August 2007, with the mission emblem visible on the rocket. NASA's own record for this frame credits the photographers Regina Mitchell-Ryall and Jerry Cannon."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/phoenix/01-01-phoenix-photographed-its-own-solar-panel-and-its.jpg"
+    },
+    {
+      "slug": "curiosity",
+      "entry_kind": "mission",
+      "name": "Curiosity (Mars Science Laboratory)",
+      "entity": "NASA",
+      "type": "rover",
+      "era": "long-occupation",
+      "outcome": "operating",
+      "status": "Operating as of 9 October 2026: fourteen years and past 5,000 Martian days, a milestone NASA's Curiosity blog dates to Saturday 29 August 2026, on a mission whose prime phase was one Martian year. The newest waypoint in NASA's MMGIS traverse file, last modified 21 September 2026, is sol 5021, a 1.02 m move to bring a drill target in range, with a cumulative drive distance of 38,383.67 m in that file's dist_total_m field, against 38.07 in the same record's dist_km field. NASA's raw images through sol 5039 (9 October 2026) show the rover at the same position.",
+      "facts_checked": "2026-09-21",
+      "has_coordinates": true,
+      "source_count": 25,
+      "page": "https://azmth.space/mars/missions/curiosity",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/01-01-curiosity-on-vera-rubin-ridge-on-sol-1943-with-m.jpg",
+          "alt": "PIA22207, a self-portrait of Curiosity standing on Vera Rubin Ridge, assembled from dozens of Mars Hand Lens Imager frames all taken on 23 January 2018, sol 1943, with the lower slopes of Aeolis Mons rising just behind the rover's mast and the rim of Gale crater on the horizon at both edges."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/02-02-curiosity-photographed-on-the-way-down-by-anothe.jpg",
+          "alt": "PIA15978, the HiRISE camera on Mars Reconnaissance Orbiter catching the Mars Science Laboratory entry vehicle descending under its fully inflated parachute on 6 August 2012 UTC, with an inset cutout of the back shell stretched to avoid saturation."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/03-03-the-atlas-v-541-leaving-complex-41-on-26-novembe.jpg",
+          "alt": "The United Launch Alliance Atlas V 541 rising from Space Launch Complex 41 at Cape Canaveral on 26 November 2011 with the Mars Science Laboratory spacecraft sealed inside its payload fairing. NASA's Kennedy Space Center media archive is the source; the file credits NASA without naming an individual photographer."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/04-04-the-hole-in-john-klein-the-mudstone-slab-curiosi.jpg",
+          "alt": "PIA16726, a Mastcam view centred on the borehole Curiosity's drill cut into the mudstone slab called John Klein in Yellowknife Bay, the mission's first sample drilling on Mars."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/05-05-yellowknife-bay-the-low-spot-curiosity-reached-f.jpg",
+          "alt": "PIA17595, a Curiosity mosaic showing the stacked geological members of the Yellowknife Bay formation and marking the two places where the rover drilled into the lowest member, Sheepbed, at the targets John Klein and Cumberland."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/06-06-curiosity-s-left-middle-and-left-rear-wheels-on.jpg",
+          "alt": "PIA20334, a Mars Hand Lens Imager view of Curiosity's left middle and left rear wheels, part of a routine wheel inspection set taken on 18 April 2016, sol 1315, showing punctures and tears in the aluminium skin."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/curiosity/07-07-curiosity-at-the-mojave-site-on-lower-mount-shar.jpg",
+          "alt": "PIA19142, a Curiosity self-portrait at the Mojave site on lower Aeolis Mons, combining dozens of Mars Hand Lens Imager frames taken on sols 868, 882 and 884 in January 2015, where the drill collected the mission's second sample of the mountain."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/curiosity/01-01-curiosity-on-vera-rubin-ridge-on-sol-1943-with-m.jpg"
+    },
+    {
+      "slug": "phobos-grunt-yinghuo-1",
+      "entry_kind": "mission",
+      "name": "Phobos-Grunt and Yinghuo-1",
+      "entity": "Roscosmos (Russia) and CNSA (China)",
+      "type": "sample-return",
+      "era": "long-occupation",
+      "outcome": "failure",
+      "status": "Stranded in low Earth orbit after launch on 8 November 2011: neither Mars burn ever fired, and the stack re-entered over the Pacific on 15 January 2012 with China's Yinghuo-1 still attached.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 19,
+      "page": "https://azmth.space/mars/missions/phobos-grunt-yinghuo-1",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/01-01-the-zenit-on-the-pad-at-baikonur-on-the-night-of.jpg",
+          "alt": "The Zenit-2SB rocket carrying Phobos-Grunt standing floodlit on the pad at Site 45, Baikonur, on the night of the launch, 8 to 9 November 2011."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/02-02-liftoff-20-16-03-utc-on-8-november-2011-russian.jpg",
+          "alt": "Liftoff of the Zenit-2SB with Phobos-Grunt and China's Yinghuo-1 microsatellite from Site 45 at Baikonur at 20:16:03 UTC on 8 November 2011, which was already past midnight in Moscow and four in the morning in Beijing."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/03-03-the-real-machine-assembled-at-npo-lavochkin-four.jpg",
+          "alt": "The Phobos-Grunt flight spacecraft photographed fully assembled at NPO Lavochkin in Khimki, the four stacked vehicles standing together: the jettisonable propellant tank block, the main propulsion unit, the cruise and landing module, and the return vehicle with its re-entry capsule."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/04-04-an-exhibition-model-not-flight-hardware-but-the.jpg",
+          "alt": "A Roscosmos display model of Phobos-Grunt at the 2011 Paris Air Show, numbered by the photographer to identify the drop tank, the cruise module, Yinghuo-1, the orbiter and lander, the Earth re-entry module and the sample capsule."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/05-05-phobos-grunt-seen-from-cornwall-on-27-november-2.jpg",
+          "alt": "A half-second handheld exposure taken from Cornwall on the evening of 27 November 2011 showing Phobos-Grunt as a streak of light crossing Cygnus while stranded in low Earth orbit."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/06-06-the-dish-that-heard-it-esa-modified-the-feed-on.jpg",
+          "alt": "ESA's tracking station at Perth in Western Australia, showing the 15 metre main dish and the small secondary antenna above it that was used to command Phobos-Grunt."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/07-07-where-it-was-going-esa-s-mars-express-imaged-pho.jpg",
+          "alt": "A Mars Express High Resolution Stereo Camera image of Phobos at 8.2 metres per pixel from orbit 8974, with two ellipses drawn on it marking the earlier planned landing site in red and the site under consideration in blue for Phobos-Grunt."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/phobos-grunt-yinghuo-1/01-01-the-zenit-on-the-pad-at-baikonur-on-the-night-of.jpg"
+    },
+    {
+      "slug": "maven",
+      "entry_kind": "mission",
+      "name": "MAVEN",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "ended",
+      "status": "Declared unrecoverable on 3 June 2026, after eleven years in Mars orbit against a one-year primary science mission. Its last signal came on 6 December 2025 and why it started spinning is still unexplained.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 15,
+      "page": "https://azmth.space/mars/missions/maven",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/maven/01-01-maven-s-solar-arrays-being-test-deployed-at-kenn.jpg",
+          "alt": "Engineers and technicians test deploy MAVEN's twin solar arrays inside the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center on 23 September 2013, about eight weeks before launch."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/maven/02-02-launch-18-november-2013-the-atlas-v-lifting-mave.jpg",
+          "alt": "The United Launch Alliance Atlas V carrying MAVEN lifts off from Space Launch Complex 41 at Cape Canaveral on 18 November 2013."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/maven/03-03-maven-s-first-look-eight-hours-after-arrival-hyd.webp",
+          "alt": "False colour ultraviolet images of Mars in three wavelength bands, taken by MAVEN's Imaging Ultraviolet Spectrograph from an altitude of 36,500 km eight hours after orbit insertion in September 2014. Blue shows sunlight scattered by the extended cloud of atomic hydrogen escaping the planet."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/maven/01-01-maven-s-solar-arrays-being-test-deployed-at-kenn.jpg"
+    },
+    {
+      "slug": "mangalyaan",
+      "entry_kind": "mission",
+      "name": "Mars Orbiter Mission (Mangalyaan)",
+      "entity": "ISRO",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "ended",
+      "status": "Lost after a long eclipse in April 2022; ISRO declared it non-recoverable on 27 September 2022. First Asian spacecraft to orbit Mars, it arrived in September 2014 and worked eight years against a six-month design life.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 21,
+      "page": "https://azmth.space/mars/missions/mangalyaan",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/01-01-the-whole-planet-in-one-frame-mangalyaan-s-high.webp",
+          "alt": "True-colour view of the whole Martian disc built from Mars Colour Camera frames taken on 10 October 2014 from about 76,000 km, showing the Tharsis volcanoes and Valles Marineris, processed by Justin Cowart from ISRO's archived data."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/02-02-the-1-340-kg-spacecraft-in-the-cleanroom-in-octo.jpg",
+          "alt": "The Mars Orbiter Mission spacecraft in an ISRO cleanroom during assembly in October 2013, with its high-gain antenna, solar array and 440 N liquid apogee motor visible."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/03-03-into-the-vacuum-chamber-the-mission-was-built-in.jpg",
+          "alt": "ISRO engineers loading the Mars Orbiter Mission spacecraft into the Large Space Simulation Chamber at ISAC in Bengaluru for thermal vacuum testing before launch."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/04-04-pslv-c25-leaves-sriharikota-on-5-november-2013-t.jpg",
+          "alt": "PSLV-C25 lifting off from the First Launch Pad at Satish Dhawan Space Centre SHAR, Sriharikota, at 09:08 UTC on 5 November 2013, carrying the Mars Orbiter Mission."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/05-05-the-end-of-the-24-minute-burn-07-41-ist-on-24-se.jpg",
+          "alt": "The ISRO Telemetry, Tracking and Command Network control room in Bengaluru on the morning of 24 September 2014, as Mars orbit insertion is confirmed, with Prime Minister Narendra Modi present."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/06-06-home-from-the-camera-that-would-later-photograph.webp",
+          "alt": "India photographed by the Mars Colour Camera on 19 November 2013 from about 70,000 km, the first Earth image returned by the mission, taken while the spacecraft was still in its highly elliptical Earth orbit awaiting trans-Mars injection. Released by ISRO in its Mars Colour Camera gallery."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan/01-01-the-whole-planet-in-one-frame-mangalyaan-s-high.webp"
+    },
+    {
+      "slug": "exomars-tgo",
+      "entry_kind": "mission",
+      "name": "ExoMars Trace Gas Orbiter",
+      "entity": "ESA and Roscosmos",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "operating",
+      "status": "Operating as of 3 September 2026: JPL Horizons returns live Mars-centred vectors for it, and raw ACS, NOMAD and FREND products run in ESA's public archive to 29 May 2026, the newest it holds.",
+      "facts_checked": "2026-09-03",
+      "has_coordinates": false,
+      "source_count": 14,
+      "page": "https://azmth.space/mars/missions/exomars-tgo",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/exomars-tgo/01-01-real-hardware-twelve-days-before-launch-tgo-and.jpg",
+          "alt": "The assembled ExoMars 2016 spacecraft composite, the Trace Gas Orbiter with the Schiaparelli demonstrator mounted on it, photographed on 2 March 2016 at the Baikonur cosmodrome as the second half of the Proton launcher fairing is lowered around it by overhead crane."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/exomars-tgo/02-02-the-orbiter-s-backbone-tgo-s-central-cylinder-du.jpg",
+          "alt": "The 1.194 m diameter, 3.5 m high composite central cylinder that carries launch loads through the ExoMars Trace Gas Orbiter and houses its propellant and oxidiser tanks, seen during integration of the spacecraft's electrical subsystems in the Thales Alenia Space cleanroom at Cannes, France."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/exomars-tgo/03-03-what-tgo-actually-looks-at-frost-edged-polygons.jpg",
+          "alt": "Frost-fringed polygonal ground on a springtime morning in the southern mid-latitudes of Mars near Dorsa Brevia, captured on 21 June 2020 by the CaSSIS colour and stereo camera on the Trace Gas Orbiter."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/exomars-tgo/01-01-real-hardware-twelve-days-before-launch-tgo-and.jpg"
+    },
+    {
+      "slug": "schiaparelli",
+      "entry_kind": "mission",
+      "name": "Schiaparelli EDM",
+      "entity": "ESA",
+      "type": "soft-lander",
+      "era": "long-occupation",
+      "outcome": "failure",
+      "status": "Destroyed on impact in Meridiani Planum on 19 October 2016 at 14:47:28 UTC, 37 seconds early, at about 150 m/s. ESA's inquiry board reported on 17 April 2017 and ESA announced the findings on 24 May 2017.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/schiaparelli",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/schiaparelli/01-01-six-days-after-the-crash-hirise-picks-out-the-im.jpg",
+          "alt": "HiRISE view taken on 25 October 2016, six days after the crash, of the ground in Meridiani Planum where Schiaparelli came down, with magnified insets of three places where parts of the spacecraft reached the surface: the lander module's dark impact scar, the parachute with the back shell, and the front heat shield."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/schiaparelli/02-02-schiaparelli-itself-unpacked-in-the-baikonur-cle.jpg",
+          "alt": "The Schiaparelli entry, descent and landing demonstrator being unpacked in a cleanroom at the Baikonur cosmodrome in January 2016, before being mated to the Trace Gas Orbiter for launch."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/schiaparelli/03-03-in-colour-on-1-november-2016-the-lander-scar-the.jpg",
+          "alt": "The first colour HiRISE view of the Schiaparelli impact site, observed on 1 November 2016, presented as three cutouts: the lander module at top, the parachute and back shell at lower left, and the heat shield at lower right, which fell outside the colour strip and so appears without colour."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/schiaparelli/01-01-six-days-after-the-crash-hirise-picks-out-the-im.jpg"
+    },
+    {
+      "slug": "insight",
+      "entry_kind": "mission",
+      "name": "InSight",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "long-occupation",
+      "outcome": "ended",
+      "status": "Ended on 15 December 2022, four years after landing in Elysium Planitia, when dust cut its solar power by about ninety per cent. It left 1,319 marsquakes, the first seismic catalogue of a planet other than Earth.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 18,
+      "page": "https://azmth.space/mars/missions/insight",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/01-01-insight-ten-sols-after-landing-photographed-by-t.jpg",
+          "alt": "InSight's first full selfie, a mosaic of 11 frames taken by the Instrument Deployment Camera on the elbow of the robotic arm on 6 December 2018, showing the solar panels, the deck, the weather sensor booms and the UHF antenna."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/02-02-into-the-fog-at-vandenberg-5-may-2018-the-first.jpg",
+          "alt": "The Atlas V 401 carrying InSight and the two MarCO CubeSats climbing into thick fog from Space Launch Complex 3 at Vandenberg Air Force Base before dawn on 5 May 2018."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/03-03-19-december-2018-seis-on-the-ground-the-viking-s.jpg",
+          "alt": "The copper-coloured SEIS seismometer standing on the Martian surface near dusk on 19 December 2018, photographed by the camera on InSight's robotic arm shortly after the arm set it down."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/04-04-the-shield-going-down-over-the-seismometer-on-2.jpg",
+          "alt": "The dome-shaped Wind and Thermal Shield in place over the seismometer after InSight lowered it on 2 February 2019, sol 66."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/05-05-the-end-of-the-mole-9-january-2021-after-a-last.jpg",
+          "alt": "The pit around the HP3 mole as it looked after hammering on 9 January 2021, sol 754, with the scoop on the robotic arm above it and the copper science tether running away to the left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/06-06-the-last-selfie-24-april-2022-set-it-beside-the.jpg",
+          "alt": "InSight's final selfie, a mosaic assembled from images taken on 24 April 2022, sol 1211, with the solar panels and deck buried under a thick coat of Martian dust."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/insight/07-07-11-december-2022-one-of-the-last-pictures-it-sen.jpg",
+          "alt": "One of the last images InSight returned, taken on 11 December 2022, sol 1436, showing the seismometer under its shield on the ground in front of the lander."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/insight/01-01-insight-ten-sols-after-landing-photographed-by-t.jpg"
+    },
+    {
+      "slug": "marco-a-b",
+      "entry_kind": "mission",
+      "name": "MarCO A and B",
+      "entity": "NASA",
+      "type": "flyby",
+      "era": "long-occupation",
+      "outcome": "success",
+      "status": "In orbit around the Sun and silent since 4 January 2019. The two CubeSats relayed InSight's landing live from about 3,500 km out on 26 November 2018, then stopped answering within six weeks.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/marco-a-b",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/marco-a-b/01-01-both-marco-cubesats-before-launch-one-folded-and.jpg",
+          "alt": "Engineer Joel Steinkraus with both MarCO spacecraft at the Jet Propulsion Laboratory in March 2018. The unit on the left is folded as it flew stowed on the rocket; the one on the right has its solar panels out, with its flat reflectarray high-gain antenna standing up behind it."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/marco-a-b/02-02-wall-e-s-farewell-marco-b-photographed-mars-on-t.jpg",
+          "alt": "Mars photographed by MarCO-B's wide-angle camera on 26 November 2018 as the CubeSat flew away after InSight landed, with the grid of its reflectarray antenna along the right edge of the frame. The picture sits letterboxed inside a 1920 by 1080 canvas."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/marco-a-b/03-03-the-first-picture-of-mars-ever-returned-by-a-cub.jpg",
+          "alt": "NASA's annotated version of MarCO-B's wide-angle camera view, taken as a test of exposure settings on 2 October 2018. Mars is the small red dot right of centre, ringed with a dashed circle and labelled by NASA; parts of the CubeSat's unfolded high-gain antenna show on both sides of the frame."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/marco-a-b/04-04-earth-and-the-moon-seen-from-a-briefcase-days-af.jpg",
+          "alt": "The first image returned by MarCO-B after launch, showing its unfolded high-gain antenna at right and Earth with the Moon as two points of light near the centre."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/marco-a-b/01-01-both-marco-cubesats-before-launch-one-folded-and.jpg"
+    },
+    {
+      "slug": "hope-emm",
+      "entry_kind": "mission",
+      "name": "Hope (Emirates Mars Mission)",
+      "entity": "MBRSC and UAE Space Agency (United Arab Emirates)",
+      "type": "orbiter",
+      "era": "multipolar",
+      "outcome": "operating",
+      "status": "In Mars orbit since 9 February 2021 and still flying as of 23 August 2026: the UAE announced a three-year extension to 2028 on 17 February 2026, and JPL held tracking data for it through 28 May 2026.",
+      "facts_checked": "2026-09-03",
+      "has_coordinates": false,
+      "source_count": 11,
+      "page": "https://azmth.space/mars/missions/hope-emm",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/01-01-the-first-picture-taken-a-day-after-arrival-on-1.webp",
+          "alt": "Hope's first science image of Mars, taken by the Emirates eXploration Imager on 10 February 2021 from about 24,700 km altitude, one day after orbit insertion, showing the north polar region and Olympus Mons catching the sunrise."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/02-02-orbit-47-1-may-2021-from-21-519-km-up-this-is-wh.webp",
+          "alt": "The full disc of Mars assembled from Hope EXI red, green and blue filter frames taken on 1 May 2021 during orbit 47, from a spacecraft altitude of 21,519 km, processed by Andrea Luck."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/03-03-the-atmosphere-leaking-away-in-ultraviolet-emus.webp",
+          "alt": "A labelled composite graphic titled 'The Ultraviolet Colors of the Red Planet', showing four false-colour ultraviolet views of Mars from the Emirates Mars Ultraviolet Spectrometer, grouped by species: hydrogen at 102.6 and 121.6 nm, oxygen at 130.4 nm and the 135.6 nm oxygen glow driven by energetic electrons, and carbon monoxide emission between 140 and 160 nm. The instrument team assembled the labelled graphic out of spectrometer data, so no single camera frame looks like this."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/04-04-omran-sharaf-announcing-the-science-mission-in-d.jpg",
+          "alt": "Omran Sharaf, project manager of the Emirates Mars Mission, speaking at the official announcement of the mission's scientific objectives at Al Bahr Palace in Dubai on 6 May 2015, in front of Arabic text reading 'First Arab probe to explore Mars'."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/05-05-hope-arrives-in-japan-late-april-2020-flown-in-f.jpg",
+          "alt": "The sealed shipping container carrying the Hope spacecraft being lifted from a Volga-Dnepr Antonov freighter in Japan in late April 2020, after the flight from Dubai. The spacecraft itself is inside the container and not visible; the container carries the mission decal."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/06-06-a-full-size-mockup-of-hope-photographed-at-the-d.jpg",
+          "alt": "A full-size mockup of the Hope orbiter displayed at the International Astronautical Congress in Dubai in October 2021, showing the hexagonal bus, the two solar wings and the high-gain antenna."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/hope-emm/01-01-the-first-picture-taken-a-day-after-arrival-on-1.webp"
+    },
+    {
+      "slug": "tianwen-1",
+      "entry_kind": "mission",
+      "name": "Tianwen-1",
+      "entity": "CNSA (China)",
+      "type": "orbiter",
+      "era": "multipolar",
+      "outcome": "operating",
+      "status": "The orbiter is still working: CNSA said on 20 May 2026 that it is running stably. It reached Mars orbit on 10 February 2021 and landed Zhurong on 14 May 2021; the rover has been silent since May 2022.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/tianwen-1",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/01-01-tianwen-1-photographed-by-a-camera-it-threw-away.jpg",
+          "alt": "The Tianwen-1 orbiter photographed in Mars orbit by a small camera the spacecraft released, showing the gold-foiled bus, both solar wings, the high-gain antenna and the subsurface radar booms, with Mars filling the frame behind it and the bright north polar cap at upper left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/02-02-long-march-5-y4-leaves-wenchang-on-23-july-2020.jpg",
+          "alt": "A Long March 5 Y4 rocket lifting off from Launch Complex 101 at the Wenchang Space Launch Site on Hainan at 04:41:15 UT on 23 July 2020, carrying the five-tonne Tianwen-1 stack."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/03-03-an-american-orbiter-s-view-of-the-whole-architec.jpg",
+          "alt": "HiRISE image of the Tianwen-1 landing site in southern Utopia Planitia acquired on 6 June 2021, showing the landing platform surrounded by the bright blast pattern of its descent engines and the Zhurong rover a short distance to the south."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/04-04-the-whole-planet-at-76-metres-per-pixel-built-fr.jpg",
+          "alt": "China's first global colour image map of Mars, at 76 metres per pixel, assembled from Tianwen-1 Moderate Resolution Imaging Camera coverage and shown here in Robinson projection with a graticule and scale bar."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/05-05-olympus-mons-with-cloud-piling-against-it-from-s.jpg",
+          "alt": "Olympus Mons under water-ice cloud, made from seven Tianwen-1 Moderate Resolution Imaging Camera frames taken on 30 December 2021 from 627 km altitude, mosaicked and reprojected by Andrea Luck from data released through moon.bao.ac.cn."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/06-06-the-landing-platform-photographed-by-the-rover-t.jpg",
+          "alt": "The Tianwen-1 landing platform standing on its four legs in southern Utopia Planitia with its deployment ramp lowered and the Chinese flag on its side, photographed by the Zhurong rover after it drove off on 22 May 2021."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/07-07-where-the-orbiter-s-seven-instruments-live-this.jpg",
+          "alt": "A labelled engineering diagram of the Tianwen-1 orbiter, drawn from the CAD model and shown from two angles, marking where its science instruments sit: the high- and medium-resolution cameras (HiRIC, MoRIC), the subsurface radar (MOSIR), the mineralogy spectrometer (MMS), the magnetometer (MOMAG) and the particle analysers (MINPA, MEPA)."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/tianwen-1/01-01-tianwen-1-photographed-by-a-camera-it-threw-away.jpg"
+    },
+    {
+      "slug": "zhurong",
+      "entry_kind": "mission",
+      "name": "Zhurong",
+      "entity": "CNSA (China)",
+      "type": "rover",
+      "era": "multipolar",
+      "outcome": "ended",
+      "status": "Silent since 18 May 2022, when it hibernated for the Martian winter after 358 sols and 1,921 m against a design life of 90. Dust is the likely cause, and as of 24 September 2026 China has declared no formal end.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": true,
+      "source_count": 17,
+      "page": "https://azmth.space/mars/missions/zhurong",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/01-01-the-portrait-zhurong-took-of-itself-the-rover-ca.webp",
+          "alt": "Zhurong and the Tianwen-1 landing platform standing side by side on the surface of southern Utopia Planitia, photographed by a small wireless camera that the rover set down on the ground and then drove away from."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/02-02-zhurong-close-up-cropped-from-the-same-deployabl.webp",
+          "alt": "A crop of the deployable-camera portrait showing the Zhurong rover alone: the butterfly-wing solar arrays, the mast with the navigation and terrain cameras, the directional antenna and the six wheels."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/03-03-what-zhurong-drove-through-wind-shaped-sand-and.jpg",
+          "alt": "A colour panorama of southern Utopia Planitia from Zhurong, showing bright wind-shaped sand ridges running across a rock-strewn plain to a flat horizon, with part of the rover's own hardware in the lower left of the frame."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/04-04-zhurong-looks-back-along-its-own-tracks-at-the-h.jpg",
+          "alt": "A wide-angle hazard-avoidance camera view from Zhurong showing two lines of wheel tracks running back across the plain, with a red box drawn at upper left around the discarded backshell and parachute of the entry capsule."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/05-05-ten-months-of-driving-written-on-the-ground-hiri.jpg",
+          "alt": "HiRISE image of southern Utopia Planitia acquired on 11 March 2022 in which the Zhurong rover's entire southward traverse of roughly 1.5 km can be traced as a pair of wheel tracks on the surface."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/06-06-the-ground-ahead-of-the-rover-photographed-from.jpg",
+          "alt": "PIA24914, a HiRISE view of Utopia Planitia acquired on 1 August 2021 and projected at 25 centimetres per pixel, showing the flat plain south of the landing site with impact craters, light-toned wind-blown ridges and troughs."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zhurong/07-07-the-heat-shield-where-it-fell-it-came-off-part-w.jpg",
+          "alt": "A HiRISE cutout from 6 June 2021 showing the discarded heat shield of the Tianwen-1 entry capsule lying on the surface of southern Utopia Planitia, with the dark impact mark it made on landing."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/zhurong/01-01-the-portrait-zhurong-took-of-itself-the-rover-ca.webp"
+    },
+    {
+      "slug": "perseverance",
+      "entry_kind": "mission",
+      "name": "Perseverance (Mars 2020)",
+      "entity": "NASA",
+      "type": "rover",
+      "era": "multipolar",
+      "outcome": "operating",
+      "status": "Operating as of 9 October 2026: NASA's raw-image feed carries pictures taken through sol 2001, the latest at 12:47 UTC on 6 October 2026, and its traverse file, last modified 15 September 2026, still ends with an end-of-drive localisation on sol 1980 at 45,126.078 m, about 34 m short of the 28.06 miles (45.16 kilometres) NASA credits to Opportunity as the off-Earth driving record. As of 9 October 2026 no agency had announced that record passed.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": true,
+      "source_count": 16,
+      "page": "https://azmth.space/mars/missions/perseverance",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/01-01-perseverance-and-cheyava-falls-the-pale-arrowhea.jpg",
+          "alt": "PIA26344, a Perseverance self-portrait made from 62 WATSON frames taken on 23 July 2024, with the arrowhead-shaped rock nicknamed Cheyava Falls lying to the left of the rover near the centre of the picture."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/02-02-perseverance-hanging-under-the-sky-crane-seconds.jpg",
+          "alt": "PIA24428, a still frame from video shot by a downward-looking camera on the descent stage as Perseverance was lowered on the sky crane's cables toward the floor of Jezero crater on 18 February 2021, with dust raised by the descent engines around the rover."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/03-03-launch-30-july-2020-the-ingenuity-helicopter-was.jpg",
+          "alt": "The United Launch Alliance Atlas V 541 lifting off from Space Launch Complex 41 at Cape Canaveral Air Force Station on 30 July 2020 at 7:50 a.m. EDT, carrying Perseverance and the Ingenuity helicopter, seen from the Atlas Space Operations Center."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/04-04-the-jezero-delta-the-ancient-river-deposit-perse.jpg",
+          "alt": "PIA25212, a Mastcam-Z panorama of 64 frames taken on 11 April 2022, sol 406, looking out across the fan-shaped river delta on the western side of Jezero crater, with sand bedforms running along its base. NASA states that the colour bands have been processed to accentuate differences and that the sky would not look blue to a human standing there."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/05-05-moxie-gold-plated-and-roughly-the-size-of-a-car.jpg",
+          "alt": "PIA24203, the gold-plated Mars Oxygen In-Situ Resource Utilization Experiment photographed after installation inside Perseverance's body before launch, with the wide intake tube for filtered Martian carbon dioxide on its top surface."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/06-06-mastcam-z-looking-into-the-drill-on-4-september.jpg",
+          "alt": "PIA24832, a Mastcam-Z image taken on 4 September 2021 looking into the drill to confirm that a rock core had been retained inside the sample tube held there, the core later sealed as the sample Montdenier."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/perseverance/07-07-the-mast-going-on-at-jpl-on-5-june-2019-fourteen.jpg",
+          "alt": "PIA23268, engineers and technicians installing the remote sensing mast on the Mars 2020 rover in High Bay 1 of the Spacecraft Assembly Facility at NASA's Jet Propulsion Laboratory on 5 June 2019."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/perseverance/01-01-perseverance-and-cheyava-falls-the-pale-arrowhea.jpg"
+    },
+    {
+      "slug": "ingenuity",
+      "entry_kind": "mission",
+      "name": "Ingenuity",
+      "entity": "NASA",
+      "type": "helicopter",
+      "era": "multipolar",
+      "outcome": "ended",
+      "status": "Grounded at Valinor Hills since 18 January 2024, when all four rotor blades broke on landing. NASA declared the mission complete on 25 January 2024 and left it recording with no way to send anything home.",
+      "facts_checked": "2026-08-23",
+      "has_coordinates": true,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/ingenuity",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/01-01-ingenuity-alone-on-mars-on-19-april-2021-photogr.jpg",
+          "alt": "PIA24550, a Mastcam-Z mosaic taken on 19 April 2021 after Ingenuity's first flight, showing the helicopter standing on its four legs on the floor of Jezero crater at Wright Brothers Field, with rover wheel tracks crossing the foreground."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/02-02-the-first-flight-seen-from-the-aircraft-ingenuit.jpg",
+          "alt": "PIA24584, the image Ingenuity's downward-looking black-and-white navigation camera took of its own shadow while hovering above Jezero crater on 19 April 2021, during the first instance of powered, controlled flight on another planet."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/03-03-ingenuity-at-airfield-b-on-7-may-2021-at-the-end.jpg",
+          "alt": "PIA24648, a Mastcam-Z view of Ingenuity standing at its new landing site after Flight 5 on 7 May 2021, a one-way trip of 129 m to a height record of 10 m that lasted 108 seconds."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/04-04-the-picture-that-ended-the-mission-looking-at-th.jpg",
+          "alt": "PIA26243, a colour image from Ingenuity's horizon-facing camera showing the shadow of one of its rotor blades cast on the sand after Flight 72 on 18 January 2024, with a clear step in the silhouette where the outer part of the blade is missing."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/05-05-ingenuity-where-it-stopped-photographed-by-perse.jpg",
+          "alt": "PIA26236, an enhanced-colour mosaic of six Mastcam-Z frames taken on 4 February 2024 from about 450 m away, showing Ingenuity where it came to rest at the spot the team named Valinor Hills after its 72nd and last flight."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/06-06-how-jpl-thinks-it-happened-this-is-a-diagram-not.jpg",
+          "alt": "PIA26482, a NASA graphic published in December 2024 depicting the most likely sequence for Ingenuity's hard landing on Flight 72: high horizontal velocity at touchdown on a sloping sand ripple, causing the helicopter to pitch and roll and the blades to fail."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/07-07-the-ingenuity-team-at-jpl-reading-the-data-from.jpg",
+          "alt": "PIA24597, members of the Ingenuity team in the control room at NASA's Jet Propulsion Laboratory reacting to the data showing the helicopter had completed its second flight on Mars, on 22 April 2021."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/ingenuity/01-01-ingenuity-alone-on-mars-on-19-april-2021-photogr.jpg"
+    },
+    {
+      "slug": "escapade",
+      "entry_kind": "mission",
+      "name": "ESCAPADE",
+      "entity": "NASA / UC Berkeley Space Sciences Laboratory / Rocket Lab",
+      "type": "orbiter",
+      "era": "multipolar",
+      "outcome": "operating",
+      "status": "Operating as of 9 October 2026: both orbiters are being tracked, Blue 1.88 million km and Gold 1.96 million km from Earth and falling back towards it, loitering since their 13 November 2025 launch. The burn for Mars is planned for November 2026, arrival September 2027.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 20,
+      "page": "https://azmth.space/mars/missions/escapade",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/escapade/01-01-blue-and-gold-the-two-identical-escapade-orbiter.jpg",
+          "alt": "The two identical ESCAPADE orbiters, Blue and Gold, standing on dollies in a high bay of the Astrotech Space Operations Facility near Kennedy Space Center on 22 August 2024, where they were inspected and processed after delivery."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/escapade/02-02-the-launch-that-finally-flew-new-glenn-s-second.jpg",
+          "alt": "The second New Glenn lifting off from Space Launch Complex 36 at Cape Canaveral Space Force Station on 13 November 2025, the flight that carried the two ESCAPADE spacecraft away from Earth."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/escapade/03-03-taken-from-the-spacecraft-itself-earth-and-the-m.webp",
+          "alt": "Earth and the Moon as crescents, photographed on 3 July 2026 by one of the two ESCAPADE spacecraft from 584,600 km from Earth while it loitered in the Earth's neighbourhood waiting for the Mars window, with only about 8 per cent of each face sunlit."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/escapade/01-01-blue-and-gold-the-two-identical-escapade-orbiter.jpg"
+    },
+    {
+      "slug": "mmx",
+      "entry_kind": "mission",
+      "name": "Martian Moons eXploration (MMX)",
+      "entity": "JAXA",
+      "type": "sample-return",
+      "era": "multipolar",
+      "outcome": "operating",
+      "status": "Operating as of 20 October 2026: MMX lifted off on H3 flight 10 from Tanegashima at 04:41:03 JST on 20 October 2026, which is 19:41:03 UTC on 19 October, separated into its planned orbit about 71 minutes later, and was reported stable by its mission leader at the post-launch press conference. Arrival at Mars is planned for August 2027, with at least 10 g of Phobos due on Earth in July 2031.",
+      "facts_checked": "2026-10-20",
+      "has_coordinates": false,
+      "source_count": 23,
+      "page": "https://azmth.space/mars/missions/mmx",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mmx/01-01-video-still-h3-flight-10-rises-over-yoshinobu-la.jpg",
+          "alt": "H3 flight 10 rising on its exhaust plume above the launch pad at night, seen across the water, with the lit Vehicle Assembly Building at left and the ground cloud spreading to the right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mmx/02-02-photograph-the-mmx-emblem-on-the-h3-flight-10-fa.jpg",
+          "alt": "Close-up of the H3 flight 10 fairing with the MMX emblem large and sharp, the top of the core stage, and the red and white lightning towers and umbilical mast of the launch pad under a clear blue sky."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mmx/03-03-the-people-who-built-it-the-megane-gamma-ray-spe.jpg",
+          "alt": "American and Japanese team members gathered around the gamma ray spectrometer part of MEGANE, the NASA-provided instrument that will measure the elemental composition of Phobos, during its development at the Johns Hopkins Applied Physics Laboratory."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mmx/04-04-the-landing-legs-on-a-half-scale-model-of-mmx-sh.jpg",
+          "alt": "The landing gear on a half-scale model of the MMX spacecraft displayed in the first floor atrium at the Japan Aerospace 2024 exhibition, Tokyo Big Sight, on 19 October 2024."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mmx/01-01-video-still-h3-flight-10-rises-over-yoshinobu-la.jpg"
+    },
+    {
+      "slug": "rosalind-franklin",
+      "entry_kind": "mission",
+      "name": "Rosalind Franklin rover",
+      "entity": "ESA, with NASA",
+      "type": "rover",
+      "era": "announced",
+      "outcome": "in-development",
+      "status": "Funded and building hardware as of September 2026: NASA approved its supporting project on 16 April 2026 and selected a Falcon Heavy. ESA still says launch in 2028 and landing in 2030, with no exact dates published.",
+      "facts_checked": "2026-09-03",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/rosalind-franklin",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/rosalind-franklin/01-01-the-rover-itself-under-construction-in-the-airbu.jpg",
+          "alt": "The ExoMars rover under construction in the bio-burden controlled cleanroom at Airbus Defence and Space in Stevenage, photographed in February 2019, the month the rover was named after Rosalind Franklin."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/rosalind-franklin/02-02-april-2026-the-35-metre-main-parachute-going-int.jpg",
+          "alt": "The mission's 74 kg, 35 m diameter main parachute, made mostly of nylon and Kevlar, wrapped in a ring shaped bag and about to be sterilised in a dry heat oven, photographed by ESA in April 2026."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/rosalind-franklin/03-03-flight-standard-hardware-on-test-a-three-metre-r.webp",
+          "alt": "One of the three metre ramps that will carry the Rosalind Franklin rover down off its landing platform, photographed fully deployed with its guide rails inside a thermal vacuum chamber after a release test at about minus 70 C. Published by ESA on 21 July 2026."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/rosalind-franklin/01-01-the-rover-itself-under-construction-in-the-airbu.jpg"
+    },
+    {
+      "slug": "tianwen-3",
+      "entry_kind": "mission",
+      "name": "Tianwen-3 (天问三号)",
+      "entity": "CNSA",
+      "type": "sample-return",
+      "era": "announced",
+      "outcome": "in-development",
+      "status": "In development, nothing flown yet: on 12 March 2026 chief designer Liu Jizhong said the spacecraft were in prototype build. CNSA still says launch around 2028 and samples on Earth around 2031.",
+      "facts_checked": "2026-09-24",
+      "has_coordinates": false,
+      "source_count": 16,
+      "page": "https://azmth.space/mars/missions/tianwen-3",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-3/01-01-china-s-rendering-of-the-tianwen-3-orbiter-and-r.webp",
+          "alt": "Rendering issued by China News Service in December 2025 of the Tianwen-3 orbiter and return module combination, labelled in the original Chinese caption as a simulation image (天问三号探测器轨返组合体模拟图). China News Service issued the rendering rather than a photograph of hardware."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/tianwen-3/02-02-where-it-might-land-the-preliminary-tianwen-3-si.jpg",
+          "alt": "Map of preliminary landing sites considered for Tianwen-3, published by the mission's science team in National Science Review in October 2024. Green dots mark sites that meet the engineering constraints, yellow dots mark sites that do not but have high scientific value."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/tianwen-3/01-01-china-s-rendering-of-the-tianwen-3-orbiter-and-r.webp"
+    },
+    {
+      "slug": "mars-5m",
+      "entry_kind": "mission",
+      "name": "Mars 5M",
+      "entity": "USSR",
+      "type": "sample-return",
+      "era": "viking",
+      "outcome": "cancelled",
+      "status": "Cancelled with flight vehicles already in manufacture. Russian sources close this Soviet sample return on 17 November 1977, the week its chief designer lost his job; Perminov, who worked on it, dates the end to 1978.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-5m",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-5m/01-01-the-5m-complex-on-its-own-drawing-sheet-umbrella.jpg",
+          "alt": "A Soviet presentation sheet headed АВТОМАТИЧЕСКИЙ КОСМИЧЕСКИЙ КОМПЛЕКС-5М, showing the vehicle with its umbrella shield opened, the mass written as ВЕС КОСМИЧЕСКОГО АППАРАТА 8700 +75 КГ, five numbered callouts reading descent vehicle, return vehicle, ascent rocket, landing platform and trajectory block, and two small scale views at the right, the plan one dimensioned about 11.7 m across."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-5m/02-02-how-one-5m-mission-was-to-leave-earth-two-proton.jpg",
+          "alt": "A modern 3D cutaway rendering of the two Proton-K launches that would have assembled one 5M mission, the left rocket carrying the 11S86 active space tug with its docking port, rendezvous antennas and avionics, the right carrying the 11S824M passive tug with the 5M sample return spacecraft above it and its deployable Mars entry shield, labelled TZU, folded inside the payload fairing."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-5m/01-01-the-5m-complex-on-its-own-drawing-sheet-umbrella.jpg"
+    },
+    {
+      "slug": "zond-3",
+      "entry_kind": "mission",
+      "name": "Zond 3",
+      "entity": "OKB-1 (USSR)",
+      "type": "flyby",
+      "era": "first-attempts",
+      "outcome": "success",
+      "status": "Success: launched 18 July 1965 towards the orbit of Mars with no Mars at the end of it, it photographed the unseen third of the lunar far side and replayed those frames to 153.5 million km by March 1966.",
+      "facts_checked": "2026-08-27",
+      "has_coordinates": false,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/zond-3",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-3/01-01-the-zond-3-exhibit-in-kaluga-a-museum-article-st.jpg",
+          "alt": "A 3MV station exhibited as Zond 3 in the hall of the Tsiolkovsky State Museum of the History of Cosmonautics in Kaluga: the petal-built parabolic dish across the front, two solar wings, the polished pressurised instrument compartment with its spherical tanks and orientation sensors above, the two hemispherical thermal radiators at the sides, and a wheeled museum stand under the whole thing."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-3/02-02-one-of-the-25-lunar-frames-zond-3-took-on-20-jul.jpg",
+          "alt": "Zond 3 frame 3 from the 68 minute session on 20 July 1965, showing far-side terrain with dark mare patches left of centre, bright ray craters scattered across the disc and the limb falling into shadow at the right. The dark shape with a white wedge in the lower left corner belongs to the camera's own frame and marks nothing on the surface."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-3/03-03-another-frame-from-the-same-68-minutes-these-sam.jpg",
+          "alt": "Zond 3 frame 14 from the same session, a heavily cratered far-side landscape with a large dark-floored crater near the centre, bright fresh craters around it and the limb curving away at the right edge, with the camera's corner mark again at the lower left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/zond-3/04-04-not-everything-on-the-film-was-a-picture-frames.jpg",
+          "alt": "An ultraviolet spectrum recorded on the same film as the lunar pictures, from the group exposed in frames 8 to 10, printed as a broad banded strip with a wavelength scale beneath it running from 350 down to 260, in nanometres."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/zond-3/01-01-the-zond-3-exhibit-in-kaluga-a-museum-article-st.jpg"
+    },
+    {
+      "slug": "kazachok",
+      "entry_kind": "mission",
+      "name": "Kazachok",
+      "entity": "Roscosmos, with ESA",
+      "type": "soft-lander",
+      "era": "multipolar",
+      "outcome": "cancelled",
+      "status": "Built, tested, mated to the rover and never launched. ESA suspended the ExoMars cooperation with Roscosmos on 17 March 2022 and terminated it in July; Roscosmos said the platform was home in Russia on 30 October 2024.",
+      "facts_checked": "2026-08-27",
+      "has_coordinates": false,
+      "source_count": 14,
+      "page": "https://azmth.space/mars/missions/kazachok",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kazachok/01-01-kazachok-itself-ramps-and-solar-panels-folded-wi.jpg",
+          "alt": "The Kazachok landing platform in the clean room at Thales Alenia Space in Turin in November 2020, sitting on a supporting trolley with its ramps and solar panels folded, while the dark rear jacket of the descent module hangs from a red lifting frame directly above it and engineers work at floor level. ESA's caption records that the front shield would later be fitted to the same trolley, and that the platform and the Rosalind Franklin rover would then undergo joint testing at Cannes."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kazachok/02-02-the-rover-on-the-platform-that-was-to-put-it-on.jpg",
+          "alt": "The Rosalind Franklin rover in its stowed configuration sitting on top of the Kazachok surface platform in a clean room at Thales Alenia Space in Cannes, two of the platform's ramps deployed down to the floor on either side and one of its solar panels partially deployed at the front left, the platform itself standing on a wheeled support trolley rather than on its own landing legs. ESA's caption records that the two were mated to form the landing module and that the tests included electrical, power and data transfer checks between them."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kazachok/03-03-the-platform-arriving-in-italy-in-march-2019-the.jpg",
+          "alt": "The Russian landing platform suspended from a hoist as it is unpacked in Turin in March 2019, its white upper panels and the dark frame of its ramps visible, with a technician in a clean-room suit steadying it. ESA's caption records that the platform left Russia in March 2019 packed to planetary protection requirements, flew to Turin on an Antonov with its ground support equipment, and that Roscosmos announced its new name, Kazachok, at this point."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kazachok/04-04-lavochkin-s-own-drawing-of-the-layout-rover-on-t.jpg",
+          "alt": "A Lavochkin computer drawing of the landing platform from above and from below, labelled in Russian for марсоход (the rover), трапы (the ramps), панели СБ (the solar panels), служебная и научная аппаратура (the service and science equipment), баки с топливом (the propellant tanks) and посадочные опоры (the landing legs)."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/kazachok/05-05-the-landing-kazachok-was-built-to-make-drawn-wit.jpg",
+          "alt": "A Lavochkin diagram of the entry, descent and landing sequence drawn over a Martian horizon and keyed in Russian with times, altitudes and speeds: entry at t equals 0 at 120 km and 6.1 km/s, peak heating, first stage of the parachute system, main parachute, front shield separation, separation of the rear cover with the parachute, end of braking, engine cut-off and touchdown at about 1.2 to 1.45 m/s, then the landing platform deploying its solar panels and ramps."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/kazachok/01-01-kazachok-itself-ramps-and-solar-panels-folded-wi.jpg"
+    },
+    {
+      "slug": "mars-excursion-module",
+      "entry_kind": "mission",
+      "name": "Mars Excursion Module",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "first-orbits",
+      "outcome": "cancelled",
+      "status": "Never built, and never formally cancelled: no crewed Mars programme was ever approved for it to belong to. It was designed three times between 1963 and 1967, by Philco Aeronutronic, Marshall and North American Rockwell.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 11,
+      "page": "https://azmth.space/mars/missions/mars-excursion-module",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/01-01-the-mars-excursion-module-as-philco-aeronutronic.jpg",
+          "alt": "The Aeronutronic artist's concept of Mars Excursion Module surface operations, which is Figure 9 of Dixon's 1964 summary presentation. The tail-landing D9-1 vehicle stands on four legs with its winglets at the base, the crew windows uncovered and the airlock cylinder extended beneath it, while two of the three crew work outside beside a portable meteorological station and the 10 foot communications dish on its tripod."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/02-02-the-cutaway-of-the-design-choice-configuration-d.jpg",
+          "alt": "Figure 27 of the Aeronutronic study, the inboard profile of MEM configuration D9-1, carrying the Ford Aeronutronic Division logo. Three views are drawn: a plan view and a sectioned profile view showing the fuel cells, the Step I, II and III oxidiser and fuel tanks, liquid oxygen and liquid nitrogen for the environmental control system, parachute storage, the ascent engine blast tube, the docking radar, the landing gear and its shock attenuation and the extended airlock; and beneath them a plan view of the living area labelled with the laboratory work and storage areas, food storage and preparation, a portable eating table, a sofa or bunk, personal gear storage, a shower, a lavatory and a waste station."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/03-03-the-rejected-alternative-configuration-d8-1-whic.jpg",
+          "alt": "Figure 30 of the Aeronutronic study, the inboard profile of MEM configuration D8-1, the canted lander that was not chosen. The vehicle is drawn nose-high on a nose leg and two main legs, sectioned to show the command module separation joint, the docking window and radar, the fuel cells, the Step I, II and III propellant tanks, the ascent engine, the living area and its access door, the airlock and parachute storage, with a separate plan view of the living area naming the laboratory work and storage area, an eating area, a relief station, lavatories, a shower and a sofa or bunk."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/04-04-the-outside-shape-of-the-tail-landing-mem-dimens.jpg",
+          "alt": "Figure 26 of the Aeronutronic study, the general arrangement of the tail sitter vehicle: a dimensioned outline of the half-cone lifting body in rear and side view, marked 400 inches across the two winglets, 264 inches across the body, 360 inches long, with a 164 inch radius and a 49.2 inch spherical nose radius."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/05-05-woodcock-s-answer-to-mariner-4-an-apollo-cone-th.jpg",
+          "alt": "Figure 9 of Gordon Woodcock's June 1966 memorandum, the Mars Excursion Module concept: a labelled section through the Apollo-cone lander showing the separable cap, the 4 man cabin with a viewport and a floating astronaut, the egress lock, the ascent stage with its LOX tank, super insulation and a pressurant gas helium sphere, the descent stage carrying the Mars surface operations crew quarters and the landing propellant, the ascent stage propulsion and the landing engines, the thrust structure and the heat shield. The paragraph of body text above the figure is part of the scanned page."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/06-06-marshall-s-apollo-shaped-mars-excursion-module-p.webp",
+          "alt": "A 1969 Marshall Space Flight Center cutaway painting headed MARS EXCURSION MODULE CONFIGURATION and numbered MSFC-69 PD-SA 164, showing an Apollo-shaped Mars Excursion Module landed on a red plain with its ramp down, a surface vehicle and crew quarters in the lower body, a ladder, the ascent stage on the centreline and an astronaut in the cabin at the top of the cone."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-excursion-module/01-01-the-mars-excursion-module-as-philco-aeronutronic.jpg"
+    },
+    {
+      "slug": "mars-surveyor-2001-lander",
+      "entry_kind": "mission",
+      "name": "Mars Surveyor 2001 Lander",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "losing-decade",
+      "outcome": "cancelled",
+      "status": "Built and never flown: NASA said on 28 March 2000 that it was cancelled and on hold indefinitely, a near copy of Mars Polar Lander, which had crashed on 3 December 1999. Its structure reached Mars in 2008 as Phoenix.",
+      "facts_checked": "2026-08-27",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mars-surveyor-2001-lander",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/01-01-the-mars-surveyor-2001-lander-during-assembly-te.jpg",
+          "alt": "A colour photograph of a Mars Surveyor 2001 lander standing on three white test stands in a bare high-bay cell, its circular equipment deck wrapped in gold and silver thermal blanketing with amber plumbing and cabling running across it, protective yellow tape and red covers on the deck edge, and camera tripods and ground support cabling on the floor around it. JPL published it in a gallery headed ATLO Test and Integration Images on the lander's own site, with no individual caption and no date."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/02-02-under-the-deck-of-the-2001-lander-where-the-desc.jpg",
+          "alt": "A close colour photograph taken under the rim of the lander deck, showing gold multilayer insulation folded back over tanks and lines, a cluster of small rocket nozzles pointing down at the centre of the frame, valve and connector blocks bolted to the underside, and white cable harness taped across the structure. It is one of four frames JPL published without captions in the ATLO Test and Integration Images gallery."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/03-03-jpl-s-labelled-rendering-of-the-deck-this-lander.jpg",
+          "alt": "A labelled computer rendering of the 2001 lander's science deck seen from above and to one side, with white pointer arrows naming the Martian Radiation Environment Experiment (MARIE), Mini-TES, the APEX Pancam on its mast, the Mars In Situ Propellant Production experiment (MIP), the Mars Environmental Compatibility Assessment (MECA) and a Mossbauer Spectrometer, with two solar panels and the rover deployment ramp cut off at the edges of the frame. The rendering was made for the mission website, and the page that carries it credits the site's 2001 artwork to Corby J. Waste of JPL."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/04-04-marie-curie-itself-the-sojourner-flight-spare-th.jpg",
+          "alt": "Museum object photography of the Marie Curie rover on its black plinth at the National Air and Space Museum, three-quarter view from the front left, showing the black solar panel with its colour calibration targets along the edge, the gold-foiled warm electronics box, the rocker-bogie suspension and all six cleated aluminium wheels. Part of the plinth label reading SOJOURNER FLIGHT SPARE MARIE C is visible at bottom left."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/05-05-marie-curie-on-display-in-washington-labelled-fo.jpg",
+          "alt": "The Marie Curie rover as displayed at the National Air and Space Museum, standing on a pink plinth against a painted Martian backdrop with a larger rover model behind it. The exhibit label in the foreground is headed Marie Curie Rover, Sojourner's Flight Spare, and its text records that Sojourner landed on 4 July 1997 and operated for 85 days, that the rover shown is Sojourner's flight spare, and that the object was transferred from the National Aeronautics and Space Administration."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/06-06-phoenix-under-assembly-in-denver-in-september-20.jpg",
+          "alt": "A colour photograph released by JPL as PIA01885, showing the Phoenix Mars Lander partway through assembly and testing at Lockheed Martin Space Systems in Denver in September 2006, the lander deck on a work fixture in the clean room with its two circular solar arrays unfolded flat on either side and three gowned technicians working over the deck."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-surveyor-2001-lander/01-01-the-mars-surveyor-2001-lander-during-assembly-te.jpg"
+    },
+    {
+      "slug": "mars-telecom-orbiter",
+      "entry_kind": "mission",
+      "name": "Mars Telecommunications Orbiter",
+      "entity": "NASA",
+      "type": "orbiter",
+      "era": "long-occupation",
+      "outcome": "cancelled",
+      "status": "Cancelled on 21 July 2005 before construction, and nothing replaced it. NASA sought proposals for a commercially built Mars Telecommunications Network on 14 May 2026, with no award announced as of 24 August 2026.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/mars-telecom-orbiter",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-telecom-orbiter/01-01-the-mars-telecommunications-orbiter-as-jpl-drew.jpg",
+          "alt": "The JPL artist's concept released on 29 March 2005 as PIA07500, titled Mars Telecommunications Orbiter, Artist's Concept, showing the spacecraft in front of Mars with a gold-blanketed bus, a large white high-gain dish, two long solar wings, a cylindrical optical terminal assembly on top and a flat radiator panel below."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-telecom-orbiter/02-02-the-laser-link-the-orbiter-was-to-demonstrate-dr.jpg",
+          "alt": "The JPL artist's concept released on 29 March 2005 as PIA07499, titled Mars Laser Communication Demonstration, Artist Concept, showing the Mars Telecommunications Orbiter above Mars with a red beam running from the small optical terminal on its upper deck all the way to Earth. NASA's caption describes it as a concept for operation of an optical communications system on the orbiter, with the primary work left to the radio link."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-telecom-orbiter/03-03-what-mars-got-instead-of-a-relay-satellite-a-nas.jpg",
+          "alt": "A JPL graphic released on 29 November 2016 as PIA21139, Strengthening the Mars Telecommunications Network, showing the geometry of the rover Opportunity transmitting UHF data up to ESA's Trace Gas Orbiter, whose long elliptical orbit is drawn in red around the planet. The orbiter received the data on one of its NASA-supplied Electra UHF radios and relayed it to Earth on its own X-band link."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-telecom-orbiter/01-01-the-mars-telecommunications-orbiter-as-jpl-drew.jpg"
+    },
+    {
+      "slug": "mars-life-explorer",
+      "entry_kind": "mission",
+      "name": "Mars Life Explorer",
+      "entity": "NASA",
+      "type": "soft-lander",
+      "era": "announced",
+      "outcome": "planned",
+      "status": "Still a concept as of 24 August 2026, with no new start, funding line or launch date. The 2022 decadal survey made this ice-drilling lander NASA's top medium-class Mars mission, to follow sample return's peak spending.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 11,
+      "page": "https://azmth.space/mars/missions/mars-life-explorer",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-life-explorer/01-01-the-mars-life-explorer-as-drawn-for-the-concept.jpg",
+          "alt": "An artist's concept of the Mars Life Explorer standing on rocky ground under a pale orange sky: a lander in the Phoenix and InSight mould, with two circular fan-fold solar arrays spread either side, instrument boxes on the deck, and a tall vertical drill mast reaching down to the surface beside the leg. The Planetary Society captions it as the Mars Life Explorer operating on the surface with its drill deployed. Nothing has been built."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-life-explorer/02-02-the-reason-mars-life-explorer-exists-a-meteorite.jpg",
+          "alt": "A HiRISE excerpt from NASA's Mars Reconnaissance Orbiter showing a small fresh impact crater in the northern mid-latitudes, a bright white patch of excavated ice at its centre surrounded by a dark blast scar on rippled orange ground, with a 100 metre scale bar. NASA's record states that the impact exposed bright ice that had been hidden just beneath the surface at this location."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mars-life-explorer/03-03-where-the-buried-ice-is-from-the-swim-project-ma.jpg",
+          "alt": "The Subsurface Water Ice Mapping map, a grey shaded-relief Mars base with the Tharsis volcanoes and Valles Marineris across the lower half and a broad blue wash covering the northern plains, marking where NASA missions have detected subsurface water ice. Triangles are past and present landed missions, circles are ice-exposing impact craters. NASA's record states that the project mapped from the equator to 60 degrees north, hunting ice in the mid-latitudes: far enough toward the pole for water ice to be plentiful, but close enough to the equator to avoid the coldest temperatures on Mars."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mars-life-explorer/01-01-the-mars-life-explorer-as-drawn-for-the-concept.jpg"
+    },
+    {
+      "slug": "ares-mars-airplane",
+      "entry_kind": "mission",
+      "name": "ARES, the Mars airplane",
+      "entity": "NASA",
+      "type": "aircraft",
+      "era": "long-occupation",
+      "outcome": "cancelled",
+      "status": "Never built beyond subscale test articles. NASA Langley's rocket-powered aeroplane, designed for a single 70-minute flight over the Southern Highlands, lost Mars Scout to Phoenix in 2003 and was passed over in 2007.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/ares-mars-airplane",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/01-01-the-ares-team-at-langley-around-the-full-scale-t.jpg",
+          "alt": "Roughly fifty members of the ARES team in matching blue ARES polo shirts, packed shoulder to shoulder around a full-scale ARES test airplane indoors at NASA Langley, the aircraft finished in white with dark blue sweeps and a United States flag on its tail fin. The Commons file page identifies team leader Joel S. Levine at the bottom right. This airframe is a ground test article built at Langley, and no ARES was ever built to go to Mars."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/02-02-the-half-scale-mars-eagle-on-the-morning-of-the.jpg",
+          "alt": "The half-scale ARES drop-test aircraft, which the project called the Mars Eagle, sitting on a wooden cradle on a fog-bound airfield apron with its wings and tail deployed, white with orange wingtips and tail, cables trailing across the tarmac, and a Douglas DC-3 parked behind it. The project's multimedia page captions the frame as the ARES Mars Eagle on the morning of the high altitude drop test with a DC-3 in the background."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/03-03-the-tail-camera-of-the-half-scale-mars-eagle-des.jpg",
+          "alt": "A frame from the tail-mounted video camera of the half-scale Mars Eagle during its 19 September 2002 high-altitude flight, looking forward along a deployed wing and the twin tail booms towards a black sky and the curved bright limb of the Earth, with cloud and terrain far below. The project's multimedia page captions it as the ARES Mars Eagle descending over Oregon during its high altitude flight test."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/04-04-the-ares-wind-tunnel-model-in-langley-s-transoni.jpg",
+          "alt": "A bare metal ARES wind-tunnel model mounted upside down on a yellow-taped sting inside NASA Langley's Transonic Dynamics Tunnel, wings and tail in their fully deployed positions, rows of pressure taps drilled into the wing, tunnel lights burning through portholes in the wall behind it. The project's multimedia page captions the frame as the current ARES wind tunnel model in the TDT in May 2004."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/05-05-how-ares-was-to-get-out-of-its-aeroshell-interfa.webp",
+          "alt": "The entry, descent and deployment figure from the 2006 ARES proposal documentation. Four CAD panels across the top show the folded airplane still inside the backshell at heat shield release, the release pyros firing, extraction complete on the drogue riser, and the wings deploying beneath the supersonic parachute. Below them an altitude against downrange plot traces the whole sequence with three sigma Monte Carlo boxes, and a table lists every event from atmospheric interface at 135 km and Mach 24 to pullout complete at 2.41 km and Mach 0.64, 309 seconds later. It is an engineering drawing of a vehicle that was never built."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/06-06-langley-s-picture-of-the-moment-the-folded-aerop.jpg",
+          "alt": "A NASA Langley artist's concept of the drogue chute and tail deployment step, drawn over cratered Martian highlands. A dark truss, the airplane extraction structure, hangs beneath the white drogue canopy at the upper left with its own risers running up out of frame; a single line runs down from the canopy to the aircraft, and the aircraft itself is shown with its tail unfolded but its wings still folded flat down against the fuselage. The backshell is not in frame. The project's own multimedia page labels this image an artist's concept of ARES during drogue chute and tail deployment."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/ares-mars-airplane/01-01-the-ares-team-at-langley-around-the-full-scale-t.jpg"
+    },
+    {
+      "slug": "hera-deimos",
+      "entry_kind": "mission",
+      "name": "Hera at Deimos",
+      "entity": "ESA",
+      "type": "flyby",
+      "era": "multipolar",
+      "outcome": "success",
+      "status": "Success: Hera photographed the far side of Deimos from about 1,000 km on 12 March 2025 during a Mars gravity assist. In August 2026 those frames pinned a Nature Astronomy reconstruction to a 320 m impactor.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/hera-deimos",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hera-deimos/01-01-deimos-against-mars-from-about-1-000-km-seen-by.webp",
+          "alt": "Deimos as a dark, irregular silhouette against the brighter disc of Mars, in a monochrome visible-light frame from Hera's 1020 by 1020 pixel Asteroid Framing Camera taken during the gravity assist of 12 March 2025 from about 1,000 km. ESA's caption places the bright Terra Sabaea region at the top, part of the 450 km Huygens crater at the right and part of Hellas Basin at the bottom right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hera-deimos/02-02-in-thermal-infrared-the-contrast-reverses-dark-l.webp",
+          "alt": "The same encounter in mid-infrared, from the Thermal Infrared Imager that JAXA supplied to Hera. Deimos is the small bright spot below the centre of a cooler Mars, because the airless, very dark moon absorbs sunlight and heats up while Mars is more reflective and moves heat around with its atmosphere. Hellas Basin is the cool purple region at the lower right, and a brightness temperature scale runs down the right-hand edge."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hera-deimos/03-03-the-same-moment-through-hyperscout-h-which-works.webp",
+          "alt": "A near-infrared frame from HyperScout H, Hera's hyperspectral imager, which works in 25 visible and near-infrared bands to characterise surface materials. Mars is rendered pale blue and Deimos appears as a small dark ellipse in front of it, with Terra Sabaea at the top, the Huygens and 460 km Schiaparelli craters below it and Hellas Basin at the lower right."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hera-deimos/04-04-the-buried-depression-the-stereo-rendering-broug.webp",
+          "alt": "A stereo pair of Deimos built from Hera's 12 March 2025 flyby frames by Sir Brian May of the Hera science team, published by ESA on 14 August 2026. A dashed white circle on the right-hand frame marks one of the ancient impact depressions lying under the moon's regolith blanket. Sabina Raducan says these buried features were not obvious by eye in the flat images and that the stereo rendering is what revealed them, supplying the last constraint on her Nature Astronomy reconstruction."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/hera-deimos/05-05-esa-s-pre-flyby-briefing-graphic-the-source-of-b.jpg",
+          "alt": "ESA's briefing graphic of 10 March 2025, published two days before the flyby. It gives Deimos a maximum diameter of 12.4 km and an orbit 20,068 km above the Martian surface, states that the trajectory brings Hera within 300 km of the moon while the three instruments will image it from a minimum of 1,000 km, labels the Asteroid Framing Camera, HyperScout H and the JAXA-supplied Thermal Infrared Imager on a drawing of the spacecraft, and sets Deimos beside the 780 m Didymos and the 151 m Dimorphos."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/hera-deimos/01-01-deimos-against-mars-from-about-1-000-km-seen-by.webp"
+    },
+    {
+      "slug": "red-dragon",
+      "entry_kind": "mission",
+      "name": "Red Dragon",
+      "entity": "SpaceX with NASA Ames Research Center (United States)",
+      "type": "soft-lander",
+      "era": "long-occupation",
+      "outcome": "cancelled",
+      "status": "Cancelled on 19 July 2017, when Musk dropped propulsive landing for Dragon: the capsule was to land on Mars on its own engines with no parachute, announced by SpaceX on 27 April 2016. None was ever built.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/red-dragon",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/red-dragon/01-01-entry-in-spacex-s-own-concept-art-red-dragon-was.jpg",
+          "alt": "SpaceX concept art titled Dragon to Mars, showing a Dragon capsule glowing white hot as it enters the martian atmosphere at hypersonic speed, dragging a long incandescent wake across the sunlit face of the planet with the canyon system of Valles Marineris below it."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/red-dragon/02-02-the-landing-trick-that-red-dragon-existed-for-dr.jpg",
+          "alt": "SpaceX concept art of a Dragon 2 capsule a few metres above the martian surface with its four landing legs extended, SuperDraco engines firing from the pods set into its side walls and blasting grit horizontally across the ground."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/red-dragon/03-03-a-dragon-down-on-mars-in-spacex-concept-art-publ.jpg",
+          "alt": "SpaceX concept art of a landed Dragon capsule standing alone on its legs in a wide rock-strewn martian valley, small against the ridges and the dusty horizon."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/red-dragon/04-04-the-launch-spacex-pictured-on-27-april-2016-the.jpg",
+          "alt": "SpaceX concept art of a Falcon Heavy with a Dragon capsule on top climbing away from launch complex 39A at Kennedy Space Center in a bank of exhaust, posted to the Official SpaceX Photos Flickr account on 27 April 2016, the day SpaceX announced it would send Dragons to Mars as early as 2018."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/red-dragon/01-01-entry-in-spacex-s-own-concept-art-red-dragon-was.jpg"
+    },
+    {
+      "slug": "i-mim",
+      "entry_kind": "mission",
+      "name": "International Mars Ice Mapper",
+      "entity": "NASA, CSA, JAXA and ASI, later joined by the Netherlands Space Office",
+      "type": "orbiter",
+      "era": "multipolar",
+      "outcome": "cancelled",
+      "status": "NASA terminated its financial support on 28 March 2022 and the other partners did not follow: Italy signed a 22 million euro Phase B1 contract on 8 March 2024. As of 24 August 2026 no agency has said whether it lives.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 9,
+      "page": "https://azmth.space/mars/missions/i-mim",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/i-mim/01-01-the-four-agency-ice-mapper-as-nasa-drew-it-in-20.jpg",
+          "alt": "NASA's artist illustration of the International Mars Ice Mapper, published with the 3 February 2021 announcement of the statement of intent. The radar orbiter is in the foreground low over Mars with its solar wings out and a large mesh reflector carried above it on a boom, a wedge shaped radar swath cutting down into the ground below it, and three smaller relay orbiters strung out higher up with a beam running to Earth at the top right. NASA's own file metadata captions it as four orbiters that are part of the I-MIM mission."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/i-mim/02-02-where-japan-filed-the-ice-mapper-the-step-straig.webp",
+          "alt": "JAXA's own chart of its Strategic Mars Exploration Program, published with its 3 March 2021 statement on the Mars Ice Mapper agreement. A grey arrow curves from the 2020s at the lower left, through Martian Moons Exploration and its objectives, up through a Small Orbiter and EDL Demonstration box captioned Distribution and Inventory of Water with an inset picture of MIM beside it, on to lander and rover exploration in the 2030s captioned Evolution of Water, and finally to multiple and sustainable Mars exploration at 20xx."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/i-mim/03-03-the-state-of-the-art-before-the-ice-mapper-burie.jpg",
+          "alt": "A global map of buried water ice on Mars released by JPL on 10 December 2019, made by combining data from Mars Reconnaissance Orbiter, Mars Odyssey and Mars Global Surveyor. Colour gives the depth to ice over a grey shaded relief base, from magenta at less than about 10 cm to red at more than 80 cm; the black areas are ground where a landing spacecraft would sink into fine dust, and the white outlined box in the northern mid latitudes marks the region JPL calls ideal for sending astronauts who need to dig up water ice."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/i-mim/01-01-the-four-agency-ice-mapper-as-nasa-drew-it-in-20.jpg"
+    },
+    {
+      "slug": "idefix",
+      "entry_kind": "mission",
+      "name": "Idefix (MMX Phobos rover)",
+      "entity": "CNES and DLR, flying with JAXA",
+      "type": "rover",
+      "era": "multipolar",
+      "outcome": "operating",
+      "status": "Launched on 20 October 2026, stowed on JAXA's MMX, which lifted off at 04:41:03 Japan time (19:41:03 UTC on 19 October) on H3 flight 10. Release onto Phobos from 40 to 100 metres up follows in late 2028 or early 2029.",
+      "facts_checked": "2026-09-03",
+      "has_coordinates": false,
+      "source_count": 13,
+      "page": "https://azmth.space/mars/missions/idefix",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/idefix/01-01-the-actual-flight-rover-folded-for-the-journey-a.jpg",
+          "alt": "The Idefix flight rover in its cruise configuration, published by ISAS with the caption 'IDEFIX Rover' alongside the 14 March 2024 announcement of the handover to JAXA at the Mitsubishi Electric Kamakura Works. The body is wrapped in gold and black thermal blanketing, two of its four wheels are folded flat against the flank facing the camera on their stowed hinged legs, and the top face carries the orange-red blanket over the folded solar panels studded with the open aluminium lattice crash pads that take the impact when the rover is dropped. It sits in a handling frame on protective sheeting, with a Centre National d'Etudes Spatiales label visible on the wall behind."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/idefix/02-02-the-rover-in-the-place-it-will-launch-from-bolte.jpg",
+          "alt": "Idefix in its stowed position on the MMX spacecraft at the Tanegashima Space Center, captioned by CNES as 'Insertion of an SD card inside Idefix®'. The rover is bolted to a spacecraft panel amid gold multi-layer insulation and black structure, red thermal blanket over its folded solar panels, lattice crash pads standing proud, wheels folded against its sides, while an engineer in cleanroom coveralls works at an opened flap on its upper face. Parts of the background are deliberately blurred in the frame CNES published."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/idefix/03-03-one-of-the-four-wheels-folded-against-the-body-e.jpg",
+          "alt": "A close-up of one folded wheel of the Idefix rover, photographed on 7 September 2023 in a cleanroom, showing the machined mesh-like wheel disc and the curved blades or grousers around its rim. The photographer's own caption describes the rover as folded and ready for flight before its transfer to Japan, and says the view focuses on a wheel with its special pads for moving on a soft Phobos surface."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/idefix/04-04-prototypix-a-prototype-and-not-the-flight-rover.jpg",
+          "alt": "Prototypix, the Earth prototype of Idefix, on the Phobos-analogue yard of DLR's Planetary Exploration Laboratory at Oberpfaffenhofen near Munich, during the four-day test campaign of late November 2025. The dark-bodied prototype carries DLR, CNES and JAXA markings, stands on four bright metal wheels with two of them lifted so the body is tilted back, and grooved wheel tracks run across the grey regolith simulant around it. Engineers watch from behind a rail at the edge of the yard. CNES's own caption reads 'Prototypix tests out the heliotropic sequence' and adds that the prototype is not hailing the Sun."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/idefix/05-05-how-the-rover-is-meant-to-turn-itself-the-right.webp",
+          "alt": "A figure from the rover team's own 2025 paper showing the autonomous uprighting sequence. The upper part is a schematic of the named body positions the rover moves through, Cruise, Parachutist, Flat, Inverse stowed, Stowed and Dragster, linked by coloured arrows with 'four legs at a time' on two of the transitions and a red branch marked 'If global Blockage counter is 8 or more'. The lower strip is four frames of the same manoeuvre rendered in a simulated environment, ending with the solar panels open. Every frame is either a diagram or a simulation."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/idefix/06-06-a-frame-from-dlr-s-simulation-of-the-rover-drivi.jpg",
+          "alt": "A frame from DLR's physics simulation of the rover driving on Phobos, captioned by DLR as 'The MMX Rover moving on Phobos (simulation)'. The vehicle is shown deployed, solar panels spread on both sides, wheels on the ground, with a shallow track behind it across a grey boulder-strewn surface under a black sky. The image carries a DLR Robotics and Mechatronics Center and Institute of System Dynamics and Control watermark at the top left and a simulation clock reading 'Time: 764.7200s' at the bottom left."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/idefix/01-01-the-actual-flight-rover-folded-for-the-journey-a.jpg"
+    },
+    {
+      "slug": "mangalyaan-2",
+      "entry_kind": "mission",
+      "name": "Mangalyaan-2 (Mars Lander Mission)",
+      "entity": "ISRO",
+      "type": "soft-lander",
+      "era": "announced",
+      "outcome": "planned",
+      "status": "Announced in October 2014 and still unfunded: the Space Commission approved it in February 2025, and the Union Cabinet, which releases the money, had not by 24 August 2026. No Mars window opens in 2030.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/mangalyaan-2",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan-2/01-01-v-narayanan-isro-s-chairman-in-january-2025-he-i.webp",
+          "alt": "Dr V. Narayanan seated at ISRO Headquarters in Bengaluru on 15 January 2025, the day ISRO announced he had begun functioning there, beneath the State Emblem of India and the wall lettering 'Government of India, Department of Space, ISRO Headquarters' in English and Hindi. The frame carries ISRO's own on-screen caption naming him Secretary, Department of Space and Chairman, ISRO."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan-2/02-02-the-rocket-the-plan-calls-for-an-lvm3-leaving-sr.jpg",
+          "alt": "An LVM3 lifting off from the Second Launch Pad at the Satish Dhawan Space Centre, Sriharikota, on the LVM3-M5 mission carrying the CMS-03 communications satellite on 2 November 2025. The vehicle is caught at the instant of lift-off with its two solid strap-on boosters burning, still level with the swing arms of the service structure and flanked by both lightning towers, and the SDSC SHAR sign is visible at the base."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/mangalyaan-2/01-01-v-narayanan-isro-s-chairman-in-january-2025-he-i.webp"
+    },
+    {
+      "slug": "aeolus-relativity",
+      "entry_kind": "mission",
+      "name": "Aeolus and the Relativity Mars orbiter",
+      "entity": "NASA and Relativity Space",
+      "type": "orbiter",
+      "era": "announced",
+      "outcome": "in-development",
+      "status": "Announced on 17 June 2026 and still undisclosed in almost every detail: NASA supplies the four-instrument Aeolus payload, Relativity pays for and flies the orbiter. Launch is 2028 on Terran R, which has never flown.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 11,
+      "page": "https://azmth.space/mars/missions/aeolus-relativity",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/aeolus-relativity/01-01-relativity-space-s-own-render-of-the-spacecraft.jpg",
+          "alt": "A Relativity Space computer render of the company's proposed Mars orbiter, a compact boxy bus carrying two long multi-panel solar wings, coasting in front of a fully lit Mars."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/aeolus-relativity/02-02-the-announcement-itself-on-the-factory-floor-at.jpg",
+          "alt": "A photograph of NASA Administrator Jared Isaacman announcing the public-private partnership at Relativity Space on 17 June 2026, addressing a large seated and standing crowd on the factory floor with a United States flag and a long Relativity-branded rocket stage lying horizontally behind him."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/aeolus-relativity/01-01-relativity-space-s-own-render-of-the-spacecraft.jpg"
+    },
+    {
+      "slug": "sr-1-freedom",
+      "entry_kind": "mission",
+      "name": "Space Reactor-1 Freedom",
+      "entity": "NASA",
+      "type": "flyby",
+      "era": "announced",
+      "outcome": "in-development",
+      "status": "Announced on 24 March 2026 for a December 2028 launch: it would be the first spacecraft to propel itself beyond Earth orbit on a fission reactor. By August 2026 it had a requirements-level review and no rocket.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/sr-1-freedom",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/sr-1-freedom/01-01-nasa-s-own-artist-s-concept-of-sr-1-freedom-pass.webp",
+          "alt": "NASA's artist's concept of Space Reactor-1 Freedom passing Mars, showing the two large solar wings of the Gateway Power and Propulsion Element, a long truss boom carrying the reactor and its radiators, and the blue plume of an electric thruster firing."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/sr-1-freedom/02-02-nasa-s-published-flight-path-graphic-the-cleares.jpg",
+          "alt": "NASA's Space Reactor-1 Freedom Flight Path graphic, plotting the SR-1 trajectory against the orbits of Earth and Mars and numbering seven events: launch in late 2028, solar array deployment at one day, reactor startup at 30 days, a first Mars flyby at 300 days, release of the SkyFall capsule at 600 days, and a second Mars flyby and atmospheric entry at 660 days."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/sr-1-freedom/03-03-the-power-and-propulsion-element-in-the-cleanroo.jpg",
+          "alt": "A cleanroom photograph of Gateway's Power and Propulsion Element undergoing battery installation at Lanteris Space Systems in Palo Alto, California, showing the flight bus on its handling fixture with multi-layer insulation, orange cabling and a painted United States flag on its side."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/sr-1-freedom/01-01-nasa-s-own-artist-s-concept-of-sr-1-freedom-pass.webp"
+    },
+    {
+      "slug": "skyfall",
+      "entry_kind": "mission",
+      "name": "SkyFall",
+      "entity": "NASA and AeroVironment",
+      "type": "helicopter",
+      "era": "announced",
+      "outcome": "in-development",
+      "status": "Adopted by NASA on 24 March 2026, cut from AeroVironment's six-helicopter concept to three: released in mid-air with no lander involved. Launch is December 2028 aboard SR-1 Freedom, landing in autumn 2030.",
+      "facts_checked": "2026-09-05",
+      "has_coordinates": false,
+      "source_count": 10,
+      "page": "https://azmth.space/mars/missions/skyfall",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/skyfall/01-01-the-whole-idea-in-one-frame-the-aircraft-are-let.jpg",
+          "alt": "A NASA artist's concept of the SkyFall manoeuvre, seen from below, with three small helicopters flying away from the aeroshell while it still hangs beneath its inflated parachute in the Martian atmosphere."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/skyfall/02-02-the-three-aircraft-at-work-with-the-radar-and-in.jpg",
+          "alt": "NASA image PIA26760, an artist's concept of the three SkyFall helicopters working over Martian ground, with green cones drawn beneath their antennas to represent ground-penetrating radar sounding and red beams to represent near-infrared imaging of the regolith."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/skyfall/03-03-av-s-own-reveal-image-from-24-july-2025-when-the.webp",
+          "alt": "The banner still from AV's Skyfall reveal, showing a helicopter flying clear of the capsule as it descends under its parachute, with the words ARTIST'S CONCEPT printed in the top right corner by the company."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/skyfall/01-01-the-whole-idea-in-one-frame-the-aircraft-are-let.jpg"
+    },
+    {
+      "slug": "impulse-relativity-lander",
+      "entry_kind": "mission",
+      "name": "The Impulse and Relativity Mars lander",
+      "entity": "Impulse Space and Relativity Space",
+      "type": "soft-lander",
+      "era": "announced",
+      "outcome": "planned",
+      "status": "Dormant rather than cancelled: announced on 19 July 2022 for a launch as soon as late 2024, moved to 2026 in May 2023, and unmentioned by either company since. No hardware, customer or payload has ever been shown.",
+      "facts_checked": "2026-08-24",
+      "has_coordinates": false,
+      "source_count": 12,
+      "page": "https://azmth.space/mars/missions/impulse-relativity-lander",
+      "images": [
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/impulse-relativity-lander/01-01-impulse-space-s-2022-render-of-the-cruise-vehicl.jpg",
+          "alt": "An Impulse Space render of the Mars Cruise Vehicle, a small spacecraft with two black solar panels, flying beside the released entry capsule and its blunt heat shield above a mostly sunlit Mars, with the night side falling away at the left limb."
+        },
+        {
+          "url": "https://marswalk-imagery.pages.dev/missionImages/impulse-relativity-lander/02-02-the-lander-under-retro-thrust-from-the-same-july.webp",
+          "alt": "An Impulse Space render of the proposed Mars lander, a four-legged vehicle descending on two engines through a dust-coloured Martian sky with the ground faintly visible below."
+        }
+      ],
+      "primaryImage": "https://marswalk-imagery.pages.dev/missionImages/impulse-relativity-lander/01-01-impulse-space-s-2022-render-of-the-cruise-vehicl.jpg"
+    }
+  ],
+  "assetsDownloadedAt": "2026-10-23T13:54:15.065896+00:00",
+  "imageAssetRoot": "https://marswalk-imagery.pages.dev/missionImages",
+  "downloadSummary": {
+    "uniqueUrls": 308,
+    "successfulDownloads": 308,
+    "failedDownloads": 0,
+    "imagesRequiringRightsReview": 1
+  }
+}
